@@ -1,0 +1,30 @@
+{
+  "generatedAt": "2026-10-15T20:05:46.486Z",
+  "entryPoints": [
+    "main/index.ts",
+    "main/preload.ts",
+    "main/notificationPreload.ts",
+    "main/overlayPreload.ts"
+  ],
+  "renderer": "src/compiled/.vite/renderer",
+  "output": "dist/source-app",
+  "esbuild": "0.25.12",
+  "target": "node20",
+  "format": "cjs",
+  "aliases": [
+    "@ -> recovered/sourcemaps/application/src",
+    "@plato-corp/tiro-core/entities/calendar -> recovered application/packages/core/dist/entities/calendar.mjs"
+  ],
+  "external": [
+    "electron",
+    "@plato-corp/microphone"
+  ],
+  "envDefaults": {
+    "api": "https://api.tiro.ooo",
+    "web": "https://tiro.ooo",
+    "ws": "wss://api.tiro.ooo",
+    "docs": "https://docs.tiro.ooo",
+    "channelTalk": "5d873410-56f4-4504-8497-b1ca2f13a8a9",
+    "appEnv": "production"
+  }
+}

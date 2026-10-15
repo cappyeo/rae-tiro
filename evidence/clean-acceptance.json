@@ -1,0 +1,80 @@
+{
+  "timestamp": "2026-10-15T20:12:20.126964+00:00",
+  "passed": true,
+  "environment": "Windows, Node.js 24.14.0, npm 11.9.0, stock Electron 41.8.0",
+  "method": "Fresh source copy without root node_modules, dist, or profiles; new npm ci followed by build and isolated offline startup.",
+  "commands": [
+    {
+      "command": "npm ci --no-audit --no-fund",
+      "exitCode": 0
+    },
+    {
+      "command": "npm run build",
+      "exitCode": 0
+    },
+    {
+      "command": "npm run smoke -- --label clean",
+      "exitCode": 0
+    }
+  ],
+  "verifiedSourceFiles": [
+    {
+      "path": "package.json",
+      "sha256": "3b156ea2f27623b0e845c082ddbdb1b34ee0d13ca00775465c2abfee3565d176"
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "3b2ac0b513fce635be95e93ed83a5d97d99388b4fa2099c26dd5557b32518292"
+    },
+    {
+      "path": "scripts/build-all.mjs",
+      "sha256": "881395038ae231129d86a8aa2607186e2f1c5d3d4547bed3424ac0f6935e9190"
+    },
+    {
+      "path": "scripts/build.mjs",
+      "sha256": "2d0f567f63f747ab462453e99e037708f37fefa8db1c18442a05174be8ee7309"
+    },
+    {
+      "path": "scripts/build-from-sources.mjs",
+      "sha256": "9e702f68f9bd7394105cddacd660fc207dd36e56ba4c5b53f3d120c252496afe"
+    },
+    {
+      "path": "scripts/recover-locales.mjs",
+      "sha256": "591adb8cda06dc1ab513b0f4def8866f659713832093d2d2a8544e2b119f88e2"
+    },
+    {
+      "path": "scripts/runtime.cjs",
+      "sha256": "74f9b951b3fdcdcc0dd784f8f9f77505f5ce8b0ae317e7ccbd622faa18171f69"
+    },
+    {
+      "path": "scripts/start.mjs",
+      "sha256": "8fcadfaff02c911c25f15487c913d71fe5164c4853261694fa8608c2cc3e531e"
+    },
+    {
+      "path": "scripts/smoke.mjs",
+      "sha256": "7ca4c259a4b52353ac71f71c2aef1802aace4ec999effca38dfc67d1eb2f8d7f"
+    },
+    {
+      "path": "recovered/sourcemaps/application/src/main/index.ts",
+      "sha256": "bcccbd4d3e1d19b6614d3b5adedb3ecee11851ab68ba3f3468c71910d1bbb730"
+    },
+    {
+      "path": "recovered/sourcemaps/application/src/main/preload.ts",
+      "sha256": "ffd5325a77c23bd18936fb43e00fc0cced57b97b803a189ca54396267224bffa"
+    },
+    {
+      "path": "src/compiled/.vite/renderer/main_window/assets/index-CXautzcB.js",
+      "sha256": "7f634147892d803b3cf642a2e62be55ea42ca73d133d2bd6c9cf3ac7591be272"
+    },
+    {
+      "path": "src/compiled/.vite/renderer/main_window/assets/index-DEPkF0IT.css",
+      "sha256": "31727c9a85a6260d381e20b8796babcef5e3d0ea354ab74a37e401eafe85a649"
+    }
+  ],
+  "startupEvidence": "evidence/smoke-clean.json",
+  "screenshotSha256": "78141eb5799ed5a92cebe76b24ec9f0e441e00f4b0749b554b1a7fb1e055716b",
+  "limitations": [
+    "Fresh copy test was performed in another workspace path on this computer.",
+    "No login, cloud service, audio capture, upload, installer generation or signing acceptance."
+  ]
+}

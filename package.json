@@ -1,0 +1,36 @@
+{
+  "name": "tiro-recovered",
+  "version": "4.9.14",
+  "private": true,
+  "description": "Editable recovery project for the Tiro 4.9.14 Windows build.",
+  "main": "scripts/runtime.cjs",
+  "scripts": {
+    "build": "node scripts/build-all.mjs",
+    "build:bundles": "node scripts/build.mjs",
+    "build:source": "node scripts/build-from-sources.mjs",
+    "recover:sources": "node scripts/recover-sourcemaps.mjs",
+    "recover:locales": "node scripts/recover-locales.mjs",
+    "verify:recovery": "node scripts/verify-recovery.mjs",
+    "format:recovered": "node scripts/format-recovered.mjs",
+    "start": "node scripts/start.mjs",
+    "smoke": "node scripts/smoke.mjs"
+  },
+  "devDependencies": {
+    "electron": "41.8.0",
+    "esbuild": "0.25.12",
+    "prettier": "3.6.2"
+  },
+  "dependencies": {
+    "@sentry/electron": "6.2.0",
+    "@stomp/stompjs": "7.5.0",
+    "conf": "13.1.0",
+    "electron-log": "5.3.2",
+    "electron-squirrel-startup": "1.0.1",
+    "electron-store": "8.2.0",
+    "https-proxy-agent": "9.0.0",
+    "i18next": "23.14.0",
+    "node-machine-id": "1.1.12",
+    "socks-proxy-agent": "10.0.0",
+    "zod": "3.24.2"
+  }
+}

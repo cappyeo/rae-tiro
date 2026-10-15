@@ -1,0 +1,3401 @@
+"use strict";
+try {
+  let e =
+      typeof window < "u"
+        ? window
+        : typeof t < "u"
+          ? t
+          : typeof globalThis < "u"
+            ? globalThis
+            : typeof self < "u"
+              ? self
+              : {},
+    i = new e.Error().stack;
+  i &&
+    ((e._sentryDebugIds = e._sentryDebugIds || {}),
+    (e._sentryDebugIds[i] = "2fb653b5-394b-4b7a-b09f-24733684c3ed"),
+    (e._sentryDebugIdIdentifier =
+      "sentry-dbid-2fb653b5-394b-4b7a-b09f-24733684c3ed"));
+} catch {}
+Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
+const o = {
+    eventName: "2026 鄭周永 創業コンテスト パートナー特典",
+    pageTitle: "鄭周永 創業コンテスト ギフト · Tiro Pro プラン1か月無料",
+    pageDescription:
+      "2026 鄭周永 創業コンテスト参加者向けの Tiro Pro プラン1か月無料クーポン。決済画面でコードを入力すると適用されます。",
+    benefitLabel: "Tiro Pro プラン",
+    monthFree: "か月無料",
+    deadline: "クーポン登録期限：2026/11/18 23:59まで",
+    renewal: `1か月後、有料プランに自動更新されます。
+決済前に次回の請求日と金額をご確認ください。`,
+    steps1:
+      "「今すぐ特典を受け取る」ボタンをクリックし、ご希望のプランの［はじめる］をクリック",
+    steps2: "Tiroにログイン（アカウントがない場合は、ここで新規登録できます）",
+    steps3:
+      "決済画面で割引コード「ASAN2026」が適用されているか確認（適用されていない場合は「プロモーションコードを追加」に直接入力）",
+    steps4:
+      "19,900ウォン割引された金額を確認して決済を完了（Lite・Proプランは0ウォン）",
+    endedTitle: "クーポンの登録期間は終了しました",
+    endedHelp: "このイベント特典の提供期間は終了しました。",
+    pausedTitle: "クーポン案内を準備しています",
+    pausedHelp: "しばらくしてからご確認ください。",
+  },
+  n = {
+    eventName: "D4D × EDTHハッカソン参加者特典",
+    pageTitle: "D4D参加者特典 · Tiro無料トライアル1,000分",
+    pageDescription:
+      "下のリンクから新規登録すると、登録日から31日間使える合計1,000分の無料トライアルをすぐにご利用いただけます。",
+    benefitLabel: "無料トライアル",
+    minutes: "分",
+    deadline: "2026年10月31日23:59までに新規登録（日本・韓国時間）",
+    duration: `専用リンクから新規登録すると、
+合計1,000分の無料トライアルをご利用いただけます。
+有効期間は登録日から31日間です。`,
+    redeem: "1,000分の無料トライアルをはじめる",
+    instructionsTitle: "特典の受け取り方",
+    steps1: "上のボタンからD4D専用の登録ページへお進みください。",
+    steps2: "招待画面の登録ボタンから新しくアカウントを作成してください。",
+    steps3:
+      "登録後すぐに、合計1,000分の無料トライアルをご利用いただけます。有効期間は登録日から31日間です。",
+    endedTitle: "D4D参加者特典の受付は終了しました",
+    endedHelp:
+      "新規登録特典の受付期間は終了しました。受け取り済みの特典は付与された有効期間内にご利用いただけます。",
+    pausedTitle: "D4D参加者特典はただいま準備中です",
+    pausedHelp: "しばらくしてから再度ご確認ください。",
+    visitTiro: "Tiroについて見る",
+  },
+  r = {
+    event: "2026 地上軍フェスティバル",
+    eyebrow: "ご来場の皆さまへの特典",
+    headline: `会話のひとときを、
+記録に。`,
+    description: "Tiroが会話を記録し、大切な内容を整理いたします。",
+    ticketLabel: "Tiro無料録音クーポン",
+    benefitLabel: "Tiro録音クーポン",
+    minutesFree: "分無料",
+    benefitCaption: "会話に集中。記録はTiroにお任せ。",
+    eligibilityLabel: "対象",
+    eligibility: "新規・既存のすべての会員",
+    validityLabel: "有効期間",
+    validity: "クーポン登録日から{{days}}日間",
+    redeemTitle: "クーポンを登録",
+    guide: "コードをコピーし、クーポン登録画面に入力してください。",
+    codeLabel: "クーポンコード",
+    copy: "コピー",
+    copied: "コピー済み",
+    loginHelp: "ログインまたは会員登録後にご利用いただけます。",
+    copiedHelp: "コピーしました。クーポン登録画面に貼り付けてください。",
+    copyFailed:
+      "自動でコピーできませんでした。選択されたコードを手動でコピーしてください。",
+    redeem: "今すぐティロに登録して特典を受け取る",
+    steps: "コードをコピー → ログイン → クーポン登録",
+    limits: "先着5,000名 · 1アカウントにつき1回",
+    deadline: "クーポン登録期限：2026/10/14 23:59まで",
+    tagline: "Tiroで、会話のその先へ",
+    endedTitle: "クーポンの登録期間は終了しました",
+    endedHelp: "このイベント特典の提供期間は終了しました。",
+    pausedTitle: "クーポンのご案内を一時休止しています",
+    pausedHelp: "しばらくしてから、もう一度ご確認ください。",
+    visitTiro: "Tiroへ",
+    pageTitle: "フェスティバル特典 · Proプラン1か月無料",
+    pageDescription: "フェスティバル参加者限定、Tiro Proプラン1か月無料。",
+    instructionsTitle: "クーポンの登録方法",
+    instruction1: "クーポンコード「IGYB2026」をコピー",
+    instruction2: "ウェブまたはデスクトップアプリでTiroにログイン",
+    instruction3:
+      "左上のプロフィールをクリック > プランを契約 > Proプランを選択",
+    instruction4: "「プロモーションコードを追加」にコピーしたコードを入力",
+    planLabel: "プラン",
+    freeMonth: "1か月無料",
+    offerTitle: "Proプラン1か月無料",
+    plan: "Proプラン",
+    monthFree: "か月無料",
+    renewal: `1か月後、有料プランに自動更新されます。
+決済前に次回の請求日と金額をご確認ください。`,
+    billingGuide: "詳しいクーポンの適用方法は、ガイドをご覧ください。",
+    laterTitle: "あとで利用するには",
+    laterHelp: "有効期限までに、以下の手順でクーポンを登録してください。",
+  },
+  a = {
+    instructionsTitle: "クーポンの登録方法",
+    billingGuide: "詳しいクーポンの適用方法",
+    eyebrow: "AI FESTA ご来場者へのギフト",
+    description: "Tiro が会話を記録し、大事な内容を整理します。",
+    ticketLabel: "Tiro 割引クーポン",
+    benefitLabel: "Tiro 全プラン",
+    percentOff: "% 割引",
+    benefitCaption: "議事録からエージェント連携まで、すべての機能をそのまま。",
+    duration: "初月の決済に1回のみ適用されます。",
+    redeemTitle: "割引コードを使う",
+    guide:
+      "下のコードをコピーし、決済画面のプロモーションコード欄に貼り付けてください。",
+    codeLabel: "クーポンコード",
+    copy: "コピー",
+    copied: "コピー済み",
+    loginHelp: "ログイン後にプランを選ぶと決済画面が開きます。",
+    copiedHelp: "コードをコピーしました。決済画面に貼り付けてください。",
+    copyFailed:
+      "自動コピーができません。選択されたコードを手動でコピーしてください。",
+    redeem: "今すぐ特典を受け取る",
+    steps1: "クーポンコード「AIFESTA2026」をコピー",
+    steps2: "ウェブまたはデスクトップアプリでTiroにログイン",
+    steps3: "左上のプロフィールをクリック > プランを契約 > プランを選択",
+    steps4: "「プロモーションコードを追加」にコピーしたコードを入力",
+    deadline: "クーポン登録期限：2026/11/30 23:59まで",
+    tagline: "会話の次をつくる Tiro",
+    endedTitle: "クーポンのご利用期間が終了しました",
+    endedHelp: "すでに適用された割引は、請求期間の終わりまで有効です。",
+    pausedTitle: "クーポン案内を準備しています",
+    pausedHelp: "しばらくしてからご確認ください。",
+    visitTiro: "Tiro へ移動",
+    pageTitle: "AI FESTA ギフト · Tiro 全プラン50%割引",
+    pageDescription:
+      "AI FESTA ご来場者向けの Tiro 全プラン50%割引クーポン。決済画面でコードを入力すると適用されます。",
+  },
+  s = {
+    instructionsTitle: "クーポンの登録方法",
+    billingGuide: "詳しいクーポンの適用方法",
+    eyebrow: "IMPACT 2026 ご来場者へのギフト",
+    description: "Tiro が会話を記録し、大事な内容を整理します。",
+    ticketLabel: "Tiro 割引クーポン",
+    benefitLabel: "Tiro 全プラン",
+    percentOff: "% 割引",
+    benefitCaption: "議事録からエージェント連携まで、すべての機能をそのまま。",
+    duration: "初月の決済に1回のみ適用されます。",
+    redeemTitle: "割引コードを使う",
+    guide:
+      "下のコードをコピーし、決済画面のプロモーションコード欄に貼り付けてください。",
+    codeLabel: "クーポンコード",
+    copy: "コピー",
+    copied: "コピー済み",
+    loginHelp: "ログイン後にプランを選ぶと決済画面が開きます。",
+    copiedHelp: "コードをコピーしました。決済画面に貼り付けてください。",
+    copyFailed:
+      "自動コピーができません。選択されたコードを手動でコピーしてください。",
+    redeem: "今すぐ特典を受け取る",
+    steps1: "クーポンコード「IMPACT2026」をコピー",
+    steps2: "ウェブまたはデスクトップアプリでTiroにログイン",
+    steps3: "左上のプロフィールをクリック > プランを契約 > プランを選択",
+    steps4: "「プロモーションコードを追加」にコピーしたコードを入力",
+    deadline: "クーポン登録期限：2026/11/30 23:59まで",
+    tagline: "会話の次をつくる Tiro",
+    endedTitle: "クーポンのご利用期間が終了しました",
+    endedHelp: "すでに適用された割引は、請求期間の終わりまで有効です。",
+    pausedTitle: "クーポン案内を準備しています",
+    pausedHelp: "しばらくしてからご確認ください。",
+    visitTiro: "Tiro へ移動",
+    pageTitle: "IMPACT 2026 ギフト · Tiro 全プラン50%割引",
+    pageDescription:
+      "IMPACT 2026 ご来場者向けの Tiro 全プラン50%割引クーポン。決済画面でコードを入力すると適用されます。",
+  },
+  l = {
+    paidExplanation:
+      "友だちの初回のお支払いから7日後に、さらに<amt>$5</amt>のリワードが付与されます。",
+    activationExplanation:
+      "友だちが初めて10分以上の記録を完了すると、<amt>$3</amt>のリワードが付与されます。",
+    joinedCount: "{{count}}人",
+    recipientName: "招待する相手の名前",
+    title: `大切な会話にもっと集中できるように、
+Tiro Proプランを贈りましょう。`,
+    friendLabel: "友だちに",
+    friendValue: "$13",
+    friendCaption: "Proプラン1か月分",
+    rewardLabel: "あなたに",
+    rewardValue: "$8",
+    rewardCaption: "友だち1人につき・条件を満たした場合",
+    conditions: "リワードの付与条件を見る",
+    creditExplanation:
+      "あなたの招待リンクから登録した友だちに、Proプラン1か月分に相当する<amt>$13</amt>のリワードが付与されます。",
+  },
+  c = {
+    title: "支払い管理",
+    section: { paymentInfo: "お支払い方法", history: "お支払い履歴" },
+    card: "カード",
+    paymentMethodRow: "お支払い方法",
+    cardExpiry: "有効期限 {{expiry}}",
+    cardEmpty: "登録されたカードがありません",
+    paymentMethodLoadFailed: "お支払い方法を読み込めませんでした。",
+    invoiceEmailLoadFailed:
+      "請求書の受信メールアドレスを読み込めませんでした。",
+    method: {
+      bankTransfer: "銀行振込（手動更新）",
+      adminGrant: "管理者による付与",
+      apple: "Apple アプリ内課金",
+      googlePlay: "Google Play ストア アプリ内課金",
+      lemonSqueezy: "Lemon Squeezy",
+      toss: "Toss Payments",
+    },
+    invoiceEmail: "請求書の受信メールアドレス",
+    invoiceEmailEmpty: "登録されたメールアドレスがありません",
+    invoiceEmailPlaceholder: "invoice@company.com",
+    invoiceEmailInvalid: "メールアドレスをもう一度ご確認ください。",
+    invoiceEmailUpdated: "請求書の受信メールアドレスを変更しました。",
+    invoiceEmailUpdateFailed: `請求書の受信メールアドレスを変更できませんでした。
+しばらくしてからもう一度お試しください。`,
+    invoiceOpenFailed: `請求書を開けませんでした。
+しばらくしてからもう一度お試しください。`,
+    paymentMethodUpdateFailed: `お支払い方法の変更画面を開けませんでした。
+しばらくしてからもう一度お試しください。`,
+    change: "変更",
+    save: "保存",
+    cancel: "キャンセル",
+    historyNote:
+      "サブスクリプションが終了したあとも、この一覧はご覧いただけます。",
+    historyEmpty: "お支払い履歴はまだありません。",
+    historyLoading: "お支払い履歴を読み込んでいます。",
+    historyLoadFailed: "お支払い履歴を読み込めませんでした",
+    historyLoadFailedDescription: "しばらくしてからもう一度お試しください。",
+    retry: "再試行",
+    column: {
+      date: "日付",
+      description: "内容",
+      amount: "金額",
+      status: "ステータス",
+      invoice: "請求書",
+    },
+    status: {
+      upcoming: "支払い予定",
+      paid: "支払い完了",
+      voided: "支払いキャンセル",
+    },
+    amount: { estimated: "概算 {{amount}}" },
+    item: {
+      monthly: "{{plan}} 月間プラン",
+      yearly: "{{plan}} 年間プラン",
+      plan: "{{plan}} プラン",
+      seatsTail: "（{{seats}}席）",
+      fallback: "その他の項目",
+      overageTail: {
+        recorded: "超過後払い {{minutes}}分",
+        accruing: "超過後払いを集計中",
+      },
+      overageInvoice: {
+        recorded: "{{month}}月の超過後払い（{{minutes}}分）",
+        accruing: "超過後払いの利用量を集計中",
+      },
+      otherUsage: "その他の利用分",
+    },
+    download: "ダウンロード",
+    guideLink: "プランとサブスクリプションの管理ガイド",
+    noPlanBanner:
+      "現在ご利用中のプランはありませんが、お支払い履歴と請求書は引き続きご覧いただけます。",
+    viewPlans: "プランを見る",
+    pagination: { prev: "前へ", next: "次へ" },
+  },
+  d = {
+    success: {
+      title: "お支払いが完了しました",
+      description: "Tiro アプリからそのままお使いいただけます。",
+      returnToApp: "Tiro アプリに戻る",
+      installDescription:
+        "Tiro アプリをインストールして、手軽にお使いください。",
+      downloadApp: "アプリをダウンロード",
+      continueOnWeb: "Webで使う",
+      planTitle: "Tiro {{planName}}プラン",
+    },
+  },
+  p = {
+    retry: "しばらくしてからもう一度お試しください。",
+    plans: {
+      recommended: "おすすめ",
+      footnote:
+        "ご購入時にリワードが適用されます。残りの無料利用時間もそのままお使いいただけます。",
+      teamRewardNotice: "リワードは個人プランにのみ適用されます。",
+      title: "プランを選ぶ",
+      start: "はじめる",
+    },
+    title: "リワードを使う",
+    loading: "リワードを確認しています。",
+    expired: {
+      title: "リンクの有効期限が切れました",
+      description: "アプリで「リワードを使う」をもう一度タップしてください。",
+    },
+  },
+  u = {
+    title: "友だちを招待して最大 $8 もらえます",
+    description:
+      "会議が多い友だちはいませんか？ Proを1か月プレゼントしましょう。",
+    cta: "今すぐ友だちを招待",
+    paymentModal: {
+      title: "会議が多い友だちに Pro を贈りましょう",
+      description:
+        "周りに会議が多い友だちはいますか？友だちに Pro 1か月分をプレゼントして、決済時に使えるリワードを受け取りましょう。",
+      friendLabel: "友だちに",
+      friendValue: "Pro 1か月無料",
+      rewardLabel: "あなたに",
+      rewardValue: "最大 $8 リワード",
+      cta: "友だちを招待",
+    },
+  },
+  m = "Tiro | 完璧に仕上がるAI議事録 違う言語でも、ひとつの議事録に。",
+  g = "一字一句を疎かにしない、プロフェッショナルのために。",
+  T =
+    "Tiro, ティロ, Tiro AI, ティロAI, ノートテイク, ノート, 議事録, 翻訳, 要約, 会議, インタビュー, 講義録, STT, 音声, AI, 人工知能, 会話, 速記, 速記士, 速記記録, 速記ノート, 速記アプリ, 速記ツール, 速記プログラム, Clova Note, Clova",
+  b = "Tiro",
+  h = "ベータ",
+  S = { today: "今日", yesterday: "昨日" },
+  y = {
+    jobInfo: {
+      field: "どの分野で活動されていますか？",
+      usage: "どんなシーンでTiroを使いたいですか？",
+    },
+  },
+  A = {
+    eventPopup: {
+      title: "新規会員イベント",
+      description: `24時間以内に10分以上ノートを記録すると
+50分の追加クレジットをプレゼント！`,
+      laterButton: "後で",
+      startNowButton: "今すぐはじめる",
+    },
+  },
+  k = {
+    demo: {
+      backToList: "ノート一覧",
+      conferenceMode: "カンファレンスモード",
+      share: "共有",
+      meta: { addContext: "コンテキストを入力", duration: "0分" },
+      tab: { document: "文書", source: "原文" },
+      subtab: { summary: "要約", script: "スクリプト" },
+      docCreate: "文書を作成",
+      docEmptyTitle: "録音が終わると自動で文書が作成されます",
+      docEmptyTemplate: "自動生成テンプレート:",
+      docEmptyHint: "録音が終わるとすぐに確認できます。",
+      copy: "コピー",
+      docTemplate: "1ページ要約",
+      multilingual: "多言語",
+      recordLang: "日本語",
+      langs: {
+        ko: "韓国語",
+        en: "英語",
+        ja: "日本語",
+        de: "ドイツ語",
+        es: "スペイン語",
+        fr: "フランス語",
+        it: "イタリア語",
+        vi: "ベトナム語",
+      },
+      translate: "翻訳",
+      recording: "記録中",
+      rawHint: "段落が完成すると、スクリプトの内容がさらに正確になります。",
+      generating: "Tiroが文書を整理しています",
+      endNote: "記録終了",
+      replay: "もう一度見る",
+      tooltip: {
+        start: "ここを押して記録をはじめてみましょう",
+        end: "記録を終了してみましょう",
+      },
+      templates: {
+        docsOfNote: "このノートの文書",
+        recommended: "おすすめテンプレート",
+        meeting: "会議録テンプレート",
+        interview: "採用面接テンプレート",
+        lecture: "講義ノート",
+        pitch: "IR・ピッチ",
+        viewAll: "すべてのテンプレートを見る",
+        create: "新しいテンプレートを作成",
+      },
+      askTiro: {
+        title: "何かお手伝いしましょうか？",
+        description: `ノートの参照やミーティングの要約から、
+必要な情報の検索までお手伝いします`,
+        chip1: "主な内容",
+        chip2: "やること",
+        chip3: "決定事項",
+        chip4: "一行で要約",
+        refInfo: "参考にした情報",
+        refNotes: "参照したノート",
+        noteCount: "ノート1件",
+        writing: "回答を作成しています",
+        placeholder: "何でも聞いてください",
+      },
+      doc: { discussion: "主な議論", actionItems: "アクションアイテム" },
+    },
+    loginPopup: {
+      ssoRequired: `会社のSSOでログインする必要があります。
+会社のメールアドレスを入力してください。`,
+      ssoUnavailable: `このメールアドレスではSSOでログインできません。
+会社のメールアドレスを確認するか、管理者にお問い合わせください。`,
+      login: "ログイン",
+      welcome: "Welcome",
+      continueWithGoogle: "Googleでログイン",
+      continueWithMicrosoft: "Microsoftでログイン",
+      microsoftEmailRequired:
+        "Microsoftアカウントにはメールアドレスが必要です。",
+      continueWithSSO: "SSOでログイン",
+      continueWithEmail: "メールアドレスでログイン",
+      email: "メールアドレス",
+      emailPlaceholder: "メールアドレスを入力してください",
+      password: "パスワード",
+      passwordPlaceholder: "パスワードを入力してください",
+      emailRequired: "メールアドレスを入力してください。",
+      emailInvalid: "正しいメール形式を入力してください。",
+      passwordRequired: "パスワードを入力してください。",
+      passwordMinLength: "パスワードは6文字以上である必要があります。",
+      invalidCredentials: "メールアドレスまたはパスワードが正しくありません。",
+      loginError: "ログイン中にエラーが発生しました。もう一度お試しください。",
+      loginFailed: "ログインに失敗しました。",
+      ssoSignIn: "ログイン",
+      withSSO: "with SSO",
+      ssoEmailPlaceholder: "メールアドレスを入力してください",
+      next: "続ける",
+      change: "変更",
+      back: "戻る",
+      alreadyHaveAccount: "すでにアカウントをお持ちですか？",
+      forgotPassword: "パスワードをお忘れですか？",
+      emailSignup: "メールアドレスで新規登録",
+      privacyPolicy: "プライバシーポリシー",
+      agreeToPrivacyPolicy: "を読み、同意します。",
+      lastUsed: "Last Used",
+      securityCertification: "ISO/IEC 27001:2022 · SOC 2 Type 2 認証取得",
+      microsoftVerification: {
+        title: "メールをご確認ください",
+        description:
+          "Microsoftアカウントのメールに送信された6桁の認証コードを入力してください。",
+        label: "認証コード",
+        placeholder: "6桁の数字",
+        helper: "認証コードは3分間有効です。",
+        submit: "認証して続ける",
+        verifying: "認証中",
+      },
+    },
+    emailSignup: {
+      phase1: {
+        title: "利用規約同意",
+        description: "新規登録のため、利用規約に同意してください",
+        agreeToTerms: "プライバシーポリシーに同意します",
+        confirmAge: "14歳以上です",
+        next: "次へ",
+      },
+      phase2: {
+        title: "メールアドレス入力",
+        description: "メールアドレスを入力すると認証コードが送信されます",
+        emailPlaceholder: "メールアドレスを入力してください",
+        next: "次へ",
+        emailRequired: "メールアドレスを入力してください。",
+        emailInvalid: "正しいメール形式を入力してください。",
+        ssoOnlyDomain:
+          "このメールドメインはSSOログインが必要です。SSOでログインしてください。",
+        emailAlreadyExists: "このメールアドレスは既に使用されています。",
+        tooManyRequests:
+          "リクエストが多すぎます。しばらくしてから再度お試しください。",
+        verificationCodeSent: "認証コードが送信されました",
+        verificationCodeSentDescription:
+          "入力されたメールアドレスに認証コードを送信しました。",
+        codeSentError:
+          "認証コード送信中にエラーが発生しました。もう一度お試しください。",
+        confirm: "確認",
+        backToTerms: "利用規約に戻る",
+      },
+      phase3: {
+        emailAlreadyExists: "既に登録されているメールアドレスです。",
+        title: "新規登録情報入力",
+        description: "別のメールアドレスで新規登録",
+        resendVerificationCode: "認証コード再送信",
+        verificationCodePlaceholder: "認証コードを入力してください",
+        codeNotReceivedHelp:
+          "メールが届かない場合は迷惑メールフォルダをご確認ください。それでも見つからない場合は<a>hello@theplato.io</a>までご連絡ください。",
+        passwordPlaceholder: "パスワードを入力してください",
+        passwordConfirmPlaceholder: "パスワードを再度入力してください",
+        passwordRule: "英字、数字、特殊文字(@$!%*#?&)を含む8文字以上",
+        nicknamePlaceholder: "ニックネームを入力してください",
+        nicknameRule: "特殊文字不可、最大20文字",
+        signup: "新規登録",
+        verificationCodeRequired: "認証コードを入力してください。",
+        verificationCodeInvalid: "認証コードは6桁の数字である必要があります。",
+        passwordRequired: "パスワードを入力してください。",
+        passwordTooShort: "パスワードは8文字以上である必要があります。",
+        passwordInvalid:
+          "パスワードは英字、数字、特殊文字(@$!%*#?&)を含む必要があります。",
+        passwordConfirmRequired: "パスワードを再度入力してください。",
+        passwordMismatch: "パスワードが一致しません。",
+        nicknameRequired: "ニックネームを入力してください。",
+        nicknameTooLong: "ニックネームは最大20文字まで入力可能です。",
+        nicknameInvalid: "ニックネームには特殊文字を使用できません。",
+        verificationCodeMismatch: "認証コードが一致しません。",
+        passwordWeak:
+          "パスワードが弱すぎます。英字、数字、特殊文字(@$!%*#?&)を含む8文字以上のパスワードを入力してください。",
+        tooManyVerificationAttempts:
+          "認証試行回数を超えました。しばらくしてから再度お試しください。",
+        validationError: "入力値を確認してください。",
+        signupError:
+          "新規登録中にエラーが発生しました。もう一度お試しください。",
+      },
+      phase4: {
+        title: "新規登録完了",
+        description: "新規登録が完了しました！",
+        welcomeMessage: "Tiroへようこそ！",
+        loginButton: "ログイン",
+      },
+    },
+    passwordReset: {
+      hidePassword: "パスワードを隠す",
+      showPassword: "パスワードを表示",
+      completeTitle: "パスワードを変更しました",
+      linkDescription:
+        "新しいパスワードを入力してください。変更後は、すべての端末でログインし直す必要があります。",
+      linkInvalid:
+        "このリンクは有効期限が切れているか、使用できなくなっています。パスワードの再設定をもう一度リクエストしてください。",
+      requestNewLink: "パスワード再設定を再リクエスト",
+      linkRetryError:
+        "パスワードを変更できませんでした。しばらくしてから再度お試しいただくか、パスワード再設定をもう一度リクエストしてください。",
+      title: "パスワードの再設定",
+      description: "ご登録のメールアドレスに認証コードを送信します。",
+      codeDescription:
+        "アカウントが存在する場合は認証コードを送信しました。認証コードと新しいパスワードを入力してください。",
+      completeDescription: "新しいパスワードでログインしてください。",
+      emailPlaceholder: "メールアドレスを入力してください",
+      codePlaceholder: "認証コードを入力してください",
+      passwordPlaceholder: "新しいパスワード",
+      passwordConfirmPlaceholder: "新しいパスワード（確認）",
+      passwordRule: "英字・数字・下記の記号を含む8文字以上で入力してください。",
+      sendCode: "認証コードを送信",
+      resendCode: "認証コードを再送信",
+      changeEmail: "メールアドレスを変更",
+      reset: "パスワードを再設定",
+      login: "ログイン",
+      backToLogin: "ログインに戻る",
+      emailInvalid: "正しいメールアドレスを入力してください。",
+      codeInvalid: "認証コードは6桁の数字で入力してください。",
+      passwordInvalid:
+        "英字、数字、特殊文字を含む8文字以上のパスワードを入力してください。",
+      passwordMismatch: "パスワードが一致しません。",
+      tooManyRequests:
+        "リクエストが多すぎます。しばらくしてからもう一度お試しください。",
+      tooManyAttempts:
+        "認証試行回数を超えました。新しい認証コードを取得して、もう一度お試しください。",
+      sendError: "認証コードを送信できませんでした。もう一度お試しください。",
+      resetError:
+        "認証コードをご確認いただくか、新しいコードを取得してもう一度お試しください。",
+    },
+    howToUse: "使用ガイド",
+    blog: "ブログ",
+    pricing: "料金プラン",
+    roiEstimate: "導入見積",
+    download: "アプリをインストール",
+    developers: "デベロッパー",
+    continueAs: "{{name}}として続行",
+    signInWithAnotherAccount: "別のアカウントでログイン",
+    signInAs: "{{name}}としてログイン",
+    signInWithGoogle: "Googleでログイン",
+    tryTiroFree: "無料で試す",
+    tryTiroAs: "{{email}}としてはじめる",
+    referralTooltip:
+      "このリンクから登録すると、<bold>Proプラン1か月分</bold>をプレゼントいたします。",
+    referralTooltipDynamic: `<bold>{{referredName}}</bold>さんからの招待です！
+登録すると<bold>Proプラン1か月分</bold>をプレゼントいたします。`,
+    referralTooltipInviterOnly:
+      "<bold>{{referredName}}</bold>さんからの招待です。",
+    giftTooltip: `<bold>{{senderName}}</bold>さんからのギフトです！🎁
+登録すると<bold>Proプラン1か月分</bold>をご利用いただけます。`,
+    welcome: {
+      badgeWithName: "{{name}}さんが招待しました",
+      badgeGeneric: "招待が届きました",
+      title: "Tiroへようこそ",
+      subtitle: "会議も講義も逃さないAIノートを、今すぐはじめましょう。",
+      neutralHeadline: "<bold>会話の記録は<br/>Tiroにおまかせ</bold>",
+      rewardHeadlineBonus:
+        "<bold>Pro 1か月</bold>割引特典 + <bold>{{bonus}}</bold>",
+      rewardFirstMonthPartial:
+        "<bold><plan>{{planName}}</plan>初月{{percent}}%割引</bold>",
+      rewardFirstMonthFree: "<bold><plan>{{planName}}</plan>初月無料</bold>",
+      rewardFirstMonthFreeWithSecondMonthDiscount:
+        "<bold><plan>{{planName}}</plan>初月無料</bold><br/><extra>＋<bold>2か月目{{percent}}%割引</bold></extra>",
+      rewardTrialMinutes:
+        "<bold><trial>無料トライアル</trial>合計{{minutes}}分</bold>",
+      rewardCaption:
+        "登録後にサブスクリプションをはじめると、割引特典が自動で適用されます。",
+      cta: "特典を受け取ってはじめる",
+    },
+    aiNotes: {
+      ogTitle: "人とエージェントが一緒に使うAI議事録 | Tiro",
+      ogDescription:
+        "対面もオンラインも、騒がしい場所でもボットなしで正確に記録します。会議が終わったら、信頼できる議事録をすぐに共有できます。",
+      security: {
+        eyebrow: "国際セキュリティ認証を取得",
+        title: "ISO/IEC 27001:2022 · SOC 2 Type 2",
+        description:
+          "Tiroはお客様のデータ保護のために、ISO/IEC 27001:2022認証と、5つのTrust Services Criteria全範囲を対象とするSOC 2 Type 2認証を無限定適正意見で取得しています。",
+      },
+    },
+    allRightsReserved: "All Rights Reserved.",
+    faq: {
+      title: "よくある質問",
+      description: "Tiroについてもっと詳しく知りたいですか？",
+      items: {
+        howToStart: {
+          question: "利用開始までの流れを教えてください。",
+          answer:
+            "Tiroはご登録と同時に100分の無料トライアル使用時間をご提供いたします。カレンダー連携、デスクトップアプリとモバイルアプリのインストール、最初のノート作成の4つを終えると、それぞれ50分ずつ加算され最大300分になります。無料トライアルはご登録から3週間ご利用いただけます。ログイン後赤いボタンをクリックするだけで、リアルタイム記録が開始できます。また「音声ファイルをアップロード」機能をご利用いただけますと、Tiroが録音ファイルを要約し、ダウンロード可能なノートを作成いたします。",
+        },
+        videoConference: {
+          question: "ビデオ会議も記録できますか？",
+          answer:
+            "はい、デスクトップアプリ（Windows、Mac）を使えば、<strong>ミーティングボットを招待することなく</strong>ビデオ会議やYouTube、ウェビナーなどのシステム音声を記録できます。ランディングページ上部の<a href='https://tiro.ooo/ja/download/app'>アプリダウンロード</a>をクリックすると、すぐにインストール可能です。ぜひご活用ください！",
+        },
+        mobileApp: {
+          question: "モバイルアプリもありますか？",
+          answer:
+            "はい、TiroのモバイルアプリはAndroid／iOSで正式リリースされています。アプリインストールから入手し、いつ、どこでもTiroをご利用ください。",
+        },
+        security: {
+          question: "セキュリティポリシーは信頼できますか？",
+          answer:
+            "Tiroは現在利用可能なすべての音声暗号化技術を導入しており、最高レベルのセキュリティを提供しています。テキストデータは作成と同時に暗号化され、ユーザー本人以外が内容を見ることはできません。詳しくは<a href='https://jazzy-krypton-e22.notion.site/JP-Tiro-Trust-Document-28dde3ced89f80c68699d708cb1ad896?source=copy_link'>Tiroのセキュリティポリシー</a>をご覧ください。",
+        },
+        giftTiro: {
+          question: "「友だちを招待」とは何ですか？",
+          answer:
+            "設定の「友だちを招待」タブから、リンク共有またはメールで招待できます。友だちはPro 1か月分の割引を受けられ、友だちが10分以上記録すると$3、初回の有料決済から7日後にさらに$5のリワードが貯まります。",
+        },
+        translation: {
+          question: "リアルタイム翻訳もできますか？",
+          answer:
+            "はい、Tiroは日本語、英語、韓国語を含む計15言語を サポートしています。会議での発話言語と記録言語をそれぞれ設定されますとリアルタイム翻訳をご利用いただけます。最も使いやすい言語でTiroノートをお試しください！",
+        },
+        teamPlanAccount: {
+          question:
+            "チームプランを契約するとき、アカウント数はどう決めればいいですか？",
+          answer: `アカウントの数はチームの総人数ではなく、同時に開催されるミーティングの数を基準に決められることをおすすめします。ひとつのアカウントを複数のメンバーで共有し同時にログインすることも可能ですが、１つのアカウントで記録できるミーティングは1つのみとなります。
+例：チームの人数が10人でも同時に行われるミーティングが2〜3つ程度なら、アカウントは3つで十分です。`,
+        },
+        enterprisePlan: {
+          question:
+            "チームプランとエンタープライズプラン、どちらが私たちのチームに適していますか？",
+          answer: `チームプランは、小規模なチームや部門単位で基本的な協業機能を十分に提供するプランです。
+一方、エンタープライズプランは次のようなケースに適しています。
+<li>契約内容や機能のカスタマイズなど、個別対応を希望する場合</li><li>チームを超えて、大規模な組織や全社レベルでの導入を希望する場合</li>迷われる場合は、簡単なお問い合わせだけでも適切なプランをご案内いたします。<recatch>[お問い合わせ]</recatch>`,
+        },
+      },
+    },
+  },
+  t = JSON.parse(
+    '{"contactForm":{"title":"お問い合わせ","sla":"内容を確認のうえ、メールでご返信いたします。","requiredBadge":"必須","optionalBadge":"任意","company":{"label":"会社名・機関名","placeholder":"例: ThePlato Inc."},"name":{"label":"ご担当者名","placeholder":"例:山田 太郎"},"email":{"label":"会社メールアドレス","placeholder":"例:yamada@company.co.jp"},"phone":{"label":"電話番号","placeholder":"例: 03-1234-5678"},"useCase":{"label":"Tiroをどのような目的で使いますか？","options":{"team":{"label":"チームや組織の日常業務で継続的に使う","description":"議事録、通訳、セキュリティ検討など"},"conference":{"label":"イベントやカンファレンスで単発で使う","description":"日程が決まった行事の字幕・翻訳"}}},"event":{"name":{"label":"イベント名","placeholder":"例: 国際シンポジウム"},"host":{"label":"主催機関","hint":"上の会社名と異なる場合のみご記入ください。","placeholder":"代理店・主催機関名"},"startDate":{"label":"開始日"},"endDate":{"label":"終了日"},"dayLength":{"label":"1日の進行時間","options":{"within_4h":"4時間以内","all_day":"終日","varies":"日によって異なる"},"variesPlaceholder":"1日の進行時間をご記入ください"},"venue":{"label":"開催場所","options":{"offline":"オフライン","online":"オンライン","hybrid":"ハイブリッド"},"namePlaceholder":"会場名"},"languages":{"label":"進行言語","otherPlaceholder":"その他の言語"},"translation":{"label":"翻訳を希望する言語","otherPlaceholder":"その他の言語"},"languageOptions":{"ko":"韓国語","en":"英語","ja":"日本語","zh":"中国語","none":"なし","other":"その他"},"captionAudience":{"label":"字幕を見る想定人数","options":{"up_to_100":"100名以下","101_300":"101〜300名","300_plus":"300名以上"}},"rooms":{"label":"同時進行の会場数","options":{"one":"1つ","two_plus":"2つ以上"},"countPlaceholder":"いくつですか"},"pageUrl":{"label":"イベント案内ページ","placeholder":"https://"},"addons":{"label":"追加で必要なもの","options":{"glossary":"発表資料に基づく用語集の設定","post_docs":"終了後の要約・翻訳ドキュメント","branding":"ロゴ・ブランドカラーの適用","live_support":"当日のリアルタイム支援"}}},"seats":{"label":"ご利用予定人数","placeholder":"選択してください","options":{"seat_1_9":"1–9名","seat_10_49":"10–49名","seat_50_199":"50–199名","seat_200_plus":"200名以上","undecided":"未定"}},"jobFunction":{"label":"担当業務","options":{"strategy":"経営戦略","hr":"人事","sales":"営業","it":"IT","finance":"財務","legal":"法務","operations":"オペレーション","other":"その他"}},"jobTitle":{"label":"役職","placeholder":"例: チームリーダー、CTO"},"tiroUsage":{"label":"すでにTiroをご利用ですか？","options":{"personal":{"label":"個人で使っています","description":"個人アカウントで利用中です"},"department":{"label":"チームや部署で使っています","description":"すでに現場で利用しています"},"first_look":{"label":"まだ使っていません","description":"今回はじめて検討しています"}}},"howFound":{"label":"Tiroをどのように知りましたか？","detailLabel":"もう少し具体的に","detailPlaceholder":"ご紹介者、イベント名、検索語句など","options":{"referral":{"label":"知人の紹介","description":"同僚や知人から聞きました"},"conference":{"label":"カンファレンス・イベント","description":"セッションやブースで知りました"},"search":{"label":"検索","description":"検索してたどり着きました"},"ads":{"label":"広告","description":"広告を見て訪れました"},"other":{"label":"その他","description":"下にご記入ください"}}},"adoptionGates":{"label":"導入前に必要な手続きはありますか？","multiHint":"(該当するものをすべて)","options":{"security_questionnaire":{"label":"セキュリティチェックシート","description":"セキュリティ部門の質問票やチェックリスト"},"private_env":{"label":"プライベート環境","description":"専用インスタンスや閉域網"},"custom_contract":{"label":"所定の契約書様式","description":"自社の契約書で進めます"},"procurement":{"label":"購買・調達手続き","description":"稟議やベンダー登録"},"none":{"label":"該当なし","description":"上記の手続きなしで検討できます"}}},"purpose":{"label":"どのようなご状況ですか？","multiHint":"(該当するものをすべて)","coachTitle":"次の内容があると、ご返信が早くなります","coachEmpty":"状況を選ぶと、記入のヒントをお出しします。","options":{"minutes":{"label":"チームの会議を記録して整理したいです。","description":"議事録、営業、採用面接などの日常会議","hint":"主な会議の種類と利用人数"},"interpretation":{"label":"多言語の会議や通話をリアルタイムで通訳したいです。","description":"海外拠点やパートナーとの定期会議","hint":"言語の組み合わせと頻度"},"conference":{"label":"イベントやカンファレンスで、単発のリアルタイム字幕が必要です。","description":"日程が決まった行事。参加者へ配信","hint":"開催日、言語、参加規模"},"security_sso":{"label":"全社導入に向けて、セキュリティ、SSO、料金を検討しています。","description":"セキュリティチェックシート、SSO、全社契約","hint":"審査範囲（チェックシート、SSO）と導入時期"},"other":{"label":"その他です。","description":"社内ナレッジベース、AIエージェント連携など。下にご記入ください","hint":"ご利用目的を自由に"}}},"timeline":{"label":"導入希望時期","placeholder":"選択してください","options":{"asap":"できるだけ早く","within_1m":"1ヶ月以内","m1_3":"1–3ヶ月","after_3m":"3ヶ月以降","exploring":"情報収集の段階です"}},"detail":{"label":"補足があれば","placeholder":"ご自由にご記入ください"},"notice":"ご提出いただいた情報は、導入に関するご案内のため、プライバシーポリシーに基づいて取り扱います。","noticeLinkLabel":"プライバシーポリシー","submit":"問い合わせを送信","submitting":"送信中…","errors":{"required":"必須項目です","email":"メールアドレスの形式をご確認ください","rateLimited":"アクセスが集中しています。入力内容は保持されますので、しばらくしてから再度お試しください。","server":"一時的なエラーが発生しました。入力内容は保持されています。再度お試しください。","captcha":"セキュリティ確認に失敗しました。再度お試しください。","validation":"入力内容をご確認ください。入力内容は保持されています。","emailEdit":"メールアドレスを修正できませんでした。ご確認のうえ、再度お試しください。"},"receipt":{"title":"お問い合わせを受け付けました。","lead":"以下のとおりご返信いたします。","ownerLabel":"担当","owner":"Tiro法人チーム担当者","deadlineLabel":"ご返信","deadline":"内容を確認のうえご連絡いたします。","channelLabel":"ご連絡方法","channelSuffix":" 宛にメール","domain":"ご連絡は @theplato.io ドメインより行います。","spam":"メールが届かない場合は、迷惑メールフォルダをご確認ください。","emailEditHint":"返信先のアドレスをすぐ修正できます。","emailEditCta":"メールアドレスを修正","emailEditSave":"このアドレスで受け取る","emailEditSaving":"修正中…","emailEditDone":"メールアドレスを修正しました。"}},"header":{"product":"サービス紹介","contactUs":"導入相談","press":"メディア掲載"},"main":{"updateAnnouncement":"ISO/IEC 27001:2022 · SOC 2 Type 2","subTitle":"","title":"完璧に仕上がるAI議事録\\n違う言語でも、ひとつの議事録に。","description":"一字一句を疎かにしない、プロフェッショナルのために。"},"trustedBy":{"prefix":"すでに","highlight":"300社以上","suffix":"がTiroを利用しています"},"keyFeatures":{"ubiquitous":{"title":"いつでも、どこでも、どんな言語でも安心","mostPrecise":"高精度リアルタイム記録 & 完璧な要約ノート","mostPreciseDescription":"ただの文字起こしを超えて、会話の文脈を理解し、段落ごとに構造化・整理します。","mostPreciseFeatures":["発話から0.5秒以内にテキスト化","文脈入力でさらに品質を向上","自動校正","ドメイン別の専門用語を認識","数字・固有名詞を圧倒的な精度で認識"],"languageSupport":"15言語をリアルタイム翻訳 & 多言語同時記録","languageSupportDescription":"多言語環境の会議も漏れなく記録し、リアルタイムで翻訳します。"},"deviceSupport":{"title":"あらゆるデバイス、あらゆる会話シーンで","description":"クライアントごとにビデオ会議プラットフォームが違うとき、ノートPCが開けないとき、Wi-Fiがつながらないとき、\\n困った経験はありませんか？これからはTiro1つで大丈夫です。","features":["アプリ不要、すぐ使える <b>Webブラウザ</b>","すべてのプラットフォームのビデオ会議・YouTube・オンライン講義まで認識する <b>デスクトップアプリ</b>","PCが開けない場面やオフライン環境でも問題なく使える <b>モバイルアプリ</b>"]},"automation":{"title":"毎日重なる記録を、価値ある資産へ変換します","documentGeneration":{"title":"3秒で欲しい形式のドキュメントを完成","description":"面倒な議事録作成はTiroにお任せください。大切な時間をより価値ある作業に使えるようにサポートします。","oneClickTemplate":{"title":"ワンクリック・テンプレート","description":"Tiroが提供するシーン別の\\nテンプレートで、\\nワンクリックで完璧に整理された文書が完成します。"},"customTemplate":{"title":"マイテンプレートを作成","description":"お好みの形式でテンプレートを自由に\\n作成できます。チームに最適な形式で\\n議事録作成を完全に自動化しましょう。"}},"askTiro":{"title":"すべての会話を知識に変える Ask Tiro","description":"過去の会議内容、インサイト抽出、アクションアイテム整理まで、何でも聞いてください。\\nTiroはすべての会話を記憶し、スマートに答えます。"}},"communication":{"title":"重要な会話を必要なところに自動で届けます","teamSharing":{"title":"より簡単なコラボ、会議後の共有まで一気に完了","description":"会議結果を何度も共有する必要はありません。\\nTiroでアクセス権限をまとめて管理できます。","features":["チームフォルダで全メンバーに一括共有","メンバーとリアルタイム記録を同時閲覧","簡単なリンク共有","セキュリティ設定による安全なノート共有"]},"workflowIntegration":{"title":"カレンダー・ワークスペース・社内メッセンジャー・CRM・ATS連携","description":"ミーティングの前後がもっとスムーズになるよう、Tiroはさまざまなワークフローに合わせ対応します。\\nカレンダーから会議予定を読み込み、会議終了後には自動で議事録を送信します。"}}},"testimonials":{"items":[{"name":"夏目英男","role":"Founding Partner・Asu Capital Partners","content":"Tiroの使い勝手の良さに本当に驚いています。過去にも類似のサービスを使ったことがあるのですが、立ち上げが複雑だったり、記録した後のデータが長文で読みづらかったりで、結果として全て解約してしまいました。しかし、Tiroはユーザーの痒いところにしっかりと手が届き、要約機能以外にも、議事録やピッチなど様々なテンプレートがあり、常に最適なノートを出してくれます。そして、何よりも多言語翻訳を使用した時の日本語が自然で読みやすい。お世辞なしに、これほどユーザー体験が良いプロダクトはなかなかありません！"},{"name":"久保田健介","role":"Co-Founder・Ten-K Studios","content":"誰かがTiroを「ノートテイキングAI」と呼んでいましたが、全く違います。Tiroは、必要な情報を正しく覚え、要約し、チームに共有してくれる「AI COO」です。日によっては、10件以上のクライアントコールをしますが、全部カバーしてくれますし、勝手にミーティングに入ってこないので使いやすくて、特に営業の方はマストアプリです。"},{"name":"平田叡佑","role":"Japan Lead・vooy","content":"Tiroのおかげで韓国のチームメンバーとのやりとりもスムーズに進みました！リアルタイムで翻訳してくれるので韓国語の会話もその場で理解することができ、後から内容も見返せるのでとても便利です。韓国出張の際は必須です！"},{"name":"Taeyang Lee","role":"代表・Base Ventures（元Toss共同創業者）","content":"組織の重要な知識は、文書よりも人々の会話の中に多く存在します。Tiroは、会話の中にありながら簡単に消えてしまう経験と文脈を、組織の中で共有され、学ばれ、次の判断に活かされる生きた知識に変えてくれます。単なるAI議事録を超えて、組織の知識が蓄積し進化する基盤になることを期待しています。"},{"name":"Luke Li","role":"Founding Partner・Asu Capital Partners","content":"Tiroは、文字起こしのスピードと精度が非常に高く、特に日本語・英語など複数言語が自然に切り替わる会話での認識精度には驚かされました。海外のFounderや投資家とのミーティングが多い私たちにとって、今では欠かせないツールです。Globalに仕事をする方にはぜひおすすめしたいです。"},{"name":"Kyunghoon Lee","role":"CAIO兼副代表・Channel Corporation","content":"AIエージェントの限界は、モデルの性能ではなくビジネスコンテキストの不在です。Tiroはそのコンテキストを拾うノートテイカーではなく、AIエージェントの記憶をつくるインフラです。"},{"name":"Jaegyu Lee（JQ）","role":"テックリード・ZEP","content":"Tiroは、自分でタイピングしなくても組織の暗黙知をエージェントに渡せる、よい手段だと考えています。"}]},"security":{"title":"セキュリティと個人情報保護","subtitle":"Tiroはお客様のセキュリティと個人情報保護を最優先に考えています。","certification":{"eyebrow":"国際セキュリティ認証を取得","title":"ISO/IEC 27001:2022 · SOC 2 Type 2","description":"Tiroは、お客様のデータ保護と安定したサービス運用のため ISO/IEC 27001:2022 認証と、5つのTrust Services Criteria全範囲を対象とするSOC 2 Type 2認証を無限定意見で取得しました（監査人：Sensiba LLP）。情報セキュリティ管理体制に基づき、セキュリティリスクを継続的に管理しています。","footerLabel":"ISO/IEC 27001:2022 · SOC 2 Type 2 認証取得"},"mainFeatures":{"fullEncryption":{"title":"データ全面暗号化","description":"すべてのテキスト記録は業界標準のAES-256方式で保護され、通信時もTLS 1.2以上で安全に守られます。"},"accessRestriction":{"title":"徹底したアクセス制御","description":"ユーザー別にAWS KMSで保護される個別暗号鍵が発行され、すべてのアクセス試行のログが記録されます。ユーザー本人以外は、内部社員を含めて誰もアクセスすることができません。"},"immediateDeletion":{"title":"音声・データの即時削除","description":"すべての音声データはテキストへ変換後すぐ削除されサーバーに保存されません。ユーザーがノートを削除する場合、関連するすべてのデータを復旧不可にし、流出を徹底的に防ぎます。"},"noAiTraining":{"title":"AI再学習の利用禁止","description":"ユーザーのデータはAIモデルの学習や性能の改善にいかなる形でも活用されません。サードパーティプロバイダーとの契約で学習禁止を明示しています。"},"networkSecurity":{"title":"ネットワークセキュリティ","description":"ファイアウォール設定でDDoS攻撃及び悪性トラフィックを防ぎます。VPC基盤のネットワーク隔離によって、許可されていないユーザーのネットワーク侵入を根底的に阻止します。"},"auditLogs":{"title":"監査ログ・モーニタリング","description":"監査ログを通じてシステム内のすべてのアクセス・変更・クエリログを最低１年間保管します。リアルタイムで脆弱性診断及び異常行為検知を行い、潜在的な危険を防ぎます。"}},"enterpriseSection":{"subtitle":"各企業のセキュリティ基準に準拠したエンタープライズ向けのセキュリティ・サービスを\\n提供します。","inquiryLink":"エンタープライズ相談"},"enterpriseFeatures":{"accountSecurity":{"title":"強固なアカウントセキュリティ","description":"","bullet1":"SAML 2.0ベースのSSO連携とMulti-Factor Authenticationを標準でサポートします。","bullet2":"二段階認証とセッションタイムアウトで\\n不正アクセスを防止します。"},"accessControl":{"title":"細分化したアクセス権限管理","description":"","bullet1":"RBAC（役割ベースアクセス制御）を適用し、組織内のデータアクセス権限を細分化して管理します。","bullet2":"SCIMベースの組織統合により大規模組織の権限管理も容易にします。"},"ipRestriction":{"title":"接続IP制限","description":"","bullet1":"IPホワイトリストに登録されたIPからのみ\\nアクセスできます。","bullet2":"サブドメインの提供により、社内VPNなど指定された\\nエリアでのみアクセスが許可されます。"},"realtimeSupport":{"title":"リアルタイムサポート","description":"","bullet1":"専用ホットラインでカスタムオンボーディングを\\n支援します。","bullet2":"追加の監査ログやレポートなど、セキュリティ関連の\\n追加要請に即時対応可能な体制を整えています。"}},"footerLink":"Security","trustCenter":"Trust Center"},"pricing":{"monthly":"月額プラン","yearly":"年額プラン","plans":"料金案内","plansDescription":"多様なプランでTiroをご利用いただけます。","freeTrialBanner":{"title":"無料ではじめて、\\nニーズに合わせてアップグレードできます。","subtitle":"3週間、最大300分の無料トライアルをご提供しています。","feature1":"ノートあたり50分の記録制限","feature2":"Pro機能を含む全機能を無料体験","cta":"無料トライアルをはじめる"},"personalPlans":"個人向けプラン","lite":"Lite","pro":"Pro","max":"Max","monthlyLimitDescription":"月{{minutes}}分の利用時間","noNoteLimit":"ノートごとの記録時間制限なし","highlightSummary":"高品質ワンページサマリー","unlimitedAI":"記録ベースの無制限AIチャット","customTemplates":"オリジナルテンプレート要約","liteFeatures":"Liteプランの全機能","speakerDiarization":"話者分離","wiki":"Tiro Wiki","monthlyNoLimitDescription":"毎日使っても安心の無制限利用","proFeatures":"Proプランの全機能","perMonth":"/ 月","perMonthAnnual":"× 12ヶ月","promoFirstMonth":"初月クーポン価格 · 2か月目から{{price}}/月","priceLoadFailedRetry":"料金を読み込めませんでした。再試行","getNow":"はじめる","companyPlans":"法人向けプラン","perAccount":"/ 月・アカウントあたり","perAccountAnnual":"× 12ヶ月・アカウントあたり","teamPlan":"チームプラン","teamPlanFeatures":{"feature0":"個人向けMaxプランの全機能","feature1":"メンバーの協働と実行を支える機能","feature2":"メンバー管理、アカウント別使用量ダッシュボード","feature3":"ワークスペースフォルダ作成で権限別ノートを自動共有","feature4":"共通テンプレートで記録と文書の一貫性を実現","feature5":"共有単語帳で固有名詞の認識精度を向上"},"startTwoWeekTrial":"今すぐ始める","contactUs":"お問い合わせ","enterpriseContact":"個別相談","enterprisePlan":"エンタープライズプラン","enterprisePlanFeatures":{"feature0":"チームプランの全機能","feature1":"エンタープライズ専用のカスタム機能","feature2":"企業内規定に基づく追加セキュリティオプション","feature3":"専用API・Webhookの支援で社内システムと連携","feature4":"共有ログインドメインのサポート","feature5":"カスタムオンボーディング・専用ホットラインサポート"}}}',
+  ),
+  v = {
+    signedIn: "Tiroにログインしました",
+    redirectMessage: "デスクトップアプリに移動中です。少々お待ちください。",
+    alsoOpenInBrowser: "移動できない場合は、",
+    openThisLink: "こちらのリンクをクリックしてください。",
+  },
+  P = {
+    signedIn: "接続完了！",
+    redirectMessage: "アプリに戻っています...",
+    manualRedirect: "自動的にリダイレクトされない場合は、",
+    clickHere: "ここをクリック",
+  },
+  C = {
+    requestedBy: "未確認のアプリ",
+    redirectUri: "アプリへの戻り先",
+    loadingClientInfo: "接続情報を確認しています…",
+    clientInfoError: `接続情報を確認できませんでした。
+許可せずにアプリへ戻り、もう一度接続してください。`,
+    deny: "許可しない",
+    denying: "アプリに戻っています…",
+    retryError: "一時的なエラーが発生しました。もう一度お試しください。",
+    title: "許可する権限を選択",
+    description: "このアプリは、選択したデータにのみアクセスできます。",
+    permissionsTitle: "許可する権限",
+    permissionsDescription:
+      "データの種類ごとに許可するレベルを選択してください。",
+    levels: { none: "なし", read: "閲覧", write: "管理" },
+    entities: {
+      notes: { title: "ノート", description: "ノートの内容と文字起こし" },
+      aiDocuments: {
+        title: "AI文書",
+        description: "AI要約・テンプレート・生成された文書",
+        scopes: {
+          summary: "AI要約",
+          document: "生成された文書",
+          template: "文書テンプレート",
+        },
+      },
+      folders: { title: "フォルダ", description: "フォルダ構成と一覧" },
+      wiki: { title: "Wiki", description: "Wikiページとそのつながり" },
+    },
+    noPermissions:
+      "このアプリが要求している権限はありません。許可せずにアプリへ戻ってください。",
+    selectAtLeastOne: "権限を1つ以上選択してください",
+    approve: "選択した権限を許可",
+    approving: "選択した権限を許可しています…",
+    redirectMessage: "元のアプリに戻っています…",
+    invalidToken:
+      "リクエストの有効期限が切れました。アプリから再度接続してください。",
+  },
+  f = {
+    connectionComplete: "連携が完了しました",
+    connectionPending: "ログイン方法を連携しています。",
+    completingConnection: "連携を完了しています。少々お待ちください。",
+    connectedToProvider: "ログイン方法が連携されました。まもなく移動します。",
+    redirectMessage: "移動できない場合は、",
+    redirectToTiro: "こちらのリンクをクリックしてください。",
+  },
+  D = {
+    title: "クーポン登録",
+    description: "受け取ったコードを入力して、特典を確認してください。",
+    form: {
+      label: "クーポンコード",
+      help: "英数字を入力してください。大文字と小文字は区別しません。",
+      check: "特典を確認",
+      checking: "確認しています",
+    },
+    benefit: {
+      label: "録音クレジット",
+      amount: "{{minutes}}分",
+      registrationEndsAt: "登録期限",
+      creditExpiresAt: "利用期限",
+      noExpiry: "無期限",
+    },
+    preview: {
+      title: "受け取る特典を確認",
+      target: "自分のアカウントに録音時間が追加されます。",
+      redeem: "登録する",
+      redeeming: "登録しています",
+      back: "別のコードを入力",
+      accountLimit: "このクーポンは1アカウントにつき{{count}}回登録できます。",
+    },
+    success: {
+      title: "録音時間{{minutes}}分を受け取りました",
+      description: "自分のアカウントに特典を登録しました。",
+    },
+    errors: {
+      EMPTY_CODE: "クーポンコードを入力してください。",
+      MALFORMED_CODE: "英数字のコードを入力してください。",
+      INVALID_CODE: "クーポンが見つかりません。コードをご確認ください。",
+      NOT_STARTED: "まだ登録を開始していないクーポンです。",
+      EXPIRED: "登録期間が終了したクーポンです。",
+      PAUSED: "登録を一時停止しています。しばらくしてからお試しください。",
+      EXHAUSTED: "登録可能な上限に達しました。",
+      CODE_LIMIT: "このコードは登録上限に達しました。",
+      ACCOUNT_LIMIT: "このアカウントはすでに特典を受け取っています。",
+      INELIGIBLE: "このアカウントは登録対象ではありません。",
+      BENEFIT_EXPIRED: "特典の利用期限が過ぎたクーポンです。",
+      IDEMPOTENCY_CONFLICT:
+        "前回のリクエストと内容が異なります。別のコードを入力からやり直してください。",
+      RATE_LIMITED: "リクエストが多すぎます。少し待ってからお試しください。",
+      TEMPORARY:
+        "リクエストを処理できませんでした。コードは保持されています。再度お試しください。",
+    },
+  },
+  w = {
+    ogTitle: "Tiroに招待されました！",
+    title: "Tiroをプレゼント",
+    copyLink: "リンクをコピー",
+    banner: {
+      description: `Tiroをプレゼントして
+<b>最大$8のリワード</b>を受け取りましょう。`,
+      cta: "Tiroをプレゼント",
+    },
+    inviteSent: "招待メールを送信しました",
+    inviteePopup: {
+      openGift: "プレゼントを開く",
+      openHint: "クリックして開く",
+      ticketAlt: "Proプラン1か月分のプレゼントチケット",
+      title: "プレゼントが届きました！",
+      deadline: {
+        title: "この特典はまもなく終了します",
+        days: "D-{{count}}",
+        tomorrow: "明日まで",
+        today: "本日まで",
+      },
+      plan: { pro: "Proプラン", max: "Maxプラン" },
+      planDiscount: "{{plan}} · 初月{{percent}}%割引",
+      subscriptionDetails: "サブスクリプションのご案内",
+      discount: "{{percent}}%割引",
+      priceAfter: "{{date}}から月額{{price}}で自動更新されます",
+      priceAfterReward: "リワードを使い切ると月額{{price}}で自動更新されます",
+      rolloverNote:
+        "今すぐ始めれば、残りの{{amount}}は翌月の請求に引き継がれます。",
+      startFree: "0円で今すぐ始める",
+      startNow: "今すぐ始める",
+      switchToPro: "Proなら初月{{price}}",
+      switchToMax: "Maxなら初月{{price}}",
+      freeTrialNotice: "無料トライアルの使用時間はそのまま残ります。",
+      cardNotice:
+        "今はカードが登録されるだけで、お支払いは1か月後に始まります。",
+      cancelNotice:
+        "いつでも解約でき、解約後もお支払い済みの期間までは利用できます。",
+    },
+    planCard: {
+      perFirstMonth: "/初月",
+      priceAfterReward: "リワードを使い切ると月額{{price}}",
+      priceAfterFirstMonth: "初月以降は月額{{price}}",
+    },
+    exitWarning: {
+      title: "ちょっと待って！",
+      description:
+        "招待特典（{{minutes}}分）はこのページで登録した場合のみ受け取れます。",
+      stay: "残る",
+      leave: "離れる",
+    },
+  },
+  E = {
+    tiroAppDownload: "Tiroアプリのインストール",
+    title: "すべての会議、すべてのデバイスに対応",
+    description1: "どのデバイスでも安心して使えます。",
+    description2:
+      "対面の会議はもちろん、ビデオ会議、オンライン授業、YouTube動画まで、いつでもどこでもTiroがサポートします。",
+    android: "Android アプリ",
+    ios: "iOS アプリ",
+    ipad: "iOS アプリ",
+    mac: "macOS",
+    windows: "Windows アプリ",
+    desktop: "デスクトップ アプリ",
+    download: "{{platform}}をインストール",
+    tryTiro: "Tiroをはじめる",
+    downloadTiro: "アプリをインストール",
+    windowsGuidePopup: {
+      title: "Tiro Windowsアプリのインストール方法",
+      description1: `圧縮ファイルを解凍後、Tiroのアイコンがついた
+インストールファイルをダブルクリックします。`,
+      highlight1: "インストールファイルをダブルクリック",
+      description2: `警告が表示されたら「詳細情報」ボタンをクリックしてください。
+安全ですのでご安心ください。`,
+      highlight2: "「詳細情報」ボタン",
+      description3: `最後に「実行」ボタンをクリックすると
+Tiroアプリが起動します。`,
+      highlight3: "「実行」ボタン",
+      trouble: "インストールがうまくいきませんか？",
+      downloadAgain: "再インストール",
+    },
+    macDownloadPopup: {
+      title: `Macアプリのリリースを
+いち早くお知らせします！`,
+      description: `TiroのMacアプリが今週リリースされます。
+ウェイティングリストに登録すると、リリースと同時にお知らせします。`,
+      emailPlaceholder: "メールアドレスを入力してください",
+      button: "リリースを最速でお知らせ",
+      success: {
+        description: "通知登録が完了しました！リリースと同時にお知らせします。",
+      },
+    },
+    appStorePopup: {
+      title: "iOSアプリをインストール",
+      description:
+        "スマートフォンで下のQRコードをスキャンすると、すぐにアプリをインストールできます。",
+    },
+    playStorePopup: {
+      title: "Androidアプリをインストール",
+      description:
+        "スマートフォンで下のQRコードをスキャンすると、すぐにアプリをインストールできます。",
+    },
+    mobileAppPopup: {
+      title: "モバイルアプリをインストール",
+      description: "QRをスキャンすると、お使いの端末に合ったストアが開きます。",
+      copyUrl: "モバイルアプリのインストールリンクをコピー",
+      copySuccess: "インストールリンクをコピーしました",
+      copyError: "リンクをコピーできませんでした",
+    },
+    mobileWebAppInstallNudge: {
+      title: "モバイルアプリをインストール",
+      description: `登録したアカウントをそのまま利用できます。
+ブラウザなしで録音でき、画面を閉じても記録が続くので、より安定して使えます。`,
+      cta: "Tiroアプリで続ける",
+      closeAria: "モバイルアプリのインストール案内を閉じる",
+    },
+    desktopDownloadPopup: {
+      title: `メールでインストールリンクを
+お送りします`,
+      description:
+        "MacとWindows向けアプリで、ビデオ会議やオンライン授業、YouTube動画まで快適に記録しましょう！",
+      emailPlaceholder: "メールアドレスを入力してください",
+      button: "インストールリンクを送信",
+      success: {
+        description:
+          "インストールリンクを送信しました！デスクトップでメールをご確認ください。",
+      },
+    },
+    desktopDownload: {
+      title: "スマホをお使いですか？",
+      description: `Mac・Windowsアプリのリンクをメールでお送りします。
+システム音声も簡単に録音できます`,
+      emailPlaceholder: "メールアドレスを入力してください",
+      sentSuccess: "メールを送信しました！",
+      sentFailed: "メールを送信できませんでした。",
+    },
+  },
+  I = {
+    monthly: "月間",
+    yearly: "年間",
+    twoMonthsFree: "2ヶ月分無料",
+    tryTiroFree: "無料で試す",
+    startForFree: "無料ではじめる",
+    youCanStartForFree: "無料ですぐに始められます！",
+    upgrade: "アップグレード",
+    plans: "料金プラン",
+    plansDescription: "ニーズに合ったプランでTiroをご利用ください",
+    freeTrial: "無料トライアル",
+    freeCredit: "無料300分",
+    lite: "ライト",
+    pro: "プロ",
+    max: "マックス",
+    team: "チーム",
+    free: "無料体験",
+    downgrade: "ダウングレード",
+    switchToYearly: "年間プランに変更",
+    enterprise: "エンタープライズ",
+    teamPlanTitle: "メンバーとの連携がもっとスムーズに",
+    teamPlanDescription1:
+      "Tiroは一人でも便利ですが、チームで使うことでさらに効果を発揮します。",
+    teamPlanDescription2: `頻繁にミーティングを行うチームや
+複数メンバーが同時に記録・要約を行う環境に最適です。`,
+    createTeam: "今すぐ始める",
+    teamPlanFeatures: {
+      feature1:
+        "マックスプランのすべての機能を含む (無制限の使用時間とノート作成)",
+      feature2: "メンバーの協働と実行を支える機能",
+      feature2_1: "メンバー管理と一括請求、使用状況の可視化",
+      feature2_2: "特定のメンバーに自動共有できるチームフォルダ",
+      feature2_3: "ドキュメントの一貫性を保つ共用テンプレート",
+      feature2_4: "固有名詞の認識精度を高める共有用語集",
+    },
+    enterprisePlan: "エンタープライズプラン",
+    enterprisePlanTitle: "大規模運用を見据えたカスタマイズ性",
+    enterprisePlanDescription: `セキュリティ、連携、ポリシー管理まで企業環境に合わせて柔軟に対応します。
+今すぐお問い合わせいただければ、専任マネージャーがカスタム見積もりとデモをご案内いたします。`,
+    enterprisePlanQuote: `小規模なトライアル導入から全社展開まで
+専任担当者がデモやお見積もりをご案内します。`,
+    contactUs: "お問い合わせ",
+    enterprisePlanFeatures: {
+      feature1:
+        "チームプランのすべての機能を含む (アカウント数・使用量は柔軟に対応)",
+      feature2: "エンタープライズ専用のカスタム機能",
+      feature2_1: "社内ポリシーに準拠したセキュリティ設定",
+      feature2_2: "社内システム連携用のAPI・Webhookを提供",
+      feature2_3: "カスタムログインドメインのサポート",
+      feature2_4: "専用オンボーディングセッションと優先サポートライン",
+    },
+    teamPlan: "チームプラン",
+    monthlyLimitDescription: "月間{{minutes}}分まで利用可能",
+    monthlyNoLimitDescription: "毎日使っても安心の無制限利用",
+    freeDescription: "ご登録後3週間、最大300分を無料でご利用いただけます",
+    liteDescription:
+      "必要機能だけを搭載したライトプラン — 時々利用するユーザー向け",
+    proDescription: "実用的な全機能プラン — 頻繁に利用するユーザー向け",
+    maxDescription: "プロ仕様の全機能プラン — 毎日活用するパワーユーザー向け",
+    teamDescription: "あらゆる規模のチーム向けのカスタムソリューション",
+    totalUsage: "合計{{minutes}}分",
+    limitPerNote: "ノートごとに{{minutes}}分の録音制限",
+    noNoteLimit: "ノートごとの記録時間制限なし",
+    highlightSummary: "高品質な1ページ要約",
+    unlimitedAI: "ノートをもとに無制限でAIチャット利用可能",
+    customTemplates: "オリジナルのテンプレート要約",
+    proFeatures: "プロプランの全機能",
+    liteFeatures: "ライトプランの全機能",
+    IncludingPro: "Pro機能をすべてご利用いただけます",
+    speakerDiarization: "話者分離",
+    wiki: "Tiro Wiki",
+    mostPopular: "一番人気",
+    perMonth: "/月",
+    perMonthAnnual: "× 12ヶ月",
+    perAccount: "/月・1アカウントあたり",
+    perAccountAnnual: "× 12ヶ月・1アカウントあたり",
+    getNow: "今すぐ開始",
+    startNow: "トライアル開始",
+    talkToUs: "チームプランのお問い合わせ",
+    activePlan: "ご利用中のプラン",
+    ceoPhoneNumber: "CEOの個人電話番号",
+    appleInfo: {
+      title: "App Storeアプリ内課金について",
+      desc: "Appleのアプリ内課金でご購入の場合、Web上ではサブスクリプションの解約や返金ができません。必ずApp Storeで直接管理・変更・返金申請を行ってください。",
+      guideLinkText: "App Storeサブスクリプション管理ガイドはこちら",
+      guideLinkUrl: "https://support.apple.com/HT202039",
+      button: "お問い合わせ",
+    },
+    bankTransferInfo: {
+      title: "銀行振込でのお支払いについて",
+      desc: "銀行振込でご利用の場合、プラン変更やサブスクリプション情報の更新はサポート窓口のみで承ります。ご連絡いただければ迅速にご案内いたします。",
+      button: "お問い合わせ",
+    },
+    lemonSqueezy: {
+      contactSupport: {
+        title: "年間支払いについて",
+        description:
+          "LemonSqueezyでご購入の場合、年間プランの変更はサポート窓口で承ります。ご連絡いただければ迅速にご案内いたします。",
+        button: "お問い合わせ",
+      },
+    },
+    subscription: {
+      status: {
+        freeTrialActive: "無料体験中",
+        freeTrialExpired: "体験終了",
+        freeTrialExpiredTitle: "Tiroで会議の記録を続けましょう",
+        subscriptionExpired: "サブスクリプションが終了しました",
+        subscriptionExpiredDescription: "いつでも再開できます",
+        subscriptionExpiredBadge: "終了",
+        subscriptionExpiredMeta:
+          "以前のプラン：{{planName}} ・ いつでも再開できます",
+        subscriptionNotStarted: "まだサブスクリプションを開始していません",
+        subscriptionNotStartedDescription:
+          "プランを購読して、Tiroのすべての機能をお試しください",
+        subscriptionNotStartedBadge: "サブスクリプションが必要",
+        active: "アクティブ",
+        quotaExhausted: "プラン使用量を使い切りました",
+        canceled: "解約予定",
+        daysLeft: "終了まで{{days}}日です！",
+        usedMinutes: "{{minutes}}分使用",
+        totalMinutes: "/ 合計{{minutes}}分",
+        upgradeMessage:
+          "有料プランにアップグレードしてすべての機能をご利用ください",
+        trialActiveTitle: "Tiroのすべての機能を自由にお試しください",
+        expiryApproachingTitle: "{{days}}日後にトライアルが終了します",
+        usageNearlyExhaustedTitle: "ご利用量がもうすぐ上限に達します",
+      },
+    },
+  },
+  L = JSON.parse(
+    '{"labels":{"endDate":"終了日","usage":"使用量","nextBillingDate":"次回請求日","paymentInfo":"お支払い情報","endOfUseDate":"使用終了日","member":"メンバー","usageReset":"使用量リセット"},"paymentProviders":{"appleInApp":"Apple アプリ内課金","googlePlayInApp":"Google Play ストア アプリ内課金"},"messages":{"remainingUsageCarryover":"無料体験期間中に**有料サブスクリプションを開始**すると、**残り使用量を繰り越し**いたします！","usageResetWithBilling":"この時刻に使用量もリセットされます。","mobilePaymentManagement":"モバイルアプリでお支払いを管理できます。","availableUntilEndDate":"使用終了日まで現在のプランをご利用いただけます","teamPaymentAdminOnly":"ワークスペースのお支払い管理は管理者のみ可能です","teamSubscribeAdminOnly":"サブスクリプションを開始できるのは管理者のみです","workspaceSubscribeAdminTooltip":"お支払いは管理者のみ可能です","upgradeCtaTitle":"チームと一緒に、ミーティングをもっと有意義に","upgradeCtaDescription":"無制限利用 · ノート共有 · メンバー招待","maxUpgradeCtaTitle":"Maxで無制限に記録","maxUpgradeCtaDescription":"月間利用量の制限なく、毎日気軽に","proUpgradeCtaTitle":"Proでさらに多くの機能","proUpgradeCtaDescription":"話者分離やWikiまで、たっぷりの使用量で毎日快適に","teamUpgradeMemberCount":"現在のメンバー: {{count}}人","teamUpgradeWithMembersDescription":"チームプランを購読して、メンバーとの共同作業を続けましょう。"},"buttons":{"paymentManagement":"サブスクリプション/お支払い管理","teamManagement":"メンバー管理","viewTeamInfo":"メンバー管理","contactUs":"お問い合わせ","subscribeNow":"今すぐ購読","resumeNow":"サブスクリプションを再開","startSubscription":"サブスクリプションを開始","startTeamPlan":"チームプランを始める"},"tabs":{"individual":"個人","teamEnterprise":"チーム・企業"},"billing":{"monthly":"月額","yearly":"年額","annualOffer":"年額支払いで**2ヶ月分無料**"},"usage":{"cardTitle":"使用量","planUsageLabel":"プラン使用量","workspaceUsageLabel":"ワークスペース使用量","myUsageLabel":"自分の使用量","minutesOfTotal":"{{used}}分 / 合計{{total}}分","text":"{{count}}m used","planUsageText":"プラン使用量 {{minutes}}分使用","minutesUsed":"{{minutes}}分使用","minutesUsedOfTotal":"{{used}} / {{total}}分","minutesRemaining":"残り{{minutes}}分","percentage":"{{percentage}}%","baseWithOverage":"基本{{minutes}}分 · 超過分は後払い","overageShortLabel":"超過後払い","addonLabel":"追加使用量","addonStandby":"追加使用量 · プラン使用量の消化後に自動使用","addonUsing":"追加使用量 · 使用中","addonUsingSuffix":"· 使用中","addonAvailable":"追加使用量 · 使用可能","addonStandbyTooltip":"プラン使用量を使い切ると、追加使用量が自動的に使用されます。","addonUsingTooltip":"プラン使用量を使い切ったため、追加使用量を使用中です。","addonAvailableTooltip":"プランは期限切れですが、残りの追加使用量は利用できます。","addonCreditOnlyTooltip":"残りの追加使用量を利用できます。","addonUsedOfTotal":"{{used}} / {{total}}使用","memberCount":"{{count}}名"},"reward":{"title":"お支払いに使えるリワード","description":"次回のお支払いに自動で適用されます。ただし、ウェブ決済でのみご利用いただけます。"},"quota":{"unlimited":"Unlimited","expired":"Subscription expired","remaining":"{{count}}m left"},"title":"私のサブスクリプション","description":"現在の有効なサブスクリプションです。いつでも変更や解約が可能です。","goToNotes":"ノート一覧へ戻る","managePlan":"{{provider}}でサブスクリプション管理、決済方法の変更、領収書確認、解約が可能です。","managePlanAdminGranted":"Tiroチームからのギフトプランを使用中です。直接契約するには料金をご確認ください。","managePlanApple":"App Storeで直接サブスクリプションを管理できます。","managePlanPlaystore":"Play Storeで直接サブスクリプションを管理できます。","managePlanBank":"銀行振込で支払いました。プラン変更やサブスクリプションの更新については、お問い合わせください。","managePlanTeamMember":"チームプランを使用中です。サブスクリプション管理は管理者に連絡してください。","notHaveSubscription":"有効なサブスクリプションがありません。","checkOutThe":"追加機能を利用するには、","plans":"料金プラン","toUnlock":"をご確認ください。","quotaExceeded":{"quotaWillBeExceeded":{"title":"利用可能時間がすぐに使い切られます","description":"さらに長く記録するにはプランをアップグレードしてください。","button":"プラン管理"},"expired":{"title":"サブスクリプションが期限切れです","description":"サブスクリプションを更新してTiroを引き続きご利用ください","button":"プランを管理"},"subscription":{"title":"利用可能な上限に達しました","description":"さらに利用するにはプランをアップグレードしてください","button":"プランを管理"},"quotaWillbeExceeded":{"description":"記録を続けるにはプランをアップグレードしてください","button":"プランを管理"},"usageExceeded":{"title":"利用時間をすべて使いました","trial":{"title":"無料体験の時間をすべて使いました","description":"プランを開始すると、すぐに続けてご利用いただけます","button":"プランを開始"},"individual":{"description":"プランをアップグレードすると、すぐに続けてご利用いただけます","button":"プランを管理"},"individualOverage":{"description":"プラン管理で追加記録をオンにするか、プランをアップグレードすると続けてご利用いただけます。","button":"プランを管理"},"team":{"title":"ワークスペースの利用時間をすべて使いました","description":"ワークスペース管理者に追加利用を依頼してください。管理者が設定で追加記録をオンにすると、続けてご利用いただけます。"},"teamAdminOverage":{"title":"基本記録時間を使い切りました","description":"プラン管理で追加記録をオンにすると、基本時間を超えても会議の記録を続けられます。","button":"プランを管理"},"teamAdminContract":{"title":"契約された利用時間をすべて使いました","description":"利用時間を増やすには partners@theplato.io までお問い合わせください。契約内容の調整をサポートします。","button":"メールで問い合わせ"},"button":"確認"},"recordingStopped":{"openWorkspaceSettings":"設定する","manager":{"title":"基本記録時間を使い切りました","description":"追加記録をオンにすると、このワークスペースで基本時間を超えても会議の記録を続けられます。"},"member":{"title":"チームの基本記録時間を使い切りました","description":"記録を続けるには、ワークスペース管理者が設定で追加記録をオンにする必要があります。"},"overageEnabled":{"title":"追加記録で記録を続けられます","description":"基本記録時間は使い切りましたが、追加記録がオンになっています。記録を再開してください。"},"unpaidAdmin":{"title":"追加記録の設定は管理できますが、会話の記録はできません","description":"現在の役割では追加記録の設定を管理できますが、直接記録を開始することはできません。"},"viewer":{"title":"記録を開始するにはメンバー権限が必要です","description":"現在の役割は閲覧専用のため、ノートの作成や記録の開始はできません。"},"orgQuota":{"title":"組織の記録時間をすべて使い切りました","description":"組織全体に割り当てられた記録時間をすべて使用したため、現在は記録できません。\\n記録を続けるには、組織管理者に記録時間の追加を依頼してください。"},"workspaceQuota":{"title":"ワークスペースの記録時間をすべて使い切りました","description":"ワークスペースに設定された記録時間の上限に達したため、現在は記録できません。\\n記録を続けるには、ワークスペース管理者に上限の変更を依頼してください。"},"recordingSuspended":{"title":"組織の設定により、このアカウントでは現在記録できません。","description":"記録を再開するには、組織管理者に記録の許可を依頼してください。"}}},"stripeTransition":{"entry":{"label":"アプリ内決済をご利用中","title":"ストア手数料なしで、最大10%割安にご利用いただけます","benefitsToggle":"ウェブ決済でできることを見る","benefits":["· **現地通貨での決済** 使い慣れた通貨で支払え、アプリ内決済より負担を抑えられます。","· **チームプラン** 複数のメンバーが1つのワークスペースを一緒に管理できます。","· **年額払い** 月額払いより割安な年額料金を選べます。","· **クーポン** プロモーションコードを決済に適用できます。","· **法人カード** 会社のカードで支払い、決済手段をウェブで直接管理できます。"],"cta":"決済手段を変更する","guideLink":"決済ガイドを見る"},"billing":{"emptyTitle":"アプリ内決済の領収書は、各ストアのアカウントでご確認いただけます。","emptyCaptionStore":"Google Play・App Storeのお支払い履歴と領収書は、それぞれのストアアカウントでご確認いただけます。","emptyCaptionInvoice":"Tiroではアプリ内決済の請求書を発行していません。","label":"毎月の請求書が必要ですか？","title":"請求書の発行からカード管理まで、Tiroでまとめて","description":"ウェブでカードを登録すると、毎月の請求書発行とPDFダウンロード、法人カードの登録、請求先メールの管理をTiroで行えます。"},"members":{"title":"チームプランが必要です","description":"メンバーと一緒にご利用いただくには、チームプランへのアップグレードが必要です。"},"additionalWorkspace":{"statusBadge":"サブスクリプションが必要","title":"このワークスペースにはまだサブスクリプションがありません","description":"サブスクリプションはワークスペースごとに紐づきます。","overviewTitle":"ご利用中のサブスクリプション","noAdminPermission":"管理者権限なし","googlePlayProvider":"Google Playのアプリ内決済","appStoreProvider":"App Storeのアプリ内決済","startCurrentSubscription":"このワークスペースでサブスクリプションをはじめる","transitionDescription":"{{workspaceName}}の決済手段も変更すると、すべてのサブスクリプションを1か所で管理できます。"},"dialog":{"title":"決済手段の変更","subtitle":"プランと支払いサイクルを選んでください。次のステップでカードの登録とお支払いに進みます。","resumeTitle":"サブスクリプションの再開","resumeDescription":["ストアのアプリ内決済はすでに解約済みです。","今すぐ再開すると、有効期限を待たずに新しいプランをはじめられます。"],"yearlyHint":"年額払いで2ヶ月分無料","currentPlanBadge":"現在のプラン","summaryExistingCreditLabel":"決済リワード残高からの差し引き","summarySeats":"× {{count}}アカウント","summaryTodayLabel":"本日のお支払い金額","storeCancelNoteAppStore":"変更後は、App Storeのサブスクリプションの自動更新をご自身で解約していただく必要があります。手順は、お支払いが完了したらすぐにご案内します。","confirm":"決済する","resumeConfirm":"再開する","estimateError":"差し引き額の見込みを読み込めませんでした。しばらくしてからもう一度お試しください。","estimateRetry":"もう一度試す","estimateCurrencyLocked":"このアカウントは{{currency}}でのみお支払いいただけます。通貨を切り替えると見積もりを再読み込みします。","estimateCurrencySwitch":"{{currency}}に切り替える","estimateLoading":"見積もりを読み込んでいます。","startError":"決済ページを開けませんでした。しばらくしてからもう一度お試しください。"},"startError":{"conflictTitle":"すでに進行中の変更があります","conflictBody":"別のタブまたは別の端末で進行中の変更があります。その変更を続けるか、取り消してからもう一度お試しください。","conflictAction":"進行中の変更へ","failedTitle":"現在は変更できません","failedBody":"サブスクリプションの状態が変わったため、変更を進められません。画面を再読み込みしてからご確認ください。"},"initiated":{"badge":"決済手段を変更中","body":"お支払いが完了すると変更が確定します。それまではいつでも取り消すことができ、取り消しても現在のサブスクリプションはそのまま維持されます。","continue":"お支払いに進む","abort":"変更を取り消す","abortConfirmTitle":"変更を取り消しますか？","abortConfirmBody":"現在のサブスクリプションはそのまま維持され、決済手段の変更だけが取り消されます。いつでも再度変更いただけます。","abortConfirmCancel":"戻る","abortConflictError":"現在は取り消せません。変更の状態が変わったため、最新の状態に更新しました。","abortRetryError":"変更を取り消せませんでした。しばらくしてからもう一度お試しください。","inAppBadge":"アプリ内決済"},"cancelCheckPending":{"bannerTitle":"ストアの解約を確認しています","bannerBody":"確認までは最大1日ほどかかることがあります。確認が終わると、この案内は表示されなくなります。","pill":"確認中"},"completed":{"title":"決済手段の変更が完了しました","body1":"今後、Tiroのサブスクリプションは登録したカードに請求されます。","step2":"解約が確認されるとメールでお知らせします。解約されるまでは、3日ごとにリマインダーをお送りします。","howToCancel":"解約方法を見る","verifyingTitle":"お支払いを確認しています","verifyingBody":"少しだけお待ちください。確認が終わり次第、次のご案内を表示します。","manualCancel":{"title":"ストアのサブスクリプションを解約してください","body":"カードの登録は完了しました。ストアのサブスクリプションもまだ有効なため、解約しないと二重に請求される場合があります。","stepsTitle":"解約の手順"}},"awaiting":{"autoRevokeTitle":"自動解約と返金を処理しています","autoRevokeBody":"既存のアプリ内サブスクリプションは自動的に解約され、直近のお支払い分は全額返金されます。ご自身での解約は不要です。手続きが完了したらメールでお知らせします。","bannerTitle":"アプリ内決済がまだ有効です","bannerBody":"現在、Tiroのカード決済とストアのサブスクリプションが両方とも有効です。ストア側を解約しないと、二重に請求される場合があります。","bannerLine2":"解約後、確認までに最大1日かかる場合があります。","creditFallbackNote":"ストアからの自動返金ができなかったため、ご自身での解約が必要です。解約が確認されると、お支払い済みの残り期間分を次回のお支払い額から差し引きます。","alreadyCanceledAsk":"すでに解約済みですか？","requestConfirm":"解約確認をリクエスト","cancelCheckConflictError":"現在は解約確認をリクエストできません。\\n最新の状態に更新しました。しばらくしてからもう一度お試しください。","cancelCheckRetryError":"解約確認をリクエストできませんでした。\\nしばらくしてからもう一度お試しください。"},"recordingBanner":{"title":"利用時間をすべて使ったため、記録が停止しました","body":"決済手段を変更すると、超過後払いで途切れずに記録できます。","cta":"変更について見る"},"storeCancelGuide":{"title":"ストアのサブスクリプションを解約する方法","iosSteps":[{"title":"App Storeアプリまたは設定を開く","caption":"右上のアカウントアイコンをタップします。"},{"title":"[サブスクリプション]を選ぶ","caption":""},{"title":"利用中の項目から[Tiro]を選ぶ","caption":""},{"title":"[サブスクリプションをキャンセルする]をタップして自動更新をオフにする","caption":""}],"androidSteps":[{"title":"Google Playアプリを開く","caption":"右上のプロフィールアイコンをタップします。"},{"title":"[お支払いと定期購入] → [定期購入]を開く","caption":""},{"title":"有効な定期購入から[Tiro]を選ぶ","caption":""},{"title":"[定期購入を解約]をタップして自動更新をオフにする","caption":""}],"androidNote":"解約理由を聞かれた場合はスキップしても問題ありません。残り期間はそのまま維持されます。","confirmedNote":"解約が確認されるとメールでお知らせし、リマインダーも自動的に止まります。"},"duplicateBilling":{"bannerTitle":"二重請求が発生しています","cta":"解決ガイド","dialogTitle":"二重請求を解消する","webRowLabel":"ウェブ決済","webRowPill":"継続","storeRowPill":"解約が必要","step1KeepNote":"解約してもTiroのサブスクリプションはそのまま続きます。","requestConfirmCaption":"解約が確認されると案内が止まり、メールでお知らせします。確認までは最大1日ほどかかることがあります。"},"stores":{"APP_STORE":{"bannerBody":"App Storeのサブスクリプションが再び有効になりました。Tiroのサブスクリプションはそのまま続きますので、ストアのサブスクリプションを改めて解約してください。","step1Title":"App Storeでサブスクリプションを改めて解約する","step1CancelPath":"設定 → Appleアカウント → サブスクリプション → Tiro → サブスクリプションをキャンセルする。","completedStep1":"App StoreでTiroのサブスクリプションの自動更新を解約してください。"},"PLAY_STORE":{"bannerBody":"Google Playの定期購入が再び有効になりました。Tiroのサブスクリプションはそのまま続きますので、ストアの定期購入を改めて解約してください。","step1Title":"Google Playで定期購入を改めて解約する","step1CancelPath":"Google Playアプリ → プロフィール → お支払いと定期購入 → 定期購入 → 有効な定期購入から[Tiro] → 定期購入を解約。","completedStep1":"Google PlayでTiroの定期購入の自動更新を解約してください。"}},"planDescriptions":{"lite":"たまに記録する方や、基本機能だけで十分な方向けの手軽なプランです。","pro":"よく記録する方向けに、すべての機能をご利用いただける実用的なプランです。","max":"毎日記録する方向けに、すべての機能をご利用いただけるプロ仕様のプランです。"},"lines":{"creditNudge_one":"すでにお支払い済みの{{count}}日分は、初回のお支払い金額から差し引かれます。","creditNudge_other":"すでにお支払い済みの{{count}}日分は、初回のお支払い金額から差し引かれます。","creditNudgeUnknown":"すでにお支払い済みの残り期間は、初回のお支払い金額から差し引かれます。","nudgeRefundOrLater_one":"すでにお支払い済みの{{count}}日分は、ストアからの返金または次回のお支払いからの差し引きで自動精算されます。","nudgeRefundOrLater_other":"すでにお支払い済みの{{count}}日分は、ストアからの返金または次回のお支払いからの差し引きで自動精算されます。","nudgeRefundOrLaterUnknown":"すでにお支払い済みの残り期間は、ストアからの返金または次回のお支払いからの差し引きで自動精算されます。","storeRefunded_one":"新しいプランのお支払いが完了すると、既存のアプリ内サブスクリプションの直近のお支払い分はストアから全額返金され、サブスクリプションも自動的に解約されます。","storeRefunded_other":"新しいプランのお支払いが完了すると、既存のアプリ内サブスクリプションの直近のお支払い分はストアから全額返金され、サブスクリプションも自動的に解約されます。","storeRefundedUnknown":"新しいプランのお支払いが完了すると、既存のアプリ内サブスクリプションの直近のお支払い分はストアから全額返金され、サブスクリプションも自動的に解約されます。","storeRefundedCompleted_one":"既存のアプリ内サブスクリプションはまもなく自動的に解約され、直近のお支払い分は全額返金されます。手続きが完了したらメールでお知らせします。","storeRefundedCompleted_other":"既存のアプリ内サブスクリプションはまもなく自動的に解約され、直近のお支払い分は全額返金されます。手続きが完了したらメールでお知らせします。","storeRefundedCompletedUnknown":"既存のアプリ内サブスクリプションはまもなく自動的に解約され、直近のお支払い分は全額返金されます。手続きが完了したらメールでお知らせします。","deductedLater_one":"すでにお支払い済みの{{count}}日分は、次回のお支払い金額から差し引かれます。","deductedLater_other":"すでにお支払い済みの{{count}}日分は、次回のお支払い金額から差し引かれます。","deductedLaterUnknown":"すでにお支払い済みの残り期間は、次回のお支払い金額から差し引かれます。","nothingToSettle_one":"お支払い済みの期間はすでに使い切っています。今切り替えても損はありません。","nothingToSettle_other":"お支払い済みの期間はすでに使い切っています。今切り替えても損はありません。","nothingToSettleUnknown":"お支払い済みの期間はすでに使い切っています。今切り替えても損はありません。","creditRowLabel_one":"お支払い済み{{count}}日分の差し引き","creditRowLabel_other":"お支払い済み{{count}}日分の差し引き","creditRowLabelUnknown":"お支払い済み期間の差し引き","resumeCredit_one":"すでにお支払い済みの{{count}}日分は、本日のお支払い金額から差し引かれます。","resumeCredit_other":"すでにお支払い済みの{{count}}日分は、本日のお支払い金額から差し引かれます。","resumeCreditUnknown":"すでにお支払い済みの残り期間は、本日のお支払い金額から差し引かれます。","resumeRefund_one":"すでにお支払い済みの{{count}}日分は、ストアからの返金または次回のお支払いからの差し引きで自動精算されます。","resumeRefund_other":"すでにお支払い済みの{{count}}日分は、ストアからの返金または次回のお支払いからの差し引きで自動精算されます。","resumeRefundUnknown":"すでにお支払い済みの残り期間は、ストアからの返金または次回のお支払いからの差し引きで自動精算されます。","completedCredit_one":"すでにお支払い済みの{{count}}日分を差し引いて決済しました。","completedCredit_other":"すでにお支払い済みの{{count}}日分を差し引いて決済しました。","completedCreditUnknown":"すでにお支払い済みの残り期間を差し引いて決済しました。","completedRefund_one":"すでにお支払い済みの{{count}}日分は、ストアからの返金または次回のお支払いからの差し引きで自動精算されます。","completedRefund_other":"すでにお支払い済みの{{count}}日分は、ストアからの返金または次回のお支払いからの差し引きで自動精算されます。","completedRefundUnknown":"すでにお支払い済みの残り期間は、ストアからの返金または次回のお支払いからの差し引きで自動精算されます。","confirmedCredit":"ストアの解約が確認されました。ストアからの自動返金ができなかったため、お支払い済みの残り期間（{{date}}まで）分は次回のお支払い額から差し引きます。","confirmedCreditUnknown":"ストアの解約が確認されました。ストアからの自動返金ができなかったため、お支払い済みの残り期間分は次回のお支払い額から差し引きます。","confirmedCanceled":"ストアの解約を確認しました。以前のアプリ内決済のサブスクリプションは{{date}}に期限切れとなります。これ以上の操作は不要です。","confirmedCanceledUnknown":"ストアの解約を確認しました。以前のアプリ内決済のサブスクリプションは間もなく期限切れとなります。これ以上の操作は不要です。"}}}',
+  ),
+  M = JSON.parse(
+    `{"password":{"toast":{"error":"パスワードを変更できませんでした。"}},"title":"設定","group":{"profile":"アカウント","connectors":"連携","workspace":"ワークスペース","organization":"組織設定","developers":"開発者向け","myInformation":"個人設定","otherApps":"アプリ設定","team":"メンバー設定"},"tab":{"billing":"支払い管理","billingManagement":"支払い管理","plans":"プラン管理","profile":"アカウント","general":"基本設定","devices":"ログイン中のデバイス","referral":"友だちを招待","coupon":"クーポン登録","calendar":"カレンダー管理","person":"参加者管理","wordMemory":"単語帳管理","customTemplate":"テンプレート管理","teamWordMemory":"ワークスペース単語帳管理","integration":"連携管理","mcp":"Tiro MCP","workspace":"一般","members":"メンバー","team":"メンバー管理","teamGuide":"メンバー管理ガイド","about":"アプリ情報","organization":"組織管理","developers":"開発者センター"},"mcp":{"hero":"会議のメモを AI ツールへ","logosAlt":{"tiro":"Tiro","claude":"Claude","chatgpt":"ChatGPT","cursor":"Cursor"},"steps":{"install":"ご利用の AI ツールに、下の URL で Tiro MCP を追加してください","oauth":"ブラウザの OAuth フローで Tiro アカウント認証を完了してください","invoke":"Claude · ChatGPT · Cursor などで自然言語で会議のコンテキストを活用しましょう"},"copy":"コピー","copied":"コピーしました","learnMore":"詳しく見る"},"workspace":{"title":"一般","description":"ワークスペースの基本情報と設定を管理できます。","info":{"label":"ワークスペース情報","name":"ワークスペース名","namePlaceholder":"ワークスペース名を入力してください","nameRequired":"ワークスペース名を入力してください。","nameMaxLength":"ワークスペース名は{{max}}文字以内で入力してください。","descriptionField":"ワークスペースの説明","descriptionPlaceholder":"ワークスペースの説明を入力してください","updateError":"ワークスペース情報を保存できませんでした。\\nしばらくしてからもう一度お試しください。","icon":{"label":"ワークスペースアイコン","description":"PNG・JPG・WebP 形式、最大5MB。正方形の画像がおすすめです。","edit":"アイコンを編集","upload":"画像をアップロード","change":"画像を変更","removeButton":"削除","toast":{"uploaded":"ワークスペースアイコンを変更しました。","removed":"ワークスペースアイコンを削除しました。","failed":"アイコンを変更できませんでした。しばらくしてからもう一度お試しください。"},"error":{"unsupportedType":"PNG・JPG・WebP 形式の画像のみアップロードできます。","tooLarge":"画像は5MB以下にしてください。"}}},"settings":{"label":"ワークスペース設定","allowNoteTransfer":{"title":"他のワークスペースへのノート移動を許可","description":"メンバーが自身のノートを別のワークスペースに移動できるようにします。"}},"recordingPolicy":{"label":"記録ポリシー"},"recordingOverage":{"title":"追加記録","description":"基本の記録時間を使い切った後も、会議の記録を続けられます。","billingDescription":"超過した記録時間は1分あたり$0.025で請求されます。","enabledDescription":"基本の記録時間を超えると、追加記録として自動で継続します。","memberDescription":"追加記録の設定を変更できるのはワークスペース管理者のみです。","disabledReason":{"paymentMethodMissing":"追加記録をオンにするには、先にお支払い方法を登録してください。","paymentFailed":"直近のお支払いに失敗しました。お支払い方法を確認してから、もう一度オンにしてください。","noActiveSubscription":"追加記録をオンにするには、有効なサブスクリプションが必要です。","nonStripeSubscription":"追加記録は、デスクトップまたはウェブで決済中のワークスペースでのみご利用いただけます。お支払い方法の変更をご希望の場合は、プロフィール > お問い合わせ からご連絡ください。","generic":"現在のお支払い状況では追加記録をオンにできません。"},"toast":{"enabled":"追加記録をオンにしました","disabled":"追加記録をオフにしました","failed":"追加記録の設定を保存できませんでした","failedDescription":"お支払いまたはサブスクリプションの状態を確認してから、もう一度お試しください。"}},"sharePolicy":{"label":"共有ポリシー","orgInherited":{"title":"組織のポリシーも適用されます","restricted":"組織が共有リンクをブロックしています。このワークスペースでも共有リンクの作成・閲覧はできません。","companyOnly":"会社メールのみ閲覧可能","maxDays":"リンクは最大{{days}}日","domains":"許可ドメイン: {{domains}}","none":"組織による追加の制限はありません。ワークスペース設定と組織設定のうち、より厳しい方が適用されます。"},"ceiling":{"title":"ワークスペースの共有範囲の上限","description":"メンバーが作成する共有リンクの最大公開範囲を強制します。既存の共有ノートにも遡及適用されます。","option":{"anyone":"リンクを知っている全員","company":"社内メンバーのみ","private":"非公開（リンク共有不可）"},"confirm":{"title":"共有範囲の上限を引き下げますか？","description":"新しい上限は、既存の共有リンクにもただちに適用されます。「{{scope}}」より広い範囲で共有されたリンクは、その時点で閲覧できなくなります。","confirm":"上限を引き下げる","cancel":"キャンセル","applied":"新しい上限を適用しました。既存のリンクにも反映されています。"}},"maxDuration":{"title":"共有リンクの最大有効期間","description":"新しく作成する共有リンクが期限切れになるまでの最大日数です。","unlimited":"無制限"},"allowedDomains":{"title":"社内の許可ドメイン","description":"「社内メンバーのみ」で共有したノートは、これらのドメインのアカウントでサインインした場合のみ閲覧できます。空の場合はノート所有者の会社ドメインを使用します（gmailなどの個人メールドメインは除外）。","placeholder":"例: theplato.io","add":"追加","remove":"削除","empty":"追加されたドメインはありません（所有者の会社ドメインを使用）。","invalid":"ドメインの形式が正しくありません。"},"updateError":"共有ポリシーを保存できませんでした。しばらくしてからもう一度お試しください。","enterpriseBadge":"エンタープライズ","enterpriseOnly":"共有ポリシーはエンタープライズプランで変更できます。"},"sharedLinks":{"label":"共有中のリンク","manage":"共有リンクの管理","manageDescription":"ワークスペースで有効な共有リンクを確認し、無効化できます。","back":"ワークスペース設定に戻る","loading":"読み込み中…","empty":"現在、共有中のリンクはありません。","count":"共有中のリンク {{count}}件","selectedCount":"{{count}}件選択中","table":{"note":"ノート","scope":"共有範囲","owner":"作成者","sharedDate":"共有日"},"revoke":"取り消し","filter":{"all":"すべてのリンク {{count}}件","anonymousOpenable":"全体公開・パスワードなし {{count}}件"},"revokeAll":"すべて取り消し","revokeSelected":"選択した{{count}}件を取り消し","selectAll":"すべて選択","confirmAll":"共有リンクをすべて取り消しますか？","confirmAllDescription":"このワークスペースの有効な共有リンクがすべて取り消されます。リンクを受け取った人は開けなくなります。","confirm":"取り消す","cancel":"キャンセル","loadMore":"もっと見る","revokedOne":"リンクを取り消しました","revokedAll":"共有リンク {{count}}件を取り消しました","revokeError":"取り消しに失敗しました。もう一度お試しください。"},"advanced":"詳細設定","delete":{"title":"ワークスペースを削除","description":"「{{name}}」と関連データを完全に削除します。","action":"ワークスペースを削除","confirm":{"title":"「{{name}}」を削除しますか？","description":"このワークスペースを削除すると、このワークスペース内のすべてのノート、フォルダ、メンバー情報、ワークスペース単語帳、および関連データが完全に削除されます。この操作は元に戻せず、復元できません。","cancel":"キャンセル","confirm":"完全に削除","deleting":"削除中..."},"toast":{"success":"ワークスペースを削除しました。"},"error":{"title":"ワークスペースを削除できませんでした","forbidden":"ワークスペース管理者のみ削除できます。","notFound":"ワークスペースが見つかりません。すでに削除されている可能性があります。","organization":"組織ワークスペースは、組織管理者が組織設定で管理する必要があります。","mobileSubscription":"有効なモバイルサブスクリプションがあるため削除できません。サブスクリプション状態を確認してください。","unprocessable":"ワークスペースポリシーまたは請求状態により削除できません。","tooManyRequests":"別のワークスペース操作を処理中です。しばらくしてからもう一度お試しください。","generic":"一時的なエラーが発生しました。しばらくしてからもう一度お試しください。"}},"readOnlyHint":"ワークスペース情報の編集は管理者のみ可能です。"},"members":{"title":"メンバー","description":"ワークスペースのメンバーを招待し、役割を管理できます。","searchPlaceholder":"名前またはメールで検索","inviteMemberButton":"メンバーを招待","emailPlaceholder":"メールアドレスを入力","sendInvite":"招待を送信","inviteProviderHint":"Google または Microsoft アカウントでログインできるメールアドレスのみ招待できます。","inviteUnsupportedProviderWarning":"このアドレスは Google・Microsoft アカウントではないため、招待できない場合があります。","inviteDialogTitle":"メンバーを招待","inviteDialogDescription":"メールアドレスでワークスペースにメンバーを招待します。複数人を一度に招待できます。","inviteEmailsPlaceholder":"カンマや改行で複数のメールアドレスを入力してください","inviteRoleLabel":"役割","invitePreparedCount":"{{count}}人を招待","inviteUnsupportedEmailsWarning":"{{emails}} は Google・Microsoft アカウントではないため、招待できない場合があります。","inviteSentCount":"{{count}}件のメールに招待を送信しました。","inviteSomeFailed":"一部の招待に失敗しました（{{count}}件）。メールアドレスを確認して再度お試しください。","invitePaidRoleNotice":"購入済みのシートの利用に追加料金はかかりません。\\nシートが足りず、自動購入が可能な場合は、追加シートの料金が即時決済され、決済完了後に招待が送信されます。","readOnlyHint":"メンバー管理はワークスペース管理者のみ可能です。","inviteRequiresTeamPlanTitle":"メンバーを招待するにはチームプランへの切り替えが必要です","inviteRequiresTeamPlanDescription":"2人以上で利用するには、このワークスペースをチームプランに切り替えてください。","roleColumn":"役割","member":"メンバー","joinedAt":"参加日","memo":"メモ","memoPlaceholder":"メモを入力してください","clickToAddMemo":"メモを追加","memoUpdateFailed":"メモの保存に失敗しました","pending":"招待中","currentUser":"自分","noSearchResults":"表示するメンバーがいません","removeMember":"メンバーを削除","removeMemberTitle":"メンバーを削除しますか？","removeMemberDescription":"{{name}}さんはこのワークスペースにアクセスできなくなります。","removeMemberButton":"削除","removeSuccess":"メンバーを削除しました","removeSuccessDescription":"{{name}}さんをワークスペースから削除しました。","removeFailed":"メンバーの削除に失敗しました","removeFailedDescription":"しばらくしてからもう一度お試しください。","leaveWorkspace":"ワークスペースから退出","leaveWorkspaceTitle":"ワークスペースから退出しますか？","leaveWorkspaceDescription":"退出すると、このワークスペースの共有ノートやフォルダにアクセスできなくなります。","leaveWorkspaceButton":"退出","leaveOnlyAdminTitle":"退出するには別のAdminが必要です","leaveOnlyAdminDescription":"ワークスペースには少なくとも1人のAdminが必要です。他のメンバーをAdminに変更してから、もう一度お試しください。","leaveSuccess":"ワークスペースから退出しました","leaveSuccessDescription":"このワークスペースにはアクセスできなくなりました。","leaveFailed":"ワークスペースから退出できませんでした","leaveFailedDescription":"しばらくしてからもう一度お試しください。","roleUpdateSuccess":"メンバーの役割を変更しました","roleUpdateFailed":"メンバーの役割変更に失敗しました","inviteSuccess":"招待を送信しました","inviteSuccessDescription":"{{email}}宛に招待を送信しました。","inviteFailed":"招待の送信に失敗しました","inviteFailedDescription":"メールアドレスを確認してもう一度お試しください。","revokeInvite":"招待を取り消す","revokeInviteSuccess":"招待を取り消しました","revokeInviteSuccessDescription":"保留中の招待を取り消しました。","revokeInviteFailed":"招待の取り消しに失敗しました","revokeInviteFailedDescription":"しばらくしてからもう一度お試しください。"},"about":{"title":"情報","description":"現在インストールされているバージョン情報を確認できます。","version":"現在のバージョン","updateNow":"v{{version}}にアップデート","latestVersion":"最新バージョンです。"},"plan":{"mobilePayment":{"toast":{"title":"モバイルアプリ内購入のサブスクリプションは、アプリからのみプラン変更が可能です。","description":"モバイルアプリで再度お試しください。","action":"サポートガイド"}}},"appearance":{"section":"表示","title":"表示モード","description":"端末の設定に従うか、ライト・ダークモードを選択できます。","system":"システム","light":"ライト","dark":"ダーク"},"general":{"toast":{"preferenceUpdateError":"設定を変更できませんでした。"},"title":"基本設定","description":"Tiroのさまざまな機能を自由に管理できます","language":{"sectionTitle":"言語設定"},"audioReplay":{"title":"段落ごとの音声再生","description1":"段落ごとに元音声を再生できます。","description2":"※ 音声が保存されるため、録音前に同意を得てください。"},"speakerDiarization":{"title":"話者分離","description1":"会話中の登場人物を自動で判別し、スクリプトにスピーカータグを付与します。","description2":"※ 現在は音声ファイルのアップロード時のみ先行提供中です。リアルタイム記録にも順次対応予定です。","learnMore":"詳しく見る","tooltip":{"title":"仕組みは？","step1":"音声ファイルをアップロードしてスクリプトを開くと「Speaker A・B…」のタグが自動で付きます。","step2":"タグは自由な名前に変更でき、Enterキーで手動分割も可能です。","step2Detail":"手動でタグ付けした情報はカスタムドキュメントに反映され、より正確な生成が行えます。","step3":"タグを変更しなくても利用でき、その場合カスタムドキュメントは会話内容のみを基に作成されます。"},"litePlanDialog":{"title":"話者分離機能はProプラン以上でご利用いただけます","description":"プランをアップグレードしてすべてのPro機能をお使いください。","upgradeButton":"プランをアップグレード"}},"autoNoteSummary":{"title":"記録終了後に自動生成","description":"記録が終了すると、選択した要約とカスタムドキュメントをノートの要約言語で作成します。","summaryTemplates":"要約テンプレート","documentTemplates":"カスタムドキュメントテンプレート","selectionStatusSummary":"要約{{count}}件を自動生成します。","selectionStatusDocument":"カスタムドキュメント{{count}}件を自動生成します。","selectionStatusBoth":"要約{{summaryCount}}件・カスタムドキュメント{{documentCount}}件を自動生成します。","emptySelection":"自動生成するテンプレートを1件以上選択してください。","disabledWithoutTemplate":"テンプレートが選択されていないため、自動生成をオフにしました。"},"dataSharing":{"sectionTitle":"共有設定"},"defaultLinkSharing":{"title":"リンク共有の既定値","description":{"ANYONE":"ノートを共有するとき、「リンクを知っている全員」が最初に選択されます。","COMPANY":"ノートを共有するとき、会社ドメインのアカウントのみ開ける範囲が最初に選択されます。","PRIVATE":"ノートは既定で非公開のままです。共有が必要なときは共有画面で範囲を選択します。"},"option":{"anyone":"リンクを知っている全員","company":"社内メンバーのみ","private":"非公開"}},"notification":{"title":"カレンダー通知","description":"カレンダーと連携して、ミーティング開始10分前に通知を受け取ります。"},"micDetection":{"title":"自動検出ミーティング","description":"通話が検出されると通知を表示します。以下で特定のアプリをミュートできます。"},"audioRecording":{"title":"音声ファイルのローカル保存","description":"リアルタイム対話記録時に、音声ファイルをローカルデバイスに自動保存します。","tooltip":{"title":"音声ファイルのローカル保存について","description":"記録された会議の音声ファイルは、記録を開始したユーザーのデバイスにのみ保存され、サーバーには保存されません。最新50件の会議音声ファイルが記録者のデバイスに保存され、いつでもダウンロードできます。"},"blockedByOrgPolicy":"組織のポリシーにより、この機能は使用できません。"},"overlay":{"title":"リアルタイム記録表示","description":"記録中であることを忘れないよう、画面右側に記録状態を表示します。"},"desktopOnly":{"sectionTitle":"デスクトップアプリ","description":"デスクトップアプリで全ての機能を有効にしてください。","downloadButton":"デスクトップアプリをインストール"}},"devices":{"pageTitle":"ログイン中のデバイス","pageDescription":"Tiroにログインしているデバイスを確認し、使っていないデバイスからログアウトできます。","currentDevice":"このデバイス","currentBadge":"使用中","otherDevices":"他のデバイス","loginAt":"ログイン: {{time}}","unknownDevice":"不明なデバイス","unknownDeviceCaption":"以前のログイン記録です。そのデバイスで再度ログインすると、デバイス情報が表示されます。","mcpSession":"MCP連携","confirmCancel":"キャンセル","currentLogout":{"button":"ログアウト","confirmTitle":"このデバイスからログアウトしますか？","confirmDescription":"ログアウトすると、Tiroを使うには再度ログインが必要です。","confirmAction":"ログアウト"},"revokeAll":{"title":"他のすべてのデバイスからログアウト","caption":"このデバイス以外のすべてのデバイスからログアウトします。","button":"すべてログアウト","legacyTitle":"すべてのデバイスからログアウト","legacyCaption":"現在使用中のデバイスを判別できないため、このデバイスを含むすべてのデバイスからログアウトします。","legacyButton":"すべてログアウト","confirmTitle":"他のすべてのデバイスからログアウトしますか？","confirmDescription":"このデバイス以外のすべてのデバイスからログアウトします。各デバイスで進行中の作業はまもなく終了します。","legacyConfirmTitle":"このデバイスを含めてすべてログアウトしますか？","legacyConfirmDescription":"このデバイスもログアウトされます。再度ログインすれば、すぐに続きから使えます。","confirmAction":"すべてログアウト","toast":{"success":"他のデバイスからすべてログアウトしました（{{deviceCount}}台）","none":"ログアウトする他のデバイスはありません","error":"ログアウトに失敗しました。しばらくしてからもう一度お試しください。"}},"revoke":{"button":"ログアウト","confirmTitle":"選択したデバイスからログアウトしますか？","confirmDescription":"そのデバイスで進行中の作業はまもなく終了し、再度ログインが必要になります。","confirmAction":"ログアウト","toast":{"error":"デバイスのログアウトに失敗しました。しばらくしてからもう一度お試しください。"}},"list":{"empty":"ログインしている他のデバイスはありません。","errorTitle":"デバイス一覧を読み込めませんでした","errorDescription":"しばらくしてからもう一度お試しください。","retry":"再試行"}},"integration":{"title":"連携管理","description":"サービスを連携してノートを共有し、各サービスで自動化を管理できます。","connect":"連携する","disconnect":"連携解除","disconnectPopup":{"title":"連携の解除","description":"連携を解除すると、関連する機能が利用できなくなります。","confirm":"連携を解除","cancel":"キャンセル"},"slack":{"title":"Slack","description":"Slackにノートを直接共有できます。","automation":{"channels":"Channels","searchChannel":"チャンネルを検索","loadingChannels":"チャンネルリストを読み込み中...","noChannelsAvailable":"利用可能なチャンネルがありません","noSearchResults":"検索結果がありません","inviteBotGuide":"非公開チャンネルは Slack で \`/invite @Tiro\` を実行して Tiro アプリを招待してください。","notConnected":{"title":"Slack連携が必要です","description":"まずSlackワークスペースを連携してください。ノートをSlackチャンネルに簡単にエクスポートでき、記録が終了したときにノートが自動的に共有されるように設定できます。"}},"toast":{"channelUpdateError":"Slackチャンネルの変更に失敗しました","messageSendError":"Slackメッセージの送信に失敗しました","disconnectError":"Slack連携の解除に失敗しました"}},"notion":{"title":"Notion","description":"Notionにノートを直接保存できます。","toast":{"pageCreateError":"Notionページの作成に失敗しました","parentUpdateError":"Notion上位ページの変更に失敗しました","disconnectError":"Notion連携の解除に失敗しました","databaseCreateError":"Notionデータベースの作成に失敗しました"}},"googleDrive":{"title":"Google Drive","description":"自分のDriveにノートをGoogle Docsとしてエクスポートできます。","toast":{"disconnectError":"Google Driveの連携を解除できませんでした。\\nしばらくしてからもう一度お試しください。"}},"microsoftTeams":{"title":"Microsoft Teams","description":"ノートのリンクと選択した内容をTeamsのチャンネルや1対1のメッセージで共有できます。","authorizationError":{"title":"管理者の承認が必要です","description":"Microsoft Teamsとの連携が中断されました。\\nキャンセルしていない場合は、Microsoft 365管理者によるTiroの承認が必要です。\\n\\n以下のボタンから依頼文と承認リンクをコピーして管理者へお送りください。\\n承認後にもう一度連携してください。","closeAction":"あとで行う"},"adminConsent":{"adminMessage":"[Tiro Microsoft Teams連携の組織管理者承認のお願い]\\n\\n利用目的\\nTiroユーザーが参加しているチームとチャンネルを確認し、選択したチャンネルや組織のメンバーにTiroノートを送信するには、組織の承認が必要です。\\n\\n要求する権限と利用目的\\n- User.Read: 連携したアカウントと基本プロフィールの確認\\n- offline_access: 毎回ログインせずに連携を維持\\n- User.ReadBasic.All: メッセージを送る組織のメンバーを検索\\n- Team.ReadBasic.All: ユーザーが参加しているチーム一覧の確認\\n- Channel.ReadBasic.All: 選択可能なチャンネル一覧の確認\\n- ChannelMessage.Send: ユーザーが選択したチャンネルへノートを送信\\n- Chat.Create: ユーザーが選択したメンバーとの1対1のチャットを作成\\n- ChatMessage.Send: 作成した1対1のチャットへノートを送信\\n\\n管理者への確認事項\\n- 以下のリンクは組織全体の管理者同意画面です。アプリ名と上記権限を確認してから承認してください。\\n- TiroはTeamsのメッセージを読む権限を要求しません。\\n- 承認後、申請者へ完了可否をお知らせください。\\n\\n管理者承認リンク\\n{{adminConsentUrl}}","copyAction":"管理者承認の依頼をコピー","copied":"管理者承認の依頼とリンクをコピーしました"},"toast":{"disconnectError":"Microsoft Teamsの連携を解除できませんでした。\\nしばらくしてからもう一度お試しください。"}},"microsoftTeamsAdminConsent":{"success":{"title":"組織の承認が完了しました。","description":"組織のメンバーがTiroでMicrosoft Teamsに接続できるようになりました。","nextStep":"この画面を閉じて、承認を依頼したメンバーに完了したことをお伝えください。"},"failure":{"title":"組織の承認を完了できませんでした。","description":"Microsoft 365の管理者アカウントで承認リンクをもう一度開いてください。","nextStep":"問題が解決しない場合は、Tiroサポートまでお問い合わせください。"}},"confluence":{"title":"Confluence","description":"Confluenceにノートを直接保存できます。","toast":{"settingsUpdateError":"Confluence設定の変更に失敗しました","pageCreateError":"Confluenceページの作成に失敗しました","disconnectError":"Confluence連携の解除に失敗しました"}},"hubspot":{"title":"HubSpot","description":"HubSpotにノートを直接記録できます。","toast":{"meetingCreateError":"HubSpotミーティングノートの作成に失敗しました","disconnectError":"HubSpot連携の解除に失敗しました","settingsUpdateError":"HubSpot設定の変更に失敗しました"}},"salesforce":{"title":"Salesforce","description":"Salesforceの取引先や商談にノートを直接記録できます。","authorizationError":{"title":"Salesforceとの連携を完了できませんでした。","description":"ログインをキャンセルした場合は、もう一度接続してください。それ以外の場合は、TiroアプリのインストールとSalesforce管理者による利用承認をご確認ください。","notInstalled":"このSalesforce組織にTiroアプリがインストールされていません。管理者にインストールと利用承認を依頼してから、もう一度接続してください。","retry":"もう一度接続する"},"setup":{"title":"Salesforceへの接続準備","entry":"社内で初めての接続ですか？管理者向け設定ガイド","action":"インストール・承認ガイド","description":"Salesforce管理者が組織にTiroを一度インストールして利用を承認すると、各ユーザーが自分のアカウントを接続できます。","install":"Salesforceにインストール","guide":"利用承認の手順を見る","packageNotice":"パッケージ：Tiro · 提供元：ThePlato Inc.\\nこのパッケージはAppExchangeの審査を受けていません。インストール前にパッケージと提供元をご確認ください。","notAdmin":"Salesforce管理者ではありませんか？","copy":"管理者向けの案内をコピー","copied":"管理者向けの案内をコピーしました","connect":"インストール・承認後に接続","external":"ブラウザーの新しいタブで開きます","adminMessage":"利用中のSalesforce組織にTiroアプリをインストールし、以下のガイドに沿って私のアカウントの利用を承認してください。完了したらお知らせください。その後、Tiroで自分のアカウントを接続します。\\n\\nインストール：{{installUrl}}\\n利用承認ガイド：{{guideUrl}}"},"toast":{"disconnectError":"Salesforceの連携を解除できませんでした。\\nしばらくしてからもう一度お試しください。"}},"automation":{"backToList":"一覧に戻る","integrationSetting":"連携設定","slackAutomationDescription":"Slackワークスペースを連携すると、ノートを希望するSlackチャンネルに共有できます。共有したいノートで「Slackに共有」をクリックしてください。","automationSetting":"自動共有設定","automationSettingDescription":"記録を終了すると、希望するSlackチャンネルにノートが自動的に共有されるようにトリガーを作成できます。","newTrigger":"新規トリガー","name":"Name","namePlaceholder":"トリガー名","when":"When","noteTitle":"ノートタイトル","folder":"フォルダ","contains":"Contains","notContains":"Not Contains","is":"Is","isNot":"Is Not","in":"In","keywords":"キーワード","selectFolder":"フォルダを選択","noFoldersAvailable":"フォルダなし","where":"Where","what":"What","includeShareLink":"共有リンクを含める","shareLinkContents":"共有リンクに表示する内容","directSlackContents":"Slackの返信に直接投稿する内容","addContent":"内容を追加","removeContent":"内容を削除","paragraphSummary":"要約","transcript":"スクリプト","messages":"messages (optional)","messagesPlaceholder":"Slack通知に含めるメッセージを入力してください","messagesLength":"{{length}}/1000","selectTemplate":"テンプレートを選択","selectNone":"選択しない","alreadySelected":"既に選択済み","creating":"作成中...","save":"保存","loadingTriggers":"トリガーリストを読み込み中...","activate":"有効化","edit":"編集","delete":"削除"}},"profile":{"pageTitle":"アカウント","pageDescription":"あなたについて少し教えてください。Tiroがあなた専用に最適化され、入力された情報は文脈として活用され、より正確に記録します。","basicInfo":"基本情報","loginMethods":{"sectionLabel":"ログイン方法","addButton":"ログイン方法を追加","primaryBadge":"メインのメール","freshEmailNote":"まだTiroに登録されていないメールアドレスのみ連携できます。","limitToast":"ログイン方法はアカウントごとに10個までです。使っていない方法を先に削除してください。","lastLoginAt":"{{provider}} · 最終ログイン {{time}}","attachedAt":"{{provider}} · {{time}}に追加","provider":{"google":"Googleログイン","microsoft":"Microsoftログイン","apple":"Appleログイン","unknown":"ログイン"},"list":{"errorTitle":"ログイン方法を読み込めませんでした","errorDescription":"しばらくしてからもう一度お試しください。","retry":"もう一度試す"},"addModal":{"title":"ログイン方法を追加","description":"現在のアカウントにログインする方法を追加できます。","emailComingSoon":"メールログイン","comingSoonTag":"近日対応","successToast":"ログイン方法を追加しました。","alreadyAttachedToast":"このメールアドレスは、すでに別のTiroアカウントに連携されています。","errorToast":"ログイン方法を追加できませんでした。もう一度お試しください。"},"detach":{"button":"削除","cancel":"キャンセル","confirmAction":"削除","confirmTitle":"このログイン方法を削除しますか？","confirmDescription":"削除すると、{{email}}（{{provider}}）ではログインできなくなります。削除後は再ログインが必要です。","disabledLastOne":"最後のログイン方法は削除できません。","disabledPrimary":"メインのメールに紐づく方法のため、削除できません。","toast":{"success":"ログイン方法を削除しました。","notFound":"このログイン方法はすでに削除されているか、見つかりません。","error":"ログイン方法を削除できませんでした。"}}},"name":"名前","email":"メールアドレス","language":"言語","moreLanguagesSoon":"他の言語も順次対応予定です！","account":"アカウント","upgradePlan":"プランをアップグレード","manageSubscription":"サブスクリプション管理","logout":"ログアウト","advanced":"詳細設定","deleteAccount":"アカウント削除","accountActions":{"plan":{"title":"現在のプラン","description":"利用量や共同作業機能が必要な場合はプランを変更できます。"},"billing":{"title":"請求とサブスクリプション","description":"現在のプラン、請求サイクル、契約状況を確認できます。"},"password":{"title":"ログインセキュリティ","description":"Tiroアカウントで使用するパスワードを更新できます。"},"delete":{"title":"完全な削除","description":"アカウントと個人データを削除します。この操作は元に戻せません。"}},"deleteAccountModal":{"title":"アカウントの削除","warningDescription":"アカウントを削除すると、すべてのデータが完全に削除され、この操作は元に戻せません。","confirmEmailLabel":"削除を確認するにはメールアドレスを入力してください","emailMismatchError":"メールアドレスが一致しません","cancelButton":"キャンセル","deleteButton":"アカウントを削除","deleting":"削除中...","inAppPurchase":{"stepTitle":"アカウント削除の前にご確認ください","description":"Tiroのアカウントを削除しても、\\n現在ご利用中のサブスクリプションは自動的に解約されません。\\n\\nサブスクリプションを停止するには、{{store}}にてご自身で解約手続きを行ってください。","howToCancelAppStore":"App Storeでのサブスクリプション解約方法","howToCancelGooglePlay":"Google Playでのサブスクリプション解約方法","confirmCheckboxLabel":"アカウントを削除してもサブスクリプションは自動的に解約されないことを理解し、ストア上で解約手続きを行いました。","nextButton":"次へ","prevButton":"戻る"}},"profileDescription":"あなたについて教えていただくことで、より最適なTiroをご利用いただけます。","jobTitle":"役職","jobTitlePlaceholder":"CEO","aboutYou":"自己紹介","aboutYouPlaceholder":"関心のあることや仕事の分野など、簡単な自己紹介を入力してください。","yourCompany":"会社情報","companyName":"会社名","companyNamePlaceholder":"The Plato","companyDescription":"会社紹介","companyDescriptionPlaceholder":"事業内容や製品、主な顧客など、会社について簡単にご紹介ください。","changePassword":{"title":"パスワード変更","description":"新しいパスワードは8文字以上で入力してください。","otherDevicesNotice":"パスワードを変更すると、他のすべてのデバイスからログアウトされます。このデバイスはそのままご利用いただけます。","currentPassword":"現在のパスワード","currentPasswordPlaceholder":"現在のパスワードを入力してください","newPassword":"新しいパスワード","newPasswordPlaceholder":"新しいパスワードを入力してください","confirmNewPassword":"新しいパスワードを確認","confirmNewPasswordPlaceholder":"新しいパスワードを再入力してください","change":"パスワードを変更","cancel":"キャンセル","validation":{"currentPasswordRequired":"現在のパスワードを入力してください。","newPasswordRequired":"新しいパスワードを入力してください。","passwordMinLength":"パスワードは8文字以上で入力してください。","confirmPasswordRequired":"新しいパスワードを確認してください。","passwordMismatch":"パスワードが一致しません。"},"toast":{"success":"パスワードが変更されました。","otherDevicesLoggedOut":"他のデバイスからすべてログアウトされました","error":"パスワードの変更に失敗しました。"}}},"calendar":{"title":"カレンダー管理","addCalendar":"カレンダーを追加","google":"Google","msOutlook":"MS Outlook","connect":"連携する","notConnected":"まだ連携されていません","activate":"使用する","myCalendars":"マイカレンダー","otherCalendars":"他のカレンダー","noTitle":"（タイトルなし）","connectionExpired":"連携期限切れ","insufficientScope":"カレンダー権限が必要","connectionBlocked":"カレンダーへのアクセスがブロックされています。","reconnect":"再度連携する","disconnectButton":"連携を解除","connectedAccounts":"{{count}}件のアカウントを連携中","addAccount":"アカウントを追加","welcome":{"title":"毎回Tiroを開き忘れますか？","subtitle1":"カレンダーを連携して、","subtitle2":"ミーティングの15分前に通知を受けましょう"},"disconnectDialog":{"title":"カレンダーの連携を解除しますか？","cancel":"キャンセル","confirm":"解除する"},"toast":{"disconnectSuccess":"カレンダーの連携が解除されました","disconnectError":"連携の解除に失敗しました","updateError":"カレンダー設定の変更に失敗しました"},"bannerTitle":"今日の予定を一覧で確認","bannerDescription":"カレンダーを連携してみましょう","hideBanner":"非表示"},"person":{"title":"参加者管理","description":"会話に参加する人の名前とメールアドレスを保存できます。Tiroが名前を記憶し、より正確に記録できるようになります。","error":{"nameOrEmailRequired":"名前またはメールアドレスを入力してください"},"toast":{"tagAlreadyExists":"この参加者はすでに登録されています。既存の参加者を一覧で確認してください。","tagCreateError":"参加者を登録できませんでした。もう一度お試しください。","tagAddError":"タグの追加に失敗しました","tagRemoveError":"タグの削除に失敗しました","tagUpdateError":"タグの更新に失敗しました"},"add":"参加者を追加","empty":"参加者がいません。"},"wordMemory":{"title":"単語帳の管理","description":"重要な固有名詞や人名、製品名などを追加しましょう。Tiroが会話を記録する際に、これらの単語を正確に認識します。","noWords":"登録された単語がありません。","addWord":"新しい単語を追加（複数の場合はコンマで区切ってください）","duplicateWord":"この単語はすでに登録されています。","deleteAriaLabel":"{{word}}を削除","editAriaLabel":"単語を編集","editPronunciationAriaLabel":"発音を編集","editNotationAriaLabel":"表記を編集","phonetic":{"errors":{"pronunciationRequired":"読みを入力してください","pronunciationInvalid":"正しい読み形式を入力してください（例：ひらがな、ピンイン）","notationRequired":"表記を入力してください","notationInvalid":"正しい表記形式を入力してください（例：漢字）"},"placeholders":{"pronunciation":"読み（例：ひらがな、ピンイン）","notation":"表記（例：漢字、汉字）"}},"tabs":{"regular":"通常の単語帳 ({{count}})","phonetic":"読み+表記の単語帳 ({{count}})"},"tooltips":{"regular":"英語の固有名詞、人名、ブランド名など、発音と表記が同じ単語を保存します。\\n例: TiroやChatGPTなどのAIサービス名、EvanやLucyなどの名前、ThePlatoやMicrosoftなどの会社名、製品名、プロジェクト名など","phonetic":"日本語や中国語のように発音と表記が異なる言語の単語を保存します。\\n例: 日本語: ひらがな (読み) - 漢字 (表記)\\n中国語: pinyin (読み) - 汉字 (表記)"},"toast":{"createError":"単語の追加に失敗しました","updateError":"単語の更新に失敗しました","deleteError":"単語の削除に失敗しました","duplicateError":"この単語はすでに登録されています"}},"teamWordMemory":{"title":"ワークスペース単語帳管理","description":"ワークスペース内のすべてのメンバーに共通で適用される単語帳です。重要な固有名詞や人名、製品名などを追加すると、Tiroが会話を記録する際にこれらの単語を正確に認識します。","noWords":"登録された単語がありません。","addWord":"新しい単語を追加（複数の場合はコンマで区切ってください）","duplicateWord":"この単語はすでに登録されています。"},"wordPack":{"entryButton":"分野別の単語を追加","title":"分野別の単語帳","subtitle":"分野を選ぶと、間違って書き取られやすい用語をまとめて追加します。","packs":{"business":"経営・経済","law":"法学・ロースクール","medicine":"医学・看護","engineering":"工学一般","itDev":"IT・開発","marketing":"マーケティング・広告","finance":"金融・投資","hr":"人事・組織"},"reviewSubtitleAll":"単語{{total}}件を追加します。すでにある単語はスキップします。","reviewSubtitle":"{{total}}件のうち{{selected}}件を追加します。すでにある単語はスキップします。","selectedCount":"{{count}}件選択","pairNote":"発音+表記の単語帳に{{count}}件を追加します","submit":"単語帳に追加","fallbackHint":"探している分野がなければ、「ファイルアップロード」で資料から直接抽出できます。","selectWord":"{{word}}を選択","deselectWord":"{{word}}を除外","toast":{"added":"単語{{count}}件を追加しました","alreadyAdded":"すべて登録済みの単語です"}},"wordFileUpload":{"upload":"ファイルアップロード","title":"ファイルからキーワードを抽出","subtitle":"Tiroがキーワードを抽出して単語帳に追加します。","uploadPrompt":"ファイルをアップロードしてください","uploadDragDrop":"またはここにドラッグ＆ドロップ","supportedTypes":"対応フォーマット：ドキュメント／画像／音声／動画","maxFileSizeShort":"最大 {{size}}","maxFiles":"最大 {{max}} ファイル","maxExtractedWords":"ファイルあたり最大100個のキーワード抽出可能","selectFile":"ファイルを選択","selectedAction":"{{count}}件のファイルから抽出","extractingInProgress":"単語を抽出中…","extractedWordsCount":"抽出された単語（{{count}}件）","selectAll":"すべて選択","deselectAll":"すべて解除","inputPlaceholder":"直接入力 ↵","manualError":{"inputRequired":"単語を入力してください","tooLong":"単語が長すぎます","duplicate":"すでに一覧にあります"},"buttons":{"close":"閉じる","addSelected":"選択した単語を追加","retry":"再試行"},"errors":{"generic":"エラーが発生しました。","extracting":"処理中にエラーが発生しました。","addWords":"単語の追加中にエラーが発生しました。","workspaceNotSelected":"先にワークスペースを選択してください。"},"rejected":{"unableToUpload":"アップロードできないファイルが含まれています。","tooManyFiles":"一度に最大{{max}}件までアップロードできます。","fileTooLarge":"ファイルサイズが大きすぎます（最大 {{size}}）。","invalidType":"サポートされていないファイル形式です。"}},"team":{"stats":{"seatsLabel":"席","membersLabel":"メンバー","pendingLabel":"招待中"},"member":{"memberList":"メンバーリスト","role":"役割","roleChangeWarning":{"title":"有料ロールに変更しますか？","description":"<currentRole>{{currentRole}}</currentRole>から<newRole>{{newRole}}</newRole>に変更すると、有料の役割に切り替わります。","billingInfo":"月額$29の有料シートが追加され、残り期間分の料金は日割り計算され、次回の請求書に反映されます。","learnMore":"詳細を見る","confirm":"変更"}},"quota":{"usage":"使用量","unlimited":"無制限","minutesUsed":"分使用済み","minutes":"分","remaining":"残り","viewDetails":"詳細を表示","backToBilling":"プラン管理","detailViewTitle":"使用量詳細","granularityOptions":{"daily":"日次","weekly":"週次","monthly":"月次"},"startDate":"開始日","endDate":"終了日","usageChart":"使用量","period":"期間","showDataTable":"データ表を表示","hideDataTable":"データ表を非表示","loading":"読み込み中...","noData":"データがありません","dateRangeValidation":"開始日は終了日より前である必要があります","memberUsage":"メンバー別使用量","memberName":"名前","noteCount":"ノート数","recordingMinutes":"録音時間","accumulated":"累計","export":{"button":"エクスポート","exporting":"エクスポート中...","sectionTotals":"選択期間の合計","sectionTimeseries":"期間別レポート","memberBreakdown":"メンバー別合計","timeseries":"全体","memberTimeseries":"メンバー別","cumulativeChip":"累計","cumulativeHint":"累計がオンになっています。\\n選択した期間全体を1つに合算したCSVがダウンロードされます。","success":"CSVファイルがダウンロードされました","error":"エクスポートに失敗しました。もう一度お試しください"}},"teamPlanActivated":"チームプラン利用中"},"welcome":{"close":"閉じる","cta":"はじめる","title":"{{firstName}}さんの{{planName}}プランが有効になりました","userFallback":"お客様","greeting":"こんにちは！Tiroの有料プランへのご登録、誠にありがとうございます。","features":{"title":"Tiroの{{planName}}プランでは以下の機能をご利用いただけます。","lite":{"recording":"毎月<b>300分</b>のリアルタイムで構造化された会話記録と高品質な段落要約","duration":"<b>ノートごとの記録時間制限なし</b>"},"pro":{"recording":"毎月<b>1,000分</b>のリアルタイムで構造化された会話記録と高品質な段落要約","duration":"<b>ノートごとの記録時間制限なし</b>"},"max":{"recording":"<b>無制限</b>のリアルタイムで構造化された会話記録と高品質な段落要約","duration":"<b>ノートごとの記録時間制限なし</b>"},"team":{"recording":"<b>無制限</b>のリアルタイムで構造化された会話記録と高品質な段落要約","duration":"<b>ノートごとの記録時間制限なし</b>","consolidatedBilling":"メンバー管理と一括支払い対応","teamWordMemory":"チーム専用共有単語帳で固有名詞の認識精度アップ","teamSupport":"リアルタイムサポートおよび専用のお問い合わせチャネル"},"enterprise":{"recording":"<b>無制限</b>のリアルタイムで構造化された会話記録と高品質な段落要約","duration":"<b>ノートごとの記録時間制限なし</b>","consolidatedBilling":"メンバー管理と一括支払い対応","teamWordMemory":"チーム専用共有単語帳で固有名詞の認識精度アップ","teamSupport":"専任担当者によるサポートとカスタマイズサービス"}},"about":{"tiro":"Tiroはローマの執政官であり雄弁家だったキケロの最も親しい友人であり、<b>世界初の速記者</b>として知られています。Tiroチームでは、人生が重要な対話の連続である方々が大切な瞬間に集中できるよう、会話を記録して構造化し、高品質に要約する製品を開発しています。私たちは、世界初の速記者であるTiroへの敬意を込めて、この製品をTiroと名付けました。"},"feedback":{"request":"現在Tiroをどのようにお使いでしょうか？約20分間のオンラインミーティングを通じて、皆さまのTiroのご利用経験を伺い、大切な会話シーンに最適な製品作りのお手伝いができればと思います。また、Tiroの多彩な機能の効果的な活用方法についてもご案内いたします。","schedule":"スケジュール予約リンクからご都合の良い日時をお選びください。","surveyLink":"https://forms.gle/oTjsd8mnm8H8spuv8","survey":"または<a href='{{surveyLink}}' target='_blank'>1分以内のアンケート</a>からフィードバックをいただけます。"},"closing":{"thanks":"Tiroをご利用いただき、ありがとうございます。","farewell":"今日も素敵な一日をお過ごしください :)"},"signature":{"name":"Marcus Tullius Tiro","sincerely":"敬具 Tiro"}},"referral":{"title":"Tiroをプレゼントして最大$8のリワードを受け取る","thinkOfSomeone":"Tiroを必要としている友だちを思い浮かべてみましょう。","eyebrow":"Tiroをプレゼント","badge":"新しいリワード","headline":"Tiro Proを1ヶ月プレゼントして、最大$8割引を受け取りましょう。","headlineHighlighted":"Tiro Proを1ヶ月プレゼントして、<br />最大<hl>$8割引</hl>を受け取りましょう。","emailDivider":"またはメールで招待","description":"友だちが10分以上記録すると$3、初回の有料決済を完了するとさらに$5が貯まります。","activationRewardTitle":"友だちが10分以上記録すると<amt>$3</amt>","activationRewardDescription":"初回の記録完了後、すぐに貯まります。","paidRewardTitle":"友だちが初めて有料決済すると<amt>$5</amt>","paidRewardDescription":"決済から7日後に貯まります。","rewardTiming":"貯まったリワードは次回以降のお支払いに自動で適用されます。","termsCaption":"リワードの獲得・利用に関する詳しいルールは、<termsLink>Tiroプレゼントリワード利用条件</termsLink>でご確認いただけます。","linkTitle":"招待リンクを送る","linkLabel":"あなたの招待リンク","linkLoading":"招待リンクを読み込んでいます","linkUnavailable":"招待リンクを読み込めませんでした","rewardAppliedAutomatically":"このリンクから登録すると、Pro 1か月分の割引を受けられます。","name":"名前","namePlaceholder":"田中 太郎","email":"メールアドレス","emailPlaceholder":"friend@company.com","emailTitle":"メールで招待する","sendInvite":"招待を送る","sendInviteShort":"送信","inviteSendFailed":"招待メールを送信できませんでした。もう一度お試しください。","shareDirectly":"下記リンクを直接共有することもできます。","copyLink":"招待リンクをコピー","linkCopied":"リンクをコピーしました","copyFailed":"リンクをコピーできませんでした。もう一度お試しください。","statsTitle":"招待状況","statsDescription":"招待による成果をひと目で確認できます。","joinedFriends":"登録した友だち","joinedFriendsDescription":"招待リンクから登録を完了した人数です。","currentReward":"利用可能なリワード","currentRewardDescription":"Webでのプランのお支払いに自動で適用されます。","rewardLockedCaption":"アプリ内で決済したサブスクリプションにはリワードを適用できません。ウェブ決済への切り替えはサポートまでお問い合わせください。","personUnit":"人"},"teamGuide":{"title":"メンバー管理ガイド","description":"ワークスペースのメンバー管理に必要な機能をご説明します。","tabs":{"roles":"役割について","invite":"メンバーを招待","removal":"メンバーを除外"},"roles":{"title":"ワークスペースメンバーには4つの役割があります。","noteView":"ノート閲覧","noteEdit":"ノート作成・編集","billing":"課金","teamManagement":"メンバー管理","billingNote1":"ノートを作成・編集するには、ワークスペースシートを占有する必要があり、この場合課金が発生します。","billingNote2":"Unpaid AdminとViewerはノートを作成・編集できず、課金対象ではありません。","billingNote3":"AdminとMemberはそれぞれ月額$29の有料シートを使用します。","billingNote4":{"prefix":"詳細は","link":"こちら","suffix":"をご参照ください"}},"invite":{"title":"管理者権限があるメンバーのみ招待できます。","requiredInfo":{"title":"必須項目","emailLabel":"メールアドレス","emailDescription":"（招待メールが送信されます）","emailPlaceholder":"marcus@gmail.com"},"optionalInfo":{"title":"任意項目","memoLabel":"メモ","memoDescription":"（所属、役職など）","memoPlaceholder":"マーケティング、デザイン担当"},"process":{"title":"招待プロセスのご案内","items":["招待するとユーザーにメールが送信され、承諾するとすぐにメンバーとして登録されます。","メンバーを追加招待すると、招待を承諾した時点で有料シートが追加され、残り期間分の料金は日割り計算され、次回の請求書に反映されます。","招待メールを再送するには、保留中の招待を取り消してから、もう一度招待してください。"]}},"removal":{"title":"管理者権限があるメンバーのみ除外できます。","afterRemoval":{"title":"除外後の流れ","items":["対象メンバーは即時チームプランから除外されます。","ワークスペース単語帳などの共有機能にアクセスできなくなり、チームプランの特典も利用できません。","すでにお支払い済みの現在の請求期間の料金はそのまま維持され、残り期間分の返金や控除はありません。","減少後の人数は次回の請求日から反映されます。"]},"memberData":{"title":"除外されたメンバーのデータ","items":["メンバーが記録したノートは削除されず、本人のアカウントに残ります。","共有コンテンツ（ワークスペース単語帳、テンプレートなど）はワークスペースに残りますが、除外されたメンバーはアクセスできません。","除外されたメンバーが他メンバーを共同編集者として招待した場合、招待されたメンバーは引き続きノートにアクセスできます。"]}},"permissions":{"changeableTitle":"変更可否","conditionTitle":"条件","possibilityTitle":"可否","memberToAdmin":{"condition":"いつでも可能"},"adminToMember":{"condition":"いつでも可能"},"adminToCreator":{"condition":"メール認証が必要"},"creatorChange":{"title":"Creatorの変更","condition":"退職・異動時にAdminが指定可能（書類認証が必要な場合はTiroがサポート）"},"caution":{"title":"注意事項","description":"Creator権限を変更すると、元のCreatorの権限は自動的にAdminへ変更されます。"},"recovery":{"title":"アカウントの復旧","description":"Creatorが誤ってアカウントを削除した場合でも、7日以内であれば復旧可能です。"},"bestPractices":{"title":"権限設定のベストプラクティス","items":["<span className=\\"font-medium\\">ワークスペース作成時に</span>慎重にCreatorを指定しましょう。","<span className=\\"font-medium\\">組織構造に応じて</span>AdminとMemberを適切に割り振ることを推奨します。","<span className=\\"font-medium\\">権限を変更する前に</span>該当メンバーへ事前に通知し、混乱を防ぎましょう。"]}}},"plans":{"recordingOveragePlanChangeTooltip":"追加記録をオンにしている間は、プランを変更できません。","upgradeCta":{"paid":{"cta":"チームプランにアップグレード","ctaMax":"Maxにアップグレード","ctaPro":"Proにアップグレード","ctaMaxStart":"Maxではじめる"}},"lockedForTeam":"他のメンバーと一緒に利用しているワークスペースでは、チームプランのみご利用いただけます。","teamUpgradeInAppGuide":{"title":"チームプランはPCからのみご登録いただけます","description":"現在モバイルのアプリ内課金で個人プランをご利用中のため、チームプランの決済を直接進めることができません。以下のいずれかの方法でご対応ください。","option1":"モバイルアプリでアプリ内課金を解約し、サブスクリプションが終了したあとにPCからチームプランをご登録ください。","option2":"新しいワークスペースを作成して、そこからチームプランをご登録ください。","option3":"上記の方法が難しい場合は、カスタマーサポートまでお問い合わせください。","contactSupport":"お問い合わせ"},"currencyToggle":{"label":"決済通貨","usd":"米ドル (USD)","krw":"韓国ウォン (KRW)","jpy":"円 (JPY)"},"currencyCheckoutLink":{"lockedFallback":"このアカウントは海外カード（USD）決済に設定されているため、USDで進みます。"}}}`,
+  ),
+  R = {
+    subscribePlan: "プランを契約",
+    managePlan: "プラン管理",
+    deleteLabelTitle: "フォルダの削除",
+    deleteLabelMessage:
+      "このフォルダを削除しますか？フォルダが付けられたノートは残りますが、フォルダは完全に削除されます。",
+    deleteLabelHasChildrenWarning:
+      "このフォルダにはサブフォルダがあります。先にサブフォルダを削除してから、このフォルダを削除してください。",
+    deleteLabelConfirm: "フォルダを削除",
+    deleteLabelCancel: "キャンセル",
+  },
+  N = JSON.parse(
+    '{"removeParticipant":"参加者を削除","diarizationFailed":{"title":"話者分離を完了できませんでした。","description":"文字起こしはそのままご利用いただけます。\\nサポートが必要な場合は、右下のお問い合わせを開いてください。"},"create":{"failed":"ノートの作成に失敗しました","permissionDenied":{"title":"記録権限がありません","description":"このワークスペースでノートを作成したり記録を開始したりする権限がありません。管理者に権限変更を依頼してください。"},"restrictNonOrgWorkspace":{"title":"このワークスペースには新しいノートを作成できません","description":"組織ワークスペースでのみ新しいノートを作成できます。\\n組織ワークスペースに切り替えてからもう一度お試しください。"}},"item":{"label":"ノート","collaborators":{"moreCount":"他{{count}}名"}},"tooltip":{"close":"閉じる","openInFullView":"全画面表示"},"endNote":{"button":"記録終了","tooltip":"記録を終了すると、ワンページのドキュメントが作成されます。\\n一度終了すると、記録を再開することはできません。"},"bulk":{"selectedCount":"{{count}}件選択中","more":"その他","clearSelection":"選択を解除","deleteAll":"選択したノートを削除","downloadAll":"選択したノートをダウンロード","download":{"title":"選択したノートをダウンロード","description":"選択した<b>{{count}}件</b>のノートをダウンロードします","note":"要約","transcript":"スクリプト","onePager":"ワンペーガー","success":"{{count}}件のノートをダウンロードしました","error":"ノートのダウンロードに失敗しました"},"delete":{"title":"選択したノートを削除","description":"選択した{{count}}件のノートを本当に削除しますか？この操作は元に戻せません。","confirm":"削除","cancel":"キャンセル","deleting":"削除中...","success":"{{count}}件のノートが削除されました","error":"ノートの削除に失敗しました"},"move":{"title":"移動","description":"選択された{{count}}件のノートを移動します","selectFolder":"フォルダーを選択してください","success":"{{count}}件のノートを移動しました","partialSuccess":"{{successCount}}件のノートを移動しました。{{failCount}}件は失敗しました","error":"ノートの移動に失敗しました。もう一度お試しください。","workspace":{"empty":"他のワークスペースがありません","selectPrompt":"ワークスペースを選択してください"},"button":{"cancel":"キャンセル","move":"移動"}},"action":{"addToFolder":"フォルダに追加","moveToWorkspace":"ワークスペース移動"},"addToFolder":{"title":"フォルダに追加","description":"選択した<b>{{count}}件</b>のノートをフォルダに追加します","save":"保存","empty":"フォルダがまだありません","success":"{{count}}件のノートをフォルダに追加しました","partialError":"一部のノートをフォルダに追加できませんでした","error":"フォルダへの追加に失敗しました。もう一度お試しください。"},"moveToWorkspace":{"title":"ワークスペース移動","description":"選択した<b>{{count}}件</b>のノートを別のワークスペースに移動します。\\n現在のワークスペースからは消えます。","current":"現在","move":"移動"}},"topbar":{"lang":{"title":"言語設定","listen":"会話言語","listenCaption":"参加者が話す言語","write":"記録言語","writeCaption":"ノートが保存される言語","footnote":"一部の言語は認識品質が低い場合があります"},"record":{"startRealtime":"リアルタイム記録開始","startRealtimeCaption":"リアルタイムで会話を録音し、AIが自動で変換します","startOffline":"オフライン録音を開始","startOfflineCaption":"インターネット接続なしで録音し、後でノートに変換します","uploadFile":"ファイルアップロード","uploadFileCaption":"既存の音声ファイルをアップロードしてノートに変換します"}},"sidebar":{"title":"メニュー","open":"メニューを開く"},"folder":{"allNotes":"すべてのノート","trash":"削除したノート","sharedNotes":"共有されたノート","inbox":"インボックス","inboxDescription":"フォルダが設定されていないノートです","privateMasked":"非公開フォルダ","accessDenied":{"title":"アクセス権限のないフォルダです。"},"addToFolder":"フォルダに追加","viewerCannotChange":"共有されたノートはフォルダの場所を指定したり変更したりできません","addChip":"フォルダ","usage":{"warning":"まもなく上限に達します"},"upgrade":{"cta":"Proにアップグレード"},"section":{"private":"PRIVATE","workspace":"WORKSPACE"},"favorites":{"section":"FAVORITES","add":"お気に入りに追加","remove":"お気に入りから削除","loadError":"お気に入りを読み込めませんでした","toast":{"addError":"お気に入りに追加できませんでした。もう一度お試しください。","removeError":"お気に入りから削除できませんでした。もう一度お試しください。"}},"expand":"展開","collapse":"折りたたむ","teamInviteNudge":{"tooltip":"ワークスペースにメンバーを招待すると、ワークスペースフォルダに追加したノートが自動で一緒に共有されます。","cta":"メンバーを招待"},"create":{"title":"フォルダを作成","subtitle":"下のテンプレートを使って簡単にフォルダを作成できます","titleAndIcon":"フォルダ名","namePlaceholder":"わかりやすい名前を入力","description":"説明","descriptionPlaceholder":"フォルダの目的を簡潔に説明","access":"アクセス権限","create":"フォルダを作成","cancel":"キャンセル","createSubfolderUnder":"サブフォルダとして作成"},"tab":{"info":"フォルダ情報","automation":"自動化設定"},"config":{"popover":{"edit":"フォルダ設定","view":"フォルダ情報","delete":"フォルダを削除","move":"フォルダを移動","cannotAccess":"このフォルダ情報を確認する権限がありません","cannotAddNote":"このノートをフォルダに追加するには、ノートの編集権限が必要です。","cannotEditFolder":"このフォルダにノートを追加するには、フォルダの編集権限が必要です。","createSubfolder":"サブフォルダを作成"}},"creator":{"createdByMe":"自分が作成したフォルダ","creator":"フォルダ所有者"},"settings":{"title":"フォルダ設定"},"view":{"title":"フォルダー情報"},"template":{"userInterview":"ユーザーインタビュー","userInterviewDescription":"顧客インタビューの内容と重要な洞察を整理します","projects":"プロジェクト","projectsDescription":"プロジェクトの会議、進捗、決定事項を一箇所で管理します","salesMeeting":"営業ミーティング","salesMeetingDescription":"営業会議と顧客面談の記録で成果を追跡します","teamMeeting":"チームミーティング","teamMeetingDescription":"定期的なチーム会議と業務の議論内容を共有・管理します","oneOnOne":"1対1面談","oneOnOneDescription":"個別面談とフィードバックを記録し成長をサポートします","lectureNotes":"講義ノート","lectureNotesDescription":"講義、セミナー、教育内容を体系的に整理し復習に活用します","coffeeChat":"コーヒーチャット","coffeeChatDescription":"非公式な会話とネットワーキングの機会を記録します"},"access":{"private":"個人用","sharedWithDescription":"特定のチームメンバーまたは外部ユーザーと共有","sharedBadge":"共有フォルダ","specificMembers":"チームの特定メンバーと共有","allTeamMembersReadonly":"チーム全員と共有（閲覧のみ）","allTeamMembersEditor":"チーム全員と共有（編集者）","searchMembers":"チームメンバーを検索","teamMember":"チーム","inviteEmail":"メールで招待","noMembers":"共有するチームメンバーがいません","noSearchResults":"検索結果がありません"},"search":{"placeholder":"フォルダを検索","noResults":"検索結果がありません","section":"フォルダ"},"empty":"フォルダがありません","success":{"created":"フォルダが作成されました","deleted":"フォルダが削除されました"},"move":{"title":"{{folderName}}を移動","currentLocation":"現在の場所","selectLocation":"フォルダの移動先を選択してください","button":{"cancel":"キャンセル","move":"移動"},"selectedLocation":"選択された場所","success":"フォルダが移動されました","error":{"circularReference":"フォルダを自分のサブフォルダに移動することはできません","notFound":"フォルダが見つかりません","forbidden":"このフォルダを移動する権限がありません","maxDepthReached":"フォルダの深さは最大5階層まで","failed":"フォルダの移動に失敗しました。もう一度お試しください。"}},"error":{"duplicatePersonalFolder":"同名の個人フォルダが既に存在します","duplicateTeamFolder":"同名のチームフォルダが既に存在します","createFailed":"フォルダの作成に失敗しました。もう一度お試しください。","maxDepthReached":"これ以上サブフォルダを作成できません"},"automation":{"config":{"success":{"update":"フォルダ設定が更新されました","delete":"フォルダ設定が削除されました"},"error":{"update":"フォルダ設定の更新に失敗しました","delete":"フォルダ設定の削除に失敗しました"}},"description":"フォルダごとにノート情報と共有オプションを自動化できます。\\nフォルダで新しいノートを作成すると、ここで指定した情報がデフォルトとして適用されます。\\nまた、ノートの記録が終了したときに自動的に生成するカスタム文書を設定することもできます。","noteSettings":"ノートのデフォルト","noteTitle":"タイトル","noteTitlePlaceholder":"このフォルダ内の新しいノートのデフォルトタイトル","participants":"参加者","participantsSearchPlaceholder":"名前またはメールアドレスで検索","participantsAdd":"追加","participantsAddAsEmail":"メールアドレスとして追加","participantsAddAsName":"名前として追加","participantsSearchNoResults":"検索結果がありません","customDocument":"カスタム文書","templateSelect":"テンプレートを選択","templateSearchPlaceholder":"テンプレートを検索","templateSearchEmpty":"テンプレートが見つかりません。","selectedTemplates":"{{title}}ほか{{count}}件","templateSelected":"選択済み","templateNotSelected":"未選択","autoShareSettings":"自動共有設定","saving":"保存中...","noteSettingsDescription":"このフォルダで新しいノートが作成されるときに自動適用","addTrigger":"連携を追加"},"toast":{"createError":"フォルダの作成に失敗しました","deleteError":"フォルダの削除に失敗しました","deleteErrorHasChildren":"サブフォルダがあるため削除できません。先にサブフォルダを削除してください。","updateError":"フォルダの更新に失敗しました","noteAddError":"ノートをフォルダに追加できませんでした","noteRemoveError":"ノートをフォルダから削除できませんでした","userAddError":"メンバーの追加に失敗しました","userRemoveError":"メンバーの削除に失敗しました","userUpdateError":"メンバー権限の変更に失敗しました","userUpdateNotSharable":"共有できないノートがあります","userUpdateNotSharableDescription":"このフォルダには、あなたに共有権限がないノートが含まれているため、権限を変更できません。既存のフォルダ所有者または編集者に権限の変更を依頼してください。","createForbidden":"フォルダを作成する権限がありません。管理者に権限の変更を依頼してください。","deleteForbidden":"フォルダを削除する権限がありません。管理者に権限の変更を依頼してください。","updateForbidden":"フォルダを編集する権限がありません。管理者に権限の変更を依頼してください。","noteAddForbidden":"ノートをフォルダに追加する権限がありません。管理者に権限の変更を依頼してください。","noteAddNotePermissionForbidden":"このノートをフォルダに追加するには、ノートの編集権限が必要です。\\nノート所有者に権限の変更を依頼してください。","noteAddFolderPermissionForbidden":"このフォルダにノートを追加するには、フォルダの編集権限が必要です。\\nフォルダ所有者に権限の変更を依頼してください。","noteRemoveForbidden":"ノートをフォルダから削除する権限がありません。管理者に権限の変更を依頼してください。","userUpdateForbidden":"フォルダメンバーの権限を変更する権限がありません。管理者に権限の変更を依頼してください。"}},"delete":"削除","audio":{"toggle":{"tooltip":"音声を再生"}},"translate":{"toggle":{"tooltip":"翻訳済みスクリプトを表示"}},"creatorMode":{"note":"要約","transcript":"スクリプト","withTranscript":"要約とスクリプト","document":"文書","generateNote":"カスタム文書を作成"},"detailTab":{"document":"文書","transcript":"原文","summary":"要約","script":"スクリプト"},"documentTab":{"thisNotesDocuments":"このノートの文書","recommendedTemplates":"おすすめテンプレート","allTemplates":"すべてのテンプレートを見る","createNewTemplate":"新規テンプレート作成","regenerateDocument":"文書を再作成","deleteDocumentWithName":"「{{templateName}}」文書を削除","deleteLanguageVersion":"この{{language}}版を削除","deleteTemplateDocuments":"「{{templateName}}」の文書をすべて削除","selectTemplate":"文書を作成","generatedLanguages":"作成済みの言語","availableLanguages":"別の言語で作成","deletedTemplateTooltip":"テンプレートが削除されたため、このテンプレートでは再作成できません。","generateDisabledTooltip":"内容がある状態で一時停止するか、録音を終了すると文書を作成できます。","showCitations":"出典を表示"},"documentEmpty":{"activeTitle":"録音終了時に文書が自動作成されます","activeDefaultDescription":"自動作成テンプレート: {{templateNames}}","activeAutomationDescription":"作成予定の文書: {{templateNames}}","activeDescription":"録音終了後すぐに確認できます。","endedTitle":"文書を作成しています","endedDescription":"作成中の文書: {{templateNames}}","endedSubDescription":"準備ができ次第、ここに表示されます。","configuredTemplates":"フォルダ自動化文書","noTemplateTitle":"自動作成予定の文書はありません","noTemplateDescription":"内容がある状態で一時停止するか録音を終了した後、文書を作成からテンプレートを選択できます。","pausedTitle":"ここまでの会話で文書を作成できます","pausedDefaultDescription":"自動作成テンプレート: {{templateNames}}","pausedAutomationDescription":"作成予定の文書: {{templateNames}}","pausedDescription":"今すぐ文書を作成し、録音を続けられます。","generateNow":"今すぐ文書を作成"},"trash":{"empty":"削除したノートはありません。","restore":"復元","permanentDelete":"完全に削除","permanentDeleteTitle":"このノートを完全に削除しますか？","permanentDeleteMessage":"このノートは完全に削除され、復元できません。","permanentDeleteConfirm":"完全に削除","deletedOn":"削除日：{{date}}","daysUntilPurge":"あと{{count}}日で完全に削除","purgeToday":"本日、完全に削除予定","emptyAll":"すべて削除","emptyAllTitle":"削除したノートをすべて完全に削除しますか？","emptyAllMessage":"すべてのノートが完全に削除されます。この操作は元に戻せません。","emptyAllConfirm":"すべて完全に削除","emptyAllError":"すべてのノートの削除に失敗しました"},"list":{"mobileAppDownload":"モバイルアプリをインストール","giftTiro":"Tiroをプレゼントして最大$8を獲得","deleteNoteTitle":"このノートを削除しますか？","deleteNoteMessage":"削除したノートは30日間保管されます。保管期間中はいつでも復元できます。","deleteNoteConfirm":"削除","deleteNoteCancel":"キャンセル","leaveNoteTitle":"共同作業ノートから退出しますか？","leaveNoteMessage":"一度退出するとこのノートには再アクセスできません。\\n再び参加するには新たな招待が必要です。","leaveNoteConfirm":"退出する","leaveNoteCancel":"キャンセル","emptyFolder":{"title":"まだノートがありません。","description":"このフォルダに最初のノートを追加してみてください。"},"emptyAllNotes":{"title":"まだノートがありません。","description":"記録を開始して、最初のノートを作成してみましょう。"},"emptyInbox":{"title":"受信トレイは空です。","description":"どのフォルダにも属していないノートがここに表示されます。"},"accessDenied":{"title":"このフォルダへのアクセス権限がありません。","description1":"管理者権限でフォルダ一覧は確認できますが、内部のノートは確認できません。","description2":"ノートを確認するには、フォルダ所有者に権限を依頼してください。"},"untitled":"タイトルなしのノート"},"shared":{"emptyTitle":"共有されたノートはありません。","emptyDescription":"他のユーザーがノートを共有すると、ここに表示されます。"},"search":{"unified":{"placeholder":"ノートとフォルダを検索","empty":"検索キーワードを入力してください","noResults":"検索結果がありません","dateFilter":"日付","allDates":"すべての期間","foldersSection":"フォルダ","notesSection":"ノート","hint":{"select":"選択","close":"閉じる"}}},"audioReplay":{"loading":"音声を準備しています。","expired":"保存期間が過ぎたため、この音声は再生できません。","loadError":"音声を読み込めませんでした。時間をおいて、もう一度お試しください。","play":"再生","pause":"一時停止","seek":"再生位置を移動","rewind":"10秒戻る","forward":"10秒進む"},"paragraph":{"locked1":"無料体験中はノートあたり50分まで記録可能です。","locked2":"ただし会話の途中で記録が途切れないよう、記録自体は続けています。","locked3":"プランをアップグレードすると、最大300分まで記録された内容を確認できます。","locked4":"ご安心ください。無料体験の使用量には50分までしかカウントされません。","deleteParagraphTitle":"段落を削除","deleteParagraphMessage":"この操作は取り消せません！個人情報保護のため、この段落と関連データは完全に削除されます。","deleteParagraphConfirm":"削除","deleteParagraphCancel":"キャンセル","selectedCount":"{{count}}個選択","deleteSelected":"削除","cancelSelection":"選択解除","noEditPermission":"ノートを編集する権限がありません","selectMode":"段落選択","selectParagraph":"選択","toast":{"updateError":"段落の更新に失敗しました"}},"payToUnlock":{"recordingTitle":"無料の記録時間を超えました。","trialTitle":"Tiro無料体験中 D-{{days}}","body":"ノート後半の<b>スクリプト・要約・翻訳・Ask Tiro・共有が制限</b>されます。","recordingCta":"登録して解除","endedCta":"登録して解除","collapse":"折りたたむ","expand":"展開","lockedMinutesTitle":"{{minutes}}分の会話がロックされています。","expandedBody":"現在、ノート後半の<b>要約・翻訳・Ask Tiro・共有</b>はご利用いただけません。","upgradeIntro":"<b>Pro</b>または<b>Max</b>にアップグレードすると","benefit1":"<b>ロックされた発言と決定事項</b>をすべて<b>Unlock</b>","benefit2":"要約・翻訳・Ask Tiro・共有の<b>制限を解除</b>","benefit3":"ノートあたり<b>最大300分</b>まで途切れず記録","benefit4":"<b>話者分離されたスクリプト</b>を保持"},"upgradePlan":"プランをアップグレード","detail":{"context":{"title":"文脈を入力","placeholder":"例：AI専門家によるウェビナー「AIの未来トレンド」に参加中のマーケターです。\\n非専門家にも分かりやすく説明し、AI専門用語は英語と韓国語を併記してください。","previousContexts":"過去のメモ","addContextInSummary":"要約にメモを追加","fileUpload":{"title":"ファイルアップロード(最大5件)","add":"添付","dragText":"ファイルをアップロードしてください\\npdf, image, text, md, csv","acceptedFormats":"pdf, image, text, md, csv","dragActiveText":"ファイルをアップロードしてください","limitReached":"最大{{max}}件までアップロードできます","uploadSuccess":"ファイルが正常にアップロードされました。","uploadFailed":"ファイルのアップロードに失敗しました。","deleteSuccess":"ファイルが正常に削除されました。","deleteSuccessDescription":"ファイルが正常に削除されました。","deleteFailed":"ファイルの削除に失敗しました。","deleteFailedDescription":"ファイルの削除中にエラーが発生しました。","limitExceeded":"最大{{max}}件までアップロードできます。","fileSizeExceeded":"1つのファイルは最大20MBまでアップロードできます。","pastedImageSuccess":"画像がアップロードされました","pastedImageFailed":"画像のアップロードに失敗しました","delete":"ファイルを削除","pastedImageTooLarge":"画像サイズが大きすぎます（最大20MB）","pastedImageLimitExceeded":"最大{{max}}個までファイルを添付できます","unsupportedImageFormat":"サポートされていない画像形式です","someFilesUnsupported":"対応していない形式のファイルは除外しました。","toast":{"uploadError":"ファイルのアップロードに失敗しました","deleteError":"ファイルの削除に失敗しました","clearAllError":"ファイルの全削除に失敗しました"}}},"language":{"write":"記録言語","listen":"会話言語"},"microphone":{"blocked":{"title":"マイクへのアクセスがブロックされています。","description":"ブラウザの設定からマイクの使用を許可してから再試行してください。"},"unavailable":{"title":"マイクを開始できませんでした","description":"マイクが接続されていることを確認し、Zoom、Google Meet、Teamsなどマイクを使用するアプリを閉じてから、もう一度お試しください。解決しない場合は、マイクをつなぎ直すか、ページを再読み込みしてください。"},"notFound":{"title":"使用できるマイクが見つかりません","description":"マイクの接続とシステムの入力設定を確認してから、もう一度お試しください。"},"selectedDeviceUnavailable":{"title":"選択したマイクを使用できません","description":"別のマイクを選択するか、マイクが接続されていることを確認してから、もう一度お試しください。"},"interrupted":{"title":"マイクとの接続が中断されました","description":"しばらくしてから、もう一度お試しください。"},"browserUnavailable":{"title":"現在のブラウザではマイクを使用できません","description":"別のブラウザでtiro.oooを直接開いて、もう一度お試しください。"},"recordingInProgress":"会話の記録が進行中です。記録を先に停止してください。","deviceConnected":"{{deviceName}}が接続されました。","gain":"マイク感度"},"systemAudio":{"gain":"システムオーディオ","label":"システムオーディオ","tooltip":"ビデオ通話や動画など、コンピューターで再生される音を録音します。","desktopApp":"デスクトップアプリ","desktopCTASuffix":"で有効化してください。"},"screen":{"blocked":{"description":"システム設定で画面共有の許可を行ってから再度お試しください。","title":"画面共有がブロックされています！"}}},"summary":{"writing":"記録中…","writingDescription":"段落が完成すると、スクリプトの内容がさらに正確になります。","retry":"段落の要約を再生成","toast":{"updateError":"要約の更新に失敗しました"}},"share":{"more":"詳細","scopeRequired":"共有リンクのアクセス範囲を先に調整してください","scopeRequiredDescription":"アカウント設定で共有範囲の初期設定が「招待された人のみ」になっているため、範囲を変更すると共有リンクを作成できます。","linkDisabled":"リンクへのアクセスが停止されています","linkDisabledDescription":"共有範囲を選ぶと、リンクを再び有効にできます。","link":{"title":"リンクをコピー","rowTitle":"共有リンク","stateLive":"共有リンクは有効です","stateStopped":"共有リンクは停止中です","stateNone":"共有リンクはありません","accessTitle":"共有範囲","anyoneWithLink":"リンクを知っている全員","onlyMyCompany":"社内メンバーのみ","passwordProtected":"パスワードで保護","disabled":"リンク無効","show":"表示","hide":"非表示","generating":"生成中…","linkCopy":"リンクをコピーする","linkCopyAria":"共有リンクをコピー","linkCopied":"共有リンクをコピーしました"},"collaborator":{"title":"権限設定","placeholder":"名前またはメールアドレスで検索","success":"{{email}}さんをノートに招待しました。","failed":"{{email}}さんを招待できませんでした。再試行してください。","remove":"削除","button":"招待する","addNewEmail":"新しいメールアドレスを追加","viewer":"閲覧のみ","editor":"編集者","owner":"オーナー","hasBeenRemoved":"さんがノートから削除されました。","inviteAll":"すべての{{count}}メンバーを招待","noTeamMembers":"利用可能なチームメンバーがいません","noCollaborators":"まだコラボレーターがいません","deleteCollaborator":"コラボレーターを削除","teamMembersInviteSuccess":"{{count}}人のチームメンバーを招待しました","teamMembersInviteFailed":"{{count}}人のチームメンバーの招待に失敗しました","roleUpdateSuccess":"{{email}}さんの役割を{{role}}に変更しました","roleUpdateFailed":"役割の更新に失敗しました","nonMemberError":"チームメンバーではないため招待できません","domainNotAllowedError":"許可されていないワークスペースのユーザーです","teamDirectory":"チームメンバー","add":"追加","noSearchResults":"検索結果がありません","currentCollaborators":"現在の共同作業者","toast":{"updateError":"共同作業者の変更に失敗しました","deleteError":"共同作業者の削除に失敗しました"}},"createLink":{"button":"共有する","success":"共有リンクを作成しました","failed":"リンク共有に失敗しました。もう一度お試しください。","linkSharingNotAllowed":"このチームではリンク共有が許可されていません。\\n管理者にお問い合わせください。","noteUnavailable":{"title":"共有に必要なノート情報を確認できませんでした。","description":"Escキーで現在のノートを閉じ、ノート一覧から共有するノートを選び直して、もう一度共有してください。"},"networkError":{"title":"Tiroに接続できませんでした。","description":"インターネット接続を確認して、もう一度お試しください。"}},"includeShareLink":"共有リンクを添付","includeShareLinkCreate":"共有リンクを作成","includeShareLinkNeedsScope":"ノートの共有設定で共有リンクのアクセス範囲を先に調整してください。","deleteLink":{"button":"共有を停止"},"slack":{"title":"Slackに共有する","to":"送信先","searchChannelPlaceholder":"チャンネルを検索","message":"メッセージ","messagePlaceholder":"ノートと一緒に共有するメッセージを入力してください…","threadContent":"スレッドに投稿する内容","optionalMessage":"チャンネルメッセージ（任意）","sendContentAsReplies":"選択した内容をSlackスレッドに投稿","post":"Slackに送信","posting":"Slackに送信中...","success":{"description":"Slackに送信しました。","open":"Slackで表示"},"error":{"description":"Slackに送信できませんでした。"},"noChannels":"チャンネルが見つかりませんでした。","searching":"チャンネルを読み込み中..."},"notion":{"title":"Notionに保存する","parentPage":"保存先","destination":"保存先","searchDestinationPlaceholder":"ページまたはデータベースを検索","page":"ページ","database":"データベース","contentToInclude":"含める内容","create":"Notionに保存","success":{"description":"Notionに保存しました。","open":"Notionで開く"},"error":{"description":"Notionに保存できませんでした。","blockLimit":{"title":"Notionに保存する内容が多すぎます。","description":"含める内容を減らし、100ブロック以下にしてもう一度お試しください。"}},"noPages":"検索結果がありません","searching":"検索中..."},"googleDrive":{"title":"Google Docsにエクスポート","connectedAccount":"連携中のアカウント","destination":"フォルダ","defaultFolder":"Tiro","willCreateFolder":"マイドライブに新しく作成して保存します。","selectFolder":"フォルダを選択","selectFolderOpensBrowser":"フォルダの選択画面はブラウザで開きます。","saveAsDefault":"デフォルトのフォルダにする","contentToInclude":"含める内容","create":"エクスポート","success":{"description":"「{{folder}}」フォルダにエクスポートしました。","open":"Driveで開く"},"error":{"description":"Google Docsにエクスポートできませんでした。\\nしばらくしてからもう一度お試しください。"},"picker":{"error":"フォルダ選択画面を開けませんでした。\\nしばらくしてからもう一度お試しください。"},"pickerPage":{"title":"Google ドライブのフォルダを選択","loading":"フォルダ選択画面を開いています","returning":"Tiroアプリに戻っています","error":"フォルダ選択画面を開けませんでした。Tiroアプリからもう一度お試しください。","openApp":"Tiroを開く"}},"microsoftTeams":{"title":"Microsoft Teamsに共有","destination":"送信先","channelDestination":"チャンネル","directMessageDestination":"1対1のメッセージ","team":"チーム","channel":"チャンネル","recipient":"送信相手","selectTeam":"チームを選択してください","selectChannel":"チャンネルを選択してください","selectRecipient":"送信相手を選択してください","selectTeamFirst":"先にチームを選択してください","searchTeam":"チームを検索","searchChannel":"チャンネルを検索","recipientSource":"送信先を探す","organizationSource":"組織のメンバー","recentSource":"最近のチャット","organizationDescription":"組織のメンバーを名前やメールアドレスで検索します。","recentDescription":"最近の1対1のチャットから探します。外部の相手も含みますが、古いチャットは表示されない場合があります。","noRecentChats":"最近のチャットはありません。","noRecentMatches":"最近のチャットに一致する相手がいません。","searchPeople":"名前またはメールアドレスで検索","loading":"読み込み中…","noTeams":"共有できるチームがありません","noChannels":"共有できるチャンネルがありません","typeAtLeastTwo":"2文字以上入力してください","noPeople":"該当するメンバーが見つかりませんでした","loadError":"一覧を読み込めませんでした。しばらくしてからもう一度お試しください。","retry":"再試行","authorizationExpired":"Microsoft Teamsとの連携の有効期限が切れました。再連携してください。","reconnect":"再連携","reconnectError":"Microsoft Teamsを再連携できませんでした。\\nしばらくしてからもう一度お試しください。","channelContentDescription":"選択したコンテンツはこのメッセージへの返信として送信されます。","directMessageContentDescription":"選択したコンテンツは続けて別のメッセージとして送信されます。","summary":"要約","transcript":"文字起こし","post":"Teamsに共有","posting":"共有中…","success":"Microsoft Teamsに共有しました。","open":"Teamsで表示","destinationPermissionError":"Microsoft Teamsで選択した送信先にメッセージを送れません。\\n直接メッセージを送れる別のチャンネルまたは相手を選択してください。","error":"Microsoft Teamsに共有できませんでした。\\n連携状態と送信先の権限をご確認ください。"},"confluence":{"title":"Confluenceに保存する","selectSpacePlaceholder":"Spaceを選択してください","searchParentPagePlaceholder":"親ページを検索してください","create":"Confluenceに保存","contentToInclude":"含める内容","success":{"description":"Confluenceに保存しました。","open":"Confluenceで開く"},"error":{"description":"Confluenceに保存できませんでした。"},"cloud":"Cloud","space":"Space","parentPage":"親ページ","noPages":"ページが見つかりませんでした","searching":"検索中...","searchSpacePlaceholder":"Spaceを検索","recentSpaces":"最近使用したSpace","otherSpaces":"他のSpace","noSpaces":"Spaceが見つかりませんでした","selectCloudPlaceholder":"サイトを選択してください","searchCloudPlaceholder":"サイト検索","noClouds":"サイトが見つかりませんでした"},"hubspot":{"title":"HubSpotに記録する","meetingTitle":"ミーティングタイトル","companySearch":"会社検索","contactSearchOptional":"連絡先検索（任意）","meetingTitlePlaceholder":"ミーティングタイトルを入力してください","companySearchPlaceholder":"会社名で検索","contactSearchPlaceholder":"名前またはメールで検索","contentToInclude":"含める内容","note":"要約","transcript":"スクリプト","connected":"接続済み","recording":"記録中...","record":"HubSpotに記録する","defaultMeetingTitle":"ミーティングノート","success":{"title":"HubSpotに記録しました。","open":"HubSpotで開く"},"error":{"title":"HubSpotに記録できませんでした。","selectCompany":"会社を選択してください。","enterTitle":"ミーティングタイトルを入力してください。"},"noCompanies":"会社が見つかりませんでした","noContacts":"連絡先が見つかりませんでした","searching":"検索中..."},"salesforce":{"title":"Salesforceに記録する","connected":"接続先の組織","moreOptions":"追加設定","subject":"件名","subjectPlaceholder":"予定の件名を入力してください","event":"Salesforceの予定","newEvent":"新しい予定を作成する","newEventBehavior":"新しい予定を作成し、選択した内容を説明欄に保存します。","recordAssociationRequired":"新しい予定を作成するには、顧客または見込み客のレコードを選択してください。","infoUnavailable":"Salesforceの設定を読み込めませんでした。この画面を閉じて、もう一度お試しください。","newEventSuccess":"新しい予定を作成し、議事録を説明欄に保存しました。","noteSavedToDescription":"ノートを予定の説明に保存しました。","noteAttachmentSkipped":"予定にノートを追加できませんでした。","noteAttachmentSkippedDescription":"管理者にChatterとNotesの設定・権限の確認をご依頼ください。","chooseEvent":"既存または新しい予定を選択する","existingEvents":"既存の予定","existingEventBehavior":"既存の予定の件名や関連付けは変更せず、説明欄を選択した内容で置き換えます。","existingEventSuccess":"既存の予定の説明欄を議事録で更新しました。","eventPlaceholder":"予定の件名で検索","noEvents":"録音時間付近の予定が見つかりませんでした。","description":"本文","targetType":"記録先","account":"取引先","opportunity":"商談","accountPlaceholder":"取引先名で検索","opportunityPlaceholder":"商談名で検索","searching":"検索中...","enterTwoCharacters":"2文字以上入力してください","noAccounts":"取引先が見つかりませんでした","noOpportunities":"商談が見つかりませんでした","noTarget":"取引先・商談に関連付けない","keepTarget":"既存の取引先・商談との関連付けを維持","participant":"参加者（任意）","participantType":"参加者の種類","contact":"取引先責任者","lead":"リード","participantPlaceholder":"名前で検索","noParticipant":"参加者を選択しない","keepParticipant":"既存の参加者を維持する","suggestedParticipants":"ノートの参加者からの候補","participantAutoSelected":"{{name}}さんを参加者として自動選択しました","participantsAutoSelected":"ノートの参加者{{count}}名を自動選択しました","participantsSelected":"参加者を{{count}}名選択","removeParticipant":"{{name}}さんを参加者から削除","optional":"任意","noParticipants":"参加者が見つかりませんでした。","leadUsesNoTarget":"リードの予定は取引先や商談と同時に関連付けできません","retry":"再試行","contentToInclude":"含める内容","export":"Salesforceに記録する","exporting":"記録中...","viewEvent":"予定を開く","expired":"Salesforceの連携期限が切れました。","reconnect":"再度連携する","error":{"enterDescription":"本文を入力してください。","contentTooLong":"本文は32,000文字まで記録できます。","search":"Salesforceで検索できませんでした。\\nしばらくしてからもう一度お試しください。","searchEvents":"既存の予定を読み込めませんでした。\\nしばらくしてからもう一度お試しください。","export":"Salesforceに記録できませんでした。\\n連携状態と権限を確認してください。","reconnect":"Salesforceを再度連携できませんでした。\\nしばらくしてからもう一度お試しください。"}},"pdf":{"title":"PDFでエクスポート","documentTitle":"ドキュメントのタイトル","documentTitlePlaceholder":"ドキュメントのタイトルを入力してください","contentToInclude":"含める内容","export":"エクスポート","success":{"description":"PDFにエクスポートしました。"},"error":{"description":"PDFにエクスポートできませんでした。"}},"email":{"title":"メールでエクスポート","documentTitle":"件名","documentTitlePlaceholder":"メールの件名を入力してください","contentToInclude":"含める内容","send":"メールアプリを開く","success":"メールアプリを開きました。","toast":{"nextStepError":"次のステップの送信に失敗しました"}},"share":"共有","title":"ノートの共有","passwordProtected":"パスワード保護","linkCopy":"リンクをコピー","linkPasswordCopy":"リンク・パスワードをコピー","linkPasswordCopied":"共有リンクとパスワードをコピーしました","linkCreatedAndCopied":"共有リンクを作成してコピーしました","linkCreatedAndCopiedDescription":"このリンクでノートを共有できます。","qr":{"title":"QRコード","password":"パスワード","saveImage":"画像を保存"},"noteNowPublic":"ノートが公開されました","passwordRemovedMessage":"パスワードが削除されました。","noteNowPasswordProtected":"ノートがパスワードで保護されました。","copyText":"内容をコピー","copyNote":"コピー","passwordProtectedNote":"ノートのパスワードを入力してください","conferencePasswordHint":"発表画面に表示されているパスワードを入力してください","copy":{"success":{"description":"内容がクリップボードにコピーされました"},"error":{"description":"内容をクリップボードにコピーできませんでした"},"original":"原文","translation":"訳文","textOption":"テキストをコピー","textDescription":"テキストのみをコピーします。","htmlOption":"HTMLでコピー","htmlDescription":"NotionやSlackなどに貼り付けられるHTML形式です。","markdownOption":"マークダウン(.md)でコピー","markdownDescription":"LLM、Notion、Obsidianなどで使いやすい標準マークダウン形式です。","linkCopied":"共有リンクをコピーしました","withTranscriptOption":"要約とスクリプトを一緒にコピー","withTranscriptDescription":"要約とスクリプトを段落ごとにまとめてコピーします。","timestampOption":"タイムスタンプと一緒にコピー","timestampDescription":"各段落の開始時間を含めてコピーします。"},"word":{"title":"Wordでエクスポート","contentToInclude":"含める内容","documentTitle":"ドキュメントのタイトル","documentTitlePlaceholder":"ドキュメントのタイトルを入力してください","export":"エクスポート","success":{"description":"Wordにエクスポートしました。"},"error":{"description":"Wordにエクスポートできませんでした。"}},"greenhouse":{"export":"Greenhouseにエクスポート","exportToGreenhouse":"Greenhouseに要約をエクスポート","candidateEmail":"候補者のメールアドレス","searchByEmail":"メールで候補者を検索","searching":"検索中...","candidateNotFound":"該当のメールアドレスの候補者が見つかりません","contentToInclude":"含める内容","connectedAs":"接続済みアカウント","defaultWorkspace":"デフォルトワークスペース","emailRequired":"候補者のメールアドレスが必要です","exportSuccess":{"description":"Greenhouseに要約を送信しました。","open":"Greenhouseで開く"},"toast":{"credentialSaveError":"Greenhouse認証の保存に失敗しました","noteAddError":"Greenhouseノートの追加に失敗しました","disconnectError":"Greenhouse連携の解除に失敗しました","settingsUpdateError":"Greenhouse設定の変更に失敗しました"}},"selectiveShare":{"contentPath":"{{group}} - {{name}}","limitReached":"要約と文書は種類ごとに最大{{count}}件まで選択できます","transcriptTranslationIncomplete":"まだ翻訳されていない段落があるため、訳文では共有できません。","transcriptTranslationUnavailable":"このノートには訳文がなくなったため、訳文では共有できません。選択を解除してください。","transcriptTranslationNoSpeaker":"訳文には話者の区別が表示されません。"},"sharedContent":"共有する内容","shareSettingsUpdated":"共有設定が更新されました","disabled":{"tooltip":"録音開始後に利用できます"},"access":{"title":"アクセス権限","linkDescription":{"public":"リンクを受け取った人は閲覧のみです","company":"会社アカウントでサインインした社内メンバーのみ閲覧できます","password":"パスワードを入力すると開けます","disabled":"招待された人のみアクセスできます"}},"loginNotice":{"title":"共有ノートを見るにはサインインが必要です","description":"このノートは社内メンバーにのみ公開されています。会社アカウントでサインインしてください。","invitedDescription":"このノートは招待された人のみ閲覧できます。招待されたアカウントでサインインしてください。"},"loadError":{"title":"一時的な問題が発生しました","description":"ノートを読み込めませんでした。しばらくしてからもう一度お試しください。","retryButton":"再試行"},"signupCta":{"title":"高精度なAI議事録、Tiro","description":"リアルタイム要約と多言語同時翻訳で自信を持って会話でき、必要な形式の文書を3秒で作成して共有できます。","button":"無料ではじめる"},"linkOptions":{"title":"共有リンクの設定","subtitle":"リンクを受け取った人は常に閲覧のみです","currentSetting":"現在の設定","generalAccess":"閲覧権限","anyoneWithLink":"リンクを知っている全員","onlyMyCompany":"社内メンバーのみ","peopleAtDomain":"{{domain}}のメンバーのみ","peopleAtDomainMore":"{{domain}} ほか{{count}}件のドメインのメンバーのみ","onlyInvited":"招待された人のみ","companyNeedsDomain":"社内メンバーのみを使うには、ワークスペース設定で会社ドメインを登録してください。","createCta":"共有リンクを作成","selectToActivate":"共有リンクなし","restrictedByWorkspace":"ワークスペースのポリシーにより一部の共有範囲が制限されています。"},"linkAccess":{"disabledDescription":"リンクを再開しても、URLと設定はそのままです。"},"linkRevoke":{"button":"リンクを無効にする","confirmTitle":"共有リンクを無効にしますか？","confirmDescription":"現在の共有リンクは無効になり、開けなくなります。再度共有すると、新しいURLの共有リンクが作成されます。","cancel":"キャンセル","success":"共有リンクを無効にしました。","failed":"共有リンクを無効にできませんでした。もう一度お試しください。"},"export":{"title":"エクスポート","description":"Slack・Notion・PDF などに書き出し","disabledTooltip":"録音を一時停止するとエクスポートできます","emptyTooltip":"エクスポートできる内容はまだありません","connect":"連携ページへ"},"recording":{"title":"記録中は共有できません","description":"録音を一時停止すると、共有リンクや招待を設定できます"},"back":"戻る","invite":{"placeholder":"名前またはメールを入力","roleLabel":"役割を選択"}},"mobile":{"appGuidePopup":{"text1":"ウェブでは画面が消えると記録が停止することがあります！","text2":"画面をオンにして","text3":"ご利用ください。","dontShowAgain":"今後表示しない","confirm":"確認"}},"summaryTemplates":{"title":{"onePager":"1ページ要約","meetingMinutes":"議事録","salesNote":"営業メモ","lectureNote":"講義ノート","interviewNote":"インタビュー","pitch":"IR・ピッチ","blogContent":"ブログ記事","jobInterview":"採用面接","oneOnOne":"1on1ミーティング","coffeeChat":"カジュアル面談","userInterview":"ユーザーインタビュー","pressRelease":"プレスリリース","shareholdersMeeting":"株主総会","customTemplate":"テンプレ一覧","createMyOwn":"マイテンプレ作成"},"example":{"onePager":"# スティーブ・ジョブズのビジネス立ち上げと起業家精神\\n\\n## はじめに\\n本稿ではスティーブ・ジョブズが語った、起業時の心構えや企業経営の秘訣について解説する。Apple創業から成長に至るまでの軌跡と、経営の核心的な哲学を紹介する。\\n\\n## ビジョンと起業家精神\\n- ビジョンとは実際に達成可能な目標であり、常に意識し、多様な方法で社員に浸透させる必要がある。\\n- 優れた起業家は金銭的利益だけでなく、自分のアイデアを世に送り出す情熱を持つ。\\n- 世の中に変化をもたらせるという意識が、起業家の大きなモチベーションとなる。\\n\\n## スタートアップの創業と初期運営\\n- 会社設立には予想以上の実務作業が必要。\\n  - 会社名やロゴの決定\\n  - 部品番号システム構築、銀行口座開設、会計帳簿整備\\n  - 情報管理システムやオフィス設備の整備\\n- 創業半年後には特別扱いが終了し、実際の成果を示す必要がある。\\n- 資金管理と製品ローンチまでの生き残りが最大の課題。\\n\\n## Appleのスタートと成長\\n- 個人向けコンピュータが存在しなかった1975年に創業。\\n- スティーブ・ウォズニアックがApple 1とApple 2のエンジニアリングを担当。\\n- 自分たちと友人のために始めたものが拡大し、2,500万人のユーザーを獲得。\\n\\n## 成功する企業経営の要素\\n### 人材採用と組織運営\\n- 経験より最新技術への情熱と理解を持つ人材を重視。\\n- 核心グループ10名が自主的にチームを拡大する仕組み。\\n- シンプルな組織構造を保ち、優秀な人材を採用。\\n\\n### 製品開発と顧客志向\\n- 技術より顧客体験を最優先に考え、その後で技術を逆算して開発。\\n- 製品の質に高い基準を設定。\\n- 問題が発生したら即座に解決を優先する原則を徹底。\\n\\n### 戦略と計画\\n- 3～4年を現実的な計画期間と設定。\\n- 市場環境の変化に柔軟に対応。\\n- 少数の重要な事業に集中する戦略を採用。\\n\\n## 結論\\nスティーブ・ジョブズは真の情熱と明確なビジョンを持つことが成功の鍵であり、顧客志向と品質追求が企業を成功させる重要な要素であると強調する。さらに、企業の成功は単なる利益追求ではなく、社会に意味ある変化をもたらすことから始まると説く。","meetingMinutes":"# GitLab週次プロダクトマーケティング会議録（2024年12月1日）\\n\\n## 1. イベント支援体制の再編（20%）\\n\\n### 新イベント管理戦略\\n- 「Go to Market」チームがイベントスポンサーシップと登録を担当する新体制の導入。\\n- Slackでのコミュニケーションチャンネル構築、ポジティブなフィードバック確認。\\n- PMMとキャンペーンマネージャーの連携強化。\\n  - タイが人員配置を完了。\\n  - GTMチームの追加支援が必要。\\n\\n### Corp Eventsチーム運営\\n- イベント管理と人員トラッキングに集中。\\n- Kubecon参加に関連し、キャンペーンマネージャーに明確なコミットメントを要求。\\n\\n## 主な決定事項\\n- GTMチーム中心の新イベント支援体制を導入。\\n- 脆弱性管理機能を14.0バージョンの主要機能として位置付け。\\n- マーケティングメッセージフレームワークの改善を合意。\\n\\n## 次回アクション\\n- PRチーム担当：14.0バージョン機能関連のプレスリリース準備。\\n- キャンペーンマネージャー担当：Kubecon参加コミットメント登録。\\n- GTMチーム担当：イベント支援体制の詳細プロセス策定。","salesNote":"# Overview\\n\\n* **ミーティング日時:** 2025年6月12日\\n* **クライアント背景:** 中堅EC企業であるStyleGen社のマーケティング部門。マーケティング統括のDavid Kim氏が部門を率いているが、現在Asana、Google Drive、Slackなど複数のツールが分断されており、プロジェクト管理に非効率が生じている。これにより、主要なキャンペーンのローンチが10～15%遅延するなど、明確なビジネス上の損失が発生している。\\n\\n# Main Discussion & Client Requirements\\n\\nクライアント(David Kim氏)は現状の課題を明確に認識しており、その解決に向けた具体的な予算、権限、ニーズ、導入時期を提示しました。\\n\\n* **顧客の要求事項:**\\n    * 分断されたツールを一つに統合し、シニア人材が手作業の情報収集に費やす時間を削減する必要がある。\\n    * キャンペーンの承認やフィードバックのプロセスを明確化し、プロジェクトの遅延を防ぐことができる中央集権的なプラットフォームが求められている。\\n\\n* **BANT Framework**\\n    * **Budget (予算):** マーケティングチーム30名を基準に、**ユーザー1人当たり月額50～70ドル**の範囲で予算を検討中。この予算は、現在使用中の他のSaaSツールを基準に設定されている。\\n    * **Authority (決裁権):** **David Kim氏がソリューション導入および予算に関する最終決裁権者**である。ただし、技術的なセキュリティと統合のレビューのため、**CTOであるDr. Evelyn Reed氏の最終承認**が必要。\\n    * **Needs (要求事項):** 現在の非効率なシステムが引き起こす**「主要キャンペーンのローンチが10～15%遅延する」**という、中核的なビジネスのボトルネックを解決する必要がある。\\n    * **Timeline (導入時期):** 年末のホリデーシーズン前にシステムを安定させる必要があり、**今後2ヶ月以内に最終決定を下し、第4四半期の開始までに導入を完了する**という明確な期限がある。\\n\\n# Key Takeaways\\n\\n## 主要なインサイト\\n\\n**顧客の性向と購買意欲:** David氏は問題解決への意欲が非常に高く、直接的な議論を好む傾向がある。単なる情報収集ではなく、明確な予算と導入時期を持つ、確度の高い購入見込み客(Serious Buyer)だと判断される。\\n\\n**明確な導入の緊急性:** 「主要キャンペーンのローンチが10～15%遅延」という定量的な損失と、「第4四半期開始前の導入完了」という明確な期限を提示。これは本プロジェクトが非常に高い優先順位を持つことを意味する。\\n\\n**二重の決裁構造の把握:** 最終的な意思決定には、経済的な決裁権者であるマーケティング統括(David Kim氏)と、技術的な承認者であるCTO(Dr. Evelyn Reed氏)の両者の承認が必要であることを確認。今後の営業戦略は、この二人のステークホルダーを共に満足させるアプローチが不可欠。\\n\\n**価格感度と競合の構図:** 「ユーザー1人当たり月額50～70ドル」という具体的な予算範囲を提示。特定の競合名は挙がらなかったが、既存のSaaSツールを基準に価格対価値を評価していることを示唆しており、価格設定に対する明確な価値提案が必要。\\n\\n**主要なリスクと対応策:** 最大の障壁はCTOによる技術的な承認。デモの過程で、我々のソリューションが持つセキュリティと既存システムとの統合の容易性を明確に証明することが最重要課題。\\n\\n## アクションアイテム\\n\\n* David氏の秘書と連携し、来週中にマーケティングチーム向けの一次デモミーティングの日程を確定する。\\n* 一次デモの後、CTOであるDr. Evelyn Reed氏向けに、技術面に焦点を当てた二次セッションを別途提案し、準備を進める。","lectureNote":"# フィジカルトレーニング: ランニングの基本原理\\n\\n- 講師：キム・サンチョル（体育教育学科）\\n- 日付：2024年10月31日\\n\\n## 主なポイント\\n- 歩行とランニングは全く異なるメカニズムと技術が必要な独立した運動。\\n- 正しい方法を身に付けるには理論と実践のバランスが重要。\\n- 効率的なランニングは重心の前方移動と最小の力で最大の効果を得るのが鍵。\\n- 自分の状況に合ったトレーニング方法を選択し、屋外ランニングを優先的に検討。","interviewNote":"","pitch":"# DoorDash：45分以内のフードデリバリーサービス\\n\\n## 企業概要\\n- 社名：DoorDash\\n- YC 2013年夏のデモデイ参加\\n\\n## ビジネスモデル\\n- レストラン向け：配達員提供、物流管理サービス、パートナーシップ。\\n- 消費者向け：45分以内の配達保証、リアルタイム注文。\\n\\n## チーム\\n- Tony Xu（CEO）：UCバークレー、スタンフォード卒。Square勤務経験。\\n- Stanley Tang（CPO）：スタンフォード大学コンピューターサイエンス専攻。\\n- Andy Fang（CTO）：スタンフォード大学コンピューターサイエンス卒。\\n\\n## ビジョン\\n- 「現代版FedEx」を目指し、多様なサービスへ拡張。","blogContent":"# AI時代のマーケティング：パラダイムシフトと未来への展望\\n\\n# Introduction\\n\\n現代のデジタルマーケティングは、人工知能(AI)技術を中心に、かつてない速さで再構築されています。過去のマーケティングが担当者の勘や経験に依存していたのに対し、今日のそれはデータと自動化を駆使した高度な戦略を必要とします。多くのマーケターがAIがもたらす変化に期待を寄せる一方、この大きな波にどう適応すべきかという漠然とした不安も抱えています。\\n\\n本記事では、AIがマーケティングの核心をどのように変えているのかを具体的に解説し、これからの時代にマーケターが身につけるべきスキルセットについて考察します。\\n\\n# Body\\n\\n## ハイパーパーソナライゼーションの実現\\n\\nAI技術は、顧客一人ひとりの行動データや興味関心をリアルタイムで分析し、それぞれに最適化された体験を提供する**ハイパーパーソナライゼーション**を可能にしました。これは単に顧客の名前をメッセージに入れるといったレベルの話ではありません。\\n\\n第一に、**顧客行動の予測**です。AIは過去の購買履歴やウェブサイトの閲覧パターンを分析し、次に顧客が取るであろう行動を予測して、最適な商品やコンテンツを推薦します。Netflixのレコメンドエンジンなどがその代表例です。\\n\\n第二に、**動的なコンテンツ最適化**です。同じ広告やメールであっても、受け取るユーザーに応じてタイトルや画像、訴求メッセージが自動で最適化されます。これにより、マーケティング施策のコンバージョン率を最大化することができます。\\n\\n## コンテンツ制作の自動化と効率化\\n\\n**生成AI（Generative AI）**の登場は、マーケティングにおけるコンテンツ制作のプロセスを根底から変えました。単純な繰り返し作業を自動化することで、マーケターはより価値の高い戦略的な業務に集中できるようになります。\\n\\nブログ記事の草案作成、SNS投稿のアイデア出し、広告コピーの生成といったテキストベースのコンテンツはもちろん、簡単なバナー画像や動画の制作までAIが担うことが可能です。これは特にリソースが限られたチームにとって強力な武器となります。\\n\\n## データに基づく成果測定と未来予測\\n\\nAIは、マーケティングキャンペーンの成果を正確に測定し、未来を予測する上で中心的な役割を担います。もはや推測で予算を配分したり、効果を判断したりする必要はありません。\\n\\nAIを活用した分析ツールは、各チャネルの広告費用対効果（ROAS）をリアルタイムで分析し、最も効率の良いチャネルへ自動的に予算を再配分します。また、**顧客離反の予測モデル**を用いることで、解約の可能性が高い顧客層を事前に特定し、彼らをターゲットにした先回りのリテンション施策を展開することも可能です。\\n\\n# Transition / Connection\\n\\n結局のところ、AI時代のマーケティングは、パーソナライゼーション、コンテンツ制作の自動化、そしてデータに基づく予測という3つの柱を中心に展開されます。これは、マーケターの役割が単なる「実行者」から、AIシステムを管理・運用する「戦略家」へと変化していることを意味します。AIという強力なツールをいかに活用し、ビジネス目標を達成するかが中心的な課題となっています。\\n\\n# Conclusion\\n\\nマーケティング活動にAIを導入することは、もはや選択肢ではなく必須条件です。重要なのは、AIを盲信するのではなく、AIが提示する分析結果や自動化の機能を、人間の創造性や戦略的思考と融合させることです。\\n\\nこれからのマーケ터には、データリテラシーはもちろんのこと、AIの倫理的な利用や顧客データの保護に対する責任感が強く求められます。皆さんは現在のマーケティング業務でAIをどのように活用していますか？ぜひコメントでご自身の経験や考えを共有してください。\\n\\n# References / Further Reading\\n\\n- **SEO向けタイトル案**: 「AIマーケティング完全ガイド：2025年の最新戦略と実践事例」\\n- **メタディスクリプション案**: 「ハイパーパーソナライゼーションから生成AIまで、AIがマーケティングをどう変えるかを解説。未来のマーケター必須のスキルも紹介します。」\\n- **関連キーワード**: AI マーケティング, デジタルマーケティング, ハイパーパーソナライゼーション, 生成AI, データ駆動型マーケティング, MarTech(マーテック)\\n- **内部リンク案**: グロースハック戦略, データ分析ツールの活用法, コンテンツマーケティング成功事例などの関連記事\\n- **外部参考資料**: Marketing AI Institute, Gartner社のマーケティング関連レポート, HubSpot公式ブログ","jobInterview":"# 面接日と参加者情報\\n\\n* **面接日:** 2025年6月12日。\\n* **参加者:**\\n    * **面接官:** David (採用マネージャー, DataDrive)。\\n    * **応募者:** Emily (セールスマネージャー職・応募者)。\\n\\n# 面接の目的と応募者プロフィール\\n\\n* **面接の目的:**\\n    * セールスマネージャー職に応募したEmily氏の過去の営業実績、戦略的思考、リーダーシップのポテンシャルを総合的に評価するための実務面接。特に、データに基づいた営業戦略の立案および実行能力を検証することを目的とします。\\n\\n* **応募者プロフィール:**\\n    * 前職であるInnovate Inc. (イノベート社)でB2Bエンタープライズ営業の経験を積んだ専門家。営業サイクル全体への深い理解を示し、自身の経験をSTARメソッド(状況、課題、行動、結果)に基づき体系的に説明する能力に長けています。データに基づいた回答を行い、事前調査を通じて当社への深い関心を示しています。\\n\\n# 面接の質疑応答ノート\\n\\n**経歴と主な成果レビュー**\\n\\n* **(Q):** 前職のInnovate Inc.でのご経験について説明してください。\\n* **(A):** B2Bソフトウェアソリューションのエンタープライズ営業を担当。単なる製品販売に留まらず、顧客の課題を解決するコンサルティング的なアプローチを主に行っていたと回答しました。\\n\\n* **(Q):** そこでの最も重要な営業成果は何でしたか？\\n* **(A):** 主要なエンタープライズ顧客であるGlobex Corp. (グロベックス社)を獲得したことを挙げました。これは6桁(six-figure)規模の契約であり、その四半期のチーム売上を20%増加させる結果をもたらしました。成功要因として、主要な意思決定者を特定し、顧客に合わせた価値提案書を作成してアプローチした戦略を説明しました。\\n\\n**失敗経験と学び**\\n\\n* **(Q):** 営業ノルマ(Quota)を達成できなかった経験について教えてください。何が問題で、何を学びましたか？\\n* **(A):** 昨年の第2四半期に、一つの大型案件に依存しすぎた結果、最終段階で失注し目標を10%未達だった経験を共有しました。この経験から**パイプラインの多様化(pipeline diversification)**の重要性を学んだとのことです。その後、チームに**加重パイプライン追跡システム**を導入し、リスク管理と予測精度を向上させたと回答し、失敗から成長した点をアピールしました。\\n\\n**戦略的思考と計画**\\n\\n* **(Q):** DataDriveにとって最大の市場機会は何だとお考えですか？また、もし採用された場合、最初の90日間でどのようにアプローチしますか？\\n* **(A):** 事前調査に基づき回答。現在DataDriveが十分に攻略できていない**「中堅金融サービス」分野**を最大の機会として挙げました。\\n    * **最初の30日:** 社内データの分析とプロダクト・マーケティングチームとの面談を通じて現状を把握します。\\n    * **31～60日:** ターゲット顧客に合わせた具体的な営業戦略とアウトリーチのメッセージを策定します。\\n    * **61～90日:** 小規模なチームでパイロットプログラムを開始し、市場の反応をテスト。成功した場合には拡大計画を立案します。\\n\\n**応募者からの質問**\\n\\n* **(Q):** 現在、営業チームが直面している最大の課題は何ですか？\\n* **(A):** (面接官の回答) 既存の中小企業(SMB)中心の顧客層から、より大規模な中堅企業(Mid-market)市場へといかにうまく拡大していくかが、現在の最大の課題です。\\n\\n* **(Q):** この職務の成功は、営業ノルマ以外にどのような基準で測られますか？\\n* **(A):** (面接官の回答) チームメンバーの成長やコーチング能力、四半期ごとの営業予測の正確性、そして他部署(マーケティング、プロダクト)との連携能力も重要な成功指標です。\\n\\n* **(Q):** チームの文化はどのようなものですか？\\n* **(A):** (面接官の回答) 個々の自律性を尊重しつつも、データに基づいて透明性の高いコミュニケーションを行う、協調的な文化です。","oneOnOne":"# 1 on 1ミーティング\\n\\n今回の定例1on1ミーティングは、チームメンバーであるユジン氏が最近感じているキャリアの停滞感に関する悩みを聞き、役割を広げるための具体的な機会を共に模索するために実施しました。ユジン氏は現在担当しているProject Phoenix (フェニックス・プロジェクト)で優れた成果を上げていますが、繰り返される業務への物足りなさと、プロダクト企画の初期段階から貢献したいという明確な成長意欲を見せました。\\n\\n# Discussion\\n\\n* **キャリア成長と役割拡大に関する悩み (Career Growth & Role Expansion Concerns)**\\n    * ユジン氏は現在の業務に満足しつつも、次第に役割が反復的に感じられると率直に共有しました。\\n    * 単に与えられた企画案をデザインに落とし込むだけでなく、プロダクトの「Why」を共に考えたいという強い動機を示しました。\\n    * **Q:** 具体的にどのような部分で貢献したいですか？\\n    * **A:** ユーザーリサーチ結果の分析、問題点の発見、新機能のアイデアを出すブレインストーミングなど、企画の超初期段階から参加したいとの意思を表明しました。\\n\\n* **新たな機会の提案と解決策の模索 (Proposing New Opportunities & Solutions)**\\n    * ユジン氏の成長意欲に応えるため、次四半期に開始予定のProject Odyssey (オデッセイ・プロジェクト)の初期企画ワークショップへの参加を提案しました。\\n        * これはPMや開発者と共に顧客の問題を定義する段階から参加し、「Why」について考える絶好の機会となるでしょう。\\n    * データ分析能力を強化するため、データチームのリア(Lia)氏との連携を提案し、ユジン氏もこれに肯定的に応じました。\\n\\n* **フィードバックと激励 (Feedback & Encouragement)**\\n    * Project Phoenix (フェニックス・プロジェクト)で発揮した繊細なUIのディテールに対するこだわりを称賛しました。\\n    * このような細部へのこだわりは、企画段階においても大きな強みとなり得ると強調し、新たな挑戦への自信を後押ししました。\\n\\n# Action Items\\n\\n* **ミンジュン (Min-jun) / マネージャー**\\n    * **Description:** ユジン氏とデータチームのリア(Lia)氏とのミーティングを設定する。\\n    * **Deadline or Next Checkpoint:** 来週初めまで。\\n    * **Description:** Project Odyssey (オデッセイ・プロジェクト)の初期企画ワークショップにユジン氏を正式メンバーとして招待する。\\n    * **Deadline or Next Checkpoint:** ワークショップの日程が確定次第、直ちに。\\n\\n* **ユジン (Yujin) / チームメンバー**\\n    * **Description:** Project Odyssey (オデッセイ・プロジェクト)が解決しようとしている問題についてリサーチし、初期仮説やアイデアを2〜3つ準備する。\\n    * **Deadline or Next Checkpoint:** 最初の企画ワークショップまで。\\n    * **Additional Notes:** データチームのリア(Lia)氏とのミーティングを通じて、必要なデータサポートを要請可能。\\n\\n# ## Next 1 on 1\\n\\n* **主要なフォローアップ項目 (Key Follow-up Topics)**\\n    * データチームとのミーティングの成果と学びについて話し合う。\\n    * Project Odyssey (オデッセイ・プロジェクト)の初期リサーチ内容とアイデアを共にレビューし、発展させる。\\n\\n* **キャリア成長に関する議論 (Career Development Discussion)**\\n    * A (現在): 定義された企画案のデザイン実行が中心。\\n    * B (目標): 問題定義や企画段階に参加する役割への拡大。\\n    * **How:** Project Odyssey (オデッセイ・プロジェクト)への参加を通じて実際の企画プロセスを経験させ、データに基づいた意思決定能力を養えるよう支援する予定。\\n\\n* **信頼関係とモチベーションの管理 (Trust & Motivation Management)**\\n    * **状況:** 業務の反復性による停滞感と、成長意欲の表明。\\n    * **計画:** 先んじて役割拡大の機会を提供 → ユジン氏の成長意欲をチームの成果へと繋げる。\\n    * **期待効果:** モチベーションの向上と、マネージャーとの信頼関係強化。次の1on1では、オデッセイ・プロジェクト参加経験に関する感想や困難な点を重点的に確認する。","coffeeChat":"# Overview\\n\\n* **日時:** 2025年6月11日\\n* **参加者:**\\n    * **パク・スジン (Sujin Park):** 主催者、大手企業・3年目のブランドマーケター。\\n    * **キム・ジフン (Jihun Kim):** 相手方、ITスタートアップ・5年目のシニアPMM (プロダクトマーケティングマネージャー)。\\n* **目的:**\\n    * 大手企業のマーケターからITスタートアップのPMMへのキャリアチェンジに関する助言およびネットワーキング。\\n* **背景:**\\n    * 主催者(スジン)がLinkedInを通じて相手方(ジフン)のキャリアストーリーに感銘を受け、コーヒーチャットを要請。IT業界やPMMという職務に関する現実的な情報と、そのための準備方法について議論するために設けられた。\\n\\n# Discussion & Notes\\n\\n### 大手企業マーケター vs スタートアップPMMの役割比較\\n\\n* **Q: 大手企業のマーケターとスタートアップのPMMの最も大きな違いは何ですか？**\\n    * **A (ジフン氏の回答要約):** 「決められた道を行くこと」と「自ら道を創り出すこと」の違いに例えられる。\\n    * **大手企業マーケター:** 検証済みのプロセスと潤沢な予算の中で、ブランドメッセージを管理しキャンペーンを運営する役割が強い。\\n    * **スタートアップPMM (プロダクトマーケティングマネージャー):**\\n        * **End-to-Endのオーナーシップ:** 市場調査や顧客定義から始まり、プロダクトの成功までA to Zの全責任を負う。\\n        * **緊密な連携:** プロダクト、開発、セールスチームと絶えずコミュニケーションを取り、プロダクトの方向性を調整し、顧客の声を届ける役割が極めて重要。\\n\\n### スタートアップの組織文化とワークライフバランス\\n\\n* **Q: スタートアップの組織文化やワークライフバランスは、大企業と比べてどうですか？**\\n    * **A (ジフン氏の回答要約):** 会社やステージによって大きく異なるが、共通の特徴もある。\\n    * **長所:** 水平な文化、迅速な意思決定、個人の貢献が事業成果に直結することへのやりがい。\\n    * **短所:** 仕組みが整っていない場合があり、役割の境界が曖昧なことも多い。成果主義のためプレッシャーを感じることもある。\\n    * **キーポイント:** 決まった時間だけ働く「ワークライフバランス」よりは、働く時間や場所を柔軟に調整する**「ワークライフ・ブレンディング」**に近い場合が多い。\\n\\n### PMMへの転職に必要なコアスキル\\n\\n* **Q: PMMになるために、今からどのようなスキルを準備すれば良いですか？**\\n    * **A (ジフン氏の回答要約):** 「データ」と「顧客」という2つのキーワードを中心にスキルを構築すべき。\\n    * **データ分析能力:**\\n        * SQLを扱えるスキルは非常に強力な武器になり得る。\\n        * Googleアナリティクスのようなツールを深く使いこなし、ユーザー行動を分析し、仮説を立てて検証する練習が不可欠。\\n    * **主体的な問題解決能力:**\\n        * **「サイドプロジェクト」**を強く推奨。\\n        * (例: 小さなコミュニティの運営、ニュースレターを作成し購読者の反応を分析するなど)。\\n        * **期待効果:** 自ら「仮説→実行→データ確認→改善」の全サイクルを経験することで、面接時のストーリーテリングが強力になり、主体性のある人材という印象を与えられる。\\n\\n### PMM転職面접とポートフォリオの準備戦略\\n\\n* **Q: PMMの転職面接は主にどのような形式で、ポートフォリオはどう準備すべきですか？**\\n    * **A (ジフン氏の回答要約):** テクニカルなスキルよりも、経験と問題解決能力を検証することに重点を置いている。\\n    * **面接プロセス:** 書類選考後、実務者面接で過去の経験を深く掘り下げたり、特定の状況を仮定した課題やケース面接を行ったりする場合が多い。\\n    * **ポートフォリオ戦略:**\\n        * 華やかな成果物を並べるより**「どんな問題をどう解決したか」**というプロセス中心で構成すべき。\\n        * 全てのプロジェクトに**定量的な成果 (KPI達成率、コンバージョン率改善など)**を数字で明確に提示することが重要。\\n        * サイドプロジェクトの経験は、ポートフォリオで最も強力な差別化要因になり得る。\\n\\n### PMMという職務の魅力と最後のアドバイス\\n\\n* **スジン氏の動機:** 自身が企画したメッセージやキャンペーンがプロダクト改善に直接反映され、ユーザーの反応が即座に得られる経験に最も魅力を感じている。\\n* **ジフン氏の最後のアドバイス:**\\n    * 即時的なフィードバックと速いサイクルは、スタートアップの最大の魅力であり原動力。\\n    * 完璧に準備してから挑戦しようとするより、まず飛び込んでみて、実践から学ぶ姿勢の方がはるかに重要。ためらわずに挑戦することを奨励。","userInterview":"# 概要\\n\\n* **インタビュー日:** 2025年6月12日。\\n* **参加者情報:**\\n    * **ユーザー:** マーク (Mark)。\\n    * **ユーザータイプ:** 週に3～4回以上自炊する30代の社会人。\\n    * **主な利用目的:** 平日の夕食や週末の食事のためのレシピ検索と、効率的な食材管理。\\n    * **利用環境:** モバイルアプリ。\\n\\n# ディスカッションとメモ\\n\\n### 現在の主な不便な点\\n\\n* **混沌とした食事計画:** 自身のプロセスを「非常に混沌としている(chaotic)」と表現。明確な計画なしに即興でメニューを決めるため、結局スパゲッティやタコスなど、いつも同じメニューの繰り返しになり、飽きを感じている。\\n* **分断された買い物プロセス:** オンラインでレシピを見つけた後、①必要な材料を別途メモし、②冷蔵庫の中身を確認し、③最終的な買い物リストを作成するという各プロセスが全て分断されており、手間と時間がかかる。\\n* **食材の無駄と重複購入:**\\n    * レシピに必要な量より多い単位で食材(例: パセリ一束)を購入することになり、残った食材が冷蔵庫で傷んでしまうことが多い。\\n    * 自宅に既にある食材(例: オリーブオイル)の確認を忘れ、重複して購入してしまうミスが頻繁にあると述べた。\\n\\n### アプリに対するポジティブな反応\\n\\n* **直感的なUI:** アプリの第一印象を「すっきりしている(clean)」と評価。「30分以内のレシピ」といったホーム画面のカテゴリが明確で、何ができるかを容易に理解できたと反応した。\\n* **ショッピングリスト自動追加機能:** レシピの全材料を一度に買い物リストへ追加するボタンを見て「これは素晴らしい(cool)」と表現。自身が抱える最大の問題を直接解決してくれる核心的な機能として期待感を示した。\\n* **便利な使用感:** 買い物リストに追加された食材が「農産物」「食料品」などに自動で分類される点や、スワイプ操作で簡単に項目を削除できる点など、直感的な使用感に肯定的な反応を見せた。\\n\\n### ユーザーからの改善提案\\n\\n* **余った食材を活用するレシピ提案機能:** 「あるレシピを作って余った食材を活用できる、別のレシピを提案してくれたら嬉しい」と、非常に具体的なアイデアを提案。これは食材の無駄をなくしたいという強いニーズから生まれたものと思われる。\\n\\n# 核心的なインサイト\\n\\n* **核心的なインサイト１：ユーザーの真の苦痛は「食材管理」の段階に存在する。**\\n    * **判断根拠:** ユーザーは「レシピ検索」そのものよりも、その後に続く「買い物リスト作成」や「食材の無駄」のプロセスで最も大きな不満を感じていた。「オリーブオイルを重複購入した」「余ったパセリが傷んでしまう」といった具体的な体験談がこれを明確に裏付けている。\\n    * **推奨アクション:** 我々のアプリの核心的価値を単なる「レシピ提供」ではなく、**「知的な食材管理と無駄の削減」**と位置づけ、「ショッピングリスト自動化」機能を主要機能としてマーケティングすべき。将来的には「余った食材を活用するレシピ提案」機能の開発優先度を高く検討する必要がある。\\n\\n* **核心的なインサイト２：ユーザーは複雑な機能よりも「直感的な時間節約」に満足する。**\\n    * **判断根拠:** ユーザーは「買い物リストの自動分類」や「スワイプでの項目削除」のように、特別な学習なしに即座に時間を節約してくれる、シンプルで直感的な機能に最も肯定的に反応した。\\n    * **推奨アクション:** 新機能を企画する際は、複雑性を加えるよりも、現在の成功しているユーザー体験を損なわない範囲で、ユーザーの手間を確実に減らす直感的なソリューションを優先的に検討すべきである。","pressRelease":"","shareholdersMeeting":"# 会計報告\\n\\n2025年3月21日に開催された第15期定時株主総会において、第15期の財務諸表および利益剰余金処分計算書(案)が原案通り承認されました。\\n\\n* **主な財務データ:**\\n    * 売上高：2兆ウォン。\\n    * 当期純利益：500億ウォン。\\n* **配当詳細:**\\n    * 普通株式1株当たり500ウォンの現金配当を決定。\\n* **議決結果:**\\n    * 第1号議案：第15期財務諸表および利益剰余金処分計算書(案)承認の件 **(可決)**。\\n\\n# 事業報告\\n\\n代表取締役であるパク・ジソン氏が、前事業年度の主な事業成果と戦略的な方向性について報告いたしました。\\n\\n* **主な成果:** 主力の電気自動車モデル「エーテル(Aether)」が合計5万台販売され、**創立以来初となる営業黒字を達成**するという重要な節目を迎えました。\\n* **世界的展開:** 欧州市場への進出に成功し、世界的な販売網を構築してブランド認知度を高めました。\\n* **中核的な投資と提携:** 次世代バッテリー技術の確保および安定した**供給網(サプライチェーン)**の確立のため、「ソリッドステート社(Solid State Inc.)」と戦略的**提携(パートナーシップ)**を締結しました。\\n* **技術開発:** 自動運転ソフトウェア「オデッセイOS(Odyssey OS)」は、安全を最優先に継続的なデータ蓄積と高度化作業を進めています。\\n\\n# 決議事項\\n\\n上程された全ての議案は、株主の皆様のご賛同を得て原案通り可決されました。\\n\\n* 第1号議案：第15期財務諸表および利益剰余金処分計算書(案)承認の件 **(可決)**。\\n* 第2号議案：取締役選任の件 (社外取締役キム・ソヨン氏の選任) **(可決)**。\\n* 第3号議案：取締役の報酬限度額(総額30億ウォン)承認の件 **(可決)**。\\n* 第4号議案：定款一部変更の件 (配当基準日関連) **(可決)**。\\n\\n# 質疑応答\\n\\n株主の皆様との質疑応答では、以下の様な主要な議論が交わされました。\\n\\n* **Q: 「ソリッドステート社(Solid State Inc.)」とのバッテリー提携は、将来の生産費用(コスト)に具体的にどのような影響を与えますか？**\\n    * **A:** これは単なる部品供給を超えた共同開発協力です。長期的にはバッテリーの内製化に掛かる**費用(コスト)**を20%以上削減し、安定した供給網を確保することで、**原価(げんか)**競争力を大幅に高めることができると期待しています。\\n\\n* **Q: 自動運転ソフトウェア「オデッセイOS(Odyssey OS)」の開発速度が競合他社に比べて遅いという懸念について、会社のスタンスはどのようになっていますか？**\\n    * **A:** 当社は市場投入の速さよりも「安全」を最優先の開発哲学としています。数百万キロメートルに及ぶ実走行データを基に安定性を高度化しており、今年の下半期に大規模な更新を通じて、一段と進化した運転支援機能を披露する予定です。\\n\\n# 特記事項\\n\\n今回の株主総会で注目すべき核心的な事項は、以下の3点です。\\n\\n1.  **創立以来初の営業黒字達成:** 持続的な成長を証明し、財務的安定性の基盤を築いた非常に意義深い成果です。これは今後の資金調達や事業拡大に肯定的な影響をもたらすでしょう。\\n2.  **次世代バッテリー供給網の確保:** 「ソリッドステート社」との戦略的提携は、未来のEV市場の核心であるバッテリー技術と費用競争力を同時に確保するための重要な戦略的決定です。\\n3.  **安全中心の技術開発哲学を再確認:** 自動運転技術の競争が激化する中で、「安全」を最優先とする当社の確固たる開発哲学を改めて強調しました。これは長期的なブランド信頼の構築に寄与するでしょう。","customTemplate":""},"form":{"title":"テンプレートのタイトル","sample":"サンプル","sampleDescription":"💡 Tip: URLではなくテキストをそのまま貼り付けてください。理想的な形式で完成した文章を入力してください。","samplePlaceholder":"# スティーブ・ジョブズ：起業の心得\\n\\nスティーブ・ジョブズは起業において情熱、ビジョン、顧客志向を強調しています。\\n- ビジョン：明確に会社の方向性を示す。\\n- 起業：金銭的利益が主な動機ではない。\\n- チーム：シンプルな組織で情熱的な人材を採用。\\n- 顧客志向：技術より顧客体験を重視。\\n- 品質：最高の品質基準を追求。\\n- 戦略：重要な数項目に集中。","saveTemplate":"テンプレートを保存","generateNote":"このテンプレートでノート作成"},"delete":{"title":"{{templateTitle}}を削除","description":"この文書を削除してもよろしいですか？この操作は元に戻せません。","confirm":"削除","cancel":"キャンセル","success":"文書が削除されました。","error":"文書削除に失敗しました。"}},"documentTemplates":{"tiro":"Tiro","description":"説明","descriptionPlaceholder":"ドキュメントの目的、文脈、分野、トーンやスタイルなど、希望する特性を記述してください。","untitledTemplate":"無題のテンプレート","sectionCopy":"セクションをコピー","deleteSection":"セクションを削除","sectionTitle":"セクションのタイトル","sections":"セクション","addSection":"セクションを追加","sectionTypes":{"plainText":"プレーンテキスト","actionItems":"アクションアイテム","qna":"Q&A","example":"例文"},"sectionPlaceholders":{"plainText":"このセクションに生成してほしいアウトプットの形式を説明してください。\\n例1: 全体の内容を1段落で要約してください。\\n例2: 将来的なタイムラインごとにアクションアイテムを抽出してください。","actionItems":"このセクションに生成したいアクションアイテムの種類や形式を説明してください。\\n例1: 話し合った項目をToDoリスト形式で要約してください。\\n例2: 会話を元に優先度の高いタスクをハイライトしてください。\\n例3: 今週実行可能な具体的なアクションアイテムを提案してください。","qna":"セールスインタビューや専門家インタビューなど、事前に決まった質問がある構造化された会話の場合、各質問を別々のセクションとして入力してください。Tiroが各質問ごとに回答や議論を包括的にまとめます。","example":"例文として活用したい文書がある場合はこちらにそのまま貼り付けてください。Tiroが文書のフォーマットを丁寧に分析し、類似の形式で作成します。\\n全文を一つのセクションにまとめて貼り付けても、より明確に構成を分けたい場合は、希望する部分ごとにセクションを分けて入力しても構いません。"},"delete":{"title":"{{templateTitle}}を削除","description":"この文書を削除してもよろしいですか？この操作は元に戻せません。","confirm":"削除","cancel":"キャンセル","success":"ドキュメントが削除されました。","error":"ドキュメントの削除に失敗しました。"}},"participants":"会話参加者","participantsMore":"もっと見る","manageParticipants":"参加者管理","addParticipants":"参加者を追加","addParticipantButton":"参加者を追加","createParticipant":"作成","addAsName":"名前として追加","addAsEmail":"メールとして追加","currentParticipants":"現在の参加者","noSuggestedParticipants":"おすすめの参加者がありません","script":{"view":"スクリプトを表示","hide":"スクリプトを非表示"},"editor":{"updateDescription":"変更内容を保存しました"},"writing":{"message1":"Tiroが会話の内容を分析して、記録の品質を高めています","message2":"Tiroが会話のポイントを的確にまとめています","message3":"Tiroがキーワードと数字を整理しています","message4":"Tiroが話の流れを紐解いています"},"peek":{"viewDetail":"全画面で表示","viewDetailAria":"ノートを全画面表示で開く"},"menu":{"options":"オプションメニュー"},"initialContext":{"description":"会話の状況やテーマ、固有名詞など、話の背景となる情報を入力すると、ノートの精度が大幅に向上します。","examples":"例:\\n - 会話の状況：スティーブ・ジョブズのスタンフォード大学卒業式スピーチ\\n - テーマ：Connecting The Dots、Love and Loss、About Death\\n - 固有名詞：スティーブ・ジョブズ、Apple、人生と死、ピクサー","titleAndParticipants":"タイトルと参加者を入力してください","preMemo":"事前にメモすることはありますか？テーマ、会社や製品名、人名、状況などを書いておくと記録の精度が向上します。","startWithRedButton":"赤いボタンを押して、Tiroと一緒に記録を始めましょう！"},"speakerLabeling":{"searchPlaceholder":"参加者を検索または追加...","scope":{"current":"このセクションのみ","fromThis":"このセクションから","entire":"全セクション"},"applying":"変更中","apply":"適用","toast":{"speakerUpdateError":"話者の変更に失敗しました","segmentSplitError":"セグメントの分割に失敗しました","segmentMergeError":"セグメントの結合に失敗しました"}},"action":{"delete":"ノートを削除","deleteAria":"ノートを削除する","addToFavorites":"お気に入りに追加","moveToWorkspace":{"label":"ワークスペースに移動","loading":"ワークスペースを読み込み中...","empty":"他のワークスペースがありません","success_one":"{{workspaceName}}に移動しました","success_other":"{{count}}件のノートを{{workspaceName}}に移動しました","error":"ノートを移動できませんでした。しばらくしてからもう一度お試しください。","notEnded":"ノートの記録を終了してから、別のワークスペースに移動できます。","restrictNonOrgWorkspace":"このワークスペースにはノートを移動できません。","disabledRole":{"badge":{"viewer":"Viewer","unpaidAdmin":"Unpaid admin"},"tooltip":"このワークスペースでは{{role}}のため、ノートをここに移動できません。ワークスペースのAdminにMemberまたはAdminの役割を依頼してください。"},"toast":{"allFail":{"title":"ノートを移動できませんでした","notOwner":"共有されたノートは他のワークスペースに移動できません。自分が作成したノートのみ移動できます。","notEnded":"まだ記録中のノートは移動できません。記録を終了してからもう一度お試しください。","recording":"まだ記録中のノートは移動できません。記録を終了してからもう一度お試しください。","notFound":"削除されたか見つからないノートがあります。一覧を更新してからもう一度お試しください。","mixed":"{{causes}}があります。該当のノートを確認してからもう一度お試しください。","unknown":"しばらくしてからもう一度お試しください。繰り返し発生する場合はお問い合わせください。"},"partial":{"title":"{{count}}件のノートを移動しました","notOwner":"残りの{{count}}件は共有されたノートのため移動できません。自分が作成したノートのみ移動できます。","notEnded":"残りの{{count}}件はまだ記録中のため移動できません。記録を終了してからもう一度お試しください。","recording":"残りの{{count}}件はまだ記録中のため移動できません。記録を終了してからもう一度お試しください。","notFound":"残りの{{count}}件は削除されたか見つからないため移動できません。一覧を更新してからもう一度お試しください。","mixed":"残りの{{count}}件には{{causes}}があります。該当のノートを確認してからもう一度お試しください。","unknown":"残りの{{count}}件は移動できませんでした。しばらくしてからもう一度お試しください。"},"cause":{"notOwner":"共有されたノート","notEnded":"記録中のノート","recording":"記録中のノート","notFound":"削除・不明なノート"},"causeJoin":{"two":"{{first}}・{{second}}"}}}},"multilingual":{"title":"コンファレンスモード","backToNote":"ノートに戻る","disabledHint":"多言語で会話を記録しているときのみ利用できます。会話言語を多言語に切り替えてください","scrollHint":{"jumpToLive":"最新へ"},"recording":{"pause":"一時停止","resume":"再開","start":"開始","preparing":"準備中"},"translation":{"label":"翻訳","toggleAriaLabel":"翻訳を表示","notConfigured":"翻訳言語が未設定"},"context":{"openButton":"コンテキスト","guide":"発表テーマや、登壇者・企業名などの固有名詞、専門用語・ドメイン用語をあらかじめ入力しておくと、文字起こしの精度が上がります。"},"guide":{"openButton":"ガイド","firstVisitHint":"カンファレンスモードが初めての方は、ガイドをご覧ください。","dialogTitle":"Tiro カンファレンスモードガイド","dialogDescription":"イベントを成功させるために、事前にこのガイドをご確認のうえ、Tiroのリアルタイム字幕・翻訳をご準備ください。","tabs":{"preparation":"準備","audio":"音響","display":"画面","troubleshooting":"トラブル"},"preparation":{"heading":"準備チェック","intro":"イベントを成功させるために、下記の順番で Tiro カンファレンスモードを事前にご準備ください。","phases":[{"title":"前日まで","items":["ノートにイベント名・登壇者・会場を入力しておきましょう。字幕ヘッダーと共有リンクにそのまま使われます。","人名・社名・頻出する略語はメモに登録しておきましょう。字幕の精度が大きく上がります。","会場の Wi-Fi 速度を確認しましょう。下り 10Mbps・上り 5Mbps 程度あれば安定します。","人が多く集まると Wi-Fi が不安定になることがあります。本番を想定して、事前に接続を確認しておきましょう。"]},{"title":"会場に着いたら","items":["マイクをノートPCに接続し、音声が入るか確認します。（音響タブをご参照ください）","字幕を映す画面を決め、最後列まで行って文字が読めるか実際に確認します。","ノートPCのスリープとスクリーンセーバーをオフにしておきます。発表中に画面が消えると困ります。"]},{"title":"開始直前","items":["開始前にテスト記録を一度実施してみましょう。字幕が画面になめらかに表示され、自動でスクロールすれば準備完了です。"]}]},"audio":{"heading":"音響セットアップ","intro":"字幕の品質は、半分以上が音響で決まります。あと5分だけかけて、クリアな音声を確保しましょう。","body":"会場マイクの音声を USB オーディオインターフェース経由でノートPCに直接取り込むと、拍手や周囲のノイズの少ないクリアな音声が得られます。スマホやノートPC内蔵マイクで拾う場合に比べ、認識精度が1.5〜2倍ほど向上します。","stepsHeading":"接続の手順","steps":["音響担当にメインミキサーのラインアウトを1ch分けてもらいます。（XLR または 1/4\\" TRS）","USB オーディオインターフェース（Focusrite Scarlett Solo など）で変換し、ノートPCに接続します。","テスト録音で、音声がクリアに入っているか確認します。"],"copyMessage":"音響担当へのメッセージをコピー","copySuccess":"コピーしました","copyFailed":"コピーできませんでした","messageTemplate":"お世話になります。本日のイベントでリアルタイム字幕を提供する予定です。クリアな音声を取得するため、メインミキサーのラインアウトを1ch、ノートPCへ直接いただけますでしょうか。変換用の USB オーディオインターフェースはこちらでご用意します。セットアップに30分ほどお時間をいただけますと幸いです。どうぞよろしくお願いいたします。"},"display":{"heading":"画面構成","intro":"会場の画面サイズと資料の比重に合わせてお選びください。観客がもっとも読みやすい形に、自由に組み合わせて設定できます。","options":[{"name":"フルスクリーン字幕","when":"資料が少ない、または無いトークや対談に最適です。字幕を大きく表示し、一目で読めます。"},{"name":"資料＋字幕の分割","when":"スライドと字幕を1画面で見せたいときに。左右に分割し、どちらも見逃しません。"},{"name":"サイドモニター","when":"メイン画面は資料のまま、横のサブモニターに字幕だけを表示したいときに。"},{"name":"QR共有","when":"メイン画面が小さい・遠いときに。観客が各自のスマホで字幕を確認できます。"},{"name":"ハイブリッド","when":"大画面の字幕とQRを併用したいときに。前方も後方も、全員をカバーできます。"}],"qrTip":"QRモードはぜひ積極的にご活用ください。観客が自分の端末で、自分のペースで読めるうえ、イベント終了後にはノートを持ち帰れます。大画面の字幕より便利な場面も少なくありません。"},"troubleshooting":{"heading":"トラブル解決(Troubleshooting)","intro":"イベント中によくある場面と、その対処法をまとめました。","items":[{"q":"字幕がよく切れたり遅れたりします","a":"まずネットワークをご確認ください。有線LANがもっとも安定します。Wi-Fi の場合は、人が集まっても切れないか事前に確認しておきましょう。"},{"q":"氏名や社名などの固有名詞を正確に残したいです","a":"イベント前に、頻出する人名・用語・分野特有の表現をノートのコンテキストに入力しておきましょう。字幕の精度が大きく上がります。"},{"q":"発表中に画面が消えます","a":"ノートPCのスリープとスクリーンセーバーを事前にオフにしておきましょう。画面が消えると、字幕も一緒に止まってしまいます。"},{"q":"QRを見逃した観客がいます","a":"開始スライドや座席案内にQRを掲示しておき、開始直前に司会者からもう一度アナウンスしてもらいましょう。"}]}},"settings":{"screenSettings":"画面設定","darkMode":"ダークモード","pinHeader":"ヘッダーを常に表示","fontSize":"フォントサイズ","decreaseFontSize":"文字サイズを小さく","increaseFontSize":"文字サイズを大きく","contentWidth":"本文の幅","decreaseContentWidth":"本文の幅を狭める","increaseContentWidth":"本文の幅を広げる","displayMode":"ディスプレイモード","displayModes":{"horizontal":"横並び","horizontalMirrored":"横並び（反転）","vertical":"縦並び","verticalMirrored":"縦並び（反転）","fixedSingle":"固定","fixedSingleMirrored":"固定（反転）","translationOnly":"翻訳のみ"}}},"shareQr":{"openButton":"QR","closeButton":"閉じる","eyebrow":"Tiroが書き留めています","instruction":"スマホのカメラでQRをスキャン","untitled":"タイトルなし","addMeta":"情報を追加","addSpeaker":"発話者","addVenue":"会場","addNote":"メモ","speakerPlaceholder":"発話者","venuePlaceholder":"会場","notePlaceholder":"メモ","passwordLabel":"パスワード","editField":"{{field}} を編集","copy":{"button":"リンクをコピー","success":"共有リンクをコピーしました","failed":"コピーに失敗しました"},"prompt":{"title":"QRでリアルタイム字幕を共有しましょう","body":"QRコードを読み取ると、自分のスマホでリアルタイム字幕を見られます。","cta":"共有用QRを作成","scopeReason":"共有範囲の初期設定が「招待された人のみ」になっています。QRで共有するには、リンクを開ける範囲を選んでください。"},"visibility":{"anyone":"リンクを知っている人なら誰でも閲覧できます","company":"社内メンバーのみ閲覧できます。外部の参加者は開けません","private":"招待された人のみ閲覧できます。他の参加者は開けません"}},"recording":{"download":"音声ファイルをダウンロード","saveAs":"録音を保存","blockedByPolicy":"組織のポリシーにより、音声ファイルをダウンロードできません","pauseToDownload":"ダウンロードするには録音を一時停止してください","pause":"録音を一時停止","start":"録音を開始","resume":"録音を再開","deviceSelect":"マイクを選択","systemDefault":"システムのデフォルト","microphoneSection":"マイクの選択","sameAsSystem":"システムと同じ","pausedByAnotherRecording":{"title":"録音を一時停止しました","description":"同じアカウントで別の録音が開始されたため、この録音を一時停止しました。保存済みの内容はノートで確認できます。","learnMore":"詳しく見る"},"realtimeTranslation":{"label":"翻訳"}},"transcriptTabs":{"all":"すべて","conversationMultilingual":"多言語","languageSelect":"原文の言語","localeNames":{"ko":"韓国語","en":"英語","ja":"日本語","de":"ドイツ語","es":"スペイン語","fr":"フランス語","it":"イタリア語","th":"タイ語","sv":"スウェーデン語","vi":"ベトナム語","id":"インドネシア語","zh":"中国語","ms":"マレー語","ru":"ロシア語","hi":"ヒンディー語","auto":"多言語"}},"toast":{"deleteError":"ノートの削除に失敗しました","bulkDeleteError":"ノートの削除に失敗しました","endError":"ノートの終了に失敗しました","titleUpdateError":"ノートタイトルの更新に失敗しました","deleteForbidden":"ノートを削除する権限がありません。管理者に権限の変更を依頼してください。","titleUpdateForbidden":"ノートのタイトルを編集する権限がありません。管理者に権限の変更を依頼してください。","restoreError":"ノートの復元に失敗しました","restoreSuccess":"ノートを復元しました","permanentDeleteError":"ノートの完全削除に失敗しました"},"document":{"toast":{"generateError":"ドキュメントの生成に失敗しました","templateCreateError":"ドキュメントテンプレートの作成に失敗しました","templateDeleteError":"ドキュメントテンプレートの削除に失敗しました","templateUpdateError":"ドキュメントテンプレートの更新に失敗しました","sectionCreateError":"ドキュメントセクションの追加に失敗しました","sectionUpdateError":"ドキュメントセクションの更新に失敗しました","sectionContentLengthError":"現在{{currentLength}}文字です。10,000文字以下にして保存してください。","sectionDeleteError":"ドキュメントセクションの削除に失敗しました","shareError":"ドキュメントテンプレートの共有に失敗しました","unshareError":"ドキュメントテンプレートの共有解除に失敗しました"}},"recordingSource":{"call":"通話の録音","watch":"Watchの録音","text":"取り込んだ文字起こし"},"documentRecovery":{"done":"文書を元に戻しました。","title":"文書を初期化しますか？","description":"文書のすべての編集内容を生成された内容に戻します。初期化前の編集内容には戻せません。"},"transcriptRecovery":{"resetKind":"{{kind}}をリセット","resetKindDescription":"すべての段落の{{kind}}を自動生成された内容に戻します。他の種類の内容は維持されます。リセット前のこの内容の編集は元に戻せなくなります。","originalSpeakers":"文字起こしの話者の割り当ても自動生成された状態に戻ります。","kinds":{"original":"文字起こし","translated":"翻訳","summary":"段落の要約"},"done":"変更を元に戻しました。","undoSpeakers":"話者の変更を元に戻す"},"summaryRecovery":{"unknownResult":"処理結果を確認できませんでした。ページを再読み込みしてください。","edited":"編集済み","undo":"元に戻す","reset":"リセット","title":"要約をリセットしますか？","description":"生成された要約に戻ります。これまでの編集は元に戻せなくなります。","done":"要約を元に戻しました。"},"contentEdit":{"edited":"(edited)","title":"生成内容に戻しますか？","description":"現在の編集内容は復元できません。保存済みの生成内容に戻ります。","cancel":"キャンセル","restore":"生成内容に戻す","restored":"生成内容に戻しました。","conflict":"内容が変更されました。確認してから再試行してください。","failed":"元に戻せませんでした。もう一度お試しください。","speakers":"話者情報も生成時の状態に戻ります。","saveFailed":"保存できませんでした。入力した内容はそのまま残っています。","saveConflict":"別の変更が先に保存されました。入力した内容はそのまま残っています。","retryRead":"もう一度取得","refreshRequired":"保存された内容を取得すると、編集を再開できます。","segmentChangeFailed":"保存済みの内容を読み直しました。変更内容をご確認ください。","savedRefreshFailed":"保存しましたが、最新の内容を取得できませんでした。","refreshFailed":"元に戻しましたが、最新の内容を取得できませんでした。"}}',
+  ),
+  O = {
+    placeholder: "ノート内を検索...",
+    noResults: "検索結果がありません",
+    searching: "検索中...",
+    oneItemChanged: "1項目が変更されました",
+    itemsChanged: "{{count}}項目が変更されました",
+    itemsRestored: "{{count}}項目が復元されました",
+    changeError: "変更中にエラーが発生しました",
+    restoreError: "復元中にエラーが発生しました",
+    enterSearchAndReplace: "検索語と置換テキストの両方を入力してください",
+    currentTab: "現在のタブ",
+    searchIn: "{{tab}}で検索",
+    editWords: "単語を編集",
+    enterReplaceText: "置換テキストを入力",
+    replace: "置換",
+    replaceAll: "すべて置換",
+    undo: "元に戻す",
+    all: "すべて",
+  },
+  W = {
+    customerSupport: "サポート",
+    minute: "分",
+    cancel: "キャンセル",
+    create: "作成",
+    creating: "作成中...",
+    submit: "送信",
+    actions: "操作",
+    noteActions: "ノートの操作",
+    save: "保存",
+    edit: "編集",
+    delete: "削除",
+    deleting: "削除中...",
+    saving: "保存中...",
+    close: "閉じる",
+    copy: "コピー",
+    confirm: "確認",
+    search: "検索",
+    synchronizing: "保存中...",
+    noContexts: "以前のコンテキストがありません",
+    back: "戻る",
+    refresh: "再読み込み",
+    retry: "再試行",
+    backToNotes: "ノート一覧へ戻る",
+    backToWiki: "ウィキへ戻る",
+    error: "エラーが発生しました",
+    tryAgainLater: "しばらくしてから再度お試しください",
+    exporting: "エクスポート中...",
+    loading: "読み込み中...",
+    loadMoreFailed: "次の一覧を読み込めませんでした。もう一度お試しください。",
+    remove: "削除",
+    removing: "削除中...",
+    moving: "移動中...",
+    comingSoon: "近日公開予定",
+  },
+  F = {
+    startDate: "開始日",
+    endDate: "終了日",
+    pickEndDate: "カレンダーで開始日と終了日を順に選択してください",
+    exceedsMax: "最大{{maxDays}}日間まで選択できます",
+    dayCount: "{{count}}日間",
+    clear: "クリア",
+    cancel: "キャンセル",
+    apply: "適用",
+    presets: {
+      today: "今日",
+      last7Days: "過去7日間",
+      last30Days: "過去30日間",
+      last90Days: "過去90日間",
+      thisMonth: "今月",
+      lastMonth: "先月",
+      lastYear: "過去1年間",
+    },
+  },
+  x = {
+    upcomingEvents: "今後の予定",
+    connectCalendar: "カレンダーに接続",
+    connectCalendarDescription:
+      "カレンダーを接続すると、今後の予定を確認できます。",
+    joinMeeting: "ミーティングに参加",
+    createNote: "ノートを作成",
+    noEvents: "今後の予定はありません",
+    expiredConnectionTitle: "{{provider}} カレンダーの連携期限が切れました",
+    expiredConnectionDescription:
+      "{{email}} · 有効なカレンダーの予定は引き続き表示されます",
+    reconnect: "再連携",
+    today: "今日",
+    tomorrow: "明日",
+    previousMonth: "前の月",
+    nextMonth: "次の月",
+    allDay: "終日",
+    desktopAppDownload:
+      "<b>デスクトップアプリ</b>で<bb>会議通知</bb>を受け取る",
+    desktopAppDownload2:
+      "<b>オンライン会議</b>は<bb>デスクトップアプリ</bb>で録画しましょう",
+    showMore: "もっと見る",
+    showLess: "閉じる",
+    expand: "展開する",
+    collapse: "閉じる",
+    viewAllEvents: "すべての予定を見る",
+    nearEvents: "近い予定",
+    startsSoon: "まもなく開始",
+    options: "予定オプション",
+    refresh: "カレンダーを更新",
+    inProgress: "進行中",
+    connectButton: "連携する",
+    desktopNudgeSubtitle: "15分前にお知らせします",
+    desktopNudgeTitle: "会議の自動録音",
+    desktopNudgeInlineButton: "デスクトップでミーティング15分前通知を受け取る",
+  },
+  U = {
+    recording: {
+      createFailed: "ノートの作成に失敗しました",
+      noMatchingSession: "該当する録音セッションが見つかりません",
+    },
+  },
+  B = {
+    justNow: "たった今",
+    minutesAgo: "{{minutes}}分前",
+    hoursAgo: "{{hours}}時間前",
+    yesterday: "昨日",
+    daysAgo: "{{days}}日前",
+    weeksAgo: "{{weeks}}週間前",
+  },
+  _ = {
+    personDeleted: { description: "参加者をリストから削除しました" },
+    transcriptionPaused: {
+      title: "文字起こし一時停止",
+      description: "15分間の非アクティブ状態により文字起こしが停止されました",
+      dismiss: "閉じる",
+    },
+    connectionLost: {
+      title: "ネットワーク接続が不安定です",
+      description: "接続が復旧すると文字起こしが自動的に再開されます",
+      dismiss: "閉じる",
+    },
+    generationConnectionUnavailable: {
+      title: "接続が切れているため生成できません",
+      description: "ネットワーク接続を確認してからもう一度お試しください。",
+    },
+    systemAudioCaptureFailed: {
+      title: "システムサウンドを録音できませんでした",
+      description:
+        "マイクは正常に録音中です。パソコンの音が入らない場合は、解決方法をご確認ください。",
+      action: "解決方法",
+    },
+    systemAudioCaptureEnded: {
+      title: "システムサウンドのキャプチャが停止しました",
+      description:
+        "システムサウンドのキャプチャが停止しました。マイクのみで録音中です。",
+    },
+    nativeAudioStartFailed: {
+      title: "録音を開始できませんでした",
+      description:
+        "マイクまたはシステムサウンドにアクセスできませんでした。アクセス権限とオーディオデバイスを確認してから、もう一度お試しください。",
+    },
+    nativeAudioFailure: {
+      captureFailed: {
+        title: "オーディオを使用できません",
+        description: `マイクまたはシステムオーディオを使用できません。
+オーディオデバイスを確認して、もう一度お試しください。`,
+      },
+      systemUnavailable: {
+        title: "システムサウンドを使用できません",
+        description: `システムオーディオデバイスを確認して、もう一度お試しください。
+マイクだけでは録音できません。`,
+      },
+      noSources: {
+        title: "利用可能なオーディオソースがありません",
+        description:
+          "マイクまたはシステムオーディオデバイスを接続して、もう一度お試しください。",
+      },
+      micPermission: {
+        title: "マイクの権限が必要です",
+        description:
+          "システム設定でTiroのマイク使用を許可して、もう一度お試しください。",
+      },
+      systemPermission: {
+        title: "システムオーディオの権限が必要です",
+        description:
+          "システム設定でTiroのシステムオーディオ録音を許可して、もう一度お試しください。",
+      },
+      permissionDenied: {
+        title: "オーディオの権限が必要です",
+        description:
+          "Tiroのマイクとシステムオーディオの権限を確認して、もう一度お試しください。",
+      },
+      startTimeout: {
+        title: "オーディオの開始に時間がかかっています",
+        description:
+          "オーディオデバイスを確認して、録音をもう一度お試しください。",
+      },
+      processTerminated: {
+        title: "オーディオコンポーネントが終了しました",
+        description: `OSまたは他のプログラムがTiroのオーディオコンポーネントを終了しました。
+オーディオ関連のプログラムを終了して、もう一度お試しください。`,
+      },
+      processExited: {
+        title: "オーディオコンポーネントが予期せず終了しました",
+        description:
+          "オーディオデバイスを確認して、録音をもう一度お試しください。",
+      },
+      processUnresponsive: {
+        title: "オーディオコンポーネントが応答していません",
+        description: `Tiroのオーディオコンポーネントが応答していません。
+オーディオデバイスを確認して、もう一度お試しください。`,
+      },
+      unsupportedOs: {
+        title: "このmacOSではデスクトップアプリで録音できません",
+        description:
+          "デスクトップアプリでの録音はmacOS 14.2以降に対応しています。macOSをアップデートするか、ウェブで録音してください。",
+      },
+    },
+    nativeAudioMicNotFound: {
+      title: "マイクが見つかりません",
+      description: `マイクがない環境では、システム音声のみを録音できます。
+この場合、ご自身の声は録音されません。`,
+      settings: "マイク設定を確認",
+      systemOnly: "システム音声のみ録音",
+      cancel: "キャンセル",
+    },
+    systemOnlyRecordingStarted: {
+      title: "システム音声のみの録音を開始しました。",
+      description: "ご自身の声は録音されません。",
+    },
+  },
+  q = {
+    description: `アプリ内ブラウザではソーシャルログイン（Google、Microsoftなど）が正常に動作しないことがあります。
+端末のデフォルトブラウザでTiroをご利用ください。`,
+    usingBrowser: "現在お使いのブラウザ：{{browser}}",
+    copyLink: "リンクをコピー",
+    linkCopied: {
+      title: "リンクをコピーしました！",
+      description: "ブラウザを開いてリンクを貼り付けてください。",
+    },
+    kakaotalk: "カカオトーク",
+    facebook: "Facebook",
+    instagram: "Instagram",
+    naver: "NAVER",
+    linkedin: "LinkedIn",
+    twitter: "X（旧Twitter）",
+    threads: "Threads",
+    "in-app": "アプリ内",
+  },
+  G = {
+    title: "Tiroアプリに移動中...",
+    redirectToAppStore: "App Storeに移動します",
+    redirectToPlayStore: "Google Playに移動します",
+    redirectToWebsite: "公式サイトに移動します",
+    clickHere: "うまく移動しない場合はこちらをクリック",
+  },
+  H = {
+    title: "Tiroで録音を開始",
+    description: "下のボタンを押すとTiroアプリが開き、録音が始まります。",
+    openApp: "Tiroアプリで録音を開始",
+    noApp: "アプリをお持ちでないですか？Tiroをインストール",
+  },
+  V = {
+    hours_one: "{{count}}時間",
+    hours_other: "{{count}}時間",
+    minutes_one: "{{count}}分",
+    minutes_other: "{{count}}分",
+    seconds_one: "{{count}}秒",
+    seconds_other: "{{count}}秒",
+  },
+  z = {
+    failedToUpdate: "変更を保存できませんでした。",
+    pleaseTryAgain: "しばらくしてからもう一度お試しください。",
+    title: "少々お待ちください！",
+    description: "一時的なエラーが発生しました。もう一度お試しいただけますか？",
+    notFound: "ページが見つかりません",
+    notFoundDescription:
+      "お探しのページが見つかりませんでした。URLをご確認の上、再度お試しください。",
+    goBack: "前のページに戻る",
+    goHome: "ホームへ戻る",
+    maintenance: "Tiroは現在メンテナンス中です",
+    maintenanceDescription:
+      "サービス改善のため、Tiroをメンテナンスしています。",
+    contactSupport: {
+      title: "問題が発生しました。",
+      description: "メッセンジャーでTiroチームにお問い合わせください。",
+      button: "お問い合わせ",
+    },
+  },
+  Q = {
+    helpCenter: "ヘルプセンター",
+    contactTeam: "お問い合わせ",
+    noAudioDetected: {
+      title: "音声が入っていません",
+      description:
+        "マイクの入力が検出されていません。マイクのミュートや入力デバイスの設定をご確認ください。",
+      action: "確認方法を見る",
+      dismiss: "閉じる",
+    },
+    noAudioForWhile: {
+      title: "しばらく音声が入っていません",
+      description:
+        "席を外しているだけなら問題ありません。音声が入るはずの状況でしたら、マイクの状態をご確認ください。",
+      action: "確認方法を見る",
+      dismiss: "閉じる",
+    },
+    micPermissionDenied: {
+      title: "マイクへのアクセスが必要です",
+      description:
+        "マイクへのアクセスがブロックされ、音声を取得できていません。設定でマイクのアクセスを許可してください。",
+      action: "確認方法を見る",
+      dismiss: "閉じる",
+    },
+  },
+  K = {
+    join: {
+      description: `{{workspace}} チームに招待されました。
+招待を承認して一緒にコラボレーションしましょう。`,
+      acceptButton: "参加する",
+      laterButton: "あとで",
+    },
+    invalid: {
+      description: `招待リンクが正しくありません。
+ワークスペースのメンバーにリンクの再送をリクエストしてください。`,
+      backButton: "Tiroに戻る",
+    },
+  },
+  j = {
+    title: "お問い合わせ",
+    helpTitle: "お困りのことやご質問はありますか？",
+    enterpriseTitle: "チームでのTiro導入を検討中ですか？",
+    helpCenterTitle: "ヘルプセンターやよくある質問をお探しですか？",
+    visitHelpCenter: "ヘルプセンターへ",
+    visitFAQ: "よくある質問を見る",
+  },
+  Z = {
+    links: {
+      pricing: "料金プラン",
+      roiEstimate: "導入見積",
+      guide: "使用ガイド",
+      changelog: "変更履歴",
+      blog: "ブログ",
+      press: "メディア掲載",
+      contact: "お問い合わせ",
+      contactTeamPlan: "法人お問い合わせ",
+      termsOfService: "利用規約",
+      privacyPolicy: "プライバシーポリシー",
+      status: "サービス ステータス",
+      apiReference: "APIドキュメント",
+      cli: "CLI",
+      mcpServer: "MCP Server",
+      webhooks: "Webhook",
+    },
+    colTitles: {
+      product: "Product",
+      developer: "Developers",
+      compare: "Compare",
+      contact: "Contact",
+      legal: "Legal & Security",
+    },
+    compareHub: "AI議事録ツール比較",
+    business: {
+      name: "ThePlato Inc.",
+      addressLocal: "東京都渋谷区神南一丁目23-10 Shibuya Hive",
+      addressUs: "455 Market St Ste 1940, San Francisco, CA 94105, USA",
+      addressKr:
+        "301-ho, Raon 2, 9 Gwanak-ro 17-gil, Gwanak-gu, Seoul, Republic of Korea",
+      emailLabel: "お問い合わせ",
+      partnersLabel: "事業提携のお問い合わせ",
+      copyright: "© 2026 ThePlato Inc.",
+    },
+    slogan: "We make something wonderful.",
+  },
+  $ = {
+    heading: "Press",
+    description:
+      "Tiroを中心に紹介した記事とインタビューをまとめました。記事と動画をすばやく探せます。",
+    filters: {
+      all: "All",
+      coverage: "掲載記事",
+      interviews: "インタビュー",
+      funding: "資金調達",
+      global: "グローバル",
+      social: "動画・SNS",
+    },
+    controls: {
+      searchPlaceholder: "記事を検索",
+      rss: "RSS",
+      openArticle: "開く",
+      noResults: "条件に一致する掲載情報がありません。",
+    },
+    kinds: {
+      article: "Article",
+      profile: "Profile",
+      social: "Social",
+      video: "Video",
+    },
+    meta: {
+      title: "Press | Tiro",
+      description:
+        "Tiroを中心に紹介した記事とインタビューをまとめました。AI議事録、業務コンテキスト、グローバル展開に関する掲載情報をご覧ください。",
+      keywords:
+        "Tiro, ティロ, ThePlato, Press, AI議事録, ビジネスコンテキスト, 会議自動化, AIエージェント, MCP, メディア掲載, インタビュー",
+    },
+  },
+  Y = {
+    selectFileToUpload: "アップロードするファイルを選択してください",
+    orDragAndDrop: "またはここにドラッグ＆ドロップしてください",
+    contextFileUpload: "文脈情報ファイルをアップロード",
+    supportedFormats: "MP4, MP3, MOV, -- ",
+    fileSizeLimit: "1GB以下、5時間以内",
+    selectFile: "ファイル選択",
+    context:
+      "会話の状況や背景を教えていただくと、より正確な要約をお届けできます。",
+    contextHint: `文脈を入力すると、記録されるノートの精度が大幅に向上します。
+スクリーンショットした画像を貼り付けることもできます。`,
+    contextAdd: "文脈追加",
+    noteLanguage: "記録言語",
+    speakerCount: "話者数",
+    speakerCountAutoDetect: "自動検出",
+    speakerCountOption_one: "{{count}}人",
+    speakerCountOption_other: "{{count}}人",
+    convert: "変換する",
+    uploading: "アップロード中...",
+    converting: "変換中...",
+    error: "エラー",
+    unsupportedFormat: "サポートしていないファイル形式です",
+    fileSizeError: "ファイルが大きすぎます",
+    pleaseCheckSize: "1GB未満のファイルをアップロードしてください",
+    pleaseCheckFormat:
+      "対応しているオーディオファイルをアップロードしてください",
+    emptyFileTitle: "ファイルが空のため、アップロードできません。",
+    emptyFileDescription:
+      "ファイルを開いて再生できることを確認してから、もう一度選択してください。",
+    loadingDuration: "再生時間を取得中...",
+    estimatedDuration: "推定処理時間：{{duration}}",
+    progress: {
+      REQUEST_RECEIVED: "ファイルをアップロードしています...",
+      TRANSCRIPTION_STARTED: "音声をテキストに変換しています...",
+      TRANSCRIPTION_COMPLETED: "テキストへの変換が完了しました！",
+      TRANSCRIPTION_ERROR: "変換中にエラーが発生しました。再試行してください。",
+      PARAGRAPHS_SPLIT: "内容を構造化された段落に整理しています...",
+      SENTENCES_SPLIT: "文章の構造を調整しています...",
+      PARAGRAPHS_SUMMARIZING_STARTED: "段落の要約を作成しています...",
+      PARAGRAPHS_SUMMARIZING_COMPLETED: "段落の要約が完了しました！",
+      NOTE_METADATA_EXTRACTION_STARTED: "1ページ要約を作成しています...",
+      NOTE_METADATA_EXTRACTION_COMPLETED: "1ページ要約を作成しています...",
+      NOTE_SUMMARY_GENERATION_STARTED: "1ページ要約を作成しています...",
+      NOTE_SUMMARY_GENERATION_COMPLETED: "1ページ要約が完了しました！",
+      COMPLETED: "ノートの整理が完了しました！",
+      ERROR: "処理中にエラーが発生しました。再試行してください。",
+    },
+    googleDriveFileName: "Google Driveファイル",
+    invalidLinkError:
+      "無効なリンクです。現在、Google Driveリンクのみをサポートしています。",
+    linkUploadTooltip: `現在、リンクアップロードはGoogle Driveのみをサポートしています。
+Google Driveリンクを入力する場合は、権限を確認してください`,
+    linkPlaceholder:
+      "Google Driveリンクを入力することもできます。https://drive.google.com/file/d/:fileId",
+    contextPlaceholder: `インタビュー
+[イーロン・マスク]とのインタビューです。[ロケット科学]分野の専門用語と人物名が多く出るので、正確に記録し、要約は親しみやすいトーンで書いてください。
+人物/会社/製品: [テスラ]、[ニューラリンク]、[ロボタクシー]`,
+    fileUpload: "ファイルアップロード",
+    networkBlockedTitle: "アップロードに失敗しました",
+    networkBlockedDescription:
+      "ネットワークがアップロードをブロックしている可能性があります。モバイルホットスポットで再試行してください。",
+  },
+  J = {
+    unsupportedOs: {
+      message:
+        "デスクトップアプリでの録音はmacOS {{minimumVersion}}以降に対応しています",
+      detail: "macOSをアップデートするか、ウェブで録音してください。",
+    },
+    unavailable: {
+      message:
+        "macOSのバージョンを確認できないため、デスクトップアプリで録音を開始できません",
+      detail:
+        "デスクトップアプリでの録音はmacOS {{minimumVersion}}以降に対応しています。ウェブで録音してください。",
+    },
+    folderOpenFailed: {
+      message: "録音フォルダを開けませんでした",
+      detail:
+        "フォルダがまだないか、開く権限がない可能性があります。しばらくしてからもう一度お試しください。",
+    },
+    webOpenFailed: {
+      message: "ウェブを開けませんでした",
+      detail: "ブラウザでTiroのウェブにアクセスして録音してください。",
+    },
+    recordOnWeb: "ウェブで録音する",
+    openRecordingFolder: "録音フォルダを開く",
+    close: "閉じる",
+  },
+  X = {
+    title: "Tiroが会話を記録できるように許可してください",
+    description: `マイクとパソコンの音声をまとめて取り込み、自分と相手の会話をすべて記録します。
+会議に参加するボットはなく、Tiroで記録している間だけ動作します。`,
+    transcribeMyVoice: "自分の声を記録する",
+    transcribeMyVoiceHint: "マイクから入るあなたの声を記録します。",
+    transcribeOthersVoice: "相手の声を記録する",
+    transcribeOthersVoiceHint: "スピーカーから聞こえる相手の声を記録します。",
+    enable: "許可する",
+    granted: "許可済み",
+    continue: "続ける",
+  },
+  ee = {
+    menu: {
+      ariaLabel: "メニューを開く",
+      newNote: "新規ノート",
+      settings: "設定",
+      checkForUpdates: "アップデートを確認...",
+      restartToApply: "再起動してアップデートを適用",
+      logout: "ログアウト",
+      quit: "終了",
+      file: "ファイル",
+      edit: "編集",
+      view: "表示",
+      help: "ヘルプ",
+      undo: "元に戻す",
+      redo: "やり直す",
+      cut: "切り取り",
+      copy: "コピー",
+      paste: "貼り付け",
+      selectAll: "すべて選択",
+      reload: "再読み込み",
+      resetZoom: "実際のサイズ",
+      zoomIn: "拡大",
+      zoomOut: "縮小",
+      toggleFullscreen: "全画面表示の切り替え",
+      toggleDevTools: "開発者ツール",
+      keyboardShortcuts: "キーボードショートカット",
+      changelog: "新着情報",
+      about: "Tiroについて",
+      update: {
+        upToDate: {
+          message: "最新バージョンをご利用中です",
+          detail: "現在のバージョン: {{version}}",
+          confirm: "OK",
+        },
+        available: {
+          message: "新しいバージョン {{version}} を取得しました",
+          detail:
+            "今すぐインストールすると、Tiroを再起動して新しいバージョンに切り替わります。",
+          updateNow: "今すぐインストール",
+          later: "あとで",
+        },
+        downloading: {
+          message: "新しいバージョンをダウンロード中です",
+          detail:
+            "バックグラウンドで {{version}} をダウンロードしています。完了したらお知らせします。",
+          confirm: "OK",
+        },
+        error: {
+          message: "アップデートを確認できませんでした",
+          detail: "しばらくしてからもう一度お試しください。",
+          confirm: "OK",
+        },
+      },
+    },
+  },
+  te = {
+    upToDate: {
+      message: "最新バージョンをご利用中です。",
+      detail: "現在のバージョン: {{version}}",
+      confirm: "OK",
+    },
+    available: {
+      message: "新しいバージョン（{{version}}）が準備できました。",
+      detail:
+        "今すぐインストールすると、Tiroを再起動して新しいバージョンに切り替わります。",
+      updateNow: "今すぐインストール",
+      later: "あとで",
+    },
+    downloading: {
+      message: "新しいバージョンを利用できます。",
+      detail: `現在バックグラウンドでダウンロード中です。完了したら、メニューの「Restart to Apply Update」から適用できます。
+{{current}} → {{latest}}`,
+      confirm: "OK",
+    },
+    error: {
+      message: "アップデートを確認できませんでした。",
+      detail: "しばらくしてからもう一度お試しください。",
+      confirm: "OK",
+    },
+  },
+  ie = {
+    installNewVersion: "今すぐv{{version}} アップデート",
+    available: "新しいバージョンがあります",
+    description: "今すぐインストールしますか？",
+    button: "アップデート",
+    nextTime: "後で",
+    required: "必須のアップデートのお知らせ",
+    forceDescription: `Tiroが素敵な変更点を用意しました。
+アプリを最新バージョンにアップデートしてください！`,
+    updateNow: "今すぐアップデート",
+    newFeatures: "{{version}} 新機能",
+    completed: {
+      title: "アップデートが完了しました",
+      description: "新機能を試してみてください",
+      viewChangelog: "変更内容を見る",
+      badge: "v{{version}} アップデート完了",
+    },
+  },
+  oe = {
+    systemSuspend: {
+      title: "記録を一時停止しました",
+      body: "ノートの内容を確認してください。",
+      action: "ノートを確認する",
+    },
+  },
+  ne = {
+    advisorDebug: {
+      toggle: "自動提案の診断",
+      details: "実行の詳細",
+      noCard: "カードがない実行",
+      inputCount: "入力段落 {{count}}件",
+      paragraph: "段落 {{number}}",
+      unknownParagraph: "段落へ移動",
+      navigationFailed: "段落を開けませんでした。",
+      response: "モデルの応答",
+      validation: "検証結果",
+      validatedDraft: "検証済みのカード内容",
+      query: "検索リクエスト",
+      sources: "最終的な参照元",
+      noSources: "使用できる参照元がありません。",
+      moreEvidence: "残りの原文を表示",
+      outcomes: {
+        CARD_CREATED: "カード生成",
+        SILENT: "提案なし",
+        FAILED: "失敗",
+        TIMED_OUT: "タイムアウト",
+      },
+      stages: {
+        INPUT_PREPARATION: "入力の準備",
+        QUERY_ANALYSIS: "発言の分析",
+        SOURCE_RETRIEVAL: "参照元の検索",
+        CARD_COMPOSITION: "カードの判断",
+      },
+      statuses: {
+        SUCCEEDED: "完了",
+        FAILED: "失敗",
+        TIMED_OUT: "タイムアウト",
+        NOT_RUN: "未実行",
+      },
+    },
+    proactiveAdvisory: {
+      badge: "過去の決定",
+      dismiss: "閉じる",
+      goToParagraph: "該当の発言へ移動",
+    },
+    placeholder: "@でノート、フォルダを参照して質問してください",
+    tooltip: {
+      newChat: "新しい会話を開始",
+      copy: "内容をコピー",
+      stop: "生成を停止",
+      openPanel: "Ask Tiroを開く",
+      closePanel: "Ask Tiroを閉じる",
+      devTrace: "Ask Tiro開発者トレース",
+    },
+    empty: {
+      title: "何かお手伝いしましょうか？",
+      description: `ノートを参照したり、ミーティングを
+要約したり、必要な情報を探します`,
+      note: {
+        chip1: { label: "主な内容", prompt: "主な内容を教えて" },
+        chip2: { label: "やること", prompt: "やるべきことをまとめて" },
+        chip3: { label: "決定事項", prompt: "主な決定事項を教えて" },
+        chip4: { label: "一行で要約", prompt: "要点を一行で要約して" },
+      },
+      allNotes: {
+        chip1: {
+          label: "最近のミーティング",
+          prompt: "過去2週間のミーティングを要約して",
+        },
+        chip2: {
+          label: "よく出るキーワード",
+          prompt: "過去3週間でよく言及されたキーワードは？",
+        },
+        chip3: {
+          label: "今週のやること",
+          prompt: "今週のアクションアイテムをリストアップして",
+        },
+        chip4: {
+          label: "主な決定事項",
+          prompt: "最近のノートの主な決定事項をまとめて",
+        },
+      },
+    },
+    example: {
+      note: {
+        example1: "主な内容を教えて",
+        example2: "やるべきことをまとめて",
+        example3: "主な決定事項を教えて",
+        example4: "まだ解決していない課題を整理して",
+      },
+      allNotes: {
+        example1: "過去2週間のミーティングを要約して",
+        example2: "過去3週間でよく言及されたキーワードは？",
+        example3: "今週のアクションアイテムをリストアップして",
+        example4: "最近のノートの主な決定事項をまとめて",
+      },
+    },
+    noParagraphFound: "段落が見つかりません",
+    citation: {
+      noContent: "コンテンツを読み込めません",
+      backToSummary: "文書に戻る",
+      sourceCount: "{{count}}件の出典",
+    },
+    progress: {
+      summaryReady: "参照内容を整理しました",
+      moreReferences: "他{{count}}件",
+      noteReferences: "参照したノート",
+      wikiReferences: "参照したWikiページ",
+      referenceSample: "全{{total}}件中{{shown}}件を表示",
+      noResults: "関連情報が見つかりませんでした",
+      refCountNote_one: "ノート{{count}}件",
+      refCountNote_other: "ノート{{count}}件",
+      refCountWiki_one: "Wiki{{count}}件",
+      refCountWiki_other: "Wiki{{count}}件",
+      thinking: "考えています…",
+      thinkingProcess: "思考プロセス",
+      summaryTitle: "参照した情報",
+      summaryStage: {
+        note_search: "参照したノート",
+        wiki_search: "参照したWikiページ",
+        wiki_relation_expansion: "関連Wiki情報",
+        tool_execution: "使用したツール",
+      },
+      stage: {
+        query_analysis: {
+          started: "質問を分析しています…",
+          completed: "質問の分析が完了しました",
+          failed: "一部の情報を取得できませんでした",
+          skipped: "質問の分析をスキップしました",
+        },
+        note_search: {
+          started: "関連ノートを確認しています…",
+          completed: "関連ノートを確認しました",
+          failed: "一部の情報を取得できませんでした",
+          skipped: "ノート検索をスキップしました",
+        },
+        wiki_search: {
+          started: "関連Wikiページを確認しています…",
+          completed: "関連Wikiページを確認しました",
+          skipped: "Wiki確認をスキップしました",
+          failed: "一部の情報を取得できませんでした",
+        },
+        wiki_relation_expansion: {
+          started: "関連情報を探しています…",
+          completed: "関連情報を確認しました",
+          failed: "一部の情報を取得できませんでした",
+          skipped: "関連情報の探索をスキップしました",
+        },
+        tool_execution: {
+          started: "ツールを活用しています…",
+          completed: "ツールを活用しました",
+          failed: "一部の情報を取得できませんでした",
+          skipped: "ツールの活用をスキップしました",
+        },
+        answer_drafting: {
+          started: "回答を作成しています…",
+          completed: "回答の作成が完了しました",
+          failed: "一部の情報を取得できませんでした",
+          skipped: "回答の作成をスキップしました",
+        },
+        completed: { completed: "回答の準備ができました" },
+        cancelled: { completed: "回答生成を停止しました" },
+        error: { failed: "回答生成に失敗しました" },
+      },
+    },
+    devTrace: {
+      title: "開発者トレース",
+      empty: "表示できるトレースはありません",
+      eventCount: "{{count}}件のイベント",
+      redaction: { raw: "raw", redacted: "redacted", summary: "summary" },
+    },
+    devPreview: {
+      tooltip: "Ask Tiro進行状態プレビュー",
+      title: "進行状態プレビュー",
+      iconVariant: {
+        title: "アイコンタイプ比較",
+        sourceOutline: "A. 種類別カラーアイコン",
+        sourceTile: "B. カラータイルアイコン",
+        sourceDuo: "C. 種類 + 状態アイコン",
+      },
+      clear: "プレビューをクリア",
+      scenario: {
+        wiki: "Wikiページ参照",
+        relation: "Wiki関係",
+        note: "ノート確認",
+        tool: "ツール実行",
+        answer: "回答作成",
+        error: "エラー状態",
+        trace: "Raw trace",
+      },
+      preview: {
+        query: {
+          wiki: "AskTiro dev preview: Wikiページ進行状態",
+          relation: "AskTiro dev preview: Wiki関係進行状態",
+          note: "AskTiro dev preview: ノート確認進行状態",
+          tool: "AskTiro dev preview: ツール実行進行状態",
+          answer: "AskTiro dev preview: 回答作成進行状態",
+          error: "AskTiro dev preview: エラー状態",
+          trace: "AskTiro dev preview: raw trace",
+        },
+        answer: {
+          wiki: "Project AlphaとLaunch PlanのWikiページを一緒に参照して回答案を構成する例です。",
+          relation:
+            "2つのWikiページ間のdependency関係を確認してから結論を整理する例です。",
+          note: "最近の戦略会議と顧客インタビューノートを確認して根拠を絞り込む例です。",
+          tool: "ノート検索ツールとWikiコンテキストツールの実行状態を表示する例です。",
+          answer:
+            "検索と関係確認が終わったあと、回答を作成する進行状態の例です。",
+          error:
+            "Wikiコンテキスト読み込み失敗がユーザーにどう見えるかを確認する例です。",
+          trace:
+            "raw thinking、tool call、tool resultがdev trace panelに表示される例です。",
+        },
+      },
+      progress: {
+        queryAnalysis: "質問意図と参照範囲を確認しました",
+        wiki: "Project AlphaページとLaunch Planページを一緒に参照しています",
+        relationPages: "関連Wikiページ2件を確認しました",
+        relation:
+          "Project AlphaページとLaunch Planページの関係を理解しています",
+        note: "戦略会議ノートと顧客インタビューノートを確認しています",
+        toolStarted: "wiki_context.searchツールを実行しています",
+        toolCompleted: "wiki_context.searchツールの実行が完了しました",
+        answerContext: "回答に必要なWikiページを確認しました",
+        answer: "参照したWikiとノートを回答に整理しています",
+        errorWiki: "Wikiコンテキストの読み込みに失敗しました",
+        error: "一部の参照を読み込めなかったため回答生成を停止しました",
+        traceWiki: "raw trace例に使うWikiコンテキストを確認しました",
+        traceTool: "tool callとtool resultをtrace panelに記録しました",
+      },
+    },
+  },
+  re = {
+    expiredOrExhausted: {
+      title: "無料体験が終了しました🥲",
+      description:
+        "Tiroを引き続きご利用いただくには、有料プランをお申し込みください！",
+      cta: "サブスクリプション開始",
+    },
+    usageNearlyExhausted: {
+      title: "無料体験の残り時間があと{{minutesLeft}}分です😮",
+      description: "今すぐサブスクリプションでTiroを継続利用しましょう！",
+      cta: "サブスクリプション開始",
+    },
+    trialOneMonth: {
+      title: "Tiro無料体験中：残り{{daysLeft}}日です！",
+      description: "",
+      cta: "サブスクリプション開始",
+    },
+    trialOneYear: {
+      title: "Tiro無料体験中：使用可能時間があと{{minutesLeft}}分です！",
+      description: "",
+      cta: "サブスクリプション開始",
+    },
+    expiryApproaching: {
+      title: "Tiro無料体験中：残りわずか{{daysLeft}}日です！",
+      description: "今すぐサブスクリプションでTiroを継続利用しましょう！",
+      cta: "サブスクリプション開始",
+    },
+    recordingControls: {
+      title: "Tiro無料体験中",
+      upgrade: "プランアップグレード",
+      languageSelect: {
+        addLanguage: "言語を追加",
+        recordingLanguage: "記録言語",
+        recordingLanguageLabel: "記録",
+        translationLanguage: "リアルタイム翻訳言語",
+      },
+    },
+  },
+  ae = {
+    welcome: {
+      logoAlt: "Tiro",
+      closeAria: "オンボーディングのウェルカムモーダルを閉じる",
+      title: "Tiroへようこそ！",
+      creditLabel: "有効期限 3週間",
+      validUntil: "{{date}}まで使えます",
+      creditUnit: "分",
+      breakdown: `今すぐ<b>{{earned}}分</b>
+オンボーディング{{steps}}ステップで<b>+{{remaining}}分</b>`,
+      startButton: "今すぐノートを作成",
+    },
+    tasks: {
+      eyebrow: "始める",
+      title: "Tiroのオンボーディングで無料利用時間を獲得",
+      setupTitle: "Tiroの設定を完了",
+      collapseAria: "オンボーディングタスクを閉じる",
+      expandAria: "オンボーディングタスクを開く",
+      collapsedTitle: "無料利用時間を受け取る",
+      collapsedDoneTitle: "すべて完了しました",
+      minutesUnit: "分",
+      completed: "{{completed}}/{{total}} 完了",
+      completedSuffix: "完了",
+      calendarTitle: "カレンダー連携",
+      required: "・必須",
+      calendarDescription: "会議参加と録音をすぐ始められます。",
+      desktopTitle: "デスクトップアプリをインストール",
+      desktopDescription: "音声保存とビデオ会議の記録に対応しています。",
+      mobileTitle: "モバイルアプリをインストール",
+      mobileDescription: "PCなしでも記録できます。",
+      firstNoteTitle: "最初のノートを作成",
+      firstNoteDescription: "段落要約と文書生成を体験できます。",
+      connectButton: "連携",
+      installButton: "インストール",
+      recordButton: "記録",
+      credit: "+{{minutes}}",
+      endTitle: "Tiroのオンボーディングを終了",
+      endDescription: "必要な設定はあとから変更できます。",
+      calloutTitle: "Tiroをもっと活用する方法",
+      calloutDescription: "よく使うAIに貼り付けて質問してみましょう。",
+    },
+    firstNoteRecording: {
+      questions: {
+        team: "どんなチームで働いていますか？",
+        role: "どんな役割を担当していますか？",
+        terms: "よく使う名前や用語はありますか？",
+        finish: "一時停止してから、録音終了を押してください。",
+      },
+    },
+    firstNoteResult: {
+      eyebrow: "最初の記録",
+      title: `今の60秒を
+Tiroはこう記録しました`,
+      paragraphStat: "記録された段落",
+      keywordStat: "キーワード",
+      termsLabel: "名前と用語",
+      loadingKeywords:
+        "今話した内容から、覚えておくとよい名前や用語を探しています。",
+      keywordError:
+        "キーワードを読み込めませんでした。ノートは保存されています。",
+      emptyKeywords:
+        "追加できるキーワードが見つかりませんでした。ノートは保存されています。",
+      rememberNote: "単語帳に追加すると、次回の会議でTiroが覚えておきます。",
+      addButton: "単語帳に追加",
+      addingButton: "追加中",
+      extractingButton: "キーワード検索中",
+      goToNoteButton: "自分のノートへ",
+      retryButton: "もう一度録音",
+      saveAllButton: "すべて単語帳に保存",
+      addKeywordAria: "{{keyword}}を単語帳に追加",
+      addedKeywordAria: "{{keyword}}は保存済み",
+      createdToastTitle: "最初のノートが作成されました。",
+      createdToastDescription:
+        "次はカレンダーを連携して、実際の会議で使ってみましょう。",
+      addSuccess: "単語帳に追加しました",
+      addError: "単語帳に追加できませんでした",
+    },
+    audioReplayPreference: {
+      title: "音声の原本をどう扱うか選びましょう",
+      description: `記録を始める前に一度だけ選べば大丈夫です。
+設定からいつでも変更できます。`,
+      discardTitle: "原本を削除",
+      discardDescription: "テキストだけ残す場合",
+      keepTitle: "原本を保存",
+      keepDescription: "あとで原文を確認したい場合",
+      discardNotice: "テキストだけを残し、音声は文字起こし後すぐに削除します。",
+      keepNotice: "音声の原本を保存し、あとから段落ごとに再生できます。",
+      paragraphReplayTitle: "段落ごとに再生",
+      paragraphReplayDescription: "各段落から元の音声を再生できます",
+      wholeAudioBackupTitle: "音声全体のバックアップ",
+      wholeAudioBackupDescription: "デスクトップアプリでのみ利用できます",
+      wholeAudioBackupOrgLocked: "組織のポリシーによりロックされています",
+      wholeAudioBackupDesktopDescription:
+        "音声ファイル全体をこの端末に保存します",
+      continueButton: "続ける",
+    },
+    aiPrompt: {
+      title: `Tiroとよりよく協業する方法を
+AIに聞いてみましょう。`,
+      description:
+        "Tiroの活用方法をAIに相談するためのプロンプトをコピーします。",
+      closeAria: "AI協業プロンプトのモーダルを閉じる",
+      prompt: `あなたは、Tiroを使い始めたチームがTiroとよりうまく協業できるよう支援するAIアドバイザーです。
+
+Tiroは、会議の会話、決定事項、文脈、次のアクションを、AI agentがすぐ使えるコンテキストとして整理します。ユーザーがチーム、役割、会議の進め方、よく使うツール、繰り返し発生する作業を伝えたら、次の内容を提案してください。
+
+1. まずTiroで記録するとよい会議
+2. 会議後に自動化するとよいフォローアップ
+3. 精度を上げるために単語帳へ追加するとよい名前や用語
+4. MCP、API、Webhook、エクスポートでつなぐとよいワークフロー
+5. 今週すぐ試せる小さなアクション
+
+不確かな製品仕様は断定せず、Tiroの公式ドキュメントやTiroチームに確認するよう案内してください。
+
+最初にこう聞いてください。
+「どんなチームで働いていて、会議後にいちばん手間だと感じることは何ですか？」`,
+      steps: {
+        copy: "下のボタンでプロンプトをコピーします。",
+        paste: "Claude、ChatGPT、GeminiなどのAI agentに貼り付けます。",
+        context:
+          "自分やチームの状況を伝えると、活用方法を一緒に見つけてくれます。",
+      },
+      promptLabel: "プロンプト内容",
+      promptCount: "{{count}}文字",
+      expandButton: "展開",
+      collapseButton: "閉じる",
+      copyButton: "プロンプトをコピー",
+      copiedButton: "コピー完了",
+      copyFailedButton: "再試行",
+    },
+    step1: {
+      badge: "機能 ①",
+      title: "リアルタイム会話記録",
+      description: "ノートを作成し、下の**赤いボタン**を押すと記録開始",
+      audioReplay: {
+        title: "音声再生",
+        description: "設定をオンにすると、音声を後から再生できます",
+        off: "OFF",
+        on: "ON",
+      },
+    },
+    step2: {
+      badge: "機能 ②",
+      title: "カスタムドキュメント",
+      description: `ワンクリックで会話を1ページのドキュメントに変換
+標準テンプレートやカスタムテンプレートを利用できます。`,
+    },
+    step3: {
+      badge: "機能 ③",
+      title: "共有の方法を選択",
+      description: `共有リンクを作成したり、共同編集者を招待できます。
+よく使うツールに保存したり、PDFやWordにエクスポートできます。`,
+    },
+    step4: {
+      badge: "デスクトップアプリ",
+      title: "デスクトップアプリでオンライン会議を記録",
+      features: {
+        systemAudio: "**システム音声を録音**（ビデオ通話・動画）",
+        calendarIntegration: "会議の15分前に**リマインダーを受け取る**",
+      },
+      downloadButton: "Download",
+    },
+    step5: {
+      badge: "無料トライアル",
+      heroTitle: `3週間使える
+無料トライアルクレジット`,
+      heroDescription: `約{{count}}回分の会議を
+記録できます。`,
+      title: "Tiroから<b>{{quotaMinutes}}分の無料利用時間</b>をプレゼント！",
+      description: `3週間、全機能をフルで体験できます。
+最初のノートを作成してみませんか？`,
+      eventBadge: "EVENT",
+      eventDescription:
+        "24時間以内に**10分以上**記録すると、**50分のボーナス**がもらえます。",
+      createNoteButton: "ノート作成",
+    },
+    navigation: { previous: "前へ", next: "次へ" },
+  },
+  se = {
+    reward_granted: {
+      title: "新しいリワードが届きました",
+      activationDescription: `<b>{{amount}}</b>を獲得しました
+招待した友だちが10分以上記録しました。`,
+      paidDescription: `<b>{{amount}}</b>を獲得しました
+招待した友だちが有料プランの利用をはじめました。`,
+      cta: "リワードを確認",
+    },
+    payment_expired: {
+      title: "お支払い情報の更新が必要です",
+      rightLabel: "D-{{days}}",
+      body: "お支払い情報が更新されないとノート記録が制限されます。",
+      cta: "支払い情報を修正",
+    },
+    quota_exhausted: {
+      title: "{{planName}}",
+      rightLabel: "{{used}} / {{total}}分",
+      body: "記録時間をすべて使い切りました。プランをアップグレードしてご利用ください。",
+    },
+    trial_expired: {
+      title: "無料体験期間終了",
+      body: "新規ミーティング記録が制限されました。お支払いと同時に復旧します。",
+      cta: "プランを有効化",
+    },
+    enterprise_quota_exhausted: {
+      title: "契約量超過",
+      rightLabel: "{{used}} / {{total}}分",
+      body: "契約量に達したため新規記録がブロックされました。追加のお支払いが必要です。",
+      cta: "サポートへ問い合わせ",
+    },
+    payment_failed: {
+      title: "お支払い失敗",
+      rightLabel: "D-{{days}}",
+      body: "{{date}}までにお支払い情報の更新が必要です。",
+    },
+    trial_member_limit: {
+      title: "無料体験のメンバー上限に到達",
+      rightLabel: "{{used}} / {{total}}人",
+      body: "より多くのメンバーと使うにはプランを有効化してください。",
+    },
+    trial_ending: {
+      title: "無料体験終了予定",
+      rightLabel: "D-{{days}}",
+      body: "お支払いを設定して、作業を途切れず続けましょう。",
+    },
+    trial_invite_members: {
+      title: "チームメンバーと試しましょう",
+      body: "ワークスペースにメンバーを招待して、会議記録を一緒に共有できます。",
+    },
+    freeTrialTitle: "無料体験中",
+    quota_warning_80: {
+      title: "{{planName}}",
+      rightLabel: "{{used}} / {{total}}分",
+      body: "上限の80%に達しました。プランに加入して上限を増やしましょう。",
+    },
+    overage_ready: {
+      title: "{{planName}}",
+      rightLabel: "{{used}} / {{total}}分",
+      body: "追加記録がオンです。基本の記録時間を使い切っても記録は止まらず、超過分は1分あたり$0.025で請求されます。",
+    },
+    overage_active: {
+      title: "{{planName}}",
+      rightLabel: "{{used}} / {{total}}分",
+      body: "追加記録で記録を続けています。これまでの超過{{minutes}}分は1分あたり$0.025で請求されます。",
+    },
+    plan_change_scheduled: {
+      title: "{{planName}}終了予定",
+      rightLabel: "D-{{days}}",
+      body: "次回のお支払い日({{date}})までは{{planName}}が維持され、その後ノート記録が制限されます。",
+    },
+    trial_usage: {
+      title: "無料体験中",
+      rightLabel: "{{used}} / {{total}}分",
+      body: "プランに加入して上限を増やしましょう。",
+    },
+    upsell_pro: {
+      title: "より多くの利用量が必要なら",
+      body: "Proプランで月間利用量を増やせます。",
+    },
+    upsell_max: {
+      title: "より大きな容量が必要なら",
+      body: "Maxプランで月の使用量を増やせます。",
+    },
+    upsell_team: {
+      title: "複数人で使うなら",
+      body: "チームプランでワークスペースを共有して一緒に作業できます。",
+    },
+    subscribe_nudge: {
+      title: "プランを始めましょう",
+      body: "登録すると、Tiroのすべての機能を制限なくお使いいただけます。",
+    },
+  },
+  le = {
+    micInUse: {
+      title: "オーディオ検出",
+      body: "すぐに記録を始めましょう",
+      action: "ノート作成",
+      startRecording: "リアルタイム記録を開始",
+    },
+  },
+  ce = {
+    prompt: {
+      title: "オンライン会議が終わったようです",
+      description: "録音中のままです。一時停止しますか？",
+      pause: "一時停止",
+    },
+  },
+  de = {
+    openSettings: "設定を開く",
+    openAskTiro: "Ask Tiroを開く",
+    goBack: "戻る",
+    goForward: "進む",
+    startOfflineRecording: "オフライン録音を開始",
+    title: "キーボードショートカット",
+    showShortcuts: "キーボードショートカットを表示",
+    openSearch: "横断検索を開く",
+    selectNote: "前後のノートを選択",
+    openSelectedNote: "選択中のノートを全画面で開く",
+    expandPreview: "プレビュー中のノートを全画面で開く",
+    closeNote: "ノートを閉じる、または一覧へ戻る",
+    findInNote: "ノート内の検索・置換を開く",
+    bold: "太字",
+    italic: "斜体",
+    strikethrough: "取り消し線",
+    highlight: "ハイライト",
+    resetTextColor: "標準の文字色を適用またはリセット",
+    toggleRecording: "記録を一時停止",
+    startRecording: "記録を開始または再開",
+    group: {
+      general: "一般",
+      recording: "記録",
+      navigation: "ノートの検索と移動",
+      editing: "ノート本文の編集",
+      view: "表示とアプリ",
+    },
+    where: {
+      notes: "ノート画面",
+      noteList: "ノート一覧",
+      notePreview: "ノートプレビュー",
+      noteFullView: "ノート全画面",
+    },
+  },
+  pe = { lengthLimit: "コンテキストが{{max}}文字に自動的に調整されました" },
+  ue = {
+    bold: "Bold",
+    code: "Code",
+    highlight: "Highlight",
+    italic: "Italic",
+    strike: "Strike",
+  },
+  me = {
+    trigger: {
+      create: {
+        success: "トリガーが作成されました",
+        error: "トリガーの作成に失敗しました",
+      },
+      update: {
+        success: "トリガーが更新されました",
+        error: "トリガーの更新に失敗しました",
+      },
+      delete: {
+        success: "トリガーが削除されました",
+        error: "トリガーの削除に失敗しました",
+      },
+      toggle: {
+        activated: "トリガーが有効になりました",
+        deactivated: "トリガーが無効になりました",
+        error: "トリガーの有効化/無効化に失敗しました",
+      },
+    },
+  },
+  ge = {
+    recording: {
+      button: {
+        start: "簡単記録",
+        tooltip: `インターネット接続が不安定な場所でも録音できます。
+録音が終了すると自動的にアップロードされ、文字起こしが開始されます。`,
+      },
+      status: {
+        recording: "録音中",
+        paused: "一時停止中",
+        uploadPending: "アップロード待機中",
+        uploading: "アップロード中",
+        uploadFailed: "アップロード失敗",
+      },
+      controls: {
+        language: "言語選択",
+        languageTooltip: `録音が終了すると、選択した言語でドキュメントを生成します。
+会話言語はTiroが自動的に検出して記録するのでご安心ください。`,
+        pause: "一時停止",
+        resume: "録音再開",
+        stop: "録音終了",
+        folderTooltip: "ノートを保存するフォルダを選択",
+      },
+      success: {
+        uploaded: "アップロード完了",
+        uploadedDescription: "録音をアップロードしました。変換を開始します。",
+        goToNote: "ノートへ移動",
+      },
+      error: {
+        uploadFailed: "アップロード失敗",
+        uploadFailedDescription:
+          "録音のアップロードに失敗しました。もう一度お試しいただくか、ファイルをダウンロードしてください。",
+        startFailed: "録音の開始に失敗しました",
+        pauseFailed: "録音の一時停止に失敗しました",
+        resumeFailed: "録音の再開に失敗しました",
+        stopFailed: "録音の終了に失敗しました",
+        microphoneAccess: "マイクへのアクセスに失敗しました",
+        recoveryFailed: "録音の復元に失敗しました",
+        maxRetriesReached: "最大再試行回数に達しました",
+        maxRetriesReachedDescription:
+          "複数回の試行後もアップロードに失敗しました。ファイルをダウンロードするか、後でもう一度お試しください。",
+        s3UploadExpired: "アップロードリンクが期限切れです",
+        s3UploadExpiredDescription:
+          "アップロードリンクの有効期限が切れました。再試行すると新しいリンクでアップロードされます。",
+        s3UploadFailed: "アップロードサーバーエラー",
+        s3UploadFailedDescription:
+          "ファイルサーバーへのアップロード中にエラーが発生しました。再試行するかファイルをダウンロードしてください。",
+      },
+      retry: "再試行",
+      autoStopped: {
+        title: "オフライン録音が自動終了し、アップロードされます",
+      },
+      cancel: {
+        title: "録音をキャンセルしますか？",
+        description: "録音された内容は保存されず、元に戻すことはできません。",
+        keepRecording: "戻る",
+        confirm: "録音をキャンセル",
+        success: "録音がキャンセルされました",
+      },
+      sessionDiscarded: "録音が削除されました",
+      recovery: {
+        title: "未保存の録音があります",
+        description: "{{count}}件の未保存のオフライン録音があります。",
+        resumable: "録音を再開できます",
+        resumeRecording: "録音を再開",
+        dismiss: "無視",
+        sessionTitle: "オフライン録音",
+        upload: "アップロード",
+        discard: "削除",
+        discardAll: "すべて削除",
+        close: "閉じる",
+      },
+      unconverted: {
+        title: "録音ファイルの復旧",
+        description:
+          "端末に残っている録音ファイルです。すでにノートとして処理された録音が含まれる場合もあります。",
+        descriptionAction:
+          "WAV形式でダウンロードして確認するか、ファイルアップロードから新しいノートを作成できます。",
+        itemTitle: "{{date}}の録音",
+        modifiedAt: "更新：{{date}}",
+        download: "WAVをダウンロード",
+        downloadFileName: "Tiro 復旧録音 {{timestamp}}.wav",
+        openFolder: "フォルダで表示",
+        downloadNamed: "{{fileName}}をWAV形式でダウンロード",
+        openFolderNamed: "{{fileName}}をフォルダで表示",
+        deleteNamed: "{{fileName}}を削除",
+        empty: "復旧できる録音ファイルはありません。",
+        stopFailure: {
+          title: "録音の終了を完了できませんでした",
+          description:
+            "録音ファイルは削除せずに保存しました。復旧画面でWAVとして保存するか、削除できます。",
+        },
+        cancelFailure: {
+          title: "録音を完全に削除できませんでした",
+          description:
+            "残っている可能性のある録音ファイルを保存しました。復旧画面で確認して削除できます。",
+        },
+        toast: { action: "録音を見る" },
+        unplayable: {
+          title: "再生できないファイル",
+          description:
+            "ファイル形式を確認できないため、再生やWAV形式でのダウンロードはできません。",
+        },
+        deleteDialog: {
+          title: "この録音ファイルを削除しますか？",
+          description: "削除した録音ファイルは復元できません。",
+        },
+        success: {
+          download: "WAVファイルを保存しました。",
+          delete: "録音ファイルを削除しました。",
+        },
+        error: {
+          list: "録音ファイルを読み込めませんでした。再読み込みして、もう一度お試しください。",
+          play: "録音ファイルを再生できませんでした。",
+          download: "WAVファイルを保存できませんでした。",
+          delete: "録音ファイルを削除できませんでした。",
+        },
+      },
+    },
+  },
+  Te = JSON.parse(
+    '{"tabs":{"overview":"概要","apiKeys":"APIキー","webhooks":"Webhook","oauthApps":"OAuthアプリ"},"sidebar":{"user":"アカウント","expandSidebar":"サイドバーを開く","collapseSidebar":"サイドバーを閉じる","oauthAppsOrganizationOnly":"組織の範囲でのみ登録できます。","oauthAppsIntegrationManagerOnly":"組織の管理者と開発者のみ管理できます。","oauthAppsAccessUnavailable":"組織の権限を確認中か、確認できませんでした。"},"context":{"label":"管理対象","placeholder":"アカウント、組織、ワークスペースを選択","workspaces":"ワークスペース","organizations":"組織","organizationFallback":"自分の組織","accounts":"アカウント","account":"自分のアカウント"},"overview":{"title":"概要","openDocs":"開発者向けドキュメント","documentation":{"title":"ドキュメント","restApi":{"title":"REST API","description":"最初のAPIリクエストを送ってみましょう。"},"mcp":{"title":"MCP Server","description":"AIツールにTiroを接続してみましょう。"},"cli":{"title":"CLI","description":"CLIをインストールしてはじめましょう。"},"webhookGuide":{"title":"Webhookガイド","description":"イベントの受信を設定してみましょう。"}}},"common":{"copy":"コピー","actions":"操作","edit":"編集","delete":"削除","cancel":"キャンセル","done":"完了","save":"保存","saving":"保存中…","creating":"作成中…","deleting":"削除中…","nameLabel":"名前","nameRequired":"名前を入力してください","copyFailed":"コピーできませんでした","status":{"active":"有効","inactive":"無効"}},"notice":{"workspaceLoadFailed":"ワークスペースを読み込めませんでした","retry":"再試行","noWorkspaceTitle":"ワークスペースがありません","noWorkspaceDescription":"ワークスペースに参加すると、ここでリソースを管理できます。","workspaceListLoadFailedTitle":"ワークスペースを読み込めませんでした","workspaceListLoadFailedDescription":"しばらくしてからもう一度お試しください。","workspaceNotFoundTitle":"ワークスペースが見つかりません","workspaceNotFoundDescription":"削除されたか、アクセス権がない可能性があります。","contextLoadFailedTitle":"管理対象を読み込めませんでした","contextLoadFailedDescription":"しばらくしてからもう一度お試しください。","organizationAccessDeniedTitle":"組織のリソースを表示できません","organizationAccessDeniedDescription":"組織の管理者または開発者ロールが必要です。組織の管理者にロールの付与をご依頼ください。","organizationAccessLoadFailedTitle":"組織の権限を確認できませんでした","organizationAccessLoadFailedDescription":"しばらくしてからもう一度お試しください。","workspaceAdminOnlyTitle":"ワークスペースの連携は管理者のみ作成できます","workspaceAdminOnlyDescription":"ワークスペース管理者に依頼するか、自分のアカウントに切り替えて、アカウントが所有する連携を作成してください。","switchToAccount":"自分のアカウントに切り替える"},"apiKeys":{"title":"APIキー","workspaceDescription":"ワークスペースの管理者が作成・管理できます。フォルダ一覧・ツリーの取得には、アカウントAPIキーまたはOAuthログインが必要です。","organizationDescription":"組織の管理者と開発者が作成・管理できます。フォルダ一覧・ツリーの取得には、アカウントAPIキーまたはOAuthログインが必要です。","accountDescription":"アクセスできるワークスペースで、自分の権限で動作します。連携先で個人キーを求められた場合は、このアカウントAPIキーを使用してください。","folderBoundaryNoticeTitle":"一部のAPIキーは以前の範囲で動作しています","folderBoundaryNoticeDescription":"これらのキーも、ワークスペース全体に共有されたフォルダのノートのみを扱うよう順次移行する予定です。個人フォルダのノートが必要な場合は、そのアカウントがアクセスできるノートをすべて扱えるアカウントのAPIキーをご利用ください。","folderBoundaryNoticeOrganizationDescription":"これらのキーも、ワークスペース全体に共有されたフォルダのノートのみを扱うよう順次移行する予定です。","createButton":"APIキーを作成","empty":{"title":"Tiro APIとの連携をはじめましょう","description":"APIキーでリクエストを認証し、必要なデータへ安全にアクセスできます。","guide":"APIスタートガイド"},"table":{"name":"名前","keyId":"キーID","status":"ステータス","expires":"有効期限","lastUsed":"最終使用","created":"作成日","scopes":"スコープ","allowedHosts":"許可ホスト","allScopes":"すべてのスコープ","anyHost":"すべてのホスト"},"status":{"expired":"期限切れ","neverExpires":"無期限","neverUsed":"未使用"},"notice":{"userLoadFailed":"アカウントのAPIキーを読み込めませんでした","workspaceLoadFailed":"ワークスペースのAPIキーを読み込めませんでした","organizationLoadFailed":"組織のAPIキーを読み込めませんでした"},"dialog":{"createTitle":"APIキーを作成","namePlaceholder":"例：連携サービス用","descriptionLabel":"説明","descriptionPlaceholder":"このキーの用途をメモしておきましょう","expirationLabel":"有効期限","expiry90days":"90日（デフォルト）","expiry1year":"1年","expiryNever":"無期限","expiryCustom":"日付を指定","createConfirm":"作成","editTitle":"APIキーを編集","deleteTitle":"APIキーを削除","deleteDescription":"このAPIキーを削除しますか？削除すると元に戻せず、このキーを使用する連携は直ちに停止します。","deleteConfirm":"削除","scopesLabel":"スコープ","scopesPlaceholder":"スコープを選択","scopesSelected":"{{count}}件選択中","scopesSearchPlaceholder":"スコープを検索","scopesEmpty":"スコープが見つかりません","scopeModeAll":"すべてのスコープ","scopeModeAllDescription":"このキーがアクセスできるリソースの範囲内で、すべてのAPI操作を許可します。キーの種類やユーザー権限による制限は引き続き適用されます。","scopeModeRestricted":"選択したスコープのみ","workspaceAccessLabel":"このキーがアクセスできるワークスペース","workspaceAccessModeAll":"現在と今後追加されるすべてのワークスペース","workspaceAccessModeAllDescription":"おすすめの設定です。新しいワークスペースも自動的に含まれます。","workspaceAccessModeRestricted":"選択したワークスペースのみ","workspacesPlaceholder":"ワークスペースを選択","workspacesSelected":"{{count}}件選択中","workspacesSearchPlaceholder":"ワークスペースを検索","workspacesEmpty":"一致するワークスペースがありません","workspaceSelectionRequired":"ワークスペースを1つ以上選択してください","removeWorkspace":"ワークスペースを選択から外す","unavailableWorkspace":"現在アクセスできないワークスペース（{{guid}}）","removeScope":"スコープを削除","allowedHostsLabel":"許可ホスト","allowedHostsPlaceholder":"ホストを入力してEnterキーを押してください","allowedHostsHint":"空欄にするとすべてのホストを許可します。","applyDelayHint":"変更が反映されるまで最大1分ほどかかることがあります。","removeHost":"ホストを削除","inheritedHostsHeading":"組織から継承（常に適用）","inheritedHostsTooltip":"組織の設定で管理されます。ここでは変更できません。"},"secret":{"title":"APIキーを安全な場所に保管してください","description":"このキーが表示されるのは今回限りです。ダイアログを閉じると再表示できません。","copied":"APIキーをコピーしました"},"toast":{"created":"APIキーを作成しました","createFailed":"APIキーを作成できませんでした","updated":"APIキーを更新しました","updateFailed":"APIキーを更新できませんでした","deleted":"APIキーを削除しました","deleteFailed":"APIキーを削除できませんでした","keyIdCopied":"キーIDをコピーしました"}},"oauthApps":{"title":"OAuthアプリ","description":"アプリがアクセスできるのは、許可したユーザーの権限と同意したスコープの範囲内のみです。","createButton":"OAuthアプリを登録","listLoadFailed":"OAuthアプリを読み込めませんでした","loadMore":"さらに表示","loadingMore":"読み込み中…","loadMoreFailed":"次のページを読み込めませんでした。もう一度お試しください。","empty":{"title":"登録済みのOAuthアプリはありません","description":"ユーザーの同意を得てTiro External APIを呼び出すアプリを登録できます。"},"metadata":{"loadFailed":"利用可能なOAuthスコープを確認できませんでした","createDisabled":"既存アプリの表示と破棄は引き続き利用できます。スコープ情報を読み込むまで、新しい登録は停止されます。"},"unknown":{"title":"アプリの登録結果をご確認ください","reconciling":"OAuthアプリ一覧を再確認しています。","description":"OAuthアプリが登録されたか確認できませんでした。登録済みの場合、クライアントシークレットは再表示できません。新しいアプリが一覧にある場合は再登録せず、一覧にない場合のみもう一度登録してください。","reconcileFailed":"OAuthアプリが登録されたか確認できず、アプリ一覧も読み込めませんでした。アプリ一覧を読み込むまで、新しいアプリは登録できません。","reviewed":"一覧を確認しました"},"table":{"name":"名前","clientId":"クライアントID","status":"ステータス","created":"登録日"},"status":{"STAGED":"以前の無効な登録","ACTIVE":"有効","DISABLED_FOR_NEW_GRANTS":"新規承認を停止","REVOKED":"破棄済み","stagedDescription":"以前の方式で登録されているため利用できません"},"dialog":{"createTitle":"OAuthアプリを登録","editTitle":"OAuthアプリを編集","editDescription":"アプリ情報とユーザーにリクエストするスコープを変更できます。","scopeNarrowingNotice":"スコープを外すと（{{scopes}}）、すでに許可したユーザーは残ったスコープの範囲でのみ利用します。残りがない場合は再度許可が必要です。","description":"アプリ情報とユーザーにリクエストするスコープを入力してください。","secretDescription":"登録を完了する前に、現在表示されている認証情報を保存してください。","namePlaceholder":"例：社内自動化ツール","redirectUrisLabel":"リダイレクトURI一覧","redirectUriRowLabel":"リダイレクトURI {{index}}","redirectUrisHint":"認可リクエストでは、登録したURLのいずれかと完全に一致するredirect_uriを使用してください。","addRedirectUri":"リダイレクトURIを追加","removeRedirectUri":"リダイレクトURI {{index}}を削除","redirectUriErrors":{"required":"リダイレクトURIを入力してください。","duplicate":"同じリダイレクトURIを複数登録することはできません。","invalid":"正しいリダイレクトURIを入力してください。HTTPを使用できるのはlocalhost、127.0.0.1、[::1]のみです。"},"scopesLabel":"リクエストするスコープ","resource":"対象リソース：{{resource}}","scopePresets":{"all":"すべて選択","readOnly":"読み取りのみ","clear":"選択解除"},"createConfirm":"登録"},"scopeDescriptions":{"note_read":"ノート一覧、メタデータ、文字起こしを読み取ります。","note_write":"タイトルなどのノートメタデータを更新します。ノートの読み取り権限を含みます。","note_summary_read":"ノートの要約文書を読み取ります。","note_document_read":"生成された文書を読み取ります。","note_document_template_read":"文書テンプレートの一覧と内容を読み取ります。","folder_read":"フォルダを読み取ります。","folder_write":"フォルダの作成、更新、削除を行います。フォルダの読み取り権限を含みます。","wiki_read":"Wikiの読み取りと検索を行います。","word_memory_read":"単語メモリを読み取ります。"},"secret":{"title":"クライアントシークレットを安全な場所に保存してください","description":"クライアントシークレットが表示されるのは今回限りです。ダイアログを閉じると再表示できません。","copied":"クライアントシークレットをコピーしました","savedAcknowledgement":"クライアントIDとクライアントシークレットを安全な場所に保存しました"},"edit":{"action":"編集"},"disable":{"action":"新規承認を停止","title":"新規の承認を停止しますか？","description":"これから許可するユーザーのみを止めます。すでに許可したユーザーはそのまま利用できます。いつでも再開できます。","confirm":"停止","disabling":"停止中…"},"enable":{"action":"新規承認を再開"},"regenerate":{"action":"シークレットを再発行","title":"クライアントシークレットを再発行しますか？","unknownTitle":"再発行の結果をご確認ください","description":"再発行すると、現在のクライアントシークレットは直ちに利用できなくなります。このアプリを利用しているサービスに新しいクライアントシークレットを設定してください。","confirm":"再発行","regenerating":"再発行中…","secretTitle":"新しいクライアントシークレットを保存してください","secretDescription":"以前のクライアントシークレットは利用できません。このアプリを利用しているサービスに新しいクライアントシークレットを設定してください。","savedAcknowledgement":"新しいクライアントシークレットを安全な場所に保存しました","unknown":"再発行の結果を確認できませんでした。クライアントシークレットがすでに変更されている可能性があります。以前のクライアントシークレットが機能しない場合は、もう一度再発行してください。"},"discard":{"action":"以前の登録を破棄","title":"OAuthアプリの登録を破棄しますか？","description":"以前の方式による無効な登録は利用できません。利用するには、この登録を破棄してOAuthアプリを再登録してください。","confirm":"登録を破棄","discarding":"破棄中…"},"toast":{"created":"OAuthアプリを登録しました","updated":"OAuthアプリを更新しました","updateFailed":"OAuthアプリを更新できませんでした。\\nもう一度お試しください。","enabled":"新規承認を再開しました","disabled":"新規承認を停止しました","enabledChangeFailed":"ステータスを変更できませんでした。\\nもう一度お試しください。","createFailed":"OAuthアプリを登録できませんでした。\\nもう一度お試しください。","discarded":"OAuthアプリの登録を破棄しました","discardFailed":"OAuthアプリの登録を破棄できませんでした。\\nもう一度お試しください。","regenerateFailed":"クライアントシークレットを再発行できませんでした。\\nもう一度お試しください。","clientIdCopied":"クライアントIDをコピーしました"}},"webhooks":{"title":"Webhook","workspaceDescription":"ワークスペースの管理者が作成・管理できます。","organizationDescription":"組織の管理者と開発者が作成・管理できます。","accountDescription":"アクセスできるワークスペースのイベントを受け取ります。","folderBoundaryNoticeTitle":"一部のWebhookは以前の配信範囲で動作しています","folderBoundaryNoticeDescription":"これらのWebhookエンドポイントも、ワークスペース全体に共有されたフォルダのノートイベントのみを受け取るよう順次移行する予定です。","createButton":"Webhookを作成","empty":{"title":"Webhookで作業を自動化しましょう","description":"ノートの作成や更新イベントを、登録したHTTPSエンドポイントで受け取れます。","guide":"Webhookガイド"},"table":{"name":"名前","url":"URL","events":"イベント","status":"ステータス","created":"作成日","eventCount_other":"{{count}}件のイベント"},"notice":{"userLoadFailed":"アカウントのWebhookを読み込めませんでした","workspaceLoadFailed":"ワークスペースのWebhookを読み込めませんでした","organizationLoadFailed":"組織のWebhookを読み込めませんでした"},"dialog":{"createTitle":"Webhookエンドポイントを作成","createDescription":"HTTPSエンドポイントでイベント通知を受け取れます。","namePlaceholder":"例：通知連携用","urlLabel":"URL","urlRequired":"URLを入力してください","urlInvalid":"正しいURLを入力してください","urlHelp":"TiroがこのURLにWebhookのPOSTリクエストを送信します。","eventTypesLabel":"イベントタイプ","selectAll":"すべて選択","deselectAll":"すべて解除","eventsSelected_other":"{{count}}件のイベントタイプを選択中","eventsRequired":"イベントタイプを1つ以上選択してください","activeLabel":"有効","activeDescription":"オフにすると、Webhookの送信を一時停止します。","createConfirm":"作成","editTitle":"Webhookエンドポイントを編集","editDescription":"エンドポイントのURLとイベントを変更できます。","deleteTitle":"Webhookを削除","deleteDescription":"このWebhookエンドポイントを削除しますか？削除すると元に戻せません。","deleteConfirm":"削除"},"secret":{"title":"Webhookシークレットを安全な場所に保管してください","description":"このシークレットが表示されるのは今回限りです。TiroのWebhookペイロードの検証に使用するため、今すぐコピーしてください。","copied":"Webhookシークレットをコピーしました"},"toast":{"created":"Webhookを作成しました","createFailed":"Webhookを作成できませんでした","updated":"Webhookを更新しました","updateFailed":"Webhookを更新できませんでした","deleted":"Webhookを削除しました","deleteFailed":"Webhookを削除できませんでした"},"eventTypeLabels":{"note_created":"ノートの作成","note_deleted":"ノートの削除","note_ended":"ノートの終了","note_participants_updated":"参加者の更新","note_user_content_updated":"ノート内容の更新","note_recording_completed":"録音の一時停止","folder_note_added":"フォルダへのノート追加","folder_note_removed":"フォルダからのノート削除","note_document_generated":"文書の生成","note_document_updated":"文書の更新","note_document_deleted":"文書の削除","note_summary_generated":"要約の生成","note_summary_updated":"要約の更新","note_summary_deleted":"要約の削除"},"resourceTypeLabels":{"note":"ノート","foldernoterelation":"フォルダ","notedocument":"文書","notesummary":"要約"}}}',
+  ),
+  be = JSON.parse(
+    '{"wordMemory":{"title":"組織の単語帳","description":"組織全体に共通で適用される単語帳です。よく使うドメイン用語やサービス名、社内システム名を追加すると、Tiroが会話を記録する際に正確に書き起こします。","bulkImport":"一括追加","bulkExample":"ルネサンス, Renaissance\\nキケロ, Cicero\\nニーチェ, Nietzsche","bulkSubmit":"{{count}}件追加","bulkSubmitting":"追加中…","bulkUpload":"CSVファイルを選択","bulkDownloadSample":"サンプルCSVをダウンロード","bulkCancel":"閉じる","sampleCsv":"ルネサンス,Renaissance\\nキケロ,Cicero\\nニーチェ,Nietzsche","noWords":"登録された単語がありません。","loadError":"単語帳を読み込めませんでした。","entryColumn":"発音","subEntryColumn":"表記","entryPlaceholder":"例: ルネサンス","subEntryPlaceholder":"例: Renaissance","optional":"（任意）","addAriaLabel":"単語を追加","deleteAriaLabel":"{{word}}を削除","editAriaLabel":"単語を編集","editEntryAriaLabel":"発音を編集","editSubEntryAriaLabel":"表記を編集","saveAriaLabel":"保存","cancelAriaLabel":"キャンセル"},"policy":{"title":"セキュリティポリシー","loadError":"セキュリティポリシーを読み込めませんでした。","retry":"再試行","locked":"閲覧のみ","lockedHint":"組織ポリシーにより、閲覧のみ可能です。\\n変更をご希望の場合は担当者にお問い合わせください。","enterpriseOption":"Enterpriseオプション","enterpriseOptionHint":"現在の契約には含まれていないオプションです。\\n導入をご希望の場合は担当者にお問い合わせください。","groups":{"appAndWorkspace":"アプリとワークスペースの利用","audioData":"音声データ","contentAndSharing":"コンテンツ保護と共有","members":"メンバー管理","invitesAndAccess":"招待とアクセス制限"},"allowCapture":{"title":"画面キャプチャを許可","description":"メンバーがTiroアプリで画面をキャプチャすることを許可します。オフにすると、すべてのメンバーが画面をキャプチャできなくなります。","updateSuccess":"画面キャプチャポリシーを変更しました","updateError":"画面キャプチャポリシーを変更できませんでした"},"masking":{"title":"個人情報マスキング","description":"新しく作成するノートの電話番号、メール、個人番号などの個人情報を自動的にマスキングします。既存のノートには適用されません。","updateSuccess":"個人情報マスキング設定を変更しました","updateError":"個人情報マスキング設定を変更できませんでした"},"audioRetention":{"title":"音声の再生","description":"再生を許可しない場合は音声をすぐに削除し、期間を設定した場合はその期間が過ぎてから削除します。文字起こしとノートはそのまま残ります。","blocked":"再生を許可しない","unlimited":"許可","threeDays":"3日間許可","sevenDays":"7日間許可","custom":"期間を指定","fieldLabel":"再生を許可する期間","daysUnit":"日","rangeError":"1〜365の整数を入力してください。","confirmTitle":"音声の再生設定を変更しますか？","confirmDescription":"新しい設定は以前の録音にも適用されます。再生を許可しない場合や、新しい許可期間をすでに過ぎている場合は、音声がすぐに削除され、復元できません。","confirmAction":"設定を変更","updateSuccess":"音声の再生設定を変更しました","updateError":"音声の再生設定を変更できませんでした。\\nしばらくしてから、もう一度お試しください。"},"deleteLocalAudioAfterProcessing":{"title":"音声処理後に音声ファイルを自動削除","description":"音声処理が完了すると、メンバーの端末に残った音声ファイルを自動的に削除し、そのファイルの共有と書き出しもブロックします。この設定をオンにした後に記録される音声から適用されます。","confirmTitle":"音声ファイルの自動削除をオンにしますか？","confirmDescription":"オンにすると、音声処理が完了した後にメンバーの端末に残った音声ファイルが自動的に削除されます。削除されたファイルは、設定をオフに戻しても復元できません。","confirmAction":"オンにする","updateSuccess":"音声ファイル自動削除ポリシーを変更しました","updateError":"音声ファイル自動削除ポリシーを変更できませんでした"},"restrictShareLink":{"title":"共有リンクのブロック","description":"共有リンクを作成できなくなり、作成済みのリンクも開けなくなります。アプリ内でメンバーを直接招待する共有は引き続き使えます。"},"sharePolicy":{"title":"共有リンクポリシー","description":"組織のすべてのワークスペースに適用される共有リンクの基本ポリシーです。ワークスペース設定と組織設定のうち、より厳しい方が適用されます。","updateSuccess":"共有リンクポリシーを変更しました","updateError":"共有リンクポリシーを変更できませんでした","companyOnly":{"title":"会社メールのみ閲覧可能","description":"オンにすると、新規と作成済みの共有リンクは許可されたメールドメインでログインしないと開けなくなります。","privateLockedHint":"現在は「非公開（リンク共有不可）」の上限が適用されており、会社メールのみ閲覧よりも厳しい設定です。\\n変更するには、担当マネージャーまたは partners@theplato.io までお問い合わせください。"},"maxDuration":{"title":"リンクの最大有効期間","description":"作成からこの日数が経過した共有リンクは開けなくなります。空欄の場合は無制限です。","unlimited":"無制限","days":"{{days}}日"},"domains":{"title":"許可メールドメイン","description":"会社メールのみ閲覧時に許可するドメインです。ワークスペース側にもドメインが設定されている場合、両方に含まれるドメインのみ許可されます。","placeholder":"例: {{domain}}","add":"追加","remove":"ドメインを削除","empty":"設定されたドメインはありません。"}},"restrictNonOrgWorkspace":{"title":"組織ワークスペースのみ使用","description":"オンにすると、メンバーは組織ワークスペースでのみノートの作成と録音ができます。","updateSuccess":"「組織ワークスペースのみ使用」設定を変更しました","updateError":"「組織ワークスペースのみ使用」設定を変更できませんでした"},"allowMemberWorkspaceCreation":{"title":"メンバーのワークスペース作成","description":"メンバーによる新しいワークスペースの作成を許可します。オフにすると、組織管理者のみ作成できます。","updateSuccess":"ワークスペース作成設定を変更しました","updateError":"ワークスペース作成設定を変更できませんでした"},"allowedHosts":{"title":"APIキーの許可ホスト","description":"ここに登録したホスト宛てのリクエストのみ認証し、別のホストに送った場合はキーが正しくても拒否します。組織のすべてのAPIキーに適用し、空欄の場合は制限しません。","applyDelayHint":"変更が反映されるまで最大1分ほどかかることがあります。","placeholder":"例: mycompany.api.tiro.ooo","add":"追加","remove":"ホストを削除","anyHost":"制限なし（すべてのホストを許可）","updateSuccess":"許可ホストを変更しました","updateError":"許可ホストを変更できませんでした"},"inviteDomains":{"title":"招待を許可するドメイン","description":"招待できるメールドメインを指定して、組織外の人が資料にアクセスしないようにします。ワークスペースメンバーとノートの共同作業者は別々に設定でき、空欄の場合は制限しません。","inputLabel":"許可するドメイン","placeholder":"例: {{domain}}","add":"追加","remove":"{{domain}}を削除","anyDomain":"このリストでは制限しません","workspaceMember":{"title":"ワークスペースメンバーの招待","description":"ここに登録したドメインのメールアドレスのみ、ワークスペースメンバーとして招待できます。ドメインを削除すると、条件に合わなくなった保留中の招待は自動的に取り消されます。"},"noteUser":{"title":"ノートの共同作業者の招待","description":"ここに登録したドメインのメールアドレスのみ、ノートの共同作業者として招待できます。ワークスペースごとの許可ドメインと併せて適用され、組織の設定が上限となるため、ワークスペース側で広げることはできません。"},"lastDomainWarning":{"title":"リストを空にすると制限が解除されます","description":"保存すると、このリストでは制限しなくなります。制限を続ける場合は、先にドメインを追加してください。","confirm":"解除して保存する"},"updateSuccess":"招待許可ドメインを変更しました","updateError":"招待許可ドメインを変更できませんでした"},"leaverNotePreservation":{"title":"退出メンバーのノート保存","description":"メンバーが退出しても、ノートを組織の保管用ワークスペースに保存します。","updateSuccess":"退出メンバーのノート保存設定を変更しました","updateError":"退出メンバーのノート保存設定を変更できませんでした"},"allowedIps":{"title":"接続を許可する IP","description":"登録したIPからのリクエストのみ許可します。メンバーの接続と組織のAPIキーの両方に適用され、空欄の場合はすべてのIPから接続できます。","currentIp":"保存時に、現在の接続IP（{{currentIpCidr}}）を必ず追加します。","currentIpLoadError":"現在の接続IPを確認できないため、この設定は変更できません。","loadError":"接続を許可するIPを読み込めませんでした。","retry":"再試行","inputLabel":"許可するIPまたはCIDR","placeholder":"例: 203.0.113.10 または 203.0.113.0/24","add":"IPを追加","remove":"{{cidr}}を削除","disable":"IP制限を解除","anyIp":"制限なし（すべてのIPを許可）","updateSuccess":"接続を許可するIPを変更しました","updateError":"接続を許可するIPを変更できませんでした。\\nもう一度お試しください。"}},"noMembers":"メンバーがいません","name":"名前","email":"メール","createdAt":"作成日","role":{"unpaidAdmin":"無料管理者","viewer":"閲覧者","label":"組織の役割","allRoles":"全役割","admin":"管理者","member":"メンバー","developer":"開発者"},"tabs":{"overview":"概要","workspaces":"ワークスペース","members":"メンバー","memberHistory":"監査","usage":"統計","security":"セキュリティ","directorySync":"ディレクトリ同期（SCIM）","wordMemory":"単語帳"},"directorySync":{"title":"ディレクトリ同期（SCIM）","loadError":"ディレクトリ同期の情報を読み込めませんでした。","retry":"再試行","connection":{"title":"IdP連携","description":"OktaやMicrosoft Entra IDなどのIdPと連携すると、メンバーとグループが自動で同期されます。","connect":"IdPと連携する","continueSetup":"設定を続ける","portalLinkError":"設定リンクを発行できませんでした","syncStatusPending":"変更を記録中","syncStatusActive":"変更を反映中","disconnected":"連携解除済み"},"groups":{"title":"グループとワークスペースの紐付け","description":"IdPのグループをワークスペースに紐付けると、グループのメンバー変更がそのワークスペースに反映されます。紐付けていないグループの変更は反映されません。","groupColumn":"グループ","workspaceColumn":"紐付け先のワークスペース","map":"ワークスペースを紐付ける","change":"変更","add":"追加","searchPlaceholder":"ワークスペースを検索","suggested":"候補","bulk":{"trigger":"名前で一括連携 ({{total}})","title":"同じ名前のワークスペースに連携","description":"選択したグループを、同じ名前の既存ワークスペースに連携します。そのグループのメンバーはワークスペースにある既存のノートも閲覧できるようになるため、一覧を確認してから適用してください。","matched":"連携可能 {{count}}","ambiguous":"名前の重複 {{count}}","none":"同名なし {{count}}","groupColumn":"グループ","workspaceColumn":"連携先ワークスペース","manualHeading":"個別に判断が必要なグループ {{count}}件","ambiguousItem":"{{name}}（ワークスペース {{count}}件）","emptyMatched":"同じ名前のワークスペースが1つだけのグループはありません。グループごとに個別に連携してください。","apply":"{{count}}件を連携","applying":"連携中 {{done}}/{{total}}","cancel":"キャンセル","success":"{{applied}}件のグループを連携しました。\\n同期を有効にするとメンバーが参加します。すでに有効な場合は「今すぐ同期」を実行するとすぐに反映されます。","partial":"{{applied}}件まで連携しました。\\n残りは再度お試しください。","error":"連携できませんでした。\\nしばらくしてから、もう一度お試しください。","loadingCandidates":"候補を読み込んでいます","loadError":"候補を読み込めませんでした。","retry":"再試行","duplicateGroup":"グループ名の重複 {{count}}","duplicateGroupItem":"{{name}}（同名のグループが複数あります）"},"noSearchResults":"検索結果がありません","workspacesLoadError":"ワークスペース一覧を読み込めませんでした。","empty":"同期されたグループはまだありません。IdPでグループを割り当てるとここに表示されます。","loadMore":"もっと見る","loadError":"グループ一覧を読み込めませんでした。","unmappedWarning":"ワークスペースに紐付けられていません。このグループのメンバー変更は反映されません。","deletedWorkspace":"{{name}}（削除済み）","removeMapping":"紐付けを解除","mappingCreateSuccess":"グループをワークスペースに紐付けました","mappingCreateError":"グループを紐付けできませんでした","mappingUpdateSuccess":"紐付け先のワークスペースを変更しました","mappingUpdateError":"紐付け先のワークスペースを変更できませんでした","mappingDeleteSuccess":"紐付けを解除しました","mappingDeleteError":"紐付けを解除できませんでした"},"apply":{"title":"変更の反映","descriptionPending":"現在はIdPの変更を記録していますが、メンバーシップにはまだ反映していません。変更内容を確認してから、メンバーシップへの反映をはじめてください。","descriptionActive":"IdPの変更をメンバーシップに反映しています。","previewTitle":"反映予定の変更","previewRefresh":"プレビューを更新","previewLoadError":"プレビューを読み込めませんでした。","directoryUserCount":"ディレクトリのユーザー総数","addOrgMembers":"組織に追加されるメンバー","deprovision":"Tiroを利用できなくなるメンバー","unmappedGroups":"ワークスペースに紐付いていないグループ","conflicts":"他の組織に所属するユーザー","workspaceAdds":"ワークスペースに追加されるメンバー","workspaceRemovals":"解除されるワークスペースのメンバーシップ","grantRevokes":"取り消されるワークスペースのアクセス権限","peopleCount":"{{count}}人","groupCount":"{{count}}件","activate":"変更の反映をはじめる","confirmTitle":"変更の反映をはじめますか？","confirmDescription":"これ以降、IdPの変更がメンバーシップに反映され、全体同期が1回実行されます。","confirmAction":"変更の反映をはじめる","activateSuccess":"変更の反映をはじめました","activateError":"変更の反映をはじめられませんでした","deactivate":"変更の反映を一時停止","deactivateSuccess":"変更の反映を一時停止しました","deactivateError":"変更の反映を一時停止できませんでした","reconcile":"今すぐ同期","reconcileSuccess":"同期をリクエストしました","reconcileError":"同期をリクエストできませんでした","membershipCount":"{{count}}件","countUnknown":"不明","reconcileConfirmTitle":"今すぐ同期しますか？","reconcileConfirmDescription":"この同期により、ワークスペースのメンバーシップが{{count}}件解除される可能性があります。","reconcileConfirmDescriptionUnknown":"解除されるメンバーシップ数を確認できませんでした。プレビューを更新して変更内容を確認してから実行することをおすすめします。","reconcileConfirmAction":"同期する"}},"memberHistory":{"title":"権限変更履歴","emptyFiltered":"条件に一致する権限変更履歴はありません","description":"メンバーの追加・削除や役割の変更履歴を確認できます。プライバシー保護と監査のために記録されます。","searchPlaceholder":"名前またはメールで検索","startDate":"開始日","endDate":"終了日","allActions":"すべての種類","actionLabel":"種類","action":{"added":"追加","removed":"削除","roleChanged":"役割変更"},"member":"対象メンバー","change":"変更内容","performedBy":"実行者","occurredAt":"発生日時","systemActor":"システム","unknownUser":"確認できないユーザー","deletedUser":"退会したユーザー","empty":"権限変更履歴はありません","loadError":"履歴を読み込めませんでした","showing":"{{count}}件を表示中・さらに読み込めます","loadMore":"もっと見る"},"auditLog":{"tabs":{"permissionHistory":"権限変更履歴","auditLog":"監査ログ","accessLog":"アクセスログ"},"title":"監査ログ","description":"メンバーの権限変更とログファイル作成の記録をCSVで作成できます。","selectDates":"期間を選択","actionFilter":"操作の種類","actionsSelected":"操作の種類 {{count}}件","actions":{"all":"すべての操作","authLogin":"ログイン成功","noteRead":"ノート閲覧","noteUpdate":"ノート編集","noteDelete":"ノート削除","transcriptDelete":"文字起こしの段落を削除","memberRoleAdd":"メンバーに役割を付与","memberRoleChange":"メンバーの役割を変更","memberRoleRemove":"メンバーの役割を解除","auditLogSearch":"監査ログを照会","auditLogExport":"監査ログをエクスポート","wikiPageList":"Wikiページ一覧を照会","wikiPageView":"Wikiページを照会","wikiSearch":"Wikiを検索","wikiGraphSeed":"Wikiグラフを照会","wikiGraphExpand":"Wikiグラフを展開","wikiGraphAround":"Wikiグラフの周辺を探索","wikiSourceOpen":"Wikiの出典を照会"},"createExport":"ログファイルを作成","download":"ダウンロード","status":{"QUEUED":"待機中","RUNNING":"作成中","READY":"準備完了","FAILED":"失敗","EXPIRED":"期限切れ"},"list":{"title":"リクエスト履歴","requestedFilter":"リクエスト日","requestedWithin":{"7":"過去7日間","30":"過去30日間","90":"過去90日間","365":"過去1年間","all":"全期間"},"emptyFiltered":"{{range}}にリクエストしたログファイルはありません","requestedAt":"リクエスト日時","period":"期間","requestedBy":"リクエストしたユーザー","status":"状態","recordCount":"件数","expiresAt":"有効期限 {{datetime}}","failureReason":"失敗理由","truncated":"一部のみ含む","empty":"作成したログファイルはまだありません","loadError":"ログファイルのリクエスト履歴を読み込めませんでした","showing":"{{count}}件を表示中・さらに読み込めます","loadMore":"もっと見る"},"export":{"timezone":"タイムゾーン","timezoneHelp":"地域のタイムゾーンまたはUTCオフセットを入力してください。例: Asia/Seoul、America/New_York、+09:00","timezoneUtc":"UTC (UTC+00:00)","timezoneSeoul":"韓国標準時 (UTC+09:00)","title":"ログファイルを作成","description":"ダウンロード理由は監査ログに記録されます。作成できるファイルのサイズは最大1GBです。","period":"ログの期間","periodHelp":"最大{{maxDays}}日まで選択できます。直近15分は自動的に除外されます。","reason":"ダウンロード理由","reasons":{"CUSTOMER_REQUEST":"顧客からの依頼","INCIDENT_INVESTIGATION":"インシデント調査","LEGAL_AUDIT":"法的監査","INTERNAL_OPERATION":"社内運用","PERIODIC_REVIEW":"定期点検","OTHER":"その他"},"detail":"理由の詳細","detailPlaceholder":"例：2026年第3四半期の定期セキュリティ点検","detailHelp":"前後の空白を除き、10文字以上200文字以下で入力してください。","detailError":"理由の詳細を10文字以上200文字以下で入力してください。","submit":"作成"},"failure":{"archivedRange":"選択した期間の一部のログは長期保管されているため、すぐには照会できません。管理者に復元を依頼してください。","rangeTooLong":"選択した期間が長すぎます。期間を短くして、もう一度お試しください。","scanBudget":"処理する記録が多すぎます。期間を短くして、もう一度お試しください。","exportSizeLimit":"ログファイルが1GBを超えたため、作成できませんでした。期間を短くして、もう一度お試しください。","exportProcessingTimeout":"ログファイルの作成に時間がかかったため、処理を中止しました。期間を短くして、もう一度お試しください。","archiveParse":"一部のログの読み込み中に問題が発生しました。もう一度試しても解決しない場合は、お問い合わせください。","internal":"ログファイルを作成できませんでした。しばらくしてから、もう一度お試しください。","unknown":"ログファイルを作成できませんでした。条件を確認して、もう一度お試しください。"},"errors":{"invalidTimezone":"有効な地域のタイムゾーンまたはUTCオフセットを入力してください。","selectRange":"開始日と終了日を選択してください。","noSettledRecords":"選択した期間には、まだ作成できるログがありません。15分後にもう一度お試しください。","exportRangeTooLong":"選択したタイムゾーンでは検索可能な期間を超えています。終了日を1日前にしてください。","tooManyJobs":"処理中のリクエストが多すぎます。いずれかが完了してから、もう一度お試しください。","invalidRequest":"選択した期間を処理できません。期間を短くして、もう一度お試しください。","createFailed":"ログファイルの作成を開始できませんでした。しばらくしてから、もう一度お試しください。","downloadFailed":"ダウンロードを開始できませんでした。しばらくしてから、もう一度お試しください。"}},"accessLog":{"title":"アクセスログ","description":"組織メンバーのアクセスログをCSVで作成できます。"},"usage":{"title":"統計","reportTabs":{"usage":"使用量","signups":"新規登録者"},"granularityOptions":{"daily":"日次","weekly":"週次","monthly":"月次"},"accumulated":"累計","startDate":"開始日","endDate":"終了日","dateRangeValidation":"開始日は終了日より前でなければなりません","usageChart":"使用量","signupChart":"新規登録者","signupDefinition":"現在の組織メンバーがTiroアカウントを作成した日を基準に、新規登録者数を集計します。","signupTotal_one":"選択した期間の新規登録者数は{{count}}人です。","signupTotal_other":"選択した期間の新規登録者数は{{count}}人です。","signupCount":"新規登録者","signupLoadError":"新規登録者数を読み込めませんでした。しばらくしてからもう一度お試しください。","signupRefreshError":"最新の新規登録者数を読み込めなかったため、読み込み済みのデータを表示しています。","signupLoading":"新規登録者数を読み込んでいます…","signupExport":{"button":"新規登録者CSV","exporting":"ダウンロード中…","success":"新規登録者CSVをダウンロードしました。","error":"新規登録者CSVをダウンロードできませんでした。もう一度お試しください。"},"period":"期間","showDataTable":"データ表を表示","hideDataTable":"データ表を非表示","quotaReference":"使用上限","minutesUsed":"分使用","loading":"読み込み中…","noData":"データがありません","noteCount":"ノート数","recordingMinutes":"録音時間(分)","activeUsers":"アクティブユーザー","activeUsersDefinition":"期間中に録音したメンバー数です。日、週、月単位に応じてDAU/WAU/MAUに切り替わります。","activeUsersCount_one":"アクティブユーザー{{count}}人","activeUsersCount_other":"アクティブユーザー{{count}}人","usageFilter":{"button":"使用量フィルター","title":"使用量で絞り込み","description":"選択した期間の録音使用量（分）でメンバーを絞り込みます。","minPrefix":"","minSuffix":"分以上","maxPrefix":"","maxSuffix":"分未満","noLimitPlaceholder":"制限なし","apply":"適用","reset":"リセット","invalidRange":"0以上の整数を入力し、最小値は最大値より小さくしてください","chipMin":"{{min}}分以上","chipMax":"{{max}}分未満","chipRange":"{{min}}分以上{{max}}分未満","matchCount_one":"{{count}}人","matchCount_other":"{{count}}人","emptyResult":"条件に一致するメンバーがいません","clearFilter":"フィルターを解除"},"memberBreakdown":"メンバー別使用量","memberName":"名前","memberEmail":"メール","totalRecordingMinutes":"総録音時間","totalNoteCount":"総ノート数","totalCreditsUsed":"総クレジット使用量","totalOverageMinutes":"総超過使用量","orgQuotaUsage":"{{used}}分 / {{quota}}分","orgUsageValue":"{{used}}分","orgQuotaPeriodHint":"現在の請求期間の使用量です。","export":{"button":"使用量CSV","exporting":"エクスポート中…","sectionTotals":"選択期間の合計","sectionTimeseries":"期間別レポート","sectionRaw":"元データ","memberBreakdown":"メンバー別合計","timeseries":"全体","memberTimeseries":"メンバー別","workspaceTimeseries":"ワークスペース別","memberWorkspaceTimeseries":"メンバー×ワークスペース","cumulativeChip":"累計","cumulativeHint":"累計がオンのため、選択した期間全体を1つに合算したCSVをダウンロードします。","success":"CSVファイルをダウンロードしました","error":"エクスポートできませんでした。\\nもう一度お試しください。","workspaceBreakdown":"ワークスペース別合計"},"workspaceBreakdown":"ワークスペース別の使用量","workspaceName":"ワークスペース名"},"overview":{"subscription":"サブスクリプション","subscriptionStart":"開始日","subscriptionEnd":"終了日","noSubscriptionEnd":"なし","paymentState.active":"アクティブ","paymentState.canceling":"キャンセル予定","paymentState.pending":"保留中","paymentState.expired":"期限切れ","noSubscription":"有効なサブスクリプションがありません。","editName":"組織名を編集","saveName":"保存","cancelEdit":"キャンセル","manageMembers":"メンバーを管理","manageWorkspaces":"ワークスペースを管理","viewUsage":"使用量を確認","currentUsage":"現在の使用量","unlimited":"上限なし","usagePercent":"{{percent}}％使用","loadError":"組織の状態を読み込めませんでした。","loadErrorDescription":"時間をおいて、もう一度お試しください。","retry":"もう一度試す","updateSuccess":"組織名を変更しました","updateError":"組織名を変更できませんでした"},"workspaces":{"createSuccess":"ワークスペースを作成しました","loadError":"ワークスペースを読み込めませんでした。","emptyFiltered":"検索結果がありません。","createError":"ワークスペースを作成できませんでした","deleteSuccess":"ワークスペースを削除しました","deleteError":"ワークスペースを削除できませんでした","memberAddSuccess":"メンバーを追加しました","memberAddError":"メンバーを追加できませんでした","memberRemoveSuccess":"メンバーを削除しました","memberRemoveError":"メンバーを削除できませんでした","memberRoleUpdateSuccess":"役割を変更しました","memberRoleUpdateError":"役割を変更できませんでした","searchPlaceholder":"ワークスペース名で検索","addWorkspace":"ワークスペースを作成","totalCount":"全{{count}}件","noWorkspaces":"ワークスペースがありません。","columnName":"名前","columnMembers":"メンバー","columnUsage":"使用量 / 使用上限","columnCreatedAt":"作成日","systemBadge":"システム","onboardingBadge":"オンボーディング","onboarding":{"title":"オンボーディングワークスペース","description":"新しいメンバーが組織に参加すると、以下のワークスペースに自動的に追加されます。","empty":"指定されたワークスペースはありません。","add":"追加","searchPlaceholder":"ワークスペース名で検索","noSearchResults":"検索結果がありません。","limitReached":"最大{{max}}個まで指定できます。","remove":"オンボーディングワークスペースから削除","loadError":"オンボーディングワークスペースを読み込めませんでした。","updateError":"オンボーディングワークスペースを変更できませんでした"},"usageValue":"{{used}}分 / {{quota}}分","usageValueUnlimited":"{{used}}分 / -","usageValueBlocked":"{{used}}分 / ブロック","quotaUpdateSuccess":"使用上限を変更しました","quotaUpdateError":"使用上限を変更できませんでした","nameUpdateSuccess":"ワークスペース名を変更しました","nameUpdateError":"ワークスペース名を変更できませんでした","quota":{"quotaLabel":"使用上限","mode":{"unlimited":"上限なし","blocked":"ブロック (0分)","limit":"上限を設定"},"minutesPerMonth":"分 / 月","placeholder":"例: 500","hint":"このワークスペースの合計使用量が上限に達すると、新しい記録を開始できなくなります。","quickEditLabel":"使用上限を設定"},"memberCount":"{{count}}人","deleteWorkspace":"ワークスペースを削除","loadMore":"もっと見る","createDialogTitle":"ワークスペースを作成","createDialogDescription":"組織に新しいワークスペースを作成します。","nameLabel":"ワークスペース名","namePlaceholder":"ワークスペース名を入力してください","create":"作成","deleteDialogTitle":"ワークスペースを削除","deleteDialogDescription":"「{{name}}」ワークスペースを削除しますか？この操作は取り消せません。","detail":{"back":"一覧に戻る","loadError":"ワークスペース情報を読み込めませんでした。","editName":"名前を編集","quotaTitle":"使用上限","createdAt":"作成日","updatedAt":"更新日","membersTitle":"メンバー","membersShowing":"{{count}}人を表示中","membersLoadError":"メンバー一覧を読み込めませんでした。","memberSearchLoadError":"メンバー検索結果を読み込めませんでした。","addMember":"メンバーを追加","emailPlaceholder":"メールアドレスを入力してください","selectMemberPlaceholder":"メンバーを選択してください","searchMemberPlaceholder":"名前またはメールで検索","noMemberSearchResults":"該当するメンバーがいません","add":"追加","noMembers":"まだメンバーがいません。","removeMember":"メンバーを削除","dangerTitle":"ワークスペースを削除","dangerDescription":"ワークスペースを削除すると元に戻せません。"}},"members":{"searchPlaceholder":"名前またはメールで検索","totalCount":"全{{count}}人","loadError":"メンバーを読み込めませんでした","emptyFiltered":"条件に一致するメンバーがいません","columns":"列","visibleColumns":"表示する列","joinedAt":"参加日","showing":"{{count}}人を表示中・さらに読み込めます","loadMore":"もっと見る","updateSuccess":"組織の役割を変更しました","updateError":"メンバー情報を変更できませんでした","removeMember":"メンバーを削除","removeMemberDialogTitle":"メンバーを削除","removeMemberDialogDescription":"{{memberName}}さんを組織から削除しますか？この操作は元に戻せません。","preserveNotesLabel":"このメンバーのノートを保管する","preserveNotesDescription":"ワークスペースフォルダに共有されていないノートを、組織の保管用ワークスペースに移動します。","removeSuccess":"メンバーを削除しました","removeError":"メンバーを削除できませんでした","moreActions":"その他の操作","suspendRecording":"録音を禁止","resumeRecording":"録音を許可","recordingSuspendedBadge":"録音禁止中","recordingSuspendSuccess":"このメンバーの録音を禁止しました","recordingResumeSuccess":"このメンバーの録音を許可しました","onboardMembers":"招待と割り当て","onboardDialogTitle":"メンバー招待とワークスペース割り当て","onboardDialogDescription":"組織の役割とワークスペース割り当てを設定して、複数のメンバーを一度に招待します。","onboardManualInput":"手動入力","onboardCsvUpload":"CSVアップロード","onboardEmailPlaceholder":"メールアドレスをカンマまたは改行で区切って入力してください","onboardDefaultRole":"組織役割","onboardDownloadTemplate":"CSVテンプレートをダウンロード","onboardSubmit":"招待と割り当て","onboardSubmitting":"処理中…","onboardMaxExceeded":"一度に最大{{max}}人まで招待できます。","onboardParsedCount":"{{count}}人の招待準備が完了","onboardResultTitle":"招待と割り当ての結果","onboardResultInvitedNew":"新しいユーザーが招待されました","onboardResultInvitedExisting":"既存ユーザーが招待されました","onboardResultAlreadyMembers":"すでにメンバー","onboardResultRoleUpdated":"役割が更新されました","onboardResultFailed":"失敗","onboardError":"メンバーの招待と割り当てができませんでした","onboardCsvMissingEmailColumn":"CSVファイルにはemail列が必要です","onboardCsvLegacyTeamNameHeader":"teamNameヘッダーは現在サポートしていません。列名をworkspaceNameに変更して、もう一度アップロードしてください。","onboardCsvParseError":"CSVファイルを解析できませんでした","onboardCsvInvalidAction":"action列にはADDまたはDELETEのみ指定できます","onboardNoValidEmails":"有効なメールアドレスが見つかりません","onboardProviderHint":"Google または Microsoft アカウントでログインできるメールアドレスのみ招待できます。","onboardUnsupportedProviderWarning":"{{emails}}はGoogle・Microsoftアカウントではないため、招待されない場合があります。","onboardCsvGuideTitle":"CSVの記入方法","onboardCsvGuideColumnEmail":"招待するメールアドレスです。必ず入力してください。","onboardCsvGuideColumnRole":"組織の役割です。ADMINまたはMEMBERを入力し、空欄の場合はMEMBERになります。","onboardCsvGuideColumnWorkspace":"割り当てるワークスペースです。空欄の場合は割り当てず、存在しない名前を入力すると新しく作成します。","onboardCsvGuideColumnAction":"ADDは追加と招待、DELETEはワークスペースからの削除です。空欄の場合はADDとして処理します。","onboardCsvGuideMoveTip":"ワークスペースを移動するときは、元のワークスペースをDELETEの行、新しいワークスペースをADDの行に分けて記入してください。","workspaces":"ワークスペース","allWorkspaces":"全ワークスペース","workspaceFilterSelectedCount":"ワークスペース{{count}}件","workspaceFilterSearchPlaceholder":"ワークスペース名で検索","workspaceFilterNoResults":"該当するワークスペースがありません","workspaceFilterLoadError":"ワークスペースを読み込めませんでした","workspaceFilterWithoutWorkspace":"ワークスペース未所属のメンバーのみ","noWorkspace":"未所属","memberSheet":{"addToWorkspace":"ワークスペースに追加","selectWorkspacePlaceholder":"ワークスペースを選択してください","add":"追加","noAvailableWorkspaces":"追加できるワークスペースがありません。","membershipsLabel":"所属ワークスペース","noMemberships":"まだ所属しているワークスペースがありません。","loadError":"ワークスペース情報を読み込めませんでした。しばらくしてからもう一度お試しください。","removeFromWorkspace":"ワークスペースから削除","searchWorkspacePlaceholder":"ワークスペース名で検索","noWorkspaceSearchResults":"該当するワークスペースがありません"},"onboardWorkspaceName":"ワークスペース名","onboardWorkspaceNamePlaceholder":"ワークスペース名を入力（任意）","onboardWorkspaceAutoCreateTooltip":"存在しないワークスペース名を入力すると、自動的に作成されます。","onboardResultWorkspaceUpdated":"ワークスペース変更済み","onboardResultWorkspaceRemoved":"ワークスペースから削除済み","onboardResultInvitationsRevoked":"招待取り消し済み","resetPassword":"パスワードをリセット","passwordRecovery":{"confirmTitle":"パスワード再設定メールを送信しますか？","confirmDescription":"新しいパスワードが設定されるまでは、現在のパスワードを使用できます。","confirmSend":"メールを送信","description":"メンバー本人がパスワードを変更できるよう、再設定用のリンクをメールで送信します。","sendEmail":"再設定メールを送信","sending":"送信中…","sent":"パスワード再設定メールを送信しました。","sendError":"メールを送信できませんでした。しばらくしてからもう一度お試しください。","rateLimited":"メールの送信回数が上限に達しました。しばらくしてからもう一度お試しください。"},"resetPasswordDialogTitle":"パスワードをリセット","resetPasswordDialogDescriptionLine1":"{{memberName}}さんのパスワードをリセットしますか？","resetPasswordDialogDescriptionLine2":"仮パスワードが生成されます。メンバーに直接お伝えください。","resetPasswordConfirm":"リセット","resetPasswordResultTitle":"仮パスワードを生成しました","resetPasswordResultDescriptionLine1":"{{memberName}}さんの仮パスワードです。","resetPasswordResultDescriptionLine2":"安全に共有し、ログイン後にパスワードを変更するようご案内ください。","newPassword":"仮パスワード","copyPassword":"コピー","resetPasswordAdminContact":"管理者のパスワードをリセットするには、担当マネージャーまたは partners@theplato.io までお問い合わせください。","resetPasswordError":"パスワードをリセットできませんでした","loginProvider":{"local":"メール"},"detail":{"back":"一覧に戻る","loadError":"メンバー情報を読み込めませんでした。","infoTitle":"メンバー情報","recordingSuspendDescription":"無効にすると、新しい録音を開始できなくなり、進行中のリアルタイム録音も終了します。","resetPasswordDescription":"仮パスワードが生成されます。メンバーに直接お伝えください。","loginMethodLabel":"ログイン方法","dangerTitle":"メンバーを削除","dangerDescription":"組織からメンバーを削除すると元に戻せません。"}},"sidebar":{"organization":"組織","user":"ユーザー","management":"組織管理","policies":"ポリシー"}}',
+  ),
+  he = {
+    message: "サインイン中...",
+    subtitle: "しばらくお待ちください。",
+    back: "戻る",
+  },
+  Se = {
+    conferenceMode: "カンファレンスモード",
+    enterConference: "カンファレンスモード",
+    normalView: "通常表示",
+    translation: "翻訳",
+    toggleTranslation: "翻訳を表示",
+    waitingForCaptions: "まもなくリアルタイム字幕が始まります",
+    eventInfo: "イベント情報",
+    appBanner: {
+      title: "ご自身の会議もTiroで記録してみませんか",
+      description: "リアルタイム要約・翻訳から議事録まで",
+      download: "ダウンロード",
+      dismiss: "閉じる",
+    },
+  },
+  ye = {
+    status: {
+      recording: "録音中",
+      uploading: "アップロード中...",
+      uploadComplete: "アップロード完了",
+      uploadFailed: "アップロード失敗",
+    },
+    lockedNote: "ロックされたノート",
+  },
+  Ae = JSON.parse(
+    '{"title":"Trust Center | Tiro","description":"Tiroのセキュリティ認証、統制項目、コンプライアンス文書をまとめて確認できます。ISO/IEC 27001:2022認証取得、SOC 2 Type 1・Type 2取得済み（5つのTrust Services Criteria全範囲）。","keywords":"Tiro Trust Center, セキュリティ, SOC 2, ISO 27001, コンプライアンス, サブプロセッサー, DPA","hero":{"eyebrow":"Trust Center","company":"Tiro","tagline":"セキュリティは機能ではなく、私たちの働き方そのものです。","description":"Tiroは、初日からセキュリティを前提に設計されたAIミーティングアシスタントです。認証や統制項目、ポリシーをご確認いただき、セキュリティチームに必要な文書をリクエストしてください。","requestAccess":"アクセスをリクエスト","lastUpdated":"最終更新 {{date}}","privacyPolicy":"プライバシーポリシー"},"nav":{"aria":"Trust Centerのセクション","overview":"概要","controls":"セキュリティ統制","resources":"資料","subprocessors":"サブプロセッサー","faq":"よくある質問","updates":"更新履歴"},"overview":{"title":"セキュリティ審査を始める","intro":"TiroのTrust Centerへようこそ。このポータルから、Tiroのセキュリティ体制を確認し、認証や統制項目を閲覧し、セキュリティチームに必要な文書をリクエストできます。","viewAll":"すべて表示","viewMore":"他{{count}}件の統制を表示","cta":{"request":"文書をリクエスト","requestDesc":"SOC 2・ISO・各種ポリシー文書をNDAのもとで取得できます。","browse":"資料を閲覧","browseDesc":"提供可能な報告書・ポリシー・法務文書を確認できます。","contact":"セキュリティ窓口に連絡"}},"compliance":{"sectionTitle":"コンプライアンス","description":"第三者による独立監査を経た認証と、Tiroのセキュリティプログラムが準拠するフレームワークです。","status":{"certified":"認証取得","attested":"報告書発行","inProgress":"進行中"},"certs":{"iso":{"name":"ISO/IEC 27001:2022","detail":"2026年6月4日認証取得 · Sensiba LLP","blurb":"情報セキュリティマネジメントシステム（ISMS）の国際規格であり、独立した認定機関の監査により確認されています。"},"soc2type1":{"name":"SOC 2 Type 1","detail":"5つのTrust Services Criteria","blurb":"5つのTrust Services Criteriaにわたり、セキュリティ統制が特定時点で適切に設計されていることを証明します。"},"soc2type2":{"name":"SOC 2 Type 2","detail":"2026年7月24日 取得 · Sensiba LLP","blurb":"同じ5つのTrust Services Criteriaを対象に、これらの統制が監査期間を通じて実際にどのように運用されたかを評価した報告書です。無限定意見を受けています。"}},"frameworksTitle":"フレームワークと自己宣言","frameworksDescription":"Tiroの情報セキュリティプログラムが準拠するフレームワークです。監査の記載がない場合は自己宣言に基づきます。","frameworks":{"nistCsf":"NIST CSF","nistAiRmf":"NIST AI RMF","cis":"CIS Controls 8.1","gdpr":"GDPR","ccpa":"CCPA / CPRA"}},"controls":{"sectionTitle":"セキュリティ統制","description":"Tiroのインフラと組織全体で運用されているセキュリティ統制を、領域ごとに整理しています。","summary":"{{count}}件の統制 · 最終レビュー {{date}}","controlCount":"{{count}}件の統制","statusActive":"有効","categories":{"data":{"title":"データセキュリティと暗号化","items":{"audio":{"title":"文字起こし後に音声を破棄","desc":"音声は文字起こしの直後に復元不能な形で破棄され、平文でディスクに保存されることはありません。"},"encryption":{"title":"保存時・通信時の暗号化","desc":"データは保存時にAES-256で、通信時にTLS 1.2以上で暗号化されます。"},"keys":{"title":"ユーザーごとの暗号鍵","desc":"機微なコンテンツはユーザーごとに個別の鍵で暗号化され、データベースに直接アクセスできる運用者でも平文では読み取れません。"},"kms":{"title":"マネージド鍵管理（KMS / HSM）","desc":"鍵はFIPS 140-2 Level 3検証済みのHSMを用いるAWS KMSで保護され、12か月ごとに自動でローテーションされます。"},"noTraining":{"title":"お客様データをAI学習に使用しない","desc":"会話を含むお客様のデータを、AIモデルの学習やファインチューニングに使用することはありません。これはすべてのプランに適用されます。"},"deletion":{"title":"復元不能な削除","desc":"削除は運用データベース、バックアップ、ベクトルインデックス、キャッシュに及びます。アカウント解約時にはKMSの鍵が削除予約されます。"}}},"access":{"title":"アクセス制御と認証","items":{"rbac":{"title":"最小権限アクセス（RBAC / ABAC）","desc":"RBACとABACにより、システムとデータへの最小権限アクセスを徹底します。"},"plaintext":{"title":"平文アクセスの制限","desc":"平文コンテンツへのアクセスは、最小権限の原則のもと明示的に承認された少数の担当者に限定され、すべてのアクセスがクエリ・カラム単位で記録されます。"},"sso":{"title":"シングルサインオン（SAML 2.0）","desc":"Okta、Azure AD、Google Workspaceなど各種IdPによるエンタープライズSSOで、アクセスを御社のポリシーと同期できます。"},"mfa":{"title":"多要素認証","desc":"OTP、認証アプリ、ハードウェアキーを第二要素として追加し、パスワードが漏えいしてもログインを防ぎます。"},"ip":{"title":"IPアドレスの許可リスト","desc":"承認済みのIP範囲にアクセスを制限し、オフィスやVPNからの通信のみを許可できます。"},"scim":{"title":"SCIMプロビジョニング","desc":"御社のIdPでのユーザー追加・削除が、SCIMにより自動でTiroに同期されます。"},"session":{"title":"セッション・デバイス制御","desc":"デフォルトで30分の無操作タイムアウト（エンタープライズ単位で調整可能）に加え、同時セッション数やデバイス登録をポリシー単位で制御します。"}}},"infra":{"title":"インフラと可用性","items":{"region":{"title":"韓国国内でのデータ保管（AWSソウル）","desc":"データはAWSソウルリージョン（ap-northeast-2）に保管されます。エンタープライズのお客様は専用VPCや別リージョンを選択できます。"},"multiAz":{"title":"マルチAZによる冗長性","desc":"マルチAZ構成により、単一AZの障害が発生してもサービスを継続できます。"},"backup":{"title":"暗号化された自動バックアップ","desc":"データベースはKMSで暗号化したうえで自動バックアップされ、年次で復旧テストを実施します。"},"restore":{"title":"検証済みの復旧目標","desc":"年次の復旧テストにより、バックアップからの復旧手順を検証しています。具体的な復旧目標は、ご契約時にご相談いただけます。"},"sla":{"title":"稼働率99.9%のSLA","desc":"月間稼働率99.9%のSLAを適用し、未達の場合はサービスクレジットを提供します。"}}},"monitoring":{"title":"監視と脅威検知","items":{"guardduty":{"title":"24時間365日の脅威検知","desc":"AWS GuardDutyが環境を継続的に監視し、脅威を検知します。"},"inspector":{"title":"脆弱性スキャン","desc":"AWS Inspectorがワークロードの脆弱性を継続的にスキャンします。"},"waf":{"title":"Web攻撃からの保護","desc":"WAFとCloudflareにより、一般的なWeb攻撃から保護します。"},"cloudtrail":{"title":"改ざん耐性のあるログ","desc":"監査・インフラログは隔離された改ざん耐性のあるストレージへ送られ、運用システムからの変更を防ぎます。"},"auditLog":{"title":"監査ログ","desc":"ユーザーと管理者の操作を記録し、保持期間を設定できるほか、御社のSIEMへエクスポートやストリーミングが可能です。"},"pentest":{"title":"ペネトレーションテスト","desc":"ペネトレーションテストと脆弱性評価を実施し、リスクを先回りして特定・是正します。"}}},"ai":{"title":"AIセキュリティとデータプライバシー","items":{"noTraining":{"title":"お客様データでモデルを学習しない","desc":"お客様の会話・文字起こし・要約を、モデルの学習やファインチューニングに使用することはありません。"},"zdr":{"title":"Zero Data Retentionのベンダー契約","desc":"すべてのLLM・STTベンダーは、学習禁止とZero Data Retentionを義務付けるDPAに拘束されます。"},"pii":{"title":"個人情報の自動マスキング","desc":"ミーティングノート内の個人を特定できる情報（PII）を自動で検出・マスキングできます。"},"retention":{"title":"設定可能なデータ保持期間","desc":"保持期間をドメイン単位で設定でき、期間の経過後は自動で削除されます。"},"vendorRouting":{"title":"ベンダールーティングの制御","desc":"テナントで利用できるLLM・STTベンダーを選択でき、韓国国内のみへのルーティングも可能です。"}}},"governance":{"title":"データガバナンスと共有","items":{"sharing":{"title":"外部共有の制御","desc":"ノートの共有を、信頼できるドメインの許可リストに限定できます。"},"screenCapture":{"title":"モバイルの画面キャプチャ防止","desc":"モバイルアプリ内のスクリーンショットをブロックでき、試行はすべて記録されます。"},"retentionPolicy":{"title":"組織の保持ポリシー","desc":"エンタープライズ管理者は、組織全体の保持期間を一元的に適用できます。"},"deletionOnClose":{"title":"解約時の完全削除","desc":"アカウント解約後、関連する個人データは14日以内に削除され、それを保護する暗号鍵は削除予約され、残存するコピーは暗号学的にアクセスできなくなります。"},"erasureReceipt":{"title":"削除ログ","desc":"各削除の要求・実行・完了が記録され、エンタープライズのお客様はご要望に応じて削除の証跡を受け取れます。"}}},"corporate":{"title":"コーポレートと組織","items":{"training":{"title":"セキュリティ研修","desc":"従業員は入社時にセキュリティ研修を必須で受講します。"},"accessReviews":{"title":"四半期ごとのアクセス権レビュー","desc":"アクセス権を四半期ごとにレビューし、最小権限を常に維持します。"},"policyLibrary":{"title":"情報セキュリティポリシー","desc":"情報セキュリティポリシー一式を整備し、専用のGRCプラットフォーム上で運用しています。"},"vendorDpa":{"title":"ベンダーのデューデリジェンス","desc":"サブプロセッサーは、学習禁止とZero Data Retentionを義務付けるDPAに拘束されます。"}}},"resilience":{"title":"インシデント対応と事業継続","items":{"incidentResponse":{"title":"インシデント対応","desc":"エンタープライズのお客様には、セキュリティインシデントに対し初動対応4時間のSLAを提供します。"},"notificationSla":{"title":"侵害通知のSLA","desc":"セキュリティインシデント発生時には、影響を受けるお客様へ24時間以内に通知するSLAを適用します。"},"continuity":{"title":"事業継続とDR","desc":"バックアップ、マルチAZ構成、検証済みの復旧目標により、事業継続と災害復旧（DR）を支えます。"},"changeManagement":{"title":"変更管理","desc":"本番環境の変更は、管理されたレビューとデプロイのプロセスに従います。"}}}}},"resources":{"sectionTitle":"資料","description":"報告書とポリシーをセキュリティチームにご提供します。アクセス制限のある文書はNDAの締結が必要です。アクセスをリクエストしてお受け取りください。","available":"提供可能","requestAccess":"アクセスをリクエスト","groups":{"reports":{"title":"報告書と認証"},"policies":{"title":"ポリシー"},"legal":{"title":"法務とプライバシー"}},"docs":{"iso":"ISO/IEC 27001:2022 認証書","soc2type1":"SOC 2 Type 1 報告書","soc2type2":"SOC 2 Type 2 報告書","infosec":"情報セキュリティポリシー","access":"アクセス制御ポリシー","dataProtection":"データ保護ポリシー","bcdr":"事業継続・DR計画","incident":"インシデント対応計画","vendor":"ベンダー管理ポリシー","dpa":"データ処理契約（DPA）","subprocessors":"サブプロセッサー一覧","privacy":"プライバシーポリシー","terms":"利用規約"}},"subprocessors":{"sectionTitle":"サブプロセッサー","description":"Tiroがサービス運用のために利用する第三者サービスです。すべてのLLM・音声認識（STT）パートナーは、学習禁止とZero Data Retentionを義務付けるDPAに拘束されます。","asOf":"{{date}}時点","note":"サービスの進化に合わせて、この一覧を更新します。","headers":{"name":"サブプロセッサー","purpose":"用途","location":"所在地","dataProcessed":"処理するデータ"},"purposes":{"infra":"インフラ","llm":"LLMプロバイダー","stt":"音声認識（STT）","payments":"決済","email":"メール配信","cdn":"CDN・TLS終端","sso":"SSO・ID連携","observability":"オブザーバビリティ","errorMonitoring":"エラーモニタリング"},"locations":{"us":"米国","kr":"韓国","global":"グローバル"},"zdrNote":"すべてのLLM・音声認識（STT）プロバイダーはZero Data Retention契約のもとで運用され、お客様のデータをモデルの学習に使用することは契約で禁止されています。","data":{"infra":"保存時に暗号化されたデータ（全カテゴリー）","llm":"文字起こしとプロンプトのテキスト — ZDR・学習禁止","stt":"文字起こしのためのミーティング音声 — ZDR","payments":"請求・サブスクリプション情報。カード情報はPCI-DSS Level 1の決済事業者が処理し、Tiroのサーバーには保存されません","email":"メールアドレスとメッセージ内容","cdn":"通信中のトラフィック（TLS終端、WAF・DDoSエッジ）","sso":"エンタープライズSSO用の認証識別子（メール・ディレクトリID）","observability":"運用ログ・トレース（PIIは自動マスキング）","errorMonitoring":"エラーイベント・スタックトレース（PIIは自動マスキング）"}},"dataCollected":{"sectionTitle":"Tiroが扱うデータ","description":"Tiroが処理する対象と、各カテゴリーの保護方法をご説明します。","items":{"audio":"ミーティング音声 — 文字起こし後に即時破棄","notes":"文字起こしと要約 — 保存時にAES-256で暗号化","account":"アカウントと組織の情報","usage":"利用状況と診断ログ"}},"updates":{"sectionTitle":"更新履歴","description":"セキュリティとコンプライアンスの主な進捗を、新しい順に掲載します。この履歴はTiroチームが管理しています。","categories":{"compliance":"コンプライアンス","security":"セキュリティ","product":"プロダクト"},"entries":{"iso":{"title":"ISO/IEC 27001:2022 認証を取得","body":"Tiroの情報セキュリティマネジメントシステムが、Sensiba LLPによりISO/IEC 27001:2022の認証を取得しました。"},"pentest":{"title":"ペネトレーションテストプログラムを開始","body":"セキュリティリスクを先回りして特定・是正するため、ペネトレーションテストと脆弱性評価を開始しました。"},"soc2type2":{"title":"SOC 2 Type 2 報告書が完成","body":"Type 1と同じ5つのTrust Services Criteriaを対象に、SOC 2 Type 2報告書を無限定意見で受領しました（監査人：Sensiba LLP）。報告書はNDA締結後にご提供いたします。"},"soc2type1":{"title":"SOC 2 Type 1 報告書が完成","body":"5つのTrust Services Criteriaを対象に、SOC 2 Type 1報告書を完成しました（監査人：Sensiba LLP）。"}},"subscribeNote":"今後の更新をお受け取りになりますか？","subscribeCta":"Trust Centerで購読する"},"dataFlow":{"sectionTitle":"データの流れ","description":"取得から削除まで、ミーティングのデータがどのように扱われ、どのプロバイダーが何を参照するのかをご説明します。","steps":{"capture":{"title":"取得","desc":"ミーティング音声を取得し、TLS 1.2以上でストリーミングします。平文でディスクに書き込むことはありません。"},"transcribe":{"title":"文字起こし","desc":"音声はZero Data Retention契約のもとで音声認識（STT）プロバイダーに送信し、テキストに変換した後に破棄します。"},"summarize":{"title":"要約","desc":"文字起こしテキストをLLMプロバイダーに送信し（Zero Data Retention・学習禁止）、要約と回答を生成します。"},"store":{"title":"保存","desc":"ノート・文字起こし・要約は、AWSソウルリージョンで保存時にAES-256で暗号化し、ユーザーごとの鍵で分離します。"},"delete":{"title":"削除","desc":"削除すると、データベース、バックアップ、ベクトルインデックス、キャッシュから内容を消去します。アカウント解約時にはKMSの鍵が削除予約されます。"}}},"dataOwnership":{"sectionTitle":"データの所有権とプライバシー","description":"お客様のデータはお客様のものです。所有権、処理条件、データの保管場所の扱いについてご説明します。","points":{"ownership":{"title":"データの所有権はお客様にあります","desc":"お客様のコンテンツはお客様に帰属します。Tiroはサービス提供のためにのみ処理し、販売することも、AIモデルの学習に使用することもありません。"},"dpa":{"title":"DPAとSCC","desc":"データ処理契約（DPA）を締結でき、国際移転に対応するEU標準契約条項（SCC）を含みます。"},"residency":{"title":"データの保管場所","desc":"データは既定でAWSソウルリージョン（ap-northeast-2）に保存されます。エンタープライズのお客様は専用リージョンやVPCをリクエストできます。"},"rights":{"title":"データ主体の権利","desc":"GDPRおよびCCPAに沿って、アクセス・訂正・エクスポート・削除のリクエストに対応します。"}}},"incident":{"sectionTitle":"インシデント対応と可用性","description":"セキュリティインシデントをどのように検知・対応・通知するか、また稼働状況をリアルタイムで確認する方法をご説明します。","steps":{"detect":{"title":"検知","desc":"24時間365日の監視（AWS GuardDuty、Inspector、WAF、CloudTrail）により、異常をリアルタイムで検知します。"},"respond":{"title":"対応","desc":"確認されたセキュリティインシデントに対し、エンタープライズのお客様には初動対応4時間のSLAを適用します。"},"notify":{"title":"通知","desc":"影響を受けるお客様へ24時間以内に通知するSLAを適用し、範囲・影響・是正措置をお伝えします。"},"review":{"title":"振り返り","desc":"すべてのインシデントについて、事後レビューと是正措置を実施します。"}},"statusLabel":"システムステータス","slaLabel":"サービスレベルアグリーメント"},"vdp":{"sectionTitle":"脆弱性の開示","description":"セキュリティ研究者の皆さまからのご報告を歓迎し、責任を持って対応します。","reportCta":"脆弱性を報告する","report":"セキュリティ上の脆弱性は {{email}} までご報告ください。","response":"ご報告から3営業日以内に受領をお知らせし、是正が完了するまで進捗をご連絡します。","safeHarbor":"本ポリシーに沿って誠実に行われた研究は許可されており、ポリシーを遵守する研究者に対して法的措置を取ることはありません。","securityTxtLabel":"security.txtを表示"},"faq":{"sectionTitle":"セキュリティ質問票とよくある質問","description":"セキュリティチームから多く寄せられる質問への回答を、評価領域ごとに整理しています。","requestFull":"CAIQ、SIG、またはTiroのセキュリティ質問票の全文が必要ですか？こちらからリクエスト","groups":{"ownership":{"title":"データの所有権"},"dataHandling":{"title":"データの取り扱いと保持"},"access":{"title":"アクセスと担当者"},"aiVendors":{"title":"AIとサブプロセッサー"},"resilience":{"title":"レジリエンスとインシデント対応"},"compliance":{"title":"コンプライアンスと法務"}},"items":{"dataOwnership":{"q":"データおよびコンテンツの権利は誰が所有しますか？","a":"お客様です。お客様のコンテンツは当社の利用規約のもとでお客様に帰属し、Tiroはサービス提供のためにのみ処理し、所有権を主張しません。"},"dataLeaveProduction":{"q":"お客様のデータが本番システムの外に出るのはどのような場合ですか？","a":"暗号化された状態でのみ、かつサービス提供に必要なサブプロセッサー（音声認識、LLM、ストレージ）に対してのみ送信し、それぞれZero Data RetentionのDPAを締結しています。マーケティングやモデルの学習のためにデータをエクスポートすることは一切ありません。"},"dataLocation":{"q":"データはどこに保存され、サーバーはどこにありますか？","a":"AWSソウルリージョン（ap-northeast-2）にマルチAZ構成で保存し、ユーザーごとの鍵で保存時にAES-256により暗号化します。"},"residencyOptions":{"q":"データの保管場所（データレジデンシー）の選択肢はありますか？","a":"ソウルが既定です。エンタープライズのお客様は専用リージョンやVPCをリクエストでき、ベンダールーティングを制限することも可能です（例：韓国国内のみ）。"},"retention":{"q":"データの保持ポリシーを教えてください。","a":"保持期間はお客様が制御できます。音声は文字起こし後に破棄します。ノート・文字起こし・要約は、お客様が削除するか、設定した保持期間が経過するまで保管します（例：エンタープライズでは90・180・365日）。"},"deletionPropagation":{"q":"データを削除した後も、どこかに保存されていますか？","a":"いいえ。削除は運用データベース・ベクターインデックス・キャッシュへ即時反映され、自動バックアップは保持期間の経過後に破棄されます。アカウント解約時には、データを保護するKMS鍵が削除予約され、残存するコピーは暗号学的にアクセスできなくなります。"},"voice":{"q":"ミーティング音声はどのように扱われますか？","a":"リアルタイムでは、音声は音声認識（STT）エンジンを通過した直後にメモリから破棄され、平文で保存されることはありません。アップロードされたファイルも処理完了後に破棄されます。任意のオプトインによる保持を有効にした場合は、本人の暗号化ストレージに音声を保管します（既定は無効）。"},"whoAccess":{"q":"Tiroの誰がお客様のデータにアクセスできますか？","a":"既定では本人と共有相手のみがアクセスできます。運用上、平文へのアクセスは明示的に承認された少数の担当者に限定され、すべてのアクセスがクエリ・カラム単位で記録されます。"},"employeeVetting":{"q":"アクセス権を持つ従業員にはどのような統制が適用されますか？","a":"入社時にセキュリティ研修を必須で受講し、RBAC/ABACによる最小権限アクセスを徹底し、四半期ごとのアクセス権レビューを実施しています。"},"aiTraining":{"q":"お客様のデータをAIモデルの学習に使用しますか？","a":"一切ありません。会話・文字起こし・要約を含むお客様のデータを、モデルの学習やファインチューニングに使用することはなく、これはすべてのプランに適用されます。利用するすべてのLLM・音声認識（STT）ベンダーとは、学習禁止とZero Data Retentionを契約で義務付けています。"},"vendorData":{"q":"どのAIサブプロセッサーがどのデータを受け取りますか？","a":"音声認識（STT）ベンダーは文字起こしのためにミーティング音声を受け取り、LLMベンダーは要約のために文字起こしとプロンプトのテキストを受け取ります。いずれもZero Data Retention契約のもとで行われます。各ベンダーが受け取るデータの全一覧は、サブプロセッサーのページをご確認ください。"},"humanReview":{"q":"お客様のコンテンツを人間が確認することはありますか？","a":"日常的な人手による確認はありません。平文へのアクセスはサポートとデバッグの目的に限り、承認された少数の担当者に限定され、すべてのアクセスが記録されます。"},"incidentResponse":{"q":"インシデント対応のプロセスを教えてください。","a":"24時間365日の監視で異常を検知します。確認されたインシデントには初動対応4時間のSLA（エンタープライズ）、24時間以内のお客様への通知、事後レビューを適用します。セキュリティ上の問題は <a>{{email}}</a> までご報告ください。"},"breachNotification":{"q":"侵害が発生した場合、お客様にはどのように、いつ通知されますか？","a":"影響を受けるエンタープライズのお客様には、24時間以内に通知するSLAを適用し、範囲・影響・是正措置をお伝えします。"},"bcdr":{"q":"事業継続と災害復旧（DR）の対策を教えてください。","a":"マルチAZ構成、KMSで暗号化した自動バックアップ（年次の復旧テスト付き）、月間稼働率99.9%のSLAを適用しています。具体的な復旧目標は、ご契約時にご相談いただけます。"},"pentestCadence":{"q":"ペネトレーションテストはどのくらいの頻度で実施していますか？","a":"ペネトレーションテストと脆弱性評価のプログラムを運用しており、発行後はNDAのもとで要約をご提供します。研究者の皆さまは、脆弱性開示ポリシーを通じて発見事項を報告することもできます。"},"certs":{"q":"どのような認証や監査を取得していますか？","a":"ISO/IEC 27001:2022（Sensiba LLPによる認証取得）、SOC 2 Type 1・Type 2（いずれもSensiba LLPの監査、5つのTrust Services Criteria全範囲、無限定意見）です。また、NIST CSF、NIST AI RMF、CIS Controls 8.1にも準拠しています。報告書はNDAのもとでご提供します。"},"dpa":{"q":"DPAとSCCを締結できますか？","a":"はい。EU標準契約条項（SCC）を含むデータ処理契約（DPA）を締結できます。<a>{{email}}</a> までご連絡ください。"}}},"meta":{"controls":{"title":"セキュリティ統制 · Trust Center | Tiro","description":"Tiroが会議データをどのように保護しているか — 暗号化、アクセス統制、インフラの可用性、監視、AIベンダー統制まで、セキュリティプログラム全体を確認できます。"},"resources":{"title":"セキュリティ文書・レポート · Trust Center | Tiro","description":"TiroのSOC 2・ISO 27001レポート、セキュリティポリシー、DPA、サブプロセッサー一覧を、NDAのもとでセキュリティチーム向けに請求できます。"},"subprocessors":{"title":"サブプロセッサー · Trust Center | Tiro","description":"Tiroがサービス提供のために利用するサブプロセッサーと、各社が処理するデータ・所在地、AIベンダーとのゼロデータ保持（ZDR）条件を確認できます。"},"faq":{"title":"セキュリティFAQ · Trust Center | Tiro","description":"データの所有権、保存場所、保持期間、AI学習、アクセス権限、インシデント対応、コンプライアンスなど、セキュリティチームからよく寄せられる質問への回答を確認できます。"},"updates":{"title":"セキュリティ更新履歴 · Trust Center | Tiro","description":"Tiroのセキュリティ体制、認証、コンプライアンスのマイルストーンに関する最新の変更を確認できます。"}},"vdi":{"sectionTitle":"VDI・閉域ネットワーク対応","description":"Tiroはクライアントのインストール不要で、VDI・閉域ネットワーク環境でもそのまま動作します。金融・公共・エンタープライズの組織が社内VDI経由で利用しています。","points":{"clientless":{"title":"クライアント不要","desc":"標準HTTPSのWebアプリで、VDI内のChrome・Edge・Safariからネイティブクライアントやエージェントなしで利用できます。"},"network":{"title":"ゲートウェイ・CASB連携","desc":"すべての通信が*.tiro.oooドメインに集約され、VDIゲートウェイやCASB（Prisma Access、Netskope、Zscalerなど）でドメイン・IPベースの制御が可能です。エンタープライズでは固定IPやドメイン許可リストも提供します。"},"export":{"title":"エクスポートの管理者制御","desc":"ノートのエクスポート（PDF・Markdown・DOCX）は管理者レベルで制御され、すべてのダウンロード・エクスポートが監査ログに記録されます。組織のVDIデータ漏えい対策がTiroにも適用されます。"},"endpoint":{"title":"端末に依存しない","desc":"機密性は端末ではなくサーバー側のユーザーごとの暗号化によって担保されます。データベースの原本は運用者にも平文では公開されません。"}}}}',
+  ),
+  ke = {
+    title: "テンプレート管理",
+    myTemplates: {
+      title: "マイテンプレート",
+      personal: "個人",
+      workspaceShared: "{{workspaceName}} 共有テンプレート",
+      library: "Tiro ライブラリ",
+    },
+    tiroTemplates: {
+      title: "Tiroのテンプレート",
+      custom: "自作",
+      suggested: "おすすめ",
+    },
+    section: {
+      showMore: "+ {{count}} 件もっと見る",
+      collapse: "閉じる",
+      empty: "まだありません",
+    },
+    create: {
+      button: "新しいテンプレート",
+      dropdownLabel: "新規テンプレートのオプション",
+      blank: "空のテンプレートを作成",
+      importCsv: "CSV から読み込む",
+      downloadCsvTemplate: "CSV 雛形をダウンロード",
+      csvImportSuccess: "CSV からテンプレートを作成しました",
+      csvImportEmpty: "CSV にセクションがありません",
+      csvImportInvalid: "CSV の形式が正しくありません",
+    },
+    scope: {
+      personal: "個人",
+      workspaceShared: "{{workspaceName}} 共有",
+      shareToWorkspace: "{{workspaceName}} に共有",
+      movedToPersonal: "個人テンプレートに戻しました",
+      sharedToWorkspace: "{{workspaceName}} に共有しました",
+      managed: "Tiro ライブラリ",
+    },
+    detail: { untitled: "無題のテンプレート", createdAt: "{{date}} 作成" },
+    empty: {
+      title: "テンプレートを選択してください",
+      description: "左の一覧からテンプレートを選ぶと詳細が表示されます",
+    },
+    actions: {
+      duplicate: "テンプレートを複製",
+      copyToMine: "マイテンプレートに複製",
+      delete: "削除",
+      menu: "もっと見る",
+    },
+  },
+  ve = {
+    invitedBy: "{{name}}さんからの招待",
+    addWorkspace: "新しいワークスペースを追加",
+    createTitle: "ワークスペースを作成",
+    createDescription:
+      "チーム名やプロジェクト名から始めましょう。後から変更できます。",
+    createNameLabel: "ワークスペース名",
+    createNamePlaceholder: "例: The Plato",
+    createHelp: "新しいワークスペースには、別のサブスクリプションが必要です。",
+    nameRequired: "ワークスペース名を入力してください。",
+    nameMaxLength: "ワークスペース名は{{max}}文字以内で入力してください。",
+    createAction: "ワークスペースを作成",
+    createSuccess: "ワークスペースを作成しました。",
+    createError:
+      "ワークスペースを作成できませんでした。しばらくしてからもう一度お試しください。",
+    createRestrictedTooltip: "ワークスペースの作成は組織管理者のみ可能です。",
+    switchError:
+      "ワークスペースを切り替えられませんでした。しばらくしてからもう一度お試しください。",
+    switchDisabledRecording:
+      "録音中、または録音のアップロード/同期が完了するまではワークスペースを切り替えられません。",
+    switchLoading: "ワークスペースを準備しています...",
+    pendingInvitations: "受け取った招待",
+    acceptInvitation: "承諾",
+    declineInvitation: "辞退",
+    emptyInvitations: {
+      title: "受け取った招待はありません",
+      description: "新しいワークスペースに招待されると、ここに表示されます。",
+    },
+    invitationSeatCapacityError: `空き席がないため、招待を承認できません。
+ワークスペースの管理者にお問い合わせください。`,
+    invitationSeatContractError: `参加するには契約状況の確認が必要です。
+ワークスペースの管理者にお問い合わせください。`,
+    invitationSeatPaymentError: `ワークスペースの支払いが完了していません。
+管理者にお問い合わせください。`,
+    invitationSeatPendingError: `席数の変更により、招待を承認できません。
+削減予約の取り消しが必要か、処理中の変更結果が確定しているかを管理者にご確認ください。`,
+    invitationAcceptError:
+      "招待を承諾できませんでした。しばらくしてからもう一度お試しください。",
+    invitationDeclineSuccess: "招待を辞退しました。",
+    invitationDeclineError:
+      "招待を辞退できませんでした。しばらくしてからもう一度お試しください。",
+    settings: "ワークスペース設定",
+    noWorkspace: {
+      title: "まだワークスペースがありません",
+      pendingInvitations: "受け取った招待 {{count}}件を確認",
+      calendar: {
+        title: "カレンダー連携",
+        description: "会議前に通知を受け取り、すぐに記録を始められます。",
+        action: "連携する",
+      },
+      desktop: {
+        title: "デスクトップアプリをダウンロード",
+        description: "システム音声まで、より安定して記録できます。",
+        action: "ダウンロード",
+      },
+    },
+  },
+  Pe = {
+    previewInWiki: "Wikiでプレビュー",
+    syncing: "同期中",
+    conflict: "確認が必要",
+    error: "同期エラー",
+    wikiFilter: { knowledge: "知識" },
+    activationScenario: {
+      READY: "Wiki 利用可能",
+      UNINITIALIZED: "Wiki が未有効化",
+      IN_PROGRESS: "Wiki 設定中",
+      ADMIN_BLOCKED: "管理者承認が必要",
+      PLAN_BLOCKED: "プランのアップグレードが必要",
+      FEATURE_FLAG_DISABLED: "機能フラグ無効",
+    },
+    lockedPreview: {
+      ariaLabel: "Wiki 統合プレビュー",
+      close: "プレビューを閉じる",
+      breadcrumb: "Wiki プレビュー",
+      mockBadge: "Mock",
+      readOnlyBadge: "読み取り専用",
+      mappedFrom: "{{source}} から連携",
+      source: {
+        personTag: "人物タグ",
+        regularWord: "単語メモリ",
+        phoneticWord: "発音メモリ",
+      },
+      activationBlockedTitle:
+        "このワークスペースではまだ Wiki を利用できません",
+      activationBlockedDescription:
+        "有効化後にこのソースがどこへ統合されるかを示すプレビューです。Wiki が利用可能になるまで編集はロックされます。",
+      readOnlyTitle: "読み取り専用ワークスペース",
+      readOnlyDescription:
+        "ソース一覧から Wiki ページを確認できますが、Wiki 編集とソース変更は無効です。",
+      activateCta: "Wiki を有効化",
+      descriptionTitle: "説明",
+      aliasTitle: "エイリアス",
+      lifecycleTitle: "ソースのライフサイクル",
+      description: {
+        person:
+          "人物タグから作成される永続的な PERSON エンティティページです。メールアドレスはエイリアスとして保存され、名前変更後も既存メンションが解決されます。",
+        regularWord:
+          "単語メモリの用語から作成される概念ページです。soft migration 中も元の単語メモリは動作し、この項目は Wiki の知識グラフに統合されます。",
+        phoneticWord:
+          "発音メモリは既定では発音またはエイリアスメタデータとして紐づきます。チームが明示的に選択した場合は概念ページへ昇格できます。",
+      },
+      policy: {
+        person:
+          "名前変更は Wiki の canonical name に反映され、以前のタグ値はエイリアスとして残ります。ソースタグを削除してもソースリンクだけが外れます。",
+        regularWord:
+          "ソース単語を名前変更すると canonical concept が更新され、以前の単語はエイリアスとして保存されます。単語メモリを削除しても永続的な Wiki 内容は削除されません。",
+        phoneticWord:
+          "発音項目は既定でエイリアスまたは発音メタデータとして保存されます。ソース削除時はソースリンクだけが外れ、昇格済み Wiki ページは維持されます。",
+      },
+    },
+  },
+  Ce = JSON.parse(
+    '{"toast":{"pageDeleted":"Wikiページを削除しました。","pageDeleteError":"Wikiページを削除できませんでした。もう一度お試しください。","pageMerged":"Wikiページを統合しました。","pageMergeError":"Wikiページを統合できませんでした。もう一度お試しください。","renamed":"名前を変更しました。","renameError":"名前を変更できませんでした。もう一度お試しください。","aliasAdded":"別名を追加しました。","aliasAddError":"別名を追加できませんでした。もう一度お試しください。","aliasDeleted":"別名を削除しました。","aliasDeleteError":"別名を削除できませんでした。もう一度お試しください。","descriptionSaved":"説明を保存しました。","descriptionSaveError":"説明を保存できませんでした。もう一度お試しください。","descriptionRegenerating":"AIが説明を再生成しています。","descriptionRegenerateError":"再生成をリクエストできませんでした。しばらくしてからもう一度お試しください。"},"actions":{"rename":"名前を変更","blacklist":"自動抽出をブロック","delete":"ページを削除","menuLabel":"ページの操作","namePlaceholder":"名前を入力してください","save":"保存","cancel":"キャンセル","errorRequired":"名前を入力してください。","errorConflict":"同じ名前のページがすでにあります。","deleteTitle":"このWikiページを削除しますか?","deleteDescription":"「{{name}}」に紐づくエイリアスや関係が削除されます。ノート内のメンションは残ります。","deleteConfirm":"削除","merge":"このページを統合","mergeDialogTitle":"どのページに統合しますか?","mergeDialogDescription":"「{{name}}」が選択したページに統合されます。エイリアス、関係、メンションがすべて移行され、このページは削除されます。","mergePickerPlaceholder":"統合先ページを検索"},"picker":{"placeholder":"Wikiページを検索","empty":"結果がありません","loading":"検索中..."},"similar":{"title":"このページと似ているWiki","merge":"統合","meta":"メンション {{mentions}} · エイリアス {{aliases}}","mergeTitle":"このページを統合しますか?","mergeDescription":"「{{from}}」が「{{to}}」に統合されます。エイリアス、関係、メンションがすべて移行され、このページは削除されます。"},"alias":{"conflictMergeTitle":"「{{alias}}」ページがすでにあります","conflictMergeDescription":"「{{alias}}」という名前のWikiページがすでにあります。2つのページを統合しますか? 現在のページが既存のページに統合され、エイリアス、関係、メンションがすべて移行されます。","conflictMergeConfirm":"統合","conflictMergeCancel":"キャンセル","navigateToTarget":"{{name}}ページを開く","add":"追加","addLabel":"別名を追加","addPlaceholder":"別名を入力してください","adding":"追加中...","deleteAlias":"別名を削除","autoGeneratedTooltip":"自動生成された別名です。自動生成された別名は編集できません。","empty":"別名がまだありません","manageTitle":"別名の管理"},"mention":{"deletedNote":"削除されたノート"},"lint":{"panelLabel":"Wiki整理","title":"Wiki整理","launcher":"Wikiを整理","close":"閉じる","options":"整理オプション","run":"整理を開始","totalCount":"候補 {{count}}件","queueTitle":"整理予定の操作","accepted":"承認済み","skipped":"スキップ済み","pending":"保留","submit":"整理する","submitShortcut":"Enter","submitProcessing":"整理中","submitComplete":"適用完了","submitStatusHint":"整理が終わると、次の候補をそのまま確認できます。","submittedDescription":"選択した{{count}}件の操作を適用しました。","submitPartial":"一部のみ適用されました","submitPartialDescription":"{{applied}}件適用、{{stale}}件変更、{{failed}}件失敗","submitFailed":"整理を適用できませんでした。","submitFailedDescription":"選択内容は保持されています。もう一度お試しください。","loadFailed":"候補を読み込めませんでした。","loadFailedDescription":"しばらくしてからもう一度お試しください。","retry":"再試行","loadingTitle":"候補を探しています","loadingDescription":"現在のWiki状態をもとに整理候補を読み込んでいます。","emptyTitle":"整理候補はありません","emptyDescription":"Wikiが変わった後にもう一度整理できます。","partialResultTitle":"一部の操作のみ適用されました","partialResultDescription":"{{applied}}件適用、{{skipped}}件スキップ、{{stale}}件変更、{{failed}}件失敗","cleanupOptions":"整理オプション","rerun":"更新","rerunCandidates":"候補を再抽出","batchSize":"整理候補数","batchRange":"5-10件","orphan":{"low":"弱め","medium":"普通","high":"強め"},"draftActionsTitle":"整理操作","revise":"見直す","reviseCandidate":"{{count}}番の選択を変更","status":{"pending":"保留","accepted":"承認済み","skipped":"スキップ済み"},"action":{"merge":"Merge","delete":"Delete"},"effect":"適用結果","effectDelete":"「{{name}}」はWikiから削除されます。元のノートは残ります。","effectMerge":"「{{from}}」が「{{to}}」に統合されます。別名、ソース、関係は残るページへ移動します。","headlineDelete":"「{{name}}」はWikiから削除されます。","headlineMerge":"「{{from}}」→「{{to}}」のページに統合されます。","headlineFallback":"Wiki整理候補です。","headlineDeleteSuffix":"はWikiから削除されます。","headlineMergeSuffix":"のページに統合されます。","supportDelete":"元のノートと段落はそのまま残ります。","supportMerge":"関連リンク、別名、ソース、関係も一緒に移動します。","humanReasonMerge":"2つのページが同じ内容を指しているようです。","humanReasonDeleteOrphan":"他のページとのリンクがほとんどありません。","humanReasonDeleteLowSignal":"ワークスペースの知識として残すには意味が広すぎます。","candidatePages":"確認するWiki","source":"ソース","relationship":"関係","orphanNode":"孤立ノード","connectedNode":"メンション{{mentions}}件、関係{{links}}件","duplicateReason":"重複理由","preview":"プレビュー","reason":"判断理由","accept":"承認する","skip":"スキップ"},"home":{"title":"Wiki","workspace":"ワークスペース","workspaceEmpty":"ワークスペースが準備できたらWikiを作成できます。","statusLoading":"Wikiの状態を確認中...","statusError":"Wikiの状態を読み込めませんでした。","unknownError":"不明なエラー","heroHeading":"知識が深まるウィキ","heroDescription":"ノートから自動的に見つかった概念と手動で追加した項目がつながりながら育ちます","heroStatsPages":"{{count}}ページ","heroStatsConnections":"{{count}}コネクション","graphLoading":"グラフを読み込み中...","graphError":"グラフを読み込めませんでした。"},"graph":{"summary":{"overview":"全体マップ · ページ{{shown}}件 · クラスター{{clusters}}件 · 全{{total}}件中{{omitted}}件を非表示","context":"周辺表示 · ページ{{shown}}件 · 全{{total}}件中{{omitted}}件を非表示","cluster":"クラスター · ページ{{shown}}/{{total}}件 · ほか{{omitted}}件"},"search":{"clusterPages":"ページ{{count}}件","reason":{"title":"名前一致","alias":"別名一致","mention":"言及一致","description":"説明一致"}}},"list":{"loading":"Wikiを読み込み中...","error":"Wikiを読み込めませんでした。","emptyTitle":"まだ育てるWikiがありません","emptyDescription":"一つのノート内で複数回メンションされた項目や自分で追加した項目だけがWikiになります。ノートが積み重なるほど自然に育っていきます。","searchEmptyTitle":"一致するWikiページがありません","searchEmptyDescription":"別のキーワードで検索するか、検索をクリアして一覧に戻ってください。","mentionCount":"ソース {{count}}","loadMore":"さらに読み込む","unknownError":"不明なエラー","table":{"totalPages":"合計{{count}}ページ","lastUpdated":"最終更新 {{value}}","searching":"検索中...","page":"ページ","type":"分類","updated":"更新"},"timeline":{"eyebrow":"最近の変化","title":"Wikiが何を学んだか","subtitle":"最近更新されたWikiを時系列で確認し、どのページを見直すべきか判断できます。","today":"今日","yesterday":"昨日","thisWeek":"今週","earlier":"以前","unknown":"更新時刻なし","summaryPages":"ページ","summaryUpdated":"更新済み","summarySources":"ソース","summaryRelations":"関係","previewTitle":"Wikiプレビュー","previewEmpty":"左側でページを選択すると現在の状態を確認できます。","updatedUnknown":"更新時刻なし","sourceMetric":"ソース","relationMetric":"関係","aliasMetric":"別名","aliasCount":"別名 {{count}}","partial":"一部抽出","descriptionFailed":"説明生成失敗","whyUpdated":"見直す理由","whyUpdatedDescription":"現在の更新時刻、ソース数、関係数を基準に表示します。実際の変化量はサーバーが提供するまで推定しません。","openDetail":"詳細を開く"}},"floating":{"filter":{"all":"すべて","person":"人物","org":"組織","concept":"コンセプト","decision":"決定"},"search":{"placeholder":"Wikiページを検索","empty":"検索結果がありません"},"folderFilter":{"label":"グラフフォルダ","all":"すべてのフォルダ"},"newPage":"新規ページ","scopeExpand":{"trigger":"Wikiをもっと広げる","popoverTitle":"どの期間まで広げますか？","month3":"3ヶ月","month6":"6ヶ月","month12":"12ヶ月","month24":"24ヶ月","successToast":"Wikiを{{months}}ヶ月分に拡張しています"},"viewToggle":{"graph":"グラフ表示","list":"リスト表示"},"zoom":{"in":"拡大","out":"縮小","fit":"画面に合わせる","reset":"最初に戻る"},"onboarding":{"uninitTitle":"Wikiを開始","uninitDescription":"直近6か月のノートでWikiを作成します","uninitButton":"開始","progressTitle":"Wikiを作成しています","progressDescription":"{{count}}件のノートを整理しています"}},"panel":{"resizerAria":"パネルの幅を調整","header":{"copy":"コピー","more":"もっと見る","fullscreen":"全画面","fullscreenExit":"全画面を終了","close":"パネルを閉じる","back":"戻る","exitFullscreen":"全画面を終了","merge":"別のページと統合","aliasManage":"別名を管理","delete":"このページを削除","deleteTitle":"このページを削除しますか？","deleteDescription":"「{{name}}」に関連するソースメタデータ、別名、関係がすべて削除されます。この操作は元に戻せません。","deleteConfirm":"削除","deleteCancel":"キャンセル"},"breadcrumb":{"root":"Wiki"},"error":{"fetch":"Wikiページを読み込めませんでした"},"dirtyIndicator":"保存されていない変更があります","ariaLabel":"Wikiページパネル"},"topMeta":{"typeLabel":{"person":"人物","organization":"組織","concept":"コンセプト","decision":"決定","place":"場所","product":"製品","event":"イベント","entity":"項目"},"aliasChevron":"別名","updatedAt":"{{date}} 更新"},"visibility":{"private":{"label":"自分のみ","description":"他のワークスペースメンバーには公開されません。"},"workspace":{"label":"ワークスペース","description":"ワークスペースメンバーがこのページを見つけて閲覧できます。"},"sourceAcl":{"label":"ソースノート権限","title":"ソースノートの権限に従うページです。","autoTitle":"自動で作成されたページです。","description":"このページは、接続されたソースノートを閲覧できる人にのみ表示されます。このアクセス範囲はここでは変更できません。"}},"description":{"title":"説明","placeholder":"このページの説明を追加してください","editTooltip":"編集","saveButton":"保存","cancelButton":"キャンセル","addButton":"説明を追加","loading":"説明を読み込み中...","generating":"AIが説明を作成しています。しばらくお待ちください。","generationFailed":"説明の生成に失敗しました。","regenerateButton":"AIで再生成","regenerateShort":"再生成","retryButton":"再試行","editorPlaceholder":"このページの説明を書いてください。","savingButton":"保存中...","empty":"まだ説明が作成されていません。","saveFailure":"保存できませんでした。もう一度お試しください。"},"sources":{"title":"ソースノート","titleWithCount":"ソースノート {{count}}","connectNote":"ノートを接続","connectNoteComingSoon":"ノート接続は近日対応予定です。","paragraphLabel":"段落 {{number}}","paragraphListLabel":"段落 {{numbers}}","mentionCountInNote":"{{count}}回メンション","showMore":"さらに{{count}}件を見る","showLess":"閉じる","untitledFallback":"タイトルなしのソースノート","unavailableText":"ソース内容を読み込めません。","empty":"このページに接続されたソースはまだありません","transcriptTitle":"ソースの会話録","transcriptLoading":"ソースノートを読み込んでいます...","openOriginalNote":"元のノートへ移動","closeTranscript":"ソースの会話録を閉じる","paragraphNotFound":"該当する段落が見つかりません。","card":{"menu":"もっと見る","removeLabel":"このソースをWikiから削除","removingLabel":"削除中..."},"removeSuccess":"「{{noteTitle}}」をこのWikiページから削除しました。","removeError":"このソースノートを削除できませんでした。もう一度お試しください。","removedToast":"「{{noteTitle}}」のソース接続を解除しました","undo":"元に戻す"},"relations":{"deleteConfirm":"この関係を削除しますか？","deleteAria":"関係を削除","selectRelationAria":"{{name}}との関係を選択","openPageAria":"{{name}}のページを開く","title":"関連Wikiページ","titleWithCount":"関連Wikiページ {{count}}","empty":"接続された関連Wikiページはありません。","editToggleStart":"編集","editToggleEnd":"完了","editTypeLabel":"関係の種類を編集","showMore":"さらに{{count}}件表示","createSuccess":"関係を追加しました。","createError":"関係を追加できませんでした。もう一度お試しください。","deleteSuccess":"関係を削除しました。","deleteError":"関係を削除できませんでした。もう一度お試しください。","updateSuccess":"関係を更新しました。","updateError":"関係を更新できませんでした。もう一度お試しください。","addPill":"+ ページを接続","unresolvedPage":"接続されたページ","sentenceDefault":"{{source}}は{{target}}の{{relation}}です。","removedToast":"「{{targetName}}」との接続を解除しました","undo":"元に戻す"},"relationAdd":{"step1Title":"接続するページを探す","step1Placeholder":"ページ名を検索","step1Empty":"検索結果がありません","step2BackButton":"← 別のページ","step2Preview":"{{source}}と@{{target}}の関係です。","step2Helper":"どのような関係ですか？","step2Confirm":"この関係で追加","creating":"追加中...","createFailure":"関係を追加できませんでした。もう一度お試しください。"},"copy":{"typeEntity":"エンティティ","relatedPages":"関連ページ","meta":"名前・説明・ソースノート・関連ページ","text":{"label":"テキストでコピー","desc":"テキストのみをコピーします。"},"textDescription":"テキストのみをコピーします。","html":{"label":"HTMLでコピー","desc":"NotionやSlackなどに貼り付け可能なHTML形式です。"},"htmlDescription":"NotionやSlackなどに貼り付け可能なHTML形式です。","markdown":{"label":"LLM用にコピー","desc":"ChatGPTなどのLLMに最適化されたMarkdown形式です。"},"markdownDescription":"ChatGPTなどのLLMに最適化されたMarkdown形式です。","successToast":"コピーしました","trigger":"コピー","headerMeta":"名前・説明・ソースノート・関連ページ","success":"コピーしました","error":"コピーできませんでした。もう一度お試しください。"},"create":{"trigger":"新規ページ","dialogTitle":"新規Wikiページ","nameLabel":"名前","namePlaceholder":"例: OSSチーム、田中部長、Q2決定","nameErrorRequired":"名前を入力してください。","typeLabel":"種類","typePerson":"人物","typeOrg":"組織","typeConcept":"コンセプト","typeDecision":"決定","typeErrorRequired":"種類を選択してください。","descriptionLabel":"説明（任意）","descriptionPlaceholder":"このページがどのような項目か、1〜2文で説明してください。","linkedPagesLabel":"接続するページ（任意）","linkedPagesPlaceholder":"既存のWikiページを検索","submitButton":"ページを作成","cancelButton":"キャンセル","successToastTitle":"「{{name}}」ページが作成されました","successToastDescription":"閲覧範囲はページで確認できます。","linkFailureToast":"「{{target}}」との接続に失敗しました。パネルから再度お試しください。","createFailure":"ページを作成できませんでした。もう一度お試しください。","title":"新規Wikiページ","cancel":"キャンセル","creating":"作成中...","submit":"ページを作成","linkFail":"「{{target}}」との接続に失敗しました。パネルから再度お試しください。","removeLinkedPage":"選択解除","error":{"nameRequired":"名前を入力してください。","nameMaxLength":"名前は256文字以内で入力してください。","kindRequired":"種類を選択してください。"},"kind":{"person":"人","organization":"組織","concept":"概念","decision":"決定"},"field":{"name":"名前","namePlaceholder":"例: OSSチーム、田中部長、Q2決定","kind":"種類","visibility":"アクセス範囲","description":"説明","descriptionPlaceholder":"このページがどのような項目か、1〜2文で説明してください。","linkedPages":"接続するページ","linkedPagesPlaceholder":"既存のWikiページを検索","optional":"任意"},"visibility":{"private":{"label":"自分のみ","description":"他のワークスペースメンバーには公開されません。"},"workspace":{"label":"ワークスペース","description":"ワークスペースメンバーがこのページを見つけて閲覧できます。"},"helper":"デフォルトは「自分のみ」です。必要に応じてワークスペースに共有できます。","change":"アクセス範囲を変更: {{visibility}}"},"success":{"title":"「{{name}}」ページが作成されました","desc":"閲覧範囲はページで確認できます。"}},"overflow":{"merge":"別のページと統合","aliasManage":"別名を管理","delete":"このページを削除"},"delete":{"dialogTitle":"このページを削除しますか？","dialogDescription":"「{{name}}」に関連するソースメタ・別名・関係がすべて削除されます。この操作は元に戻せません。","confirmButton":"削除","cancelButton":"キャンセル"},"merge":{"dialogTitle":"別のページと統合","step1Description":"同じ人物が2つのページに分かれていませんか？統合するページを検索して選択してください。","step1Placeholder":"ページ名を検索","step1ResultMeta":"{{type}}・ソースノート {{count}}","step1Empty":"検索結果がありません。","step2NameRadioLabel":"デフォルトの名前","step2NameRadioMeta":"ソースノート {{count}}","step2DescRadioLabel":"説明はどうしますか？","step2DescBase":"{{name}}の説明のみ保持","step2DescTarget":"{{name}}の説明のみ保持","step2DescBoth":"両方を保持（後で編集）","step2ImpactLabel":"統合後","step2ImpactSources":"ソースノート {{from}} + {{to}} → {{total}}件","step2ImpactAliases":"別名 {{from}} + {{to}} → {{total}}個（自動統合）","step2ImpactRelations":"関係 {{from}} + {{to}} → {{total}}個（自動統合）","backButton":"← 戻る","cancelButton":"キャンセル","confirmButton":"統合","failureToast":"統合に失敗しました。もう一度お試しください。"},"aliasManage":{"dialogTitle":"別名を管理","empty":"別名がまだありません","addPlaceholder":"別名を追加...","addButton":"追加","primary":"代表","createFailure":"別名を追加できませんでした。","removeFailure":"別名を削除できませんでした。"},"transcript":{"loading":"ノートを読み込んでいます...","error":"ノートを読み込めませんでした","back":"← ページに戻る"},"breadcrumb":{"ariaLabel":"Wikiページのパス","root":"Wiki"},"newPage":{"button":"新規ページ"},"onboarding":{"emptyLogoAlt":"Tiroロゴ","emptyTitle":"まだWikiが作成されていません","emptyDescription":"ノートが作成されると、Tiroが自動でWikiを作成します。まずはノートを作成してください。","previewLabels":{"cloudMigration":"クラウド移行","ossTeam":"OSSチーム","developmentTeam":"開発チーム","projectX":"プロジェクトX","acme":"ACME","meeting":"会議","plato":"プラトン","lgUplus":"LG U+"},"previewAlt":"Tiro Wikiグラフのプレビュー","title":"Tiro Wikiを有効にしてみましょう","description":"ノート内の重要な概念や関係をTiroが自動でつなぎ、Wikiを作成します。","docsButton":"Wikiドキュメントを見る","activateButton":"Wikiを有効にする","activatingButton":"有効化中...","readyToBuildTitle":"Wikiが有効になりました","readyToBuildDescription":"直近{{months}}か月の完了したノートを分析してWikiを作成できます。","backfillButton":"直近{{months}}か月のノートでWikiを作成","backfillingButton":"Wikiを作成中...","noEligibleTitle":"まだ作成できるWikiがありません","noEligibleDescription":"直近{{months}}か月に10分以上記録された完了ノートがありません。\\n長めのノートを作成してから、もう一度お試しください。","upgradeTitle":"WikiはPro以上のプランで利用できます","upgradeDescription":"現在のプランではWikiを有効にできません。\\nプランをアップグレードして、Tiro Wikiを使ってみましょう。","upgradeButton":"プランをアップグレード","adminTitle":"ワークスペース管理者のみWikiを有効化できます","adminDescription":"このワークスペースではWikiを利用できますが、有効化できるのは管理者のみです。\\nワークスペース管理者にWikiの有効化を依頼してください。","subscriptionInactiveTitle":"Wikiを有効にするにはサブスクリプション状態の確認が必要です","subscriptionInactiveDescription":"TeamまたはEnterpriseプランを利用中にこのメッセージが表示される場合は、ワークスペースのサブスクリプション状態を確認してください。","unavailableTitle":"このワークスペースではまだWikiを利用できません","unavailableDescription":"機能の公開状態を確認しています。利用条件はWikiドキュメントで確認できます。","uninitTitle":"Wikiを開始","uninitDesc":"直近6か月のノートでWikiを作成します","startButton":"Wikiを有効にする","startingButton":"有効化中...","inProgressTitle":"Wikiを作成しています","inProgressBody":"{{count}}件のノートを整理しています","inProgressNotice":"新しいノート{{count}}件を分析中です","inProgressNoticePendingNames":"分析中のノート: {{names}}","inProgressNoticeOverflow":"他{{count}}件","inProgressNoticeDismissHint":"閉じても分析は続きます","inProgressNoticeCloseAria":"分析進行のお知らせを閉じる"},"activation":{"error":"Wikiを有効化できませんでした。"},"backfill":{"error":"Wikiの作成を開始できませんでした。","noEligibleTitle":"まだWikiを作成できるノートがありません","noEligibleDescription":"10分以上記録された完了ノートを作成してから、もう一度お試しください。"},"scopeExpand":{"chip":"Wikiをもっと広げる","popoverTitle":"どの期間まで広げますか？","option":"{{months}}ヶ月","toastInProgress":"Wikiを{{months}}ヶ月分に拡張しています"},"search":{"placeholder":"Wikiページを検索","noResults":"検索結果がありません","loading":"検索中...","close":"検索を閉じる"},"filter":{"all":"すべて","person":"人物","org":"組織","concept":"コンセプト","decision":"決定"},"zoom":{"in":"拡大","out":"縮小","fit":"画面に合わせる","reset":"レイアウトを再配置"},"viewToggle":{"graph":"グラフ表示","list":"リスト表示","graphShort":"グラフ","listShort":"リスト"},"sidebar":{"label":"ウィキ","badgeNew":"NEW","badgeBeta":"Beta"}}',
+  ),
+  fe = {
+    sessionExpired: {
+      toast: {
+        title: "再度ログインしてください",
+        description:
+          "セキュリティのため、セッションが終了しました。再度ログインすると続きから使えます。",
+      },
+      expired: {
+        title: "ログインの有効期限が切れました",
+        description:
+          "ログインの有効期限が過ぎたためログアウトされました。再度ログインすると続きから使えます。",
+      },
+      revoked: {
+        title: "セキュリティのためログアウトされました",
+        description:
+          "パスワードの変更やリモートでのログアウトにより、セッションが終了しました。再度ログインすると続きから使えます。",
+      },
+      recordingStopped: {
+        title: "録音が停止しました",
+        description:
+          "セッションが終了したため、録音を停止しました。保存済みの内容はノートで確認できます。",
+      },
+    },
+  },
+  De = {
+    pageTitle: "ボイスパッド",
+    statusIdle: "待機",
+    statusSpeaking: "再生中",
+    esTitle: "はじめる前に",
+    esStep1:
+      "Tiroのノートでマイクアイコンを押し、<strong>システムサウンドの音量が100%</strong>になっているか確認してください。",
+    esStep2:
+      "文章を入力してEnterを押すと、スピーカーから再生され、同時にTiroのノートに記録されます。",
+    esStep3:
+      "デスクトップのスピーカーをミュートしても、Tiroのノートにはそのまま記録されます。",
+    esStep4: "読み上げる音声の言語は、設定（歯車アイコン）から変更できます。",
+    esOpenApp: "Tiroノートを開く",
+    inputPlaceholder: "話したいことを入力",
+    stop: "停止",
+    metaQueued: "待機中",
+    metaSpeaking: "再生中",
+    metaDone: "完了",
+    metaCanceled: "キャンセル",
+    metaError: "再生できませんでした",
+    msgReplayTitle: "クリックで再生",
+    settingsVoice: "音声",
+    settingsSpeed: "速度",
+    settingsName: "名前",
+    namePlaceholder: "例：たろう",
+    settingsPrefix: "文章の前に名前を読み上げる",
+    addChip: "+ 新しいフレーズ",
+    addChipTitle: "よく使うフレーズを追加",
+    editTitle: "編集",
+    deleteTitle: "削除",
+    bannerNoSynth:
+      "このブラウザは音声合成に対応していません。ChromeまたはEdgeで開いてください。",
+    bannerNoVoice:
+      "この言語の音声が見つかりませんでした。最新のChromeまたはEdgeで開いてください。",
+    bannerEdge: "Edgeで開くと、より自然な音声を利用できます。",
+  },
+  we = {
+    metaTitle: "パートナーリンク成果 | Tiro",
+    metaDescription:
+      "Tiroの提携パートナーが紹介リンクの成果を確認するためのページです。",
+    eyebrow: "パートナーリンク",
+    title: "紹介リンクの成果",
+    ranges: { 7: "直近7日", 14: "直近14日", 30: "直近30日", all: "全期間" },
+    linkFilterLabel: "リンクを選択",
+    allLinks: "すべてのリンク",
+    allLinksWithCount: "すべてのリンク（{{count}}）",
+    metrics: {
+      signup: "登録",
+      signupNote: "リンク経由で登録したユーザー",
+      activated: "有効化",
+      activatedRate: "登録比 {{rate}}",
+      paid: "有料化",
+      paidRate: "登録比 {{rate}}",
+    },
+    cards: {
+      activationRate: "有効化率",
+      activationNote: "登録 {{signups}}名 → 有効化 {{activated}}名",
+      paidRate: "有料化率",
+      paidNote: "有効化 {{activated}}名 → 有料化 {{paid}}名",
+      signupPaidRate: "登録比 {{rate}}",
+    },
+    conversions: { title: "転換率" },
+    benefits: {
+      paymentRewardFirstMonthPartial: "{{planName}}初月{{percent}}%割引",
+      paymentRewardFirstMonthFree: "{{planName}}初月無料",
+      paymentRewardFirstMonthFreeWithSecondMonthDiscount:
+        "{{planName}}初月無料＋2か月目{{percent}}%割引",
+      freeTrialMinutes: "無料トライアル {{minutes}}分",
+      none: "特典なし",
+      loading: "読み込み中",
+    },
+    dailyTitle: "日別推移",
+    dailySubtitle: "登録、有効化、有料化を同じ期間で確認できます。",
+    emptyDaily: "表示できる活動はまだありません。",
+    copy: "コピー",
+    copied: "コピーしました",
+    showMore: "もっと見る",
+    tableTitle: "リンク別の状況",
+    table: {
+      date: "日付",
+      link: "リンク",
+      benefit: "特典",
+      signup: "登録",
+      activated: "有効化",
+      paid: "有料化",
+      activatedRate: "有効化率",
+      total: "合計",
+      actions: "操作",
+    },
+    loading: "パートナーリンクの状況を読み込んでいます。",
+    errorTitle: "パートナーリンクの状況を読み込めませんでした。",
+    errorDescription: "しばらくしてからもう一度お試しください。",
+    retry: "再試行",
+    notPartner: {
+      title: "Tiroの提携パートナーではありません。",
+      description:
+        'パートナー活動をご希望の場合は、"{{email}}"までお問い合わせください。',
+      button: "メールを送信",
+      copiedButton: "メールアドレスをコピーしました",
+      mailSubject: "Tiroパートナーに関するお問い合わせ",
+    },
+  },
+  Ee = {
+    title: "セキュリティ | Tiro",
+    description:
+      "強固なセキュリティ体制。すべての音声は文字起こし後直ちに破棄され、Oktaなど主要IdPベースのSSOとSCIMに対応しています。",
+    keywords:
+      "Tiro セキュリティ, AI議事録 セキュリティ, SOC 2, ISO 27001, データ暗号化, Okta SSO, SCIM",
+    hero: {
+      title: "強固なセキュリティ体制",
+      subtitle:
+        "すべての音声は文字起こし後直ちに破棄され、いかなるデータもAI学習には使用されません。",
+      caption:
+        "Tiroは多忙なビジネスリーダーのためのAIミーティングアシスタントです。厳格なセキュリティポリシーのもと、リアルタイム記録・自動要約・検索可能な構造化ノートをご提供いたします。",
+    },
+    principles: {
+      sectionTitle: "厳格なデータ保護の原則",
+      processing: {
+        title: "音声の即時破棄とデータ暗号化",
+        description:
+          "音声ファイルは文字起こし直後に復元不可能な形で破棄され、平文のままディスクに保存されることはありません。議事録・要約などのテキストデータはAES-256で暗号化して保存され、ユーザーごとに個別の暗号化キーを生成します。転送中のデータはTLS 1.2以上で保護されます。",
+      },
+      noTraining: {
+        title: "AIモデルの学習には使用しません",
+        description:
+          "お客様の会話記録を含むいかなる情報も、モデルの学習・ファインチューニングには使用しません。無料・有料・法人のお客様を問わず一貫して適用され、すべてのLLM・STTベンダーと学習不使用・非保存（Zero Data Retention）のDPAを締結しています。",
+      },
+      location: {
+        title: "AWSソウルリージョンに保存",
+        description:
+          "AWSソウルリージョン（ap-northeast-2）にMulti-AZ構成で保存され、韓国国内のデータ主権要件を満たすとともに、単一アベイラビリティゾーンの障害時にも可用性を維持します。Enterprise契約に応じて、別リージョンや専用VPC構成による物理的なテナント分離にも対応可能です。",
+      },
+    },
+    overview: {
+      sectionTitle: "セキュリティ概要",
+      encryption: {
+        title: "暗号化",
+        description:
+          "すべてのデータストア（データベース・ブロックストレージ・オブジェクトストレージ）の保存データはAES-256で、転送中のデータはTLS 1.2以上で暗号化されます。機微なコンテンツにはユーザーごとの追加暗号化レイヤーが適用され、DBに直接アクセスできる運用者であっても平文を閲覧することはできません。",
+      },
+      accessControl: {
+        title: "アクセス制御",
+        description:
+          "RBAC・ABACにより最小権限アクセスを適用しています。平文コンテンツへの直接アクセスは明示的に承認された少数の担当者に限定され、すべてのアクセスはクエリ・カラム単位で永続的に記録されます。",
+      },
+      keyManagement: {
+        title: "キー管理（KMS / HSM）",
+        description:
+          "AWS KMSはFIPS 140-2 Level 3検証済みのHSMでキーを保護し、12か月周期で自動ローテーションされます。アプリケーションは平文のキーを直接保持せず、KMS APIを通じて暗号化・復号のリクエストのみを行います。",
+      },
+      location: {
+        title: "データの保存場所",
+        description:
+          "AWSソウルリージョン（ap-northeast-2）で韓国国内のデータ主権要件を満たします。Multi-AZ配置で可用性を維持し、Enterprise契約に応じて別リージョン・専用VPC構成による物理的なテナント分離にも対応可能です。",
+      },
+      monitoring: {
+        title: "モニタリングと監査ログ",
+        description:
+          "AWS GuardDuty（脅威検知）、Inspector（脆弱性）、WAF + Cloudflare（Web攻撃防御）、Datadogダッシュボードにより、24時間365日モニタリングしています。監査ログは隔離された改ざん防止ストレージに転送され、運用システムからは変更できないよう保護されます。",
+      },
+      backup: {
+        title: "サービス可用性とバックアップ",
+        description:
+          "月間99.9%のSLAを適用し、未達の場合はサービスクレジットをご提供いたします。データベースはKMS暗号化で自動バックアップされ、年1回の復旧テストを実施しています。具体的な復旧目標は、ご契約時にご相談いただけます。",
+      },
+    },
+    enterprise: {
+      sectionTitle: "エンタープライズ向けセキュリティ機能",
+      description:
+        "Tiroは、エンタープライズ環境に最適化されたセキュリティ制御オプションをご提供いたします。",
+      calloutLabel: "Enterpriseオプション：",
+      calloutDescription:
+        "専用クラウド環境（物理的なテナント分離）に加え、カスタムセキュリティオプションもご相談いただけます。",
+      calloutCta: "営業に問い合わせる",
+      features: {
+        sso: {
+          label: "Okta SSO",
+          title: "Oktaなど主要IdPとのSSO",
+          description:
+            "SAML 2.0/OIDCでOkta、Azure AD、Google Workspaceなどの社内IdPと連携します。ユーザーは会社アカウント1つでTiroにログインでき、アカウント権限の変更はIdPポリシーと一貫して同期されます。",
+        },
+        mfa: {
+          label: "MFA（多要素認証）",
+          title: "MFA（多要素認証）",
+          description:
+            "OTP・認証アプリ・ハードウェアキーなどの追加認証手段で、アカウントの保護を強化します。パスワードが漏えいした場合でも、不正ログインを遮断します。",
+        },
+        scim: {
+          label: "SCIM 2.0プロビジョニング（Enterpriseオプション）",
+          title:
+            "SCIM 2.0プロビジョニング（Enterpriseオプション・時期と範囲は協議）",
+          description:
+            "IdP連携によるユーザーの自動同期（追加・削除・変更）は、Enterpriseオプションとしてご提供を予定しています。導入時期と適用範囲は、ご契約時に協議のうえ確定いたします。",
+        },
+        audit: {
+          label: "Audit Logs",
+          title: "Audit Logs（監査ログ）",
+          description:
+            "ユーザー・管理者の操作履歴を記録・保管します（保持期間は1年〜7年でカスタマイズ可能）。CSV/JSONエクスポートやSIEM連携（Splunk、Datadog Cloud SIEM、Sumo Logic、Elasticなど）により、自社のセキュリティ監視環境に直接統合できます。",
+        },
+        admin: {
+          label: "Admin Console",
+          title: "Admin Console",
+          description:
+            "組織・チーム別の利用状況ダッシュボードと、ポリシーの一括管理。",
+        },
+        ip: {
+          label: "IPアクセス制限",
+          title: "IPアクセス制限（ワークスペースIPレンジ単位）",
+          description:
+            "ワークスペースごとに許可するIPレンジを指定し、それ以外からのアクセスを遮断します（オフィス/VPN専用）。IdPの条件付きアクセスポリシーとは独立して動作する機能です。",
+        },
+        session: {
+          label: "セッション・デバイス制御",
+          title: "セッション・デバイス制御",
+          description:
+            "セッションの有効期限、同時接続数の制限、デバイス登録の制限などをポリシー単位で設定できます。",
+        },
+        share: {
+          label: "外部共有の制限",
+          title: "外部共有の制限",
+          description:
+            "許可ドメイン以外へのノート共有を遮断します。ホワイトリストに登録したドメインのみ許可する構成が可能です。",
+        },
+        retention: {
+          label: "データ保持ポリシー",
+          title: "データ保持ポリシー",
+          description:
+            "ドメイン単位で議事録の保持期間を設定でき（例：90日/180日/1年）、期間の経過後は自動削除されます。",
+        },
+        delete: {
+          label: "退会時のデータ完全削除",
+          title: "退会時のデータ完全削除",
+          description:
+            "アカウント削除時に、関連データを復元不可能な状態で削除します（最長30日以内）。",
+        },
+        receipt: {
+          label: "削除証明",
+          title: "削除証明（Erasure Receipt）",
+          description:
+            "削除リクエスト→実行→完了の各時点を監査ログに記録し、証明書（JSON/PDF）を発行します。",
+        },
+        pii: {
+          label: "個人情報マスキング（PII）",
+          title: "個人情報マスキング（PII Auto-Masking）",
+          description:
+            "議事録内の個人情報を自動的に非識別化します。住民登録番号（韓国のマイナンバーに相当）・電話番号・口座番号などの機微な識別子を検出し、マスキングします。",
+        },
+        capture: {
+          label: "モバイル画面キャプチャ防止",
+          title: "モバイル画面キャプチャ防止",
+          description:
+            "モバイルアプリの画面キャプチャをブロックし、試行ログを記録します。",
+        },
+        vendor: {
+          label: "ベンダールーティングのホワイトリスト",
+          title: "ベンダールーティングのホワイトリスト",
+          description:
+            "利用可能なLLM・STTベンダーをお客様側で選択でき、韓国リージョン限定ルーティングなどのカスタマイズも可能です。データ主権要件や特定ベンダーの利用制限ポリシーがある場合に適用します。",
+        },
+      },
+      review: {
+        badge: "IT & Security Review",
+        title: "Okta連携で確認できる統制",
+        description:
+          "セキュリティチームが確認する認証・プロビジョニング・監査の各項目を、既存の社内ポリシーに合わせて構成できます。",
+        items: {
+          protocol: {
+            title: "SSOプロトコル",
+            description: "SAML 2.0/OIDCでOktaのアプリ設定と連携します。",
+          },
+          mfa: {
+            title: "MFAポリシー",
+            description:
+              "Okta MFAと条件付きアクセスポリシーをログインに適用します。",
+          },
+          scim: {
+            title: "SCIM同期（Enterpriseオプション）",
+            description:
+              "ユーザーの作成・無効化・グループ変更の自動反映は、Enterpriseオプションとして導入時期と範囲を協議のうえご提供いたします。",
+          },
+          audit: {
+            title: "監査証跡",
+            description:
+              "管理者・ユーザーの操作ログをセキュリティレビュー資料としてご提供いたします。",
+          },
+        },
+      },
+    },
+    dataHandling: {
+      sectionTitle: "データの処理と削除",
+      principleLabel: "音声処理の原則：",
+      principleQuote:
+        "文字起こしのためにのみ処理され、処理直後に復元不可能な形で破棄されます",
+      tableHeaders: { mode: "モード", flow: "処理フロー", storage: "保存" },
+      rows: {
+        realtime: {
+          mode: "リアルタイム（Streaming）",
+          flow: "マイク/システム音声 → STTエンジン（ストリーミング） → テキスト変換後、メモリ/ストリームから破棄",
+          storage: "平文でのディスク保存なし",
+        },
+        batch: {
+          mode: "バッチ（Upload）",
+          flow: "音声/動画ファイルのアップロード → STT/話者分離の処理 → 直ちに破棄",
+          storage: "処理後に自動破棄",
+        },
+        training: { mode: "AI学習", flow: "-", storage: "一切使用しません" },
+      },
+      deletionTitle: "削除時の処理範囲",
+      deletionBody:
+        "運用DB・自動バックアップ・ベクターインデックス・キャッシュなど、全領域で削除が行われます。一部の項目は法令上の保存義務により分離保管され、保存期間の経過後に自動的に破棄されます。退会時にはAWS KMSカスタマーキーの削除をスケジュールし、残存する暗号化データへ永久にアクセスできない状態にします。",
+      exceptionLabel: "例外 - ユーザーの明示的なリクエストによる元音声の保管：",
+      exceptionBody:
+        "議事録の検証・バックアップを目的に元音声の保管を希望されるユーザーには、ご本人アカウントの暗号化ストレージに限って保存オプションをご提供いたします。別のキーで暗号化され、ユーザーの削除リクエストがあれば直ちに破棄されます。デフォルトはオフ（false）で、企業単位での設定・統制が可能です。",
+    },
+    compliance: {
+      sectionTitle: "コンプライアンス認証の状況",
+      description:
+        "TiroはISO 27001:2022認証と、5つのTrust Services Criteria全範囲を対象とするSOC 2 Type 2認証を取得しており、専用のGRCプラットフォームで統制体系を運用しています。",
+      noteLabel: "NDA締結前でも認証と同一の統制",
+      noteBody:
+        "（同一の統制の運用、ポリシーの文書化、エビデンスの収集）が機能しており、本Trust Documentおよびポリシー文書で実証いたします。",
+      tableHeaders: {
+        cert: "認証",
+        stage: "ステージ",
+        status: "ステータス",
+        document: "文書の提供",
+      },
+      rows: {
+        soc2type2: {
+          cert: "SOC 2 Type 2",
+          stage:
+            "5 TSC（Security、Availability、Confidentiality、Processing Integrity、Privacy）全範囲と、監査期間における運用の有効性",
+          statusLabel: "認証取得",
+          document: "NDA（Clickwrap）締結後、直ちに共有",
+        },
+        iso1: {
+          cert: "ISO 27001:2022",
+          stage: "Stage 1（Readiness Review）",
+          statusLabel: "完了",
+          document: "NDA締結後に共有",
+        },
+        iso2: {
+          cert: "ISO 27001:2022",
+          stage: "Stage 2（Certification Audit）",
+          statusLabel: "認証取得",
+          document: "NDA締結後に共有",
+        },
+      },
+      contactPrompt:
+        "認証レポート、DPA、ポリシー文書をご希望の場合は、<a>{{email}}</a>までお問い合わせください。",
+    },
+    footerLink: "Security",
+    trustCenter: "Trust Center",
+    faq: {
+      sectionTitle: "よくある質問",
+      items: {
+        aiTraining: {
+          question: "Tiroは会話をAIモデルの学習に使用しますか？",
+          answer:
+            "いいえ。会話を含むお客様のデータを、モデルの学習やファインチューニングに使用することはありません。これは無料・有料・エンタープライズのすべてのプランに適用されます。利用するすべてのLLM・STTベンダーとは、学習禁止とZero Data Retentionを義務付けるDPAを締結しています。",
+        },
+        dataLocation: {
+          question: "データはどこに保存されますか？",
+          answer:
+            "データはAWSソウルリージョン（ap-northeast-2）にマルチAZ構成で保存され、ユーザーごとに個別の鍵でAES-256により暗号化されます。エンタープライズのお客様は専用VPCや別リージョンを選択できます。",
+        },
+        access: {
+          question: "誰がデータにアクセスできますか？",
+          answer:
+            "既定では本人と共有相手のみがアクセスできます。運用上、平文コンテンツへのアクセスは明示的に承認された少数の担当者に厳格に限定され、すべてのアクセス要求がクエリ・カラム単位で永続的に記録されます。従業員は入社時に必須のセキュリティ研修を受け、四半期ごとのアクセス権レビューを通過します。",
+        },
+        voice: {
+          question: "音声データはどのように扱われますか？",
+          answer:
+            "リアルタイムモードでは、マイクおよびシステム音声はSTTエンジンを通過した直後にメモリから破棄され、平文でディスクに保存されることはありません。アップロードされた音声・動画ファイルも処理完了後に自動で破棄されます。唯一の例外は、ユーザーが明示的にオプトインした場合で、その際は本人の暗号化ストレージに保管されます（既定は無効）。",
+        },
+        control: {
+          question:
+            "音声の保存可否・ノートの保持期間・共有範囲を制御できますか？",
+          answer:
+            "はい。お客様はご自身のデータのライフサイクル（音声の保持、ノートの保持期間、外部共有の範囲）を制御できます。エンタープライズプランでは、ドメイン単位の保持期間（例：90・180・365日）、外部共有の許可リスト、セッションタイムアウトなど、組織全体のポリシーとして適用できます。",
+        },
+        delete: {
+          question: "ノートやアカウントを削除するとどうなりますか？",
+          answer:
+            "ノート本文・文字起こし・要約は、運用データベース・ベクターインデックス・キャッシュから即時に完全削除されます。自動バックアップは保持期間の経過後に破棄されます。アカウント解約時にはAWS KMSの顧客鍵が削除予約され、残存データは暗号学的にアクセスできなくなります。エンタープライズのお客様はご要望に応じて削除の証跡を受け取れます。",
+        },
+        certs: {
+          question: "SOC 2やISO 27001の認証を取得していますか？",
+          answer:
+            "はい。SOC 2はType 2認証を取得済みです（監査人Sensiba LLP、5つのTSC全範囲：セキュリティ、可用性、機密保持、処理のインテグリティ、プライバシー、無限定意見）。ISO/IEC 27001:2022はStage 1・Stage 2を完了し、認証を取得しました。統制は専用のGRCプラットフォーム上で運用しており、報告書はNDAのもとで提供します。",
+        },
+        dpa: {
+          question: "DPA（データ処理契約）を締結できますか？",
+          answer: "はい。<a>{{email}}</a> までご連絡ください。",
+        },
+        subprocessors: {
+          question: "どのサブプロセッサーを利用していますか？",
+          answer:
+            "インフラ：AWS（ソウルリージョン）。LLM：Azure OpenAI（主）、Anthropic Claude（フォールバック）、Google Vertex AI / Gemini、AWS Bedrock。STT：Deepgram、AssemblyAI、ElevenLabs、NAVER Cloud Clova、Google Speech-to-Text。決済：Stripe、RevenueCat。メール配信：SendGrid。すべてのLLM・STTパートナーは、学習禁止とZero Data Retentionを義務付けるDPAに拘束されます。",
+        },
+        sso: {
+          question: "SSOやMFAに対応していますか？",
+          answer:
+            "はい。エンタープライズプランでは、SAML 2.0ベースのSSO（Okta、Azure AD、Google Workspaceなど主要なIdP）とMFAに対応し、SCIMによる自動ユーザー同期も提供します。",
+        },
+        deployment: {
+          question: "プライベートクラウドやオンプレミスに対応していますか？",
+          answer:
+            "はい。セキュリティ要件に応じて、SaaS、プライベートクラウド、オンプレミスのいずれにも対応します。分離レベルや運用形態などの詳細は <a>{{email}}</a> までご連絡ください。",
+        },
+        report: {
+          question: "セキュリティ上の問題はどこに報告すればよいですか？",
+          answer:
+            "セキュリティ上の脆弱性は <a>{{email}}</a> までご報告ください。エンタープライズのお客様には、セキュリティインシデントに対し初動対応4時間・お客様への通知24時間のSLAを提供します。",
+        },
+      },
+    },
+    contact: {
+      sectionTitle: "お問い合わせ",
+      intro:
+        "セキュリティレビューに関して追加の資料が必要な場合や、ご不明な点がございましたら、いつでもお気軽にご連絡ください。",
+      label: "Security Contact",
+      body: "セキュリティレビュー、DPAのご請求、認証レポートの共有、脆弱性のご報告など、セキュリティに関するお問い合わせは下記までご連絡ください。",
+      email: "partners@theplato.io",
+    },
+  },
+  Ie = {
+    pricing: {
+      title: "料金プラン | Tiro",
+      description:
+        "リアルタイム議事録 Tiro の Lite、Pro、Max、チームプランを比較できます。すべてのプランは300分のクレジット付き無料トライアルから始まります。",
+      heading: "料金プラン",
+    },
+    downloadApp: {
+      title: "Tiro をダウンロード | Mac、Windows、iOS、Android",
+      description:
+        "デスクトップとモバイルで Tiro を入手できます。会議を録音してリアルタイムの文字起こしと要約を受け取り、どの端末でも同じノートを続けて開けます。",
+    },
+    privacyPolicy: {
+      title: "プライバシーポリシー | Tiro",
+      description:
+        "Tiro が個人情報を収集、利用、保管、削除する方法をご案内します。音声データの取り扱い、保存期間、データ主体が行使できる権利を記載しています。",
+    },
+    termsOfService: {
+      title: "利用規約 | Tiro",
+      description:
+        "Tiro のご利用に適用される規約です。アカウント、サブスクリプションと請求、禁止事項、知的財産権、利用終了について記載しています。",
+    },
+    termsOfServiceIos: {
+      title: "iOS 利用規約 | Tiro",
+      description:
+        "Tiro の iOS アプリに適用される規約です。App Store での購入、サブスクリプションの自動更新、プラットフォーム固有の条件を記載しています。",
+    },
+    serviceLevelAgreement: {
+      title: "サービスレベル契約（SLA） | Tiro",
+      description:
+        "有料プランに適用される Tiro の稼働のお約束です。サービスレベル、サービスクレジット、適用除外、クレジット請求手続き、責任の制限を記載しています。",
+    },
+    referralRewardsTerms: {
+      title: "Tiro ギフトリワード利用条件",
+      description:
+        "Tiro のギフトリワードの運用ルールです。参加資格、リワードの獲得と利用、失効時期、不正に獲得したリワードの回収方法を記載しています。",
+    },
+  },
+  Le = {
+    paymentScope:
+      "今回のお支払い総額には、未精算の料金やクレジットが含まれる場合があります。総額を確認してからお支払いください。お支払い完了後、招待またはロール変更を手動で再度お試しください。",
+    retryAdmission:
+      "シートのお支払いが完了しました。招待またはロール変更を手動で再度お試しください。",
+    loading: "シート情報を確認しています。",
+    retry: "再確認",
+    recordingBlocked: {
+      title: "メンバー数が購入済みのシート数を超えているため、録音できません。",
+      admin: "シートを追加購入するか、メンバー数を減らすと録音を再開できます。",
+      member:
+        "ワークスペースの管理者にシートの追加購入またはメンバー数の調整をご依頼ください。",
+    },
+    roleChange:
+      "購入済みのシートを1つ使用します。空きがない場合は、先にシートを追加してください。",
+    manage: "シートを管理",
+    description:
+      "追加シートはお支払い完了後にご利用いただけます。シート数の削減は次回更新日に適用されます。",
+    quantity: "変更後の合計シート数",
+    currentPurchased: "現在の購入済みシート：{{count}}席",
+    totalDue: "本日のお支払い総額",
+    afterPayment: "お支払い完了後、合計{{count}}席をご利用いただけます。",
+    previewLoading: "お支払い金額を確認しています…",
+    reservedHint: "承認待ちの招待もシートを使用します。",
+    invitationSeats:
+      "今回の招待に必要なシート：{{required}}席 · 利用可能：{{available}}席",
+    sendingInvites: "招待を送信しています…",
+    integer: "シート数は整数で入力してください。",
+    minimum: `メンバーと招待中の人数を含め、最低{{minimum}}シートが必要です。
+先にメンバーまたは招待を整理してください。`,
+    maximum: "{{maximum}}シートを超える購入はサポートへお問い合わせください。",
+    floor: "現在、最低{{minimum}}シートが必要です。",
+    members: "メンバー管理に戻る",
+    decrease: `{{date}}から適用されます。
+それまでは購入済みの{{purchased}}シートすべてをご利用いただけます。シート数の削減による返金やクレジットはありません。`,
+    pending: "結果を確認中",
+    pay: "支払ってシートを追加",
+    preview: "支払い金額を確認",
+    schedule: "削減を予約",
+    purchasedSeats: "購入済み",
+    usedSeats: "利用中",
+    reservedSeats: "招待中",
+    availableSeats: "利用可能",
+    next: "{{date}}の更新予定：{{count}}シート",
+    cancelSchedule: "削減予約を取り消す",
+    unknown:
+      "変更結果を確認しています。購入済みシートは維持されます。再度お支払いせず、結果をご確認ください。",
+    readback: "変更結果を確認",
+    paymentFailed:
+      "お支払いが完了しなかったため、既存のシートは維持されています。別のカードに変更するか、サポートへお問い合わせください。",
+    failed: "変更できませんでした。最新のシート状況をご確認ください。",
+    loadFailed:
+      "シート情報を読み込めませんでした。しばらくしてから再度ご確認ください。",
+    buy: "シートを追加",
+    admissionPending:
+      "席数の削減予約がある場合は、取り消してから再度お試しください。席数の変更が処理中の場合は、先に結果をご確認ください。",
+    inviteScheduledReduction:
+      "招待すると次回更新時の予約席数を超えます。削減予約を取り消してから、もう一度招待してください。",
+    inviteBlocked:
+      "利用可能なシートが足りません。シートを追加してから、招待またはロール変更を再度お試しください。",
+    guideInvite:
+      "有料ロールで招待すると、購入済みのシートを1つ使用します。空きがない場合は、先にシートを追加してください。",
+    guideRemoval: `メンバーを削除しても、購入済みのシート数は変わりません。
+空いたシートは他のメンバーに使うか、シート管理で減らせます。`,
+  },
+  Me = {
+    customDate: "期間を指定",
+    backDates: "‹ 期間を選択",
+    selectedCount: "{{count}}件選択",
+    allFilter: "すべての{{filter}}",
+    clear: "解除",
+    noCreators: "一致する作成者がいません。",
+    folderScope:
+      "このフォルダのノートを検索します。他のフォルダも検索するには、すべてのノートに移動してください。",
+    currentFolder: "現在のフォルダを検索",
+    count: "{{count}}件",
+    newest: "新しい順 · 古い順に変更",
+    oldest: "古い順 · 新しい順に変更",
+    emptyHint: "キーワードを変えるか、フィルターを解除してください。",
+    clearFilter: "{{filter}}フィルターを解除",
+    maxSelections: "各フィルターは100件まで選択できます。",
+    title: "ノート検索",
+    query: "キーワードを入力",
+    clearQuery: "キーワードをクリア",
+    close: "検索を終了",
+    creators: "作成者",
+    findCreator: "作成者を検索",
+    me: "{{name}}（自分）",
+    folders: "フォルダ",
+    dates: "日付",
+    allDates: "すべての期間",
+    today: "今日",
+    yesterday: "昨日",
+    days: "過去{{count}}日間",
+    months: "過去3か月",
+    year: "今年",
+    from: "開始日",
+    to: "終了日",
+    apply: "期間を適用",
+    reset: "フィルターをリセット",
+    loading: "検索中…",
+    error: "検索できませんでした。",
+    retry: "再試行",
+    empty: "条件に一致するノートがありません。",
+    results: "検索結果",
+    more: "さらに表示",
+    done: "完了",
+  },
+  Re = {
+    sidebar: {
+      focus: "案内へ移動",
+      done: "完了",
+      query: "チーム会議",
+      project: "プロジェクト",
+      myProject: "マイプロジェクト",
+      private: "自分のみ",
+      step1: {
+        title: "ノート検索の精度が向上しました",
+        description: `ノートやフォルダをすばやく探せます。
+日付でノートの検索範囲を絞り込めます。`,
+      },
+      step2: {
+        title: "よく使うフォルダをお気に入りに",
+        description:
+          "フォルダメニューからお気に入りに追加できます。階層をたどらずにすぐ開けます。",
+      },
+      step3: {
+        title: "フォルダの区別が明確に",
+        description:
+          "自分だけが閲覧できるフォルダには鍵マークが付きます。ワークスペースフォルダはメンバーと共有されます。",
+      },
+    },
+  },
+  Ne = {
+    asanNanum: o,
+    d4d: n,
+    igybFestival: r,
+    aifesta: a,
+    impact: s,
+    referralGift: l,
+    billing: c,
+    payment: d,
+    checkoutLink: p,
+    inviteNudge: u,
+    title: m,
+    description: g,
+    keywords: T,
+    applicationName: b,
+    beta: h,
+    date: S,
+    onboarding: y,
+    onboarding2: A,
+    landing: k,
+    global: t,
+    loginComplete: v,
+    mcpAuthCallback: P,
+    mcpConsent: C,
+    connectComplete: f,
+    coupon: D,
+    referral: w,
+    download: E,
+    pricing: I,
+    subscription: L,
+    settings: M,
+    layout: R,
+    note: N,
+    search: O,
+    common: W,
+    dateRange: F,
+    calendar: x,
+    deeplink: U,
+    time: B,
+    toast: _,
+    inAppBrowser: q,
+    appRedirect: G,
+    record: H,
+    duration: V,
+    error: z,
+    help: Q,
+    invite: K,
+    contact: j,
+    footer: Z,
+    press: $,
+    fileUpload: Y,
+    recordingSupport: J,
+    permission: X,
+    titlebar: ee,
+    appMenu: te,
+    update: ie,
+    notification: oe,
+    askTiro: ne,
+    freeTrialBanner: re,
+    onboardingPopup: ae,
+    sidebarBanner: se,
+    notifications: le,
+    meetingEnd: ce,
+    shortcut: de,
+    context: pe,
+    editor: ue,
+    automation: me,
+    offline: ge,
+    developers: Te,
+    organization: be,
+    oauthLoading: he,
+    shared: Se,
+    noteList: ye,
+    trustCenter: Ae,
+    templateManager: ke,
+    workspace: ve,
+    wikiConvergence: Pe,
+    wiki: Ce,
+    auth: fe,
+    voicepad: De,
+    partnerLinks: we,
+    security: Ee,
+    pageMeta: Ie,
+    teamSeats: Le,
+    inlineSearch: Me,
+    featureGuidance: Re,
+  };
+exports.aifesta = a;
+exports.appMenu = te;
+exports.appRedirect = G;
+exports.applicationName = b;
+exports.asanNanum = o;
+exports.askTiro = ne;
+exports.auth = fe;
+exports.automation = me;
+exports.beta = h;
+exports.billing = c;
+exports.calendar = x;
+exports.checkoutLink = p;
+exports.common = W;
+exports.connectComplete = f;
+exports.contact = j;
+exports.context = pe;
+exports.coupon = D;
+exports.d4d = n;
+exports.date = S;
+exports.dateRange = F;
+exports.deeplink = U;
+exports.default = Ne;
+exports.description = g;
+exports.developers = Te;
+exports.download = E;
+exports.duration = V;
+exports.editor = ue;
+exports.error = z;
+exports.featureGuidance = Re;
+exports.fileUpload = Y;
+exports.footer = Z;
+exports.freeTrialBanner = re;
+exports.global = t;
+exports.help = Q;
+exports.igybFestival = r;
+exports.impact = s;
+exports.inAppBrowser = q;
+exports.inlineSearch = Me;
+exports.invite = K;
+exports.inviteNudge = u;
+exports.keywords = T;
+exports.landing = k;
+exports.layout = R;
+exports.loginComplete = v;
+exports.mcpAuthCallback = P;
+exports.mcpConsent = C;
+exports.meetingEnd = ce;
+exports.note = N;
+exports.noteList = ye;
+exports.notification = oe;
+exports.notifications = le;
+exports.oauthLoading = he;
+exports.offline = ge;
+exports.onboarding = y;
+exports.onboarding2 = A;
+exports.onboardingPopup = ae;
+exports.organization = be;
+exports.pageMeta = Ie;
+exports.partnerLinks = we;
+exports.payment = d;
+exports.permission = X;
+exports.press = $;
+exports.pricing = I;
+exports.record = H;
+exports.recordingSupport = J;
+exports.referral = w;
+exports.referralGift = l;
+exports.search = O;
+exports.security = Ee;
+exports.settings = M;
+exports.shared = Se;
+exports.shortcut = de;
+exports.sidebarBanner = se;
+exports.subscription = L;
+exports.teamSeats = Le;
+exports.templateManager = ke;
+exports.time = B;
+exports.title = m;
+exports.titlebar = ee;
+exports.toast = _;
+exports.trustCenter = Ae;
+exports.update = ie;
+exports.voicepad = De;
+exports.wiki = Ce;
+exports.wikiConvergence = Pe;
+exports.workspace = ve;
+//# sourceMappingURL=common-d8iTTsZZ.js.map

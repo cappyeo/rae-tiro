@@ -1,0 +1,38 @@
+"use strict";
+try {
+  let e =
+      typeof window < "u"
+        ? window
+        : typeof global < "u"
+          ? global
+          : typeof globalThis < "u"
+            ? globalThis
+            : typeof self < "u"
+              ? self
+              : {},
+    d = new e.Error().stack;
+  d &&
+    ((e._sentryDebugIds = e._sentryDebugIds || {}),
+    (e._sentryDebugIds[d] = "5b41f614-e436-4752-9dfc-15ea51edbb09"),
+    (e._sentryDebugIdIdentifier =
+      "sentry-dbid-5b41f614-e436-4752-9dfc-15ea51edbb09"));
+} catch {}
+const n = require("electron");
+{
+  let e =
+    typeof window < "u"
+      ? window
+      : typeof global < "u"
+        ? global
+        : typeof globalThis < "u"
+          ? globalThis
+          : typeof self < "u"
+            ? self
+            : {};
+  e.SENTRY_RELEASE = { id: "b0e582b6b191bb327293ebbcbbdf60646085db2b" };
+}
+n.contextBridge.exposeInMainWorld("notification", {
+  setIgnoreMouse: (e) => n.ipcRenderer.send("notification:set-ignore-mouse", e),
+  runAction: (e) => n.ipcRenderer.invoke("notification:action-clicked", e),
+});
+//# sourceMappingURL=notificationPreload.js.map

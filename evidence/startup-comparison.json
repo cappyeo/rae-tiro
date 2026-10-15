@@ -1,0 +1,22 @@
+{
+  "timestamp": "2026-10-15T20:07:56.811Z",
+  "labels": [
+    "preserved",
+    "recovered"
+  ],
+  "passed": true,
+  "comparableFields": [
+    "text",
+    "rootChildren",
+    "electronBridge",
+    "version",
+    "bridgeMembers",
+    "readOnlyIpc",
+    "imageFailures"
+  ],
+  "screenshotIdentical": true,
+  "leftImageSha256": "b46f8757dd059e64544c4050f667982f78d40d02bcee130a5bd97d5f759b7117",
+  "rightImageSha256": "b46f8757dd059e64544c4050f667982f78d40d02bcee130a5bd97d5f759b7117",
+  "failures": [],
+  "scope": "Offline unauthenticated startup on stock Electron 41.8.0 with the recovery launcher. This does not establish equivalence after login or native audio behavior."
+}

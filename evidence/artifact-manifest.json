@@ -1,0 +1,26 @@
+{
+  "recoveryDate": "2026-10-16",
+  "timezone": "Asia/Seoul",
+  "artifacts": [
+    { "name": "tiro-4.9.14-windows.zip", "sha256": "63b8ca3a5eaf1d0aa23fe9a77473f9e5c7ccce444f5a3e9854ace8c55ddfdc56", "bytes": 193222124 },
+    { "name": "Tiro-4.9.14 Setup.exe", "sha256": "f4054a2bb85063d640b7fc5c07448f4e8a2e7c1a10b68389dbaf24075a5eaac4", "bytes": 193251584 },
+    { "name": "tiro-desktop-4.9.14-full.nupkg", "sha256": "82dcd1055ae7d99901ce0c6fdec2cd7d2ebec6ec6feb9ec6706c9076a9c5e9b9", "bytes": 192420444 },
+    { "name": "resources/app.asar", "sha256": "e9a432465704d8b584d4389419332334114475790e63284c6a225e62dbabc0e2", "bytes": 75896705 },
+    { "name": "external/win/tiro-audio-capture.exe", "sha256": "eb036f32dacc118baade22afad8ec2d78f6d5b6546db45a31a1326dcd75e148b", "bytes": 909056 },
+    { "name": "microphone.node", "observedSha256": "48f33841dd8986114c1e89cf3efa916ae84b3d0adb0d818a25283e52b40d7532", "declaredAsarSha256": "a7e869552aa2d20c4d3af49e1fd496073de1f9916eae5bcbbd1411f802ffac6e", "authenticodeStatus": "Valid", "signerCommonName": "ThePlato Inc.", "integrityMismatchCause": "unknown" }
+  ],
+  "primaryReaEvidence": {
+    "zipInspection": "ev_421b9c7ca583abd4cf9a015adb8325d6e354f0df3f51fe338854dd26c19d85f5",
+    "zipExtraction": "ev_e798627e566c8f75504c65264c3cd5ce0bc9568f00f57f0d99ddb52ee3cccaf8",
+    "asarExtraction": "ev_411e9b271bcfe2751183c35828ae36813c93ec066e0dee83561a418e72e0e8c0",
+    "selectedMainPreloadAnalysis": "ev_b58bbefd990fef7ae2423d22044c754c8d23738c566f21885014107cf0b49184",
+    "electronFuseInspection": "ev_5c0b57b470a65d4c163891534545d64c60805e9feddc89b9dd5eaafad09aabe6",
+    "passivePreservedRendererObservation": "ev_8a511275eadda7dd5d6122266b429d1293340511a5cca085a00d4a8de4f82a8f",
+    "passiveRebuiltRendererObservation": "ev_612290b9af78b67f278c25b0dce1395cb185729988a127c97a3179870514bbcb"
+  },
+  "limitations": [
+    "Static REA graph has explicitly partial semantic coverage.",
+    "Runtime observations use stock Electron 41.8.0 and the recovery launcher, rather than the signed original executable.",
+    "The signed executable and native components are retained as observed artifacts; the microphone ASAR integrity contradiction remains explicit."
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "timestamp": "2026-10-15T20:17:52.139Z",
+  "passed": true,
+  "preservedFilesVerified": 353,
+  "uniqueEmbeddedSourcesVerified": 623,
+  "formattedCodeFiles": 13,
+  "fingerprints": [
+    {
+      "file": "build/common-BYp7ijXW.js",
+      "equal": true,
+      "comparisonKind": "exact-normalized",
+      "original": "e5463a4a7582f4b7686e49e7ae3c417c2105e6217c7c9efeccfebc6f15c519c6",
+      "editable": "e5463a4a7582f4b7686e49e7ae3c417c2105e6217c7c9efeccfebc6f15c519c6"
+    },
+    {
+      "file": "build/common-d8iTTsZZ.js",
+      "equal": true,
+      "comparisonKind": "exact-normalized",
+      "original": "ee3793d6b144cac8a3a5faa515f629683c8622aef2a23adffba54e570d7cacda",
+      "editable": "ee3793d6b144cac8a3a5faa515f629683c8622aef2a23adffba54e570d7cacda"
+    },
+    {
+      "file": "build/common-ESyrnCuW.js",
+      "equal": true,
+      "comparisonKind": "exact-normalized",
+      "original": "678fffd38e09ed862eb4f9b962a2ae47945f5355fc88ba29efc604ab1fd63917",
+      "editable": "678fffd38e09ed862eb4f9b962a2ae47945f5355fc88ba29efc604ab1fd63917"
+    },
+    {
+      "file": "build/index.js",
+      "equal": true,
+      "comparisonKind": "exact-normalized",
+      "original": "31a6691f7ce1303558bf757afb5b646b729deb15fc0672e2962431947f6c7c63",
+      "editable": "31a6691f7ce1303558bf757afb5b646b729deb15fc0672e2962431947f6c7c63"
+    },
+    {
+      "file": "build/notificationPreload.js",
+      "equal": true,
+      "comparisonKind": "exact-normalized",
+      "original": "a58a0cba2515e075e1f07095b2e410dcf452c569aef87b54d613a233894d95f3",
+      "editable": "a58a0cba2515e075e1f07095b2e410dcf452c569aef87b54d613a233894d95f3"
+    },
+    {
+      "file": "build/overlayPreload.js",
+      "equal": true,
+      "comparisonKind": "exact-normalized",
+      "original": "72279c0e440805ece98463a055699eb7e95dd6a50708ca24f7b25c96040cd7cd",
+      "editable": "72279c0e440805ece98463a055699eb7e95dd6a50708ca24f7b25c96040cd7cd"
+    },
+    {
+      "file": "build/preload.js",
+      "equal": true,
+      "comparisonKind": "exact-normalized",
+      "original": "043473e5d330661e02f571d7c5cc3a5b5c250ee00a5896a6f4fec942eaf24334",
+      "editable": "043473e5d330661e02f571d7c5cc3a5b5c250ee00a5896a6f4fec942eaf24334"
+    },
+    {
+      "file": "renderer/main_window/assets/common-BaNizp2g.js",
+      "equal": true,
+      "comparisonKind": "exact-normalized",
+      "original": "749f847bdea6f7912ba43646fba0b105c996d139a96d25089293aeea48c13fa2",
+      "editable": "749f847bdea6f7912ba43646fba0b105c996d139a96d25089293aeea48c13fa2"
+    },
+    {
+      "file": "renderer/main_window/assets/common-BLBuIq7z.js",
+      "equal": true,
+      "comparisonKind": "exact-normalized",
+      "original": "5b2e6da60cd81ff4ab6b1b09dc9ecd4a81806fb6b1bf7b876547296d63b52e72",
+      "editable": "5b2e6da60cd81ff4ab6b1b09dc9ecd4a81806fb6b1bf7b876547296d63b52e72"
+    },
+    {
+      "file": "renderer/main_window/assets/common-Ciwjkgzm.js",
+      "equal": true,
+      "comparisonKind": "exact-normalized",
+      "original": "a8a294555b2c9ec431b370ec43a09218da21d03e92d79128f390262fa55ad68e",
+      "editable": "a8a294555b2c9ec431b370ec43a09218da21d03e92d79128f390262fa55ad68e"
+    },
+    {
+      "file": "renderer/main_window/assets/index-CXautzcB.js",
+      "equal": true,
+      "comparisonKind": "parsed-regex-flag-order-normalized",
+      "original": "5a30b55691d25778e295914839a41b1954b438ddc20efee4a9e2caaeec05f1ff",
+      "editable": "5a30b55691d25778e295914839a41b1954b438ddc20efee4a9e2caaeec05f1ff"
+    },
+    {
+      "file": "renderer/main_window/assets/index-DEPkF0IT.css",
+      "equal": true,
+      "comparisonKind": "pinned-formatter-output-equal",
+      "original": "31727c9a85a6260d381e20b8796babcef5e3d0ea354ab74a37e401eafe85a649",
+      "editable": "31727c9a85a6260d381e20b8796babcef5e3d0ea354ab74a37e401eafe85a649"
+    },
+    {
+      "file": "renderer/main_window/assets/sigma.esm-Dtz9FVz5.js",
+      "equal": true,
+      "comparisonKind": "exact-normalized",
+      "original": "677e1181750e189a8ad5b58092d2c0fcce52e4d5b79f9ab63467c0e4b6edec5f",
+      "editable": "677e1181750e189a8ad5b58092d2c0fcce52e4d5b79f9ab63467c0e4b6edec5f"
+    }
+  ],
+  "missingAssets": [],
+  "errors": [],
+  "limitations": [
+    "Code fingerprints compare normalized syntax using one fixed esbuild version; they do not prove runtime equivalence.",
+    "Source hashes are the recovery baseline. Expected user edits change them.",
+    "No cloud authentication, audio capture, upload or native-helper behavior is tested."
+  ]
+}

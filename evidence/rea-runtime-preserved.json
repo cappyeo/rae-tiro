@@ -1,0 +1,1323 @@
+{
+  "evidence_id": "ev_8a511275eadda7dd5d6122266b429d1293340511a5cca085a00d4a8de4f82a8f",
+  "subject": null,
+  "provider": {
+    "id": "rea-cdp-electron",
+    "name": "REA Electron file-page CDP observation provider",
+    "version": "1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.electron-page-inspection",
+  "operation": "inspect_electron_page",
+  "parameters": {
+    "cdp_endpoint": "http://127.0.0.1:9321",
+    "target_id": "6C645F20DBCB7D48B8CE6676051637A7",
+    "observation_ms": 100,
+    "include_script_sources": false
+  },
+  "raw_result": null,
+  "normalized_result": {
+    "browser": {
+      "product": "Chrome/146.0.7680.216",
+      "protocol_version": "1.3",
+      "revision": "537.36 (@cd53e6ca4aad193b0a0aff0c8e0f8fa1899c0c0f)",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) TiroRecovery/41.8.0 Chrome/146.0.7680.216 Electron/41.8.0 Safari/537.36",
+      "js_version": "14.6.202.34"
+    },
+    "target": {
+      "target_id": "6C645F20DBCB7D48B8CE6676051637A7",
+      "type": "page",
+      "title": "index.html#/login",
+      "file_path": "C:\\Users\\jeong\\Documents\\Codex\\2026-10-16\\c-users-jeong-downloads-tiro-4\\outputs\\tiro-recovered\\preserved\\app\\.vite\\renderer\\main_window\\index.html",
+      "attached": null
+    },
+    "capture_window": {
+      "started_at": "2026-10-15T19:59:13.454Z",
+      "ended_at": "2026-10-15T19:59:13.877Z",
+      "observation_ms": 100
+    },
+    "completeness": {
+      "status": "policy_filtered",
+      "conditions": [
+        "policy_filtered"
+      ],
+      "policy_filtered_sections": [
+        "resources",
+        "script_sources",
+        "scripts"
+      ],
+      "attach_limited_sections": [],
+      "truncated_sections": [],
+      "unavailable_sections": [],
+      "excluded": [
+        {
+          "section": "resources",
+          "reason": "out_of_target_scope",
+          "count": 3
+        },
+        {
+          "section": "script_sources",
+          "reason": "not_approved",
+          "count": 5
+        },
+        {
+          "section": "scripts",
+          "reason": "out_of_target_scope",
+          "count": 1
+        },
+        {
+          "section": "scripts",
+          "reason": "unattributed_origin",
+          "count": 3
+        }
+      ],
+      "dropped_events": {
+        "scripts": 0,
+        "network_requests": 0,
+        "console_events": 0,
+        "websocket_connections": 0,
+        "websocket_frames": 0,
+        "webmcp_tools": 0,
+        "timeline_events": 0,
+        "total": 0
+      }
+    },
+    "frames": [
+      {
+        "frame_id": "6C645F20DBCB7D48B8CE6676051637A7",
+        "parent_frame_id": null,
+        "file_path": "C:\\Users\\jeong\\Documents\\Codex\\2026-10-16\\c-users-jeong-downloads-tiro-4\\outputs\\tiro-recovered\\preserved\\app\\.vite\\renderer\\main_window\\index.html"
+      }
+    ],
+    "dom": {
+      "total_nodes": 100,
+      "nodes": [
+        {
+          "index": 0,
+          "parent_index": -1,
+          "node_type": 9,
+          "node_name": "#document",
+          "node_value_length": 0,
+          "attribute_names": []
+        },
+        {
+          "index": 1,
+          "parent_index": 0,
+          "node_type": 10,
+          "node_name": "html",
+          "node_value_length": 0,
+          "attribute_names": []
+        },
+        {
+          "index": 2,
+          "parent_index": 0,
+          "node_type": 1,
+          "node_name": "HTML",
+          "node_value_length": 0,
+          "attribute_names": [
+            "data-theme"
+          ]
+        },
+        {
+          "index": 3,
+          "parent_index": 2,
+          "node_type": 1,
+          "node_name": "HEAD",
+          "node_value_length": 0,
+          "attribute_names": []
+        },
+        {
+          "index": 4,
+          "parent_index": 3,
+          "node_type": 3,
+          "node_name": "#text",
+          "node_value_length": 5,
+          "attribute_names": []
+        },
+        {
+          "index": 5,
+          "parent_index": 3,
+          "node_type": 1,
+          "node_name": "META",
+          "node_value_length": 0,
+          "attribute_names": [
+            "charset"
+          ]
+        },
+        {
+          "index": 6,
+          "parent_index": 3,
+          "node_type": 3,
+          "node_name": "#text",
+          "node_value_length": 5,
+          "attribute_names": []
+        },
+        {
+          "index": 7,
+          "parent_index": 3,
+          "node_type": 1,
+          "node_name": "STYLE",
+          "node_value_length": 0,
+          "attribute_names": []
+        },
+        {
+          "index": 8,
+          "parent_index": 7,
+          "node_type": 3,
+          "node_name": "#text",
+          "node_value_length": 1358,
+          "attribute_names": []
+        },
+        {
+          "index": 9,
+          "parent_index": 3,
+          "node_type": 3,
+          "node_name": "#text",
+          "node_value_length": 5,
+          "attribute_names": []
+        },
+        {
+          "index": 10,
+          "parent_index": 3,
+          "node_type": 1,
+          "node_name": "SCRIPT",
+          "node_value_length": 0,
+          "attribute_names": []
+        },
+        {
+          "index": 11,
+          "parent_index": 10,
+          "node_type": 3,
+          "node_name": "#text",
+          "node_value_length": 2263,
+          "attribute_names": []
+        },
+        {
+          "index": 12,
+          "parent_index": 3,
+          "node_type": 3,
+          "node_name": "#text",
+          "node_value_length": 5,
+          "attribute_names": []
+        },
+        {
+          "index": 13,
+          "parent_index": 3,
+          "node_type": 1,
+          "node_name": "SCRIPT",
+          "node_value_length": 0,
+          "attribute_names": [
+            "type",
+            "crossorigin",
+            "src"
+          ]
+        },
+        {
+          "index": 14,
+          "parent_index": 3,
+          "node_type": 3,
+          "node_name": "#text",
+          "node_value_length": 5,
+          "attribute_names": []
+        },
+        {
+          "index": 15,
+          "parent_index": 3,
+          "node_type": 1,
+          "node_name": "LINK",
+          "node_value_length": 0,
+          "attribute_names": [
+            "rel",
+            "crossorigin",
+            "href"
+          ]
+        },
+        {
+          "index": 16,
+          "parent_index": 3,
+          "node_type": 3,
+          "node_name": "#text",
+          "node_value_length": 3,
+          "attribute_names": []
+        },
+        {
+          "index": 17,
+          "parent_index": 2,
+          "node_type": 3,
+          "node_name": "#text",
+          "node_value_length": 4,
+          "attribute_names": []
+        },
+        {
+          "index": 18,
+          "parent_index": 2,
+          "node_type": 1,
+          "node_name": "BODY",
+          "node_value_length": 0,
+          "attribute_names": []
+        },
+        {
+          "index": 19,
+          "parent_index": 18,
+          "node_type": 3,
+          "node_name": "#text",
+          "node_value_length": 6,
+          "attribute_names": []
+        },
+        {
+          "index": 20,
+          "parent_index": 18,
+          "node_type": 1,
+          "node_name": "SCRIPT",
+          "node_value_length": 0,
+          "attribute_names": [
+            "type",
+            "crossorigin",
+            "src"
+          ]
+        },
+        {
+          "index": 21,
+          "parent_index": 18,
+          "node_type": 1,
+          "node_name": "SCRIPT",
+          "node_value_length": 0,
+          "attribute_names": [
+            "src",
+            "id"
+          ]
+        },
+        {
+          "index": 22,
+          "parent_index": 18,
+          "node_type": 3,
+          "node_name": "#text",
+          "node_value_length": 5,
+          "attribute_names": []
+        },
+        {
+          "index": 23,
+          "parent_index": 18,
+          "node_type": 1,
+          "node_name": "DIV",
+          "node_value_length": 0,
+          "attribute_names": [
+            "id"
+          ]
+        },
+        {
+          "index": 24,
+          "parent_index": 23,
+          "node_type": 1,
+          "node_name": "DIV",
+          "node_value_length": 0,
+          "attribute_names": [
+            "class"
+          ]
+        },
+        {
+          "index": 25,
+          "parent_index": 24,
+          "node_type": 1,
+          "node_name": "DIV",
+          "node_value_length": 0,
+          "attribute_names": [
+            "class"
+          ]
+        },
+        {
+          "index": 26,
+          "parent_index": 25,
+          "node_type": 1,
+          "node_name": "BUTTON",
+          "node_value_length": 0,
+          "attribute_names": [
+            "type",
+            "aria-label",
+            "class"
+          ]
+        },
+        {
+          "index": 27,
+          "parent_index": 26,
+          "node_type": 1,
+          "node_name": "SPAN",
+          "node_value_length": 0,
+          "attribute_names": [
+            "class"
+          ]
+        },
+        {
+          "index": 28,
+          "parent_index": 27,
+          "node_type": 1,
+          "node_name": "SPAN",
+          "node_value_length": 0,
+          "attribute_names": [
+            "class",
+            "aria-hidden",
+            "style"
+          ]
+        },
+        {
+          "index": 29,
+          "parent_index": 24,
+          "node_type": 1,
+          "node_name": "DIV",
+          "node_value_length": 0,
+          "attribute_names": [
+            "class"
+          ]
+        },
+        {
+          "index": 30,
+          "parent_index": 29,
+          "node_type": 1,
+          "node_name": "DIV",
+          "node_value_length": 0,
+          "attribute_names": [
+            "class"
+          ]
+        },
+        {
+          "index": 31,
+          "parent_index": 30,
+          "node_type": 1,
+          "node_name": "DIV",
+          "node_value_length": 0,
+          "attribute_names": [
+            "class"
+          ]
+        },
+        {
+          "index": 32,
+          "parent_index": 31,
+          "node_type": 1,
+          "node_name": "DIV",
+          "node_value_length": 0,
+          "attribute_names": [
+            "class"
+          ]
+        },
+        {
+          "index": 33,
+          "parent_index": 32,
+          "node_type": 1,
+          "node_name": "DIV",
+          "node_value_length": 0,
+          "attribute_names": [
+            "class"
+          ]
+        },
+        {
+          "index": 34,
+          "parent_index": 33,
+          "node_type": 1,
+          "node_name": "SPAN",
+          "node_value_length": 0,
+          "attribute_names": [
+            "class",
+            "role",
+            "aria-label",
+            "style"
+          ]
+        },
+        {
+          "index": 35,
+          "parent_index": 32,
+          "node_type": 1,
+          "node_name": "H2",
+          "node_value_length": 0,
+          "attribute_names": [
+            "class"
+          ]
+        },
+        {
+          "index": 36,
+          "parent_index": 35,
+          "node_type": 3,
+          "node_name": "#text",
+          "node_value_length": 7,
+          "attribute_names": []
+        },
+        {
+          "index": 37,
+          "parent_index": 31,
+          "node_type": 1,
+          "node_name": "DIV",
+          "node_value_length": 0,
+          "attribute_names": [
+            "class"
+          ]
+        },
+        {
+          "index": 38,
+          "parent_index": 37,
+          "node_type": 1,
+          "node_name": "DIV",
+          "node_value_length": 0,
+          "attribute_names": [
+            "class"
+          ]
+        },
+        {
+          "index": 39,
+          "parent_index": 38,
+          "node_type": 1,
+          "node_name": "DIV",
+          "node_value_length": 0,
+          "attribute_names": [
+            "class"
+          ]
+        },
+        {
+          "index": 40,
+          "parent_index": 39,
+          "node_type": 1,
+          "node_name": "BUTTON",
+          "node_value_length": 0,
+          "attribute_names": [
+            "class"
+          ]
+        },
+        {
+          "index": 41,
+          "parent_index": 40,
+          "node_type": 1,
+          "node_name": "svg",
+          "node_value_length": 0,
+          "attribute_names": [
+            "stroke",
+            "fill",
+            "stroke-width",
+            "version",
+            "x",
+            "y",
+            "viewBox",
+            "enable-background",
+            "class",
+            "height",
+            "width",
+            "xmlns"
+          ]
+        },
+        {
+          "index": 42,
+          "parent_index": 41,
+          "node_type": 1,
+          "node_name": "path",
+          "node_value_length": 0,
+          "attribute_names": [
+            "fill",
+            "d"
+          ]
+        },
+        {
+          "index": 43,
+          "parent_index": 41,
+          "node_type": 1,
+          "node_name": "path",
+          "node_value_length": 0,
+          "attribute_names": [
+            "fill",
+            "d"
+          ]
+        },
+        {
+          "index": 44,
+          "parent_index": 41,
+          "node_type": 1,
+          "node_name": "path",
+          "node_value_length": 0,
+          "attribute_names": [
+            "fill",
+            "d"
+          ]
+        },
+        {
+          "index": 45,
+          "parent_index": 41,
+          "node_type": 1,
+          "node_name": "path",
+          "node_value_length": 0,
+          "attribute_names": [
+            "fill",
+            "d"
+          ]
+        },
+        {
+          "index": 46,
+          "parent_index": 40,
+          "node_type": 1,
+          "node_name": "SPAN",
+          "node_value_length": 0,
+          "attribute_names": []
+        },
+        {
+          "index": 47,
+          "parent_index": 46,
+          "node_type": 3,
+          "node_name": "#text",
+          "node_value_length": 22,
+          "attribute_names": []
+        },
+        {
+          "index": 48,
+          "parent_index": 38,
+          "node_type": 1,
+          "node_name": "DIV",
+          "node_value_length": 0,
+          "attribute_names": [
+            "class"
+          ]
+        },
+        {
+          "index": 49,
+          "parent_index": 48,
+          "node_type": 1,
+          "node_name": "BUTTON",
+          "node_value_length": 0,
+          "attribute_names": [
+            "class"
+          ]
+        },
+        {
+          "index": 50,
+          "parent_index": 49,
+          "node_type": 1,
+          "node_name": "IMG",
+          "node_value_length": 0,
+          "attribute_names": [
+            "src",
+            "alt",
+            "class"
+          ]
+        },
+        {
+          "index": 51,
+          "parent_index": 49,
+          "node_type": 1,
+          "node_name": "SPAN",
+          "node_value_length": 0,
+          "attribute_names": []
+        },
+        {
+          "index": 52,
+          "parent_index": 51,
+          "node_type": 3,
+          "node_name": "#text",
+          "node_value_length": 25,
+          "attribute_names": []
+        },
+        {
+          "index": 53,
+          "parent_index": 38,
+          "node_type": 1,
+          "node_name": "DIV",
+          "node_value_length": 0,
+          "attribute_names": [
+            "class"
+          ]
+        },
+        {
+          "index": 54,
+          "parent_index": 53,
+          "node_type": 1,
+          "node_name": "BUTTON",
+          "node_value_length": 0,
+          "attribute_names": [
+            "class"
+          ]
+        },
+        {
+          "index": 55,
+          "parent_index": 54,
+          "node_type": 1,
+          "node_name": "svg",
+          "node_value_length": 0,
+          "attribute_names": [
+            "xmlns",
+            "width",
+            "height",
+            "viewBox",
+            "fill",
+            "stroke",
+            "stroke-width",
+            "stroke-linecap",
+            "stroke-linejoin",
+            "class"
+          ]
+        },
+        {
+          "index": 56,
+          "parent_index": 55,
+          "node_type": 1,
+          "node_name": "path",
+          "node_value_length": 0,
+          "attribute_names": [
+            "d"
+          ]
+        },
+        {
+          "index": 57,
+          "parent_index": 55,
+          "node_type": 1,
+          "node_name": "path",
+          "node_value_length": 0,
+          "attribute_names": [
+            "d"
+          ]
+        },
+        {
+          "index": 58,
+          "parent_index": 55,
+          "node_type": 1,
+          "node_name": "path",
+          "node_value_length": 0,
+          "attribute_names": [
+            "d"
+          ]
+        },
+        {
+          "index": 59,
+          "parent_index": 55,
+          "node_type": 1,
+          "node_name": "path",
+          "node_value_length": 0,
+          "attribute_names": [
+            "d"
+          ]
+        },
+        {
+          "index": 60,
+          "parent_index": 55,
+          "node_type": 1,
+          "node_name": "path",
+          "node_value_length": 0,
+          "attribute_names": [
+            "d"
+          ]
+        },
+        {
+          "index": 61,
+          "parent_index": 55,
+          "node_type": 1,
+          "node_name": "path",
+          "node_value_length": 0,
+          "attribute_names": [
+            "d"
+          ]
+        },
+        {
+          "index": 62,
+          "parent_index": 55,
+          "node_type": 1,
+          "node_name": "path",
+          "node_value_length": 0,
+          "attribute_names": [
+            "d"
+          ]
+        },
+        {
+          "index": 63,
+          "parent_index": 54,
+          "node_type": 1,
+          "node_name": "SPAN",
+          "node_value_length": 0,
+          "attribute_names": []
+        },
+        {
+          "index": 64,
+          "parent_index": 63,
+          "node_type": 3,
+          "node_name": "#text",
+          "node_value_length": 19,
+          "attribute_names": []
+        },
+        {
+          "index": 65,
+          "parent_index": 38,
+          "node_type": 1,
+          "node_name": "BUTTON",
+          "node_value_length": 0,
+          "attribute_names": [
+            "type",
+            "class"
+          ]
+        },
+        {
+          "index": 66,
+          "parent_index": 65,
+          "node_type": 1,
+          "node_name": "DIV",
+          "node_value_length": 0,
+          "attribute_names": [
+            "class"
+          ]
+        },
+        {
+          "index": 67,
+          "parent_index": 65,
+          "node_type": 1,
+          "node_name": "SPAN",
+          "node_value_length": 0,
+          "attribute_names": [
+            "class"
+          ]
+        },
+        {
+          "index": 68,
+          "parent_index": 67,
+          "node_type": 3,
+          "node_name": "#text",
+          "node_value_length": 32,
+          "attribute_names": []
+        },
+        {
+          "index": 69,
+          "parent_index": 67,
+          "node_type": 1,
+          "node_name": "svg",
+          "node_value_length": 0,
+          "attribute_names": [
+            "xmlns",
+            "width",
+            "height",
+            "viewBox",
+            "fill",
+            "stroke",
+            "stroke-width",
+            "stroke-linecap",
+            "stroke-linejoin",
+            "class"
+          ]
+        },
+        {
+          "index": 70,
+          "parent_index": 69,
+          "node_type": 1,
+          "node_name": "path",
+          "node_value_length": 0,
+          "attribute_names": [
+            "d"
+          ]
+        },
+        {
+          "index": 71,
+          "parent_index": 65,
+          "node_type": 1,
+          "node_name": "DIV",
+          "node_value_length": 0,
+          "attribute_names": [
+            "class"
+          ]
+        },
+        {
+          "index": 72,
+          "parent_index": 38,
+          "node_type": 1,
+          "node_name": "DIV",
+          "node_value_length": 0,
+          "attribute_names": [
+            "class"
+          ]
+        },
+        {
+          "index": 73,
+          "parent_index": 72,
+          "node_type": 1,
+          "node_name": "BUTTON",
+          "node_value_length": 0,
+          "attribute_names": [
+            "type",
+            "role",
+            "aria-checked",
+            "data-state",
+            "value",
+            "class",
+            "id"
+          ]
+        },
+        {
+          "index": 74,
+          "parent_index": 73,
+          "node_type": 1,
+          "node_name": "::after",
+          "node_value_length": 0,
+          "attribute_names": []
+        },
+        {
+          "index": 75,
+          "parent_index": 73,
+          "node_type": 1,
+          "node_name": "SPAN",
+          "node_value_length": 0,
+          "attribute_names": [
+            "data-state",
+            "class",
+            "style"
+          ]
+        },
+        {
+          "index": 76,
+          "parent_index": 75,
+          "node_type": 1,
+          "node_name": "svg",
+          "node_value_length": 0,
+          "attribute_names": [
+            "xmlns",
+            "width",
+            "height",
+            "viewBox",
+            "fill",
+            "stroke",
+            "stroke-width",
+            "stroke-linecap",
+            "stroke-linejoin",
+            "class"
+          ]
+        },
+        {
+          "index": 77,
+          "parent_index": 76,
+          "node_type": 1,
+          "node_name": "path",
+          "node_value_length": 0,
+          "attribute_names": [
+            "d"
+          ]
+        },
+        {
+          "index": 78,
+          "parent_index": 75,
+          "node_type": 1,
+          "node_name": "svg",
+          "node_value_length": 0,
+          "attribute_names": [
+            "xmlns",
+            "width",
+            "height",
+            "viewBox",
+            "fill",
+            "stroke",
+            "stroke-width",
+            "stroke-linecap",
+            "stroke-linejoin",
+            "class"
+          ]
+        },
+        {
+          "index": 79,
+          "parent_index": 78,
+          "node_type": 1,
+          "node_name": "path",
+          "node_value_length": 0,
+          "attribute_names": [
+            "d"
+          ]
+        },
+        {
+          "index": 80,
+          "parent_index": 72,
+          "node_type": 1,
+          "node_name": "LABEL",
+          "node_value_length": 0,
+          "attribute_names": [
+            "for",
+            "class"
+          ]
+        },
+        {
+          "index": 81,
+          "parent_index": 80,
+          "node_type": 1,
+          "node_name": "BUTTON",
+          "node_value_length": 0,
+          "attribute_names": [
+            "type",
+            "class"
+          ]
+        },
+        {
+          "index": 82,
+          "parent_index": 81,
+          "node_type": 3,
+          "node_name": "#text",
+          "node_value_length": 24,
+          "attribute_names": []
+        },
+        {
+          "index": 83,
+          "parent_index": 80,
+          "node_type": 3,
+          "node_name": "#text",
+          "node_value_length": 40,
+          "attribute_names": []
+        },
+        {
+          "index": 84,
+          "parent_index": 29,
+          "node_type": 1,
+          "node_name": "DIV",
+          "node_value_length": 0,
+          "attribute_names": [
+            "class"
+          ]
+        },
+        {
+          "index": 85,
+          "parent_index": 84,
+          "node_type": 1,
+          "node_name": "DIV",
+          "node_value_length": 0,
+          "attribute_names": [
+            "class"
+          ]
+        },
+        {
+          "index": 86,
+          "parent_index": 85,
+          "node_type": 1,
+          "node_name": "IMG",
+          "node_value_length": 0,
+          "attribute_names": [
+            "src",
+            "alt",
+            "class"
+          ]
+        },
+        {
+          "index": 87,
+          "parent_index": 85,
+          "node_type": 1,
+          "node_name": "IMG",
+          "node_value_length": 0,
+          "attribute_names": [
+            "src",
+            "alt",
+            "class"
+          ]
+        },
+        {
+          "index": 88,
+          "parent_index": 84,
+          "node_type": 1,
+          "node_name": "SPAN",
+          "node_value_length": 0,
+          "attribute_names": [
+            "class"
+          ]
+        },
+        {
+          "index": 89,
+          "parent_index": 88,
+          "node_type": 1,
+          "node_name": "SPAN",
+          "node_value_length": 0,
+          "attribute_names": [
+            "class"
+          ]
+        },
+        {
+          "index": 90,
+          "parent_index": 89,
+          "node_type": 3,
+          "node_name": "#text",
+          "node_value_length": 18,
+          "attribute_names": []
+        },
+        {
+          "index": 91,
+          "parent_index": 88,
+          "node_type": 3,
+          "node_name": "#text",
+          "node_value_length": 4,
+          "attribute_names": []
+        },
+        {
+          "index": 92,
+          "parent_index": 88,
+          "node_type": 1,
+          "node_name": "SPAN",
+          "node_value_length": 0,
+          "attribute_names": [
+            "class"
+          ]
+        },
+        {
+          "index": 93,
+          "parent_index": 92,
+          "node_type": 3,
+          "node_name": "#text",
+          "node_value_length": 12,
+          "attribute_names": []
+        },
+        {
+          "index": 94,
+          "parent_index": 88,
+          "node_type": 3,
+          "node_name": "#text",
+          "node_value_length": 14,
+          "attribute_names": []
+        },
+        {
+          "index": 95,
+          "parent_index": 24,
+          "node_type": 1,
+          "node_name": "DIV",
+          "node_value_length": 0,
+          "attribute_names": [
+            "class"
+          ]
+        },
+        {
+          "index": 96,
+          "parent_index": 95,
+          "node_type": 1,
+          "node_name": "IMG",
+          "node_value_length": 0,
+          "attribute_names": [
+            "src",
+            "alt",
+            "class"
+          ]
+        },
+        {
+          "index": 97,
+          "parent_index": 23,
+          "node_type": 1,
+          "node_name": "DIV",
+          "node_value_length": 0,
+          "attribute_names": [
+            "role",
+            "aria-label",
+            "tabindex",
+            "style"
+          ]
+        },
+        {
+          "index": 98,
+          "parent_index": 97,
+          "node_type": 1,
+          "node_name": "OL",
+          "node_value_length": 0,
+          "attribute_names": [
+            "tabindex",
+            "class"
+          ]
+        },
+        {
+          "index": 99,
+          "parent_index": 18,
+          "node_type": 3,
+          "node_name": "#text",
+          "node_value_length": 5,
+          "attribute_names": []
+        }
+      ]
+    },
+    "scripts": {
+      "total": 5,
+      "items": [
+        {
+          "script_key": "electron_script_0763dc089d40ddeeca0452ea5fbae4c3f783cc0704638bab01fe4d6d1d225ec6",
+          "frame_id": "6C645F20DBCB7D48B8CE6676051637A7",
+          "file_path": "C:\\Users\\jeong\\Documents\\Codex\\2026-10-16\\c-users-jeong-downloads-tiro-4\\outputs\\tiro-recovered\\preserved\\app\\.vite\\renderer\\main_window\\index.html",
+          "cdp_hash": "15ef294e628c2ff5005340a19edce08abef5b2bf123d84bd537d52a77054ac61",
+          "length": 2205,
+          "is_module": false,
+          "language": "JavaScript",
+          "source": {
+            "included": false,
+            "reason": "source capture was not selected"
+          }
+        },
+        {
+          "script_key": "electron_script_076919f74d7e0583822d8c390591bb3ab9e333048862c98b9c587b36b44636df",
+          "frame_id": "6C645F20DBCB7D48B8CE6676051637A7",
+          "file_path": "C:\\Users\\jeong\\Documents\\Codex\\2026-10-16\\c-users-jeong-downloads-tiro-4\\outputs\\tiro-recovered\\preserved\\app\\.vite\\renderer\\main_window\\assets\\common-BLBuIq7z.js",
+          "cdp_hash": "874c206bf67a6cb6fc8b4aaca57b14a5dd94223051e60f197998c0c136f74292",
+          "length": 257693,
+          "is_module": true,
+          "language": "JavaScript",
+          "source": {
+            "included": false,
+            "reason": "source capture was not selected"
+          }
+        },
+        {
+          "script_key": "electron_script_49f9551f885498eea98979cf021f043d51c0aac6369ad13d01c118288c6cd7d1",
+          "frame_id": "6C645F20DBCB7D48B8CE6676051637A7",
+          "file_path": "C:\\Users\\jeong\\Documents\\Codex\\2026-10-16\\c-users-jeong-downloads-tiro-4\\outputs\\tiro-recovered\\preserved\\app\\.vite\\renderer\\main_window\\assets\\common-BaNizp2g.js",
+          "cdp_hash": "a27c7d734c2e624e48212317373cea6da5a79b0ba8c25f92da5ad92b9af91a1b",
+          "length": 384952,
+          "is_module": true,
+          "language": "JavaScript",
+          "source": {
+            "included": false,
+            "reason": "source capture was not selected"
+          }
+        },
+        {
+          "script_key": "electron_script_943bd91440f04f37fd0af313b69c2729f5b670d2e00f7763e22c846c673a4861",
+          "frame_id": "6C645F20DBCB7D48B8CE6676051637A7",
+          "file_path": "C:\\Users\\jeong\\Documents\\Codex\\2026-10-16\\c-users-jeong-downloads-tiro-4\\outputs\\tiro-recovered\\preserved\\app\\.vite\\renderer\\main_window\\assets\\index-CXautzcB.js",
+          "cdp_hash": "455bd6ef381652704cebcd65c58c460deb63ae784f4925ab974333284aa166c2",
+          "length": 5752781,
+          "is_module": true,
+          "language": "JavaScript",
+          "source": {
+            "included": false,
+            "reason": "source capture was not selected"
+          }
+        },
+        {
+          "script_key": "electron_script_f9367f0c928715d611f524bb9609d729ec6411eb00f88579419a054c80be25de",
+          "frame_id": "6C645F20DBCB7D48B8CE6676051637A7",
+          "file_path": "C:\\Users\\jeong\\Documents\\Codex\\2026-10-16\\c-users-jeong-downloads-tiro-4\\outputs\\tiro-recovered\\preserved\\app\\.vite\\renderer\\main_window\\assets\\common-Ciwjkgzm.js",
+          "cdp_hash": "a8a294555b2c9ec431b370ec43a09218da21d03e92d79128f390262fa55ad68e",
+          "length": 276379,
+          "is_module": true,
+          "language": "JavaScript",
+          "source": {
+            "included": false,
+            "reason": "source capture was not selected"
+          }
+        }
+      ]
+    },
+    "resources": [
+      {
+        "resource_key": "electron_resource_00430b732dd7b11dc218d1849fa4476bd3f3fa9992822c283fc228b119f2b379",
+        "file_path": "C:\\Users\\jeong\\Documents\\Codex\\2026-10-16\\c-users-jeong-downloads-tiro-4\\outputs\\tiro-recovered\\preserved\\app\\.vite\\renderer\\main_window\\assets\\PretendardVariable.subset.91-_yN0_362.woff2",
+        "type": "Font",
+        "mime_type": "application/octet-stream",
+        "content_size": 37776
+      },
+      {
+        "resource_key": "electron_resource_0ff8c8b7f36f873a341fda361298715e26bf78880549bb8e2d45f39e887fb9d6",
+        "file_path": "C:\\Users\\jeong\\Documents\\Codex\\2026-10-16\\c-users-jeong-downloads-tiro-4\\outputs\\tiro-recovered\\preserved\\app\\.vite\\renderer\\main_window\\assets\\login-hero-Dzaj5Tyc.png",
+        "type": "Image",
+        "mime_type": "image/png",
+        "content_size": 6013883
+      },
+      {
+        "resource_key": "electron_resource_1af657045aa7b2b8e773defde4c0eaa9fe1aefbc194c680f89362245fe8ebf78",
+        "file_path": "C:\\Users\\jeong\\Documents\\Codex\\2026-10-16\\c-users-jeong-downloads-tiro-4\\outputs\\tiro-recovered\\preserved\\app\\.vite\\renderer\\main_window\\assets\\security-certification-badges-OUff1eon.png",
+        "type": "Image",
+        "mime_type": "image/png",
+        "content_size": 47939
+      },
+      {
+        "resource_key": "electron_resource_1d6c537e7884256a3cd4d1bfd6febc13e1d0b00669676891b9e3aa211c270522",
+        "file_path": "C:\\Users\\jeong\\Documents\\Codex\\2026-10-16\\c-users-jeong-downloads-tiro-4\\outputs\\tiro-recovered\\preserved\\app\\.vite\\renderer\\main_window\\assets\\common-Ciwjkgzm.js",
+        "type": "Script",
+        "mime_type": "text/javascript",
+        "content_size": 458714
+      },
+      {
+        "resource_key": "electron_resource_208685e458126e7b4064c43bd64d5148f896050947215a0bfa7740ac7b65ddb5",
+        "file_path": "C:\\Users\\jeong\\Documents\\Codex\\2026-10-16\\c-users-jeong-downloads-tiro-4\\outputs\\tiro-recovered\\preserved\\app\\.vite\\renderer\\main_window\\assets\\common-BaNizp2g.js",
+        "type": "Script",
+        "mime_type": "text/javascript",
+        "content_size": 385633
+      },
+      {
+        "resource_key": "electron_resource_277628f6ef91f7aa864f3487643988970b991a88c3e62dcfaf6a83f4f147e641",
+        "file_path": "C:\\Users\\jeong\\Documents\\Codex\\2026-10-16\\c-users-jeong-downloads-tiro-4\\outputs\\tiro-recovered\\preserved\\app\\.vite\\renderer\\main_window\\assets\\PretendardVariable.subset.90-CaygFE4l.woff2",
+        "type": "Font",
+        "mime_type": "application/octet-stream",
+        "content_size": 20780
+      },
+      {
+        "resource_key": "electron_resource_5b9fe15f1b20b945850d62b8f4445609cc1b3947e653b693cee2211382b5e77f",
+        "file_path": "C:\\Users\\jeong\\Documents\\Codex\\2026-10-16\\c-users-jeong-downloads-tiro-4\\outputs\\tiro-recovered\\preserved\\app\\.vite\\renderer\\main_window\\assets\\common-BLBuIq7z.js",
+        "type": "Script",
+        "mime_type": "text/javascript",
+        "content_size": 481779
+      },
+      {
+        "resource_key": "electron_resource_6cdd8ef2116050a6a4d991b3d3e1c4c5919b734fe6f8fd45bad558a60c733c6b",
+        "file_path": "C:\\Users\\jeong\\Documents\\Codex\\2026-10-16\\c-users-jeong-downloads-tiro-4\\outputs\\tiro-recovered\\preserved\\app\\.vite\\renderer\\main_window\\assets\\PretendardVariable.subset.84-DOAypv5o.woff2",
+        "type": "Font",
+        "mime_type": "application/octet-stream",
+        "content_size": 24380
+      },
+      {
+        "resource_key": "electron_resource_83b5235e391b24a51c4e513dab1d8a727fd23feb7b493d512252617345a12f73",
+        "file_path": "C:\\Users\\jeong\\Documents\\Codex\\2026-10-16\\c-users-jeong-downloads-tiro-4\\outputs\\tiro-recovered\\preserved\\app\\.vite\\renderer\\main_window\\assets\\PretendardVariable.subset.89-9DQRdVIV.woff2",
+        "type": "Font",
+        "mime_type": "application/octet-stream",
+        "content_size": 21704
+      },
+      {
+        "resource_key": "electron_resource_8b4e71d233cf2355f28ce26196cdd5d0d4133f7bac4e93f31471e2dd54b05bae",
+        "file_path": "C:\\Users\\jeong\\Documents\\Codex\\2026-10-16\\c-users-jeong-downloads-tiro-4\\outputs\\tiro-recovered\\preserved\\app\\.vite\\renderer\\main_window\\assets\\security-certification-soc2-type2-DVqlWHRk.png",
+        "type": "Image",
+        "mime_type": "image/png",
+        "content_size": 11154
+      },
+      {
+        "resource_key": "electron_resource_ada71a2fc5f2a48d9f3689e10273cbbd84d98f22624876bf68957d5f3aa5fae3",
+        "file_path": "C:\\Users\\jeong\\Documents\\Codex\\2026-10-16\\c-users-jeong-downloads-tiro-4\\outputs\\tiro-recovered\\preserved\\app\\.vite\\renderer\\main_window\\assets\\index-DEPkF0IT.css",
+        "type": "Stylesheet",
+        "mime_type": "text/css",
+        "content_size": 306253
+      },
+      {
+        "resource_key": "electron_resource_d0ef9ae43f95e2a1bfa22103b085cb92a87e54d77fa812e707808a90e6a27ae3",
+        "file_path": "C:\\Users\\jeong\\Documents\\Codex\\2026-10-16\\c-users-jeong-downloads-tiro-4\\outputs\\tiro-recovered\\preserved\\app\\.vite\\renderer\\main_window\\assets\\PretendardVariable.subset.85--9jt_HAk.woff2",
+        "type": "Font",
+        "mime_type": "application/octet-stream",
+        "content_size": 25064
+      },
+      {
+        "resource_key": "electron_resource_d5555ccebe66817e192067fa76ed4f34a754e008f701d59057ceb20e53c17ed4",
+        "file_path": "C:\\Users\\jeong\\Documents\\Codex\\2026-10-16\\c-users-jeong-downloads-tiro-4\\outputs\\tiro-recovered\\preserved\\app\\.vite\\renderer\\main_window\\assets\\AveriaSerifLibre-Regular-BN-0MeY4.woff2",
+        "type": "Font",
+        "mime_type": "application/octet-stream",
+        "content_size": 40540
+      },
+      {
+        "resource_key": "electron_resource_dbb01bffd654c0fa84e08a97dcba3562aaa257b623663cc6b72eee42e4c8a3e4",
+        "file_path": "C:\\Users\\jeong\\Documents\\Codex\\2026-10-16\\c-users-jeong-downloads-tiro-4\\outputs\\tiro-recovered\\preserved\\app\\.vite\\renderer\\main_window\\assets\\tiro-icon-brown-Bnzo2vV_.png",
+        "type": "Image",
+        "mime_type": "image/png",
+        "content_size": 4867
+      },
+      {
+        "resource_key": "electron_resource_ed5da0ab5f9cfa000d46af44622e77bc159ac9b68c6c7dbd4426595809cb16a0",
+        "file_path": "C:\\Users\\jeong\\Documents\\Codex\\2026-10-16\\c-users-jeong-downloads-tiro-4\\outputs\\tiro-recovered\\preserved\\app\\.vite\\renderer\\main_window\\assets\\PretendardVariable.subset.88-DJxS5LTL.woff2",
+        "type": "Font",
+        "mime_type": "application/octet-stream",
+        "content_size": 25512
+      }
+    ],
+    "workers": [],
+    "limitations": [
+      "Local file paths exposed by the selected CDP target are retained in the observation.",
+      "REA does not evaluate renderer JavaScript, invoke Electron APIs, navigate, click, or close the page.",
+      "Select include_script_sources to retain script contents.",
+      "CDP discovery omitted the target attachment state; attached is reported as unknown."
+    ]
+  },
+  "confidence": "observed",
+  "authority": "external-service",
+  "environment": {
+    "id": "Chrome/146.0.7680.216@537.36 (@cd53e6ca4aad193b0a0aff0c8e0f8fa1899c0c0f)",
+    "platform": "unknown",
+    "architecture": "unknown",
+    "isolation": "none"
+  },
+  "limitations": [
+    "Artifact identity is unavailable for this observation.",
+    "Local file paths exposed by the selected CDP target are retained in the observation.",
+    "REA does not evaluate renderer JavaScript, invoke Electron APIs, navigate, click, or close the page.",
+    "Select include_script_sources to retain script contents.",
+    "CDP discovery omitted the target attachment state; attached is reported as unknown.",
+    "Browser host platform and architecture were not observed."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

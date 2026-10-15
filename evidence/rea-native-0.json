@@ -1,0 +1,59 @@
+{
+  "evidence_id": "ev_b988bf3ab9364bc3347545a6a77c31e4f0cbc19df1582ea1ed4b0912db37aa04",
+  "subject": {
+    "name": "tiro-audio-capture.exe",
+    "digest": {
+      "sha256": "eb036f32dacc118baade22afad8ec2d78f6d5b6546db45a31a1326dcd75e148b"
+    },
+    "local_path": "C:\\Users\\jeong\\Documents\\Codex\\2026-10-16\\c-users-jeong-downloads-tiro-4\\work\\package\\lib\\net45\\resources\\external\\win\\tiro-audio-capture.exe",
+    "format": "pe",
+    "architecture": "x86_64"
+  },
+  "provider": {
+    "id": "go-build-info",
+    "name": "REA Go build-information reader",
+    "version": "1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_go_binary",
+  "parameters": {
+    "path": "C:\\Users\\jeong\\Documents\\Codex\\2026-10-16\\c-users-jeong-downloads-tiro-4\\work\\package\\lib\\net45\\resources\\external\\win\\tiro-audio-capture.exe"
+  },
+  "raw_result": null,
+  "normalized_result": {
+    "artifact": {
+      "path": "C:\\Users\\jeong\\Documents\\Codex\\2026-10-16\\c-users-jeong-downloads-tiro-4\\work\\package\\lib\\net45\\resources\\external\\win\\tiro-audio-capture.exe",
+      "sha256": "eb036f32dacc118baade22afad8ec2d78f6d5b6546db45a31a1326dcd75e148b",
+      "bytes": 909056
+    },
+    "format": "pe",
+    "architecture": "amd64",
+    "bits": 64,
+    "byte_order": "little",
+    "build_info": null,
+    "limitations": [
+      "Embedded build metadata is observed file content, not proof of compiler identity, dependency authenticity or runtime behavior.",
+      "Only Go build information is inspected; function names, source mappings, type metadata and decompiled code are not recovered.",
+      "Resource guards bound stable artifact reads and cumulative header searches to 256 MiB each, aggregate embedded strings to 1 MiB, structural table decoding to 16 MiB and complete metadata payloads to 8 MiB; these are not operating-system memory or CPU limits.",
+      "No recognized Go build-info record was found in the inspected image; absent metadata does not establish that the binary is not Go."
+    ]
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Embedded build metadata is observed file content, not proof of compiler identity, dependency authenticity or runtime behavior.",
+    "Only Go build information is inspected; function names, source mappings, type metadata and decompiled code are not recovered.",
+    "Resource guards bound stable artifact reads and cumulative header searches to 256 MiB each, aggregate embedded strings to 1 MiB, structural table decoding to 16 MiB and complete metadata payloads to 8 MiB; these are not operating-system memory or CPU limits.",
+    "No recognized Go build-info record was found in the inspected image; absent metadata does not establish that the binary is not Go."
+  ],
+  "relationship_coverage": null,
+  "locations": [
+    {
+      "kind": "artifact-path",
+      "path": "C:\\Users\\jeong\\Documents\\Codex\\2026-10-16\\c-users-jeong-downloads-tiro-4\\work\\package\\lib\\net45\\resources\\external\\win\\tiro-audio-capture.exe"
+    }
+  ],
+  "evidence_links": []
+}

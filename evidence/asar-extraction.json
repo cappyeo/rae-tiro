@@ -1,0 +1,2909 @@
+{
+  "evidence_id": "ev_411e9b271bcfe2751183c35828ae36813c93ec066e0dee83561a418e72e0e8c0",
+  "subject": {
+    "name": "app.asar",
+    "digest": {
+      "sha256": "e9a432465704d8b584d4389419332334114475790e63284c6a225e62dbabc0e2"
+    },
+    "local_path": "C:\\Users\\jeong\\Documents\\Codex\\2026-10-16\\c-users-jeong-downloads-tiro-4\\work\\package\\lib\\net45\\resources\\app.asar",
+    "format": "asar",
+    "architecture": null
+  },
+  "provider": {
+    "id": "rea-artifact-graph",
+    "name": "REA safe artifact graph provider",
+    "version": "1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "extract_artifact",
+  "parameters": {
+    "integrity_policy": "record-and-continue"
+  },
+  "raw_result": null,
+  "normalized_result": {
+    "manifest": {
+      "manifest_id": "agm_aa8df191feac6e1a6d40eec4bd1dddf7c7a1940e1f696af9754ebb15669b9918",
+      "root_artifact_id": "art_604064d0d060255a1ab74191e7e18390df43bd04eb0b0eecb7729f29cd230a61",
+      "root_sha256": "e9a432465704d8b584d4389419332334114475790e63284c6a225e62dbabc0e2",
+      "root_format": "asar",
+      "graph_sha256": "1ee51a85e694faab70abfb7c6782cd1a144746ef1be33829286ef70d7a359a7c",
+      "node_count": 374,
+      "occurrence_count": 651,
+      "edge_count": 650
+    },
+    "extraction_manifest": {
+      "extraction_id": "aex_9a229e47ac62dd1b6cb1bce050d9343a837f893efb84ee0cce93e20dcc68c412",
+      "source_manifest_id": "agm_aa8df191feac6e1a6d40eec4bd1dddf7c7a1940e1f696af9754ebb15669b9918",
+      "selected_occurrence_ids": [
+        "occ_0136273a3f58aa58e9a855b3e802a5f87242e9cd6997760f7e26251d18dc6e22",
+        "occ_01df1bca19b727738fe95edd4be1a89ff9ae74cd5721320e5efbe51f2401d4b7",
+        "occ_0252d3b8b19480cda4501583aef85582ee423fd669615d2bf68228636a8e3db5",
+        "occ_02571e79f2296a632fd270fb4d6a88f2b60e8d312bf148264e9b4ebc64be9c3c",
+        "occ_03026eb1476bb36beb0b149e62e6af76bb8246aabd03386bbec528302c896731",
+        "occ_030cb98650214dd207f4c8df7c17177d2947b99e77e80b0d505c93165ba610f2",
+        "occ_03cca45d00ca1a1eb64ea79d2e04b446101894f420d909389b5dc2a12ddcf28d",
+        "occ_0436e31ea080efcd3e0d32516a7c0cacd0d8b83e935e37382f6da531d317b9bc",
+        "occ_04d8e67ddb0a343ccb147ec2df9653438e8aad8f7dcec2efc52ade099ead2b69",
+        "occ_07cbe0ce09749d9febf42e690fb9f2955597dd81b1e3cabb68b17e8914bb7fd7",
+        "occ_085e44f2d120818e136db4105e8b17463ed6fe8e764e9a92f1dd3935acd06ce3",
+        "occ_0864cb7058060ae08fbc14099934887850d01cdc658a1e886edeb43ad32fdc39",
+        "occ_08a68d8fc7e781981ffa764396e68f352c5adeb4e55759335dec6744c5783c2d",
+        "occ_08b22e903db5c961d34870a1fa0c3040949f1029010aa59152883525c2621dc9",
+        "occ_09af7d644ff07113c9a56d267abefcc03c501d353a0cee5c0f355466f925471c",
+        "occ_0a24d77effd195026907e8ac89b9e27479dc10af20baf42101513896aba575c2",
+        "occ_0b3d9fc70a6d6cb076c8f5b2bc8d935bad5bf13806ea9dc286892c4db9927df2",
+        "occ_0ba6bd90ecd276f693e1caaf4ff26b710324eafcbecb9f7e03a5ecb435a8aa5c",
+        "occ_0c26fba181f5e57134a423879aed762a948317f912a6e93d8968786e6d6e59de",
+        "occ_0d11a691e21f669cf45e7a492f3e07ed3836a910427a3eefa447de2136a8b356",
+        "occ_0d8dcf33e875df98509c7e5dec12b4a535de7ccc877d6dd17b71a32530cb1a38",
+        "occ_0e06fed5aa4a7a307ed179063c0194008d97218833696b5dc5ada5ec220fb015",
+        "occ_0e95409de3d036f8a69b249ab55f3bb16c25b77edbeedea7ce8278f5d929e503",
+        "occ_0eafba80d0b9fe1ca8d4b37b1a3835e48f8feef444aea292cbcb14f332438212",
+        "occ_0f3b8e69a43f8f51756b8c0aa79b6901f321c7a19b842292a791da266c7bb595",
+        "occ_104d4cfc2b77456d1c3848ebd53f06a4bde98424fb5869ee5ef66fb10eeff078",
+        "occ_10d087115eefff82f3c15cdf34e262114ee77bb1b6d8c60ecc8e090171998d5d",
+        "occ_11d1f0c9a3ddec4f1a9e43a8b26aa64b4b35ac8ac5d80197f9f99275b950a06d",
+        "occ_120c324f57870a6cb0041dc56c1eba3aef7e94c2e40e05cf0fbe17bc73e60589",
+        "occ_133b761bbfb0ec83a73acc451d5ca353bd07a748bbba66661129f0cf74dc7de0",
+        "occ_134144a779fa6eea32aa2ba425c5040d8a45e6f181843673c71f8cf8daa07f21",
+        "occ_13839d1b53c828c52dcf8bfc514f30654851886290093b2af91ea9495fe14bfe",
+        "occ_139599f2c490611c5b6cced77c5fdbdad57976d7425fee1f809802d332415b7f",
+        "occ_1672466587eeb5dff7e4ff1d8d3fc6553b8d94ddaf737043d5d2745517ab9812",
+        "occ_17069ec1bf0ded9f448631813ba518a69f338595b03b23c41f27c651dc2e0a56",
+        "occ_177d6b95e9a2a5ba6f7b2a8b5d3d87a298eaf91826fae382a18fb7c56e723f87",
+        "occ_178e7b99673631275ff30ed15aaf1148d89a15c9119219ff23926899d603da58",
+        "occ_1891c87c9ef211f86695495b38e101948c532ecaa86ac2a2549041d29693f3d2",
+        "occ_19901ed00cfe3807851ec3d37d9477dd0438754d364d7846491c44b5f632269e",
+        "occ_1a2020d9a58cf9a8553fe15712f3a00400d0cc77db48db513165bce0b11abef8",
+        "occ_1afb3b9f93e91ad7bd8f938676b7d1fd1c0b105e52534981b210ca3d2771b3e3",
+        "occ_1b0193bef21b527e6ad843371588c47321c5a2803b27e1ff545e0d078463855e",
+        "occ_1b76ef4198a43f05c2176fa81219ad3372e595d756e6a144977d76847d3ee514",
+        "occ_1ca5a194c2b651c092197ec2a44179994486a67081c5592e8ae1ab8f9ab37834",
+        "occ_1cf8e801fefd676e4906305369458974a1034ebb38aa5a4b43827d92e6bcfa93",
+        "occ_1d3b3785d3d23d5fdca739afff5a5bf076c0b7811da2f3e063d6a9688a43c794",
+        "occ_1da5e05f87e0c56303c58af0bca625978faec461e00d250ed7de257502947f67",
+        "occ_1f2428dba222490532d276606537c3cc0629c1233ea7a159ac9d9358dfb316e1",
+        "occ_1fcf7bd5818bb1caa074414a5396cf7553b40d5b951cc01f790e0f28d99cbe36",
+        "occ_200cdf0d05415271261c0d1e122dbc9e004d0d731bf829df59b1d09cc25ec89b",
+        "occ_2038bda3674a1cc9ecb05e4bcf2007d842acb4c89688b1bb68d2302aae016bfc",
+        "occ_20a996b8c69e0a92735ed01d1e918d05d631e90f358bb533ccced3d445193050",
+        "occ_2162aa06455fa2035ea95eb8a38b3c2454f8c5ddb2f714b68b89d3a10703bf3a",
+        "occ_21b345218672f1b426ad660f8e4b5b97ba8e72a59d1e6ba4731bf2391224e33b",
+        "occ_221f0287f99f879b527c793ae1fe1bcec388f49c39c8a3dbac65e2dc85677490",
+        "occ_22b2bf300cbbdece9baefb3f9900aab5b8e86505d99c5023f63514c15e8e60d2",
+        "occ_23048c1cc4b511621e503758adeb299bb000d4fc94e95f9eec52a164330c5328",
+        "occ_235bef15ee76a007f832f7692ce64eafb768be6ba9b10dccd574b4379971ba6e",
+        "occ_23e5f660c17fcc94760eba9ffc28de67b2260d9b352f7e3a4fc7b96fb7c532dc",
+        "occ_24350c67d66a57e007ee512f3ae3c069c4402089b8b08f1356ec71e960aa40d2",
+        "occ_244435921a273a3d60ecd1bc12806db8875aa0da250fcad3917aded27b70123d",
+        "occ_2494db3843fe5a128ea8ebd21e7ac2f80714278fe653dfa0ccbbb153dc800077",
+        "occ_25070aabde738b9d73acf26234c59cd763e38a5709d0717ab526b77c8542d749",
+        "occ_2542d751c529cc57d732248fa1bb85e58af102fb9a8ded59868755d5f4c1cfac",
+        "occ_255d8bb2b397b355a212e89b7310f090ff647c61d0130f496efb41ad85ec8241",
+        "occ_25ebc9bb3db2edece2f9c0dd61e6b1dadd42e69ac756edbe87cf7fd46ee7d7da",
+        "occ_2601f0531dcb733ac2261494af79bca8295eb21b50ebef5cfd3f0bf56ef718ae",
+        "occ_268986be006dd5248194aa647cba830b960f8900deafa8d375a08a08996bdd95",
+        "occ_26bb9f4be6318130faf2f6ea8ede4229552a54e0611f5e185fee30e0c14540e8",
+        "occ_26ec97b4c7f44910c63e4a418869f084a748bcec02513e5393784c85d868e49d",
+        "occ_271976eafa50279073da50ff7ee83532b65295e4afd6a2a266ff79702888074e",
+        "occ_29583782164b19ef83eb45153335a953b055f92b1225efe2518e03940c6f9a3d",
+        "occ_29cccf05da512fcf93cb6e84a85c09373b907a633f4b311e4f195b3497edbd96",
+        "occ_29d57a4b89726e637a8ebacd8a419608f2627640177e36190f61c94757f63cb0",
+        "occ_2a30b305cacf3a97ef826cac9e339f2564df7ca98fec7f1ae6e618e8e7c98ceb",
+        "occ_2a64b041612c567865d47f508d4e0f65ffafce12636c88d42697a80babc20909",
+        "occ_2ac1a441285d2043caec89bbeb1c2eed3332e4c7e87f30b903837d9edfa8c908",
+        "occ_2adceefed08eec125d77e64fa91790693371cd0ab02cacab0d31192fc999e3f0",
+        "occ_2bfdaec65013bb26b389b4f5eaf85c9d6c0582a86d823126b1076bcafd1812a5",
+        "occ_2c48b9da7b446326206342009b4c2c0e9192798cd625231b49a3a55851753a69",
+        "occ_2c99ac57d71ddd8f89cd29831e819bb1c1fd72ac8d39cb6ab8b376a31354a138",
+        "occ_2ce165a2b60b17e6bde5c7380cd0605f0f455ce5d75d575bf462af58bc1369fa",
+        "occ_2cfc8f19ab6bdbb07104e8b64f65276d173bd5a5828addbfea2b445519062f70",
+        "occ_2e6fb06d0e1b2a141356ec1c634ce861dbdc66af69cd6330aacf83439d16d67f",
+        "occ_2f6455ca53fecd5a10cb2a52802c6343439fdaa15faea42dac60858d26c91cda",
+        "occ_3008e3d6af2564212922d516f7f64f82f9c6cdc88b54da21007f3d8086f3f86d",
+        "occ_327eeadf6f56e3a893619f25c3f96225aa471dc2977e3b66a54753eef396093f",
+        "occ_32a6ca9a52e457c095bcdb3f6949843628c5f0156d5912e5fc0e13739b0b9b84",
+        "occ_3302e0c868ca002e3b939c5957f09f7f120e71e0ddafc8b39ee6e48d7f22122f",
+        "occ_33d6e170b0d26e3d4969840dffb2634752bf189358412556180c82da6be0fae3",
+        "occ_3447fa3f258fd1e76ee436398ffce00549d300ed07a3c37adcb821482246e398",
+        "occ_34513ad2855f391bc3d9b69c7eb054351570cfd63a1cff645b8a7a91416f8617",
+        "occ_34f52b07f9d6ae222bf89bc53ce67ff6cbd5b4ea9f8c97a9872adbe5b554b660",
+        "occ_35514ec6b9ab31139230222c7b4a328334d7105585404b3b62cf3bc491a56c5c",
+        "occ_3a36cec4c14e1dc27c3fffe9a15216784b3fd8c7ed8feffe95ed675f5f166e29",
+        "occ_3b30179a53fd5899d1fbdea02c449e02720c8727b983d1998abffaaa89b25b56",
+        "occ_3bdae1a621ee664aefe0d9dc3c69981eb768573df024fcef1beedf32514bdc22",
+        "occ_3c4c6a7a5be2c93fa0130a24504f27a3f4b49b25f46e02e72b71ae7cf7d2030d",
+        "occ_3d4026935833d8fa28d7af2b61f187e4e85981b664adf57625354533c87fbd31",
+        "occ_3d921ca8e36509585d5711c756592f4d180f871eca8d89e753dd2191206c419e",
+        "occ_3e01aaba189d8f06ce3200f39483096b4b5202e517464a15d9245ecf73ded942",
+        "occ_3ea13e5fba0e747695497ee280a4c6becad639bd24ff7585d8220547c052f7fa",
+        "occ_3ef4511203466830fe9735c753a2399cbbe7c8b919f1d2c8dc3397a319a687be",
+        "occ_3f584bb2600db8f94f8774e1277a7fe4b0fa330eace8dbb04177b032bc421be9",
+        "occ_40013d4e63783f0c55998b859d00dccd7eea262a54448497728187f022075c17",
+        "occ_401fdd5993df5d3580b66dab8ed11fc7bc45c803b46e496ffbeafe802cbbcb02",
+        "occ_41db4254d0b3fc28bfe645a3e6715532600a812e8b0243fb5cb7493fa62482a4",
+        "occ_42655403cf2c6a99fbe6095c1d76eec52f1543f78050d461a69e3cdfcd1378a3",
+        "occ_4376d94bf250a1da6cef9e8dc785249b8a6f50ed324dde5b20feebc9dd054c74",
+        "occ_4378ccd6042c9019d889650047f32632e8bd38ea45b92c7833cf22643dd625ad",
+        "occ_43d089ed093fa5385bb94dedc00c50883bd352033e03c16f067dcc33e7c61ab9",
+        "occ_44c7eddf5be5bc4df7137146cf2511a4ce8385729b7e9b7a825552e44f18d6a9",
+        "occ_451be48ce5cbb1f98f15cd71df5b859a09a1c6331cce9a0071390c8060812e3b",
+        "occ_45932ee263e4e71590eb20b890c858bc1d7bf082b01b8a8b8187740fa5827321",
+        "occ_45bdb54fc4d4b434e8388c500ddae9f7c95b125fe722249431a9c34a994a003a",
+        "occ_45c5821060b73e0df0fc9d04037d574309dde7bfbe9325d0124ae82c17490378",
+        "occ_49964ebd8f2468ad73502bad815b4634d69a9beba1ccc405c0e81697475b51c9",
+        "occ_49ea3d510271fcecfe8899f6df1d57b7321ffd468fd2c9c29c0887b6dd28e965",
+        "occ_4b115fd434e73bcbe7a2badebe5010292663813e3565bb8785fadba00830c65c",
+        "occ_4b22f9fe36c2d5f59d6f26c75d5833dcb94febae9daf8dc9c9bafacfcff370f6",
+        "occ_4c1dc294163b65eaceecf61dd65e8e393ec1008f85f85d6abd95f2cea5362ac6",
+        "occ_4d104679351e8af603107246aa88042755b3101788a2a594bae5523dffa46423",
+        "occ_4d2e4100b7739df02ab001e08824eb34b9231b41dfa6f621dd536a5c905ab1ca",
+        "occ_4f64e37a35df29f9a86e922a67563c97a5a632eff081feb48ea903123b2cfd8c",
+        "occ_4ff5b727dad309c5ff6b370fd13dde684bed9e6b497ec358c72c8e498dff5d1c",
+        "occ_5088fbe333e1f58c8bcd9686a80c70c29ed5735586c24bcd77562626a552edd7",
+        "occ_50c4b7f08bc2f23c3162fd8c13368c0e60c05555583aca29694f51bfd7140efb",
+        "occ_50d906eb6d2228fdf05b1e2f472267b6a7514fa6a6c9e3da5330d9baa51647f5",
+        "occ_51f725db0ba5caa89004021992f141da7387d4192191f613d2ba832b2db87cde",
+        "occ_5390291d8855d59a12876c8231e825a823883831b245afb92ea2c3360f83d591",
+        "occ_5542a897c6330cd57bfafbb4313c0a2653922122d403f38921d94ef6f21e1d30",
+        "occ_557f3ba83c3b9713ad4fe0703e96d407c0faab15afcef714ad828c043ea263ce",
+        "occ_55b4fc47b5ccadff8adf788c3e9321f02482b2bb35ef9c9a06501e433ac58aba",
+        "occ_55fdf3e3c6c67129123b14a6351d7074876718e6c1d00aed9a31acf85c0884e5",
+        "occ_590553084aa8282cd8a4a84fa71d305be9f44ae1eabefae3f52acb0d344f77f1",
+        "occ_59e041fa716059d9ffe27bb6460f368b6bf275a703077ad31e71c7c7a069a203",
+        "occ_5a067374e8b31cd1a6ff302dd213e348ff74bf576eaee0fa6f22241fbb3a09e8",
+        "occ_5a0791adb57cdd80f4836ac506c8dc6f7496d48b9050e297e52324c7c37826f6",
+        "occ_5a5b7ede5b014dc4515c09435962c32b1065ea912aaae7f10dc5f4037ce4077f",
+        "occ_5a946e92b3dcfc1fe974f60dc3d3459240317b7f8bd084286eda7bf4cd688616",
+        "occ_5aa53477c0e3015f96565b3bc9c1510cef2c27884dbafb30d17813e11fae260b",
+        "occ_5b715a69b4594e2bb327734091e11474071377083a782fd8f9be3dfd9a35a7d1",
+        "occ_5c27a5ac496492891557221854ff6b4ec65dbfb906e13492ea64741614632eea",
+        "occ_5cfe0e6dcdf7be230e038ea779a76b43f7fdb40ac3881dfd92f8fa552f526d24",
+        "occ_5e8bed9e1e7521e7c4faf9f1fccaeef78a8685f5db3f10e0d3de9651560d008b",
+        "occ_6072a5da8a547d4d96205c4d8187259692044e39c84fee49c24956bed8136e2a",
+        "occ_624fc07fd0cf86ba0b8e80293a04f8c3d0ff06a224ed7e9b1eed23b6bdae8911",
+        "occ_63c6e11bc016a6783ff730ee073e861c4bedf76be60eb7f175c55ae49991536c",
+        "occ_63f0e7569c07e2c08df56eb8212df8ac547a42807ca235bc1d8d82795fa64730",
+        "occ_64269ea7d7b58a056b9776837f0b3678f8c167753b398ef2740cd903e91ddafa",
+        "occ_64f1cd73ca72ff66a2e73566482ca92c1ceced1f1b75526af8cb54f4f0fea0fc",
+        "occ_65b301c9d2200e29eefd37a0cc2bf7d6ed6f3511ac0759d9912d32fd05b5e9f1",
+        "occ_67a75c6aeb7715589bc42c374f4e32d3d31cb560b2487d59fa655aa7da0caf76",
+        "occ_67e4749390d213aa439b1bdc417168064cabcd0cb6311efcba144e72aa8523a9",
+        "occ_6c382e8ef272ccd9a7183a53461a004b80695b46b7dfac766bb584ca896f2166",
+        "occ_6c3f677420b4fa55994ad7848e9b7749dbe286b595ce39324030ab7a0f896846",
+        "occ_6d3b4390048b02f1b05c1fae75f90920d8575bd164cb698ca4b9142dcb2d58c0",
+        "occ_6e2ceb22448afc0233c8f9c6c98c8ba559b3382c308874407be635594c3f97eb",
+        "occ_6e302860fb155dac200232a1d662caadc38cb9ada95cf6eeabfe12a175412be1",
+        "occ_6efe5369de2e28d49f57e9719b7b6655d663caa0b07e36898d7f9a8e52144740",
+        "occ_6f3351d13531f5ae0b57e2c3f6c4dd875ba5044c81b4f7ffce384a13af150c92",
+        "occ_6fb1d817a2a665a875d7fbb2ac3e274432d28552c4e43329de9460017ae92dbe",
+        "occ_6ffcb0ef12b9441b76cf7b805a22e96c13530307aa55f3f644e0d4e9b6d27e54",
+        "occ_714ee21dfa26e85961055831168515ef8753e6793cb7cdcdbfad9504f3118161",
+        "occ_71dc07a98bfc7456c66724176210cc3dd49699c1aa995f93efb346b3210d34d5",
+        "occ_723aa02b5894f0b3ecf35e3ca1ac6dd77d0332abfffcb7a4211daadb0e6c1603",
+        "occ_7375e8c7e9de77532df09b547c2356f113a3b4dd3df5e36b173a542626a34f19",
+        "occ_739bed51b2a4b5318bab76d3bd89167064dfa9d177397161613ac7c99db9a7f6",
+        "occ_73ef6a47d37c5f480a2a69b2c0eff87962bc632e529db0c07229aa13d3b115c1",
+        "occ_75f3c244cbb3dfa536dbe64e4b5297857ea1ad1b487cd7dfbbe2235315043c13",
+        "occ_765718ae73ae787774f1025ff9bb1bf5a39078f052d17697b323cf0a3eca25f1",
+        "occ_770c70ad3b69cba62f2de5a65ed10864513575390146a0a1c80474d28b7bd4a1",
+        "occ_786691fe2ec4c15e879cb0ab0303715290595f4011afe1c6844aecff208f0ad4",
+        "occ_7a8eefd44680a99f3a70291f77c9db2c1007c5f58c57ec377526cd26e64ac1b4",
+        "occ_7a9b9aef35c00e7dedb575df7cfcd0368aa1141e16325e955f7c55a25d0aa5b0",
+        "occ_7abd3b061b6a41eadf0dea360bf014e01ecd97a43c4503fd8accefee9952a336",
+        "occ_7b513ecf7e0091268180141241185d9f201467e72275942dd4561c5e4245655e",
+        "occ_7c38181457dc0c68bb46b577ff0785fb2401b70858e7e5eec565c9a87d5f6955",
+        "occ_7d2c6af9d46701826313f9290b30c8b1a9ebd9714c1df92002329c1b47629314",
+        "occ_7dcad6cf4c90b0fde4cbf26700af913e9d39fd97cde3fcf803876157866b5d5e",
+        "occ_7deb456b21948387e69cdb09fe04e30729a433ddf07091eb8e5b7435228e4cb6",
+        "occ_7e73ced96764333375ccb0d8eb29604e3db15a46df1164dbec69f68e84cb52f0",
+        "occ_7f12d192857e1fd336dc9e9a0da118b9e0140eb3e776589209afaa1b12bf15a6",
+        "occ_7faa7aac04dd77bbc0bbb931f8ce1f625da7e45f1e586ddb503c61d233bb965b",
+        "occ_7fdeaee79f8738513625c6e9a242de9f7bab8e19093820580e1497b180b6ad59",
+        "occ_8132012736cec5ad03325ba3dd5545bc71270a20d0a06b2290c585b33637581b",
+        "occ_820cf6a0ba7b1a63035484bdf5fa2774d79301d11db33920b6c4950cc927b249",
+        "occ_8289b4697e427a320f6397739246651f191ce40e5c6ccebfbd1a0bfb9e4bcff7",
+        "occ_82a1010ef0316956ae77c9ad8199a818a8a9930cb07e624f3bac458dd0127c50",
+        "occ_82ed2da38860985641ca52bf9a8ee95c8aba5353f4ea6ac0f18b266654a4b290",
+        "occ_83cb838ada7456047d208b000fe6647bfd0cc784f66c1927e6ab11159324c106",
+        "occ_842be035bca6164854b61ccf746f05e4e6659807fd14e95091bcc8c969f64cbe",
+        "occ_849e0d2d2575595e1421d02406000b1e8b9a833d4e8a6348bed8eb5cbc5f54dc",
+        "occ_85d3d666f6a50effb84e27252da9a8c55f62b54f002b40ba01c8af4dead4e2db",
+        "occ_8682943ffdd5c08bd4855dbffc6a3b1fb91ed2c8429f28faf91afbc99fe261a2",
+        "occ_86de723df6a6ebc8aed0430fe12b1b782a54b7ecacdc38a2c685343592852adc",
+        "occ_8729b36d42a2bc4dabca575357674f84d2a1abe26ffae24b599fd5cabe4b8c75",
+        "occ_87ca35b789ebd1168120addfb193947262a4a43045cfa8e67309fb0b6173dddf",
+        "occ_87e3bd55c4b6ddb5ad464a488cc37a0a6f1cd434b85ea2dcb2c8fbf87a2571b3",
+        "occ_89366d7dd2f67601ae1f98c06d749bd7da05becc28f04883c0bd38e513cf9e53",
+        "occ_8d5dac85413e8776d54b4afa7fe3bc02811fdf3810e80d6f1e4b07fae6bbd9c1",
+        "occ_8f240e9597c7e63506ce29561be7fd34f842affd0afec0b2dc8c33c8e86ea2b3",
+        "occ_90a0ff9b9f18bf1040249a9b623943f7397fd13d826965b500560e7bf98b7b70",
+        "occ_91332b9cd2c58161fadf67194c92ec662ee91a1510d03fb77dcc8bb332d5226e",
+        "occ_91a9b79c7db1b8ca3a91340d6ac0e53c6da87abd3ff2495434554c49e9eddfa4",
+        "occ_92f4067806add16aa0728a247d024bf914db0e75ab8735a45877230b4b3fb447",
+        "occ_9344c5ae1b02dc8b601e8179d25e2c80065ba8a9042dcedfc4a1d33f0b612585",
+        "occ_93d8f7caa463d3c141fcbb20b35ed48d75a3fe6365b24b1dfcad4ef338435cf4",
+        "occ_949ba03e103ac812e65ee69bac61c22696f5559e399cb9c37cc28be23928ebe1",
+        "occ_956f1bab6b4764346c743690ef74edb1aff8c55f25d4f09b609b5fe4be0a3b46",
+        "occ_96404d3f0d0f7101a05e25954f40fcbf29bed9210584ac07472595ebe8dbb24e",
+        "occ_96ed4289f18e8c431362b97a70246b824f100ef2f519c06b99fbf28b50b9a17d",
+        "occ_971804d39348358f7b096fbec949d591a1bdd405c36ed5bea2aa3b4bf1e0eca5",
+        "occ_97f20eb4155d5aea6182eabfba60e028f66f2cf0c0214b18482194b753bb0ee3",
+        "occ_99c1af9c843ecc97155935a396dc6e2ddcb815bb6127e8cec339e975146fdf45",
+        "occ_99e625ecca1a575d38d892fbbb83d032962e6146441c6a972d2807191955c6ae",
+        "occ_9a48af202760e788474886d2fedbb598e033330e0eac0b9bd013d3994f925a15",
+        "occ_9b0f80aa52bd07ad92071081aba11508d817ff00dc05eb06bcb347063a4eb4b9",
+        "occ_9bc428bf69f2fb509d33b7a397b83b6997fa4bf2acf2e64fc3b31f126efd0e55",
+        "occ_9c6b181eb2af17f3d8e57ddc3b31ab7d925d8058a9081a917c350ee2d6535c7e",
+        "occ_9d3149ce0d765d0af4b0504050d8efb90078bd638764caecf63000014ab7ea15",
+        "occ_9e38bd3888bad12f6b89a7dff87e336f295e81a95a4cacdb14eb0f456f886337",
+        "occ_9e55cba54713ad8e876896ca8f7a575804b991012fca3695973bd5b69f282f9f",
+        "occ_9f6d757c6a4ac0107ed237b30c705bb28befd631e4893d9341d5cba644be99b4",
+        "occ_a0d012d2583b90a9d442fbbf73bcf5a5bf248924bf5f51b35a2b7dc77612d20e",
+        "occ_a10491b8661c07b30b13cfde30aab20788c49be2b3e918abac0fd7bb597da135",
+        "occ_a12cc930f3f1b129c356a451ea797bd8c0e2d8a493cf3f3994677cf624fca17e",
+        "occ_a1f6ceb7f09ff7a0f389ce3d55748b95e50dfe7081d4e730a5a9f2cde856989f",
+        "occ_a303b03c9f98a536491e26fa440414ede37fb06986c81a8b941d55b8579b1e85",
+        "occ_a353e74fc6d835ba1665c9685328554580058b9337d8b61ebcd8284937d3c73a",
+        "occ_a3e2bc20f7006beb201f2cc14b48b2d02a47d322e03da06d0629537a6baf9823",
+        "occ_a49029b6528725f600e5dd11e12083252d091cde2b9d6666ef688ca3b7f78ce1",
+        "occ_a5f7ad6705167749676d750d72f57c644ff5510a88c5571ff25a838b47739a2e",
+        "occ_a7b09462f57eff6cebdf7dca1b68eac4f5cffb5214c28f851256840be7b312a4",
+        "occ_a876412e3ba25cd30e08ebf678426b91777d99d2ccfef0119f904f7229e44145",
+        "occ_aa07ee85baa455efe73670d1827bea81df9d417ca36e9b8832d91f68b6c1638d",
+        "occ_aaadb18ddd1c3b2086aca9bf139dff2b8206c31909592faad1e40e8aa51066d2",
+        "occ_ab791289a2639d1b6b158d797ccff35cdd0a29236c1899248ee0534f1f8a00d9",
+        "occ_ab9abd722b5b49a3e00216b3e4f67d855986b70fd8315da81abbb653511ca4f9",
+        "occ_ac571ebec66c1b9b5844802ee10eb3dcdd634286bfe80d9b2b8c7c5945ee999d",
+        "occ_ac652250d8895f17713ad4a1bdaf37aad584c0d638d6ce559afc2348b388bf65",
+        "occ_ad7e6dfb571aeb72aacf4eb1283557f6b79b178939d2d1632d3daa32111c8f58",
+        "occ_aea8980f400caf0d3272aae05e03e17557a38430c838b1e31db81b6c18e794a2",
+        "occ_aef1f3362756eae0207059779cc3b21d0dec297cebb8bd8996d74bd371ebbb59",
+        "occ_af9d464f40f7d2086991880d1a1ca7222ec83ec2ff11d89f10bf13ca287a4794",
+        "occ_afd8c1e516e0c6c128da3aeb6a42e65387af5a3248dcc9ca375461715250e53a",
+        "occ_b081801ccf9d2ce6132b6b0c4f8615114df628588ff58d4e252b21ed20f4a952",
+        "occ_b136f29b07d97774333bb2beece76fca804151a2ba5ff114f49964722c322230",
+        "occ_b2635085771277b4c17ddc46aa82301398caf8045c8cb182be354e2d93d425b0",
+        "occ_b2e6b8202d732795034c86a5df3f648f160cb07c85820dd5846ec5b06e14c6b2",
+        "occ_b39ddfd2757bfaa6454389d22f18295501c98e805efe0782f8aa81554db08928",
+        "occ_b3b8c74b35d66ad6cdf386ac34f8a4f07b30487518f5dcff2f405dfbc3db20e9",
+        "occ_b43b26225bea5959c1cce9e92be5ec841512d535089f25e0c94bdc4550604887",
+        "occ_b45b8c20789512519b44e52429bffa22fcc3c09174a028e685bb9ab91757e23c",
+        "occ_b4ddb6241362d183fa1221596fbbb4ede6dd67f4ec75621111d61e914db3bd3d",
+        "occ_b73de87fc104118d4cb49e1c4a6a52133567710583cda2d8d3079c4d9095ccd7",
+        "occ_b773f7d637e502771b7754bd78f6e1724b90f20232668028d87301721ff5b839",
+        "occ_b81215faada2d7240c24d147d4ddd320526ea4fdb6b29388c3103000af29ac9f",
+        "occ_b8d1fa3e20c4f090a88f1b0233bf4c40bfbd48739e2982eae7353e7e96d53484",
+        "occ_ba0e22bed5a4bb8fd7a247625bf408517ff387d8e61d09664c06e83327f07f2e",
+        "occ_ba652d297e48bb24b6b12400b1cc3a85e38ecd7e5352fbb84cf619c8abbc240a",
+        "occ_baed2f145b245ad0c27ea5bb106b0781bc78686d0d2481849e573e057ec619cf",
+        "occ_bb2469f8c2efd1ab2c412aaed9aa27d475dca65e280ad3114cfb2ffbe6bcafcd",
+        "occ_bc19fe485dade2b6079393c874f134f7e249c5f1f5b1c5435d811c2b2b88bfa6",
+        "occ_bc1dd0cea00ead16fbb9d9da540c303d9e830b78ea3fc59a15e475e6b4b25931",
+        "occ_c028e94639acf5bc72c5c4eac784e28a3971b6063e0a020e32c927ef29f60458",
+        "occ_c0c687bed6d6e990b56a05a5442ce086aea25ebc289962f3ba648d0781095f38",
+        "occ_c0ec00966e1685268d6f17ff3d7c604e2f46f4840120ffbc4c235f9f70099d08",
+        "occ_c2644f624e8f7d33ee4cdc1d28d8312d3ef4116ac7961144b5fbc5fddeecee35",
+        "occ_c27141b9213bab14752f7844393aae135d834cef82d7a8bd991947637e7164f7",
+        "occ_c31b841cd2f711ab7203097761a8a5826a56691639e952157e523003b4ca5590",
+        "occ_c3af274c326b8077434756162b4f0a1e5b795da29135e47b723bae4e23d5cd53",
+        "occ_c3faf44685fbdb33253d075190e05a3e1f8e8e58837d7d7ce88031a31b7e066b",
+        "occ_c40862a4f1073bed7b34de65dbbcbf1d136ab1c23bb60e1b279935c3bca7db80",
+        "occ_c430bdd82ebdc8adde227138c0c2535b8ddb9fe9f69689f879715917390f0772",
+        "occ_c4862c624d30805db70c931d42a69ab49f8bbcd38abf30c3353cfeca48cec0ab",
+        "occ_c556594fcd83587ff0ed6bc5a7ed0daf0557ee0c32ff2847044418b6c08af652",
+        "occ_c56718ca4500ed4eb22c77dc1b8a8842d545460fc5c7683a6fcc52e1c9a46267",
+        "occ_c5a4859411db6c181a5b25262590f42bdebd84cf969140833baff72902bf1105",
+        "occ_c67f0885e55dc503a14dcbe8b8e06a3c7c163f59c469840064672fa654cd88da",
+        "occ_c772dc4aade89935e50404f90214712140002357431e4bee8b584402431531d1",
+        "occ_c86a7b763269449308fece0ce6411cae289f9145e14b77dfdd72f9833a8220d7",
+        "occ_cb12b97ba548d5dfcc458f4630f7740da69a4ef60ce83e0a790f9c8b60c1fdee",
+        "occ_cd9b430ff288006a6a9b031fb38a42083c83bc2924cd102d822bfb03479acf94",
+        "occ_ce92eac557d38778d7de21c5046254cab8581db4066bd9e34d590f4fce7178af",
+        "occ_cff4b6cf71a17e63dff8e95e68e16b086eba59151815b6940a223d50cda999de",
+        "occ_d06b4abc9c985762d0704b1e68c7debd9bbd3b0aa9329e14fb4de789fed1b797",
+        "occ_d205c88d7d0c342f00c5aeb5c423e9228398b9e4ced5ec63bcec6b76d86c8b72",
+        "occ_d35d150c79fb502bbea71a6c7f677fcf022b209d54400754c0071d43a086d578",
+        "occ_d463f3da3a513f8421be454f0c710e05abdf8134b95f0093cf5b4cff69de437c",
+        "occ_d484e38151b367ec582470fd67aa228fca7b8d9e8fee0ed8c588e96c89f48088",
+        "occ_d4be0e72880552474b86017ce45bf95701d0e2938ac4f6b79205c14a5f4815e9",
+        "occ_d575db6f6cb966f2b0615fb1da34f358292403f8f34de35937e4518ec235609b",
+        "occ_d59b7607892a3d3864cf5e4d6fb555663ffb86e3f0be7fcf536644425b421d6b",
+        "occ_d6236c92f19ec374493611dc8a20423e28a491d6986076ed484349ba42080e3f",
+        "occ_d62c805d4e295dbea62f0234c3d848a1f4c53d7e0b9fd8cd7d8d196226219db1",
+        "occ_d6a290e74f64359942433d27d0e9bed488c513851be62e1becfee65490d048ca",
+        "occ_d6efde5cba36d535e5280b334074dcd018c446cefb4621af397d0ce1a12aa3da",
+        "occ_d7bb3a55956332dc64905cda51ad18321578f6a21bee11a70ec78a544e58caa7",
+        "occ_d87af80e2a6cf0849f8f5bfb47113202f916fb7757d280d8bfd6bafad03cd809",
+        "occ_d8a45432b4de2ec7aaf84a3d1e48d5e76926ca7dd6280d8254a8b0c84dd887d4",
+        "occ_d910f54d928b528f70e20812347aa3c37bdf2ed9c38f9ebaccb7f9c7150006c7",
+        "occ_d9fbc9e3fb08a47bbb11e2aa26b50406bc386f9ce48461ad20ddae608da540d0",
+        "occ_dae857877462b9120bfcd1b01e8873694e25eaf21a6cbe1e044ad7d90a3a46db",
+        "occ_dbf7e26ab0e919e59b3da3a0d86dd2c69989f6041610a3c0bf8bbf71ff7fc421",
+        "occ_dc57d1290d81b621a968158e73b0aeb4e70bba2f7c23e6d28333e0b8eb0b6cda",
+        "occ_dd07ebf43fc1e62baa9415ae4c2f3a4cfa1364730ca3d1d6f6aff330d038e8b4",
+        "occ_dd71ae1cc29735292cdd78840b82f0aafc3be8f41792b73ea7a51d793748b829",
+        "occ_de0a226eaa70411304f536866f4bde69dab5f8231a56b49331cd8915c79843d2",
+        "occ_de856306bd44d6c348f953413c84a2392bf629b195fe04aa25a0df510d2e7c7d",
+        "occ_e001a83e3243cca8e9e461c3c2590f21b5ffcdb0f91afad9338c81b2e6b5c32a",
+        "occ_e0bbed71b649c5e73cce0e23fd1b02f44c00cef062031c63b7d2a86c5a476779",
+        "occ_e0d387436539c5b2f7a7623279f62223733a48931dc690606ba44134ffb43d72",
+        "occ_e0e2ddc523b163fc08a8ee1917a32214aa2edd5a04ed2eb855fc24248e027e9d",
+        "occ_e2aa9f177a0cf5d33512ec4860fee5df62a6837f274913417b89b3675f547fa8",
+        "occ_e482c0c20cfb28d86221e4ecb08471312ebcc4f5073f5c42a914e1a8fd2ec24f",
+        "occ_e50be252307ffb6e879bc81606471197e6161709cee8a193bf56f4362ceb9917",
+        "occ_e5bf8d91a44e5a5253c7fc0538ab8eb3ac4004a86be4006563f119cfed0b3d52",
+        "occ_e733a4b2d127801e2d18aeb691493daad7a1f995e8fe5aa1538167ef62aaf4b2",
+        "occ_e7841c5e0557a42e12c0f06f6899775db47d3de221826e8846b7df728e8bb089",
+        "occ_e9e9ebee91f898eae14f0db8cd0ed94de0289af55c1458d89bb63ad26b114aa5",
+        "occ_ea01f171a3cea41596c30e074514d00b8fa8240de743daebb005bb1987fc8eb2",
+        "occ_ea8d6a8e1b0526465e08cd5ecf7be3334bf25e46339920068b0cb0f6bba0a486",
+        "occ_ea92f16929eb29236c444ce9137c4d56bcc9c35027425e6f17ca813c3790c45f",
+        "occ_ebe212ae31e299b4e1867a36d5639eaa1e1e29e6dd3a0fac1efd48f61f3f84bf",
+        "occ_ed2f50065cdd9e2252258f36e056da4f5b89a04c8dd90fb5b366ab91b6a74a92",
+        "occ_ed739980e69c452aedebdf8ec886d922944c64ca435d5c299dee097442adcc0c",
+        "occ_ee60a53c9e577e23a8988192c4565878d7bbef0ba2141fe39e58159c0ad58e6a",
+        "occ_eeefe158d1f67f7e14f3db75ee76928107e46df8beb83ffa38bd7812b5d0216e",
+        "occ_ef444d6971223506fc7dd08f1c690eae2c01944d7e60f3f7d9cf4539dc196924",
+        "occ_efd8b311d87ccf6c11cc0776b63b325b4e8412e1a20efc59ed7191e94cbadef8",
+        "occ_f2a7e7ee3e0b37bf24b99c7e74552211d6fee18216c70474ec542d588b561c97",
+        "occ_f39c82851374ac283601dedebbf4986c881304d2e96f99fcfd1561527016867b",
+        "occ_f3be9e63df1557b6a545bd5e944c9a832cefcc43dd86bf7753973c4132100404",
+        "occ_f4f4b3729542b81be65440cc241bfb0d27282e6c1ff48de5dca6a14184a894ce",
+        "occ_f517320ad224d7f50f431b260744fdde6cf5258e515e492b6e0da826d572a5ae",
+        "occ_f5d98cdf7b3988703cb5958bd12157a280358c24de6b957e7c1c73bbee7d85a8",
+        "occ_f5da216d54b70656c6937b23018cd6b60165ea62aa4a680f42349413007803cb",
+        "occ_f6d298b3ef8421451f7622245408f00e0fcc0e0d743e5dfa550efdf11e71967f",
+        "occ_f716e865c04a4e3b567171166828abc6dc0b7380c991de538dbfc36c20d0aff2",
+        "occ_f79225fc0dbf623003614c3250dd9e781eb865f9215b28e777f4a91551138f12",
+        "occ_f7ef0dcc3390f9df1ba62cdf73f36705188cfd0eea1db02a39918f185e1a5c82",
+        "occ_f918a95aff922a9aa02b8c01cde593e66f8c67e394b86eb52a98cfb7c8855615",
+        "occ_f97d3ff8b04e3d652bfb82e6e0c754d060539c29a4fa376671f209c281cfdb6a",
+        "occ_fb001c769edc78970acf2ae1c0e51f2ac94e0006b5e30845eece42abbbeb4b5e",
+        "occ_fc81e2d0223770e3022ab21d0eda404629f313e5a20ee87793483eac44ef698b",
+        "occ_fda6c31f0ea8a0807ed6121f3c1ae8c381579a102c790ed5a2bd5ceafc0bd90b",
+        "occ_fe17ab06439a1593aa22b6aa9869fe7b139762adb85870f1b46506d54434436f",
+        "occ_fe35d5bf4ec7201be332d8b8cbb9900f266b02262bcce1e844524caf10bc0895",
+        "occ_ffbdc385966fcca66a6bb2e0b2f35083aa155eca4e9dd494056ee0433091cf73",
+        "occ_ffcc3be6e6368fa78367839b545e7a782fcd7db6e8c165cd1aa0d806d50a8c4e",
+        "occ_fff0fde0360d70631b6f751208959fc06fac29d57f228ddecb84dd5b3c30b0ca",
+        "occ_fff4a6cc9aac26a82b20533aff99dad805f1670503f1bf6f8244443f730d0292"
+      ],
+      "files_sha256": "44499ac56b8181aa8680d27704a4506cf75ef35958f7b1585eb3c21549c374bd",
+      "output_root_alias": "$OUTPUT_ROOT"
+    },
+    "output_root": "C:\\Users\\jeong\\AppData\\Local\\Temp\\rea-extracted-9495dd4c-157b-4093-8a0c-1bfd081b4f45",
+    "artifacts": [
+      {
+        "artifact_id": "art_26af7067aedde742597006ddfcaf2fd86c7f12246a21fe245715e885ab123837",
+        "relative_path": ".vite/build/common-BYp7ijXW.js",
+        "sha256": "60e03bf2a590fcbea89d7d05568ed34c0ad11bc0fbb5ad21e4cd7958176e46ce",
+        "bytes_written": 386179,
+        "created": true
+      },
+      {
+        "artifact_id": "art_d3fd4bf21050e3e5b32e4c634d3ad9e97ad7d0bc0f5654fc48926e4cbe134873",
+        "relative_path": ".vite/build/common-BYp7ijXW.js.map",
+        "sha256": "ac4c44596948e7618a1014cb78335ca9e08ca0c80aef30925af3004a9f0ac0f2",
+        "bytes_written": 176,
+        "created": true
+      },
+      {
+        "artifact_id": "art_32f3cca54b431f01024ecbbcda19e466921a16cfc225c95e12a5e467a70eca92",
+        "relative_path": ".vite/build/common-ESyrnCuW.js",
+        "sha256": "9eb7222255651bce35c42194cbd1cccc0dee44d9f8ef3ac497b8701ffa8ea49a",
+        "bytes_written": 459265,
+        "created": true
+      },
+      {
+        "artifact_id": "art_59cc3b2f8517c8e3cd08d07da97ead2162461b4bea4763786aa5b831a0bf2bef",
+        "relative_path": ".vite/build/common-ESyrnCuW.js.map",
+        "sha256": "2726fd404b38f6807907e4f34af68b433040f1beb9f538e8b766138839a56c5d",
+        "bytes_written": 182,
+        "created": true
+      },
+      {
+        "artifact_id": "art_8680c225fb85b0701952262ddda426974dc5915758d4841263d054cf5b3a644d",
+        "relative_path": ".vite/build/common-d8iTTsZZ.js",
+        "sha256": "dd794eecd507619706311cb74b022ab49f40d9fbf0bde0b0cf4802b5fbb830f8",
+        "bytes_written": 482325,
+        "created": true
+      },
+      {
+        "artifact_id": "art_e4cd7bb7a55172111b1f7f269e4ad68173578b3399f18aabb518ec6a2e2cffda",
+        "relative_path": ".vite/build/common-d8iTTsZZ.js.map",
+        "sha256": "04852e97bbe2ef6b71ff7dfdd7ce936f041aa080e87d5591d8fb72e0c0131ed4",
+        "bytes_written": 180,
+        "created": true
+      },
+      {
+        "artifact_id": "art_6e62a6efefd36a6cebaeaa900057f062e107334023bc9f63d5dd461907672e71",
+        "relative_path": ".vite/build/index.js",
+        "sha256": "013a3b70dcf4804bef876dfb5189154b47c8ac3fb4188962b3e6ac56d2ddb418",
+        "bytes_written": 1203319,
+        "created": true
+      },
+      {
+        "artifact_id": "art_45cf23ab8dfe6167f98b808d5dbf7b1037279cbb1c475834f645fb3f58059207",
+        "relative_path": ".vite/build/index.js.map",
+        "sha256": "b80378cf69da8a19f97d2e75d89f997d5fcdb69a47cd427c49abb43aee44d12f",
+        "bytes_written": 5391911,
+        "created": true
+      },
+      {
+        "artifact_id": "art_c4b629501432d66c2a87e6e79bf3ae836253fb003cee66b1ba8cee8a2387ecc8",
+        "relative_path": ".vite/build/notificationPreload.js",
+        "sha256": "b400de9b944a56c512dc8948bb1c5049c67d808280739eea0a9a7797f0f3f9eb",
+        "bytes_written": 789,
+        "created": true
+      },
+      {
+        "artifact_id": "art_8d37786932e2b6eaa2698e17a37ecfe6c141018f0372dc0c2a1b4dc76de8c237",
+        "relative_path": ".vite/build/notificationPreload.js.map",
+        "sha256": "29e96afec0603141445358e25215bd3fbefc0e9e0ba6d5328340fe4557118bcb",
+        "bytes_written": 908,
+        "created": true
+      },
+      {
+        "artifact_id": "art_6ecc97c3fc1e22f0fa26e4f368b4bbd05a236c575ff7b0137ece217d9cec061b",
+        "relative_path": ".vite/build/overlayPreload.js",
+        "sha256": "769ca3e1ef3ba1ec70009001a0fabe6514d85ab78f4e1877c9713e0d9178c3a3",
+        "bytes_written": 760,
+        "created": true
+      },
+      {
+        "artifact_id": "art_352d76b78da0b30e85888a60f282bae8c8659724061ca65989b43039442249f3",
+        "relative_path": ".vite/build/overlayPreload.js.map",
+        "sha256": "16fed639fd12ffb386e626519b2eaed1ca31ab7eda29d00bcf750b09f5c3b7af",
+        "bytes_written": 784,
+        "created": true
+      },
+      {
+        "artifact_id": "art_a8b9dffc15afc944d46555e3ff52996e77c955ea9bad035bacba907d365b64bd",
+        "relative_path": ".vite/build/preload.js",
+        "sha256": "5840e34828e5a2edb7408db2c6b0775807263b5273ecba3c9d83edd74f3e7bdf",
+        "bytes_written": 14688,
+        "created": true
+      },
+      {
+        "artifact_id": "art_e83e84d3da6f8907a225c620fe96e364ddcbceb75a143b5f7619e729bd5f3ede",
+        "relative_path": ".vite/build/preload.js.map",
+        "sha256": "7e0267739b814bf344f9b466aaa02766821ac8b1327ba3ca040d94ab4170d32c",
+        "bytes_written": 44833,
+        "created": true
+      },
+      {
+        "artifact_id": "art_51b9311c9c58e7724cd397428274ca4ed1dd21a2e38696a4ae0758481d4aa0df",
+        "relative_path": ".vite/renderer/main_window/assets/AveriaSerifLibre-Bold-IobijRYK.woff2",
+        "sha256": "69eb3cbe62879e54378bce90f37c27bbf333ac4883a6373477f25a0f2ba16378",
+        "bytes_written": 41040,
+        "created": true
+      },
+      {
+        "artifact_id": "art_8348873815236ae9429957640bfc528365aeb7f41e8da30436990053949ed82a",
+        "relative_path": ".vite/renderer/main_window/assets/AveriaSerifLibre-BoldItalic-CMggJDfM.woff2",
+        "sha256": "7a5c3843009a3519c3ea1000a93c97c46b542676ab763f47bf4613173f1f61e0",
+        "bytes_written": 45308,
+        "created": true
+      },
+      {
+        "artifact_id": "art_9cccbacdc87074835eb5ccc4d5e7db657835a46504cb0e07ecf3f8b58237d2cf",
+        "relative_path": ".vite/renderer/main_window/assets/AveriaSerifLibre-Italic-BkCjXI_s.woff2",
+        "sha256": "155332b8f99b4238613cc2ac55445c7c422f572f92ea6dd545e00648ffb5feec",
+        "bytes_written": 44004,
+        "created": true
+      },
+      {
+        "artifact_id": "art_267109c8426aa6f9060753deea2a19d37e4c72097f17b0e9b798add590d937a8",
+        "relative_path": ".vite/renderer/main_window/assets/AveriaSerifLibre-Light-BTwX-IaJ.woff2",
+        "sha256": "d2821b7ab8696fa5d4272c30a63cea3ad191f77bb9cab8b9ff5fcf78d1ea1bed",
+        "bytes_written": 41120,
+        "created": true
+      },
+      {
+        "artifact_id": "art_c3aa906b7224f9493d7712b22ec3358b06d8f93ce49f64c8ba4ebd57da6bff5b",
+        "relative_path": ".vite/renderer/main_window/assets/AveriaSerifLibre-LightItalic-x9xpLHLj.woff2",
+        "sha256": "48bc23ecbb3c71f19bb13c97ee317b7e6c2605610d34c5a7bb07f5fd97a5a95d",
+        "bytes_written": 45612,
+        "created": true
+      },
+      {
+        "artifact_id": "art_c3ab4d107b5f06a9f98caedc856151f2a61036ad7a513b76c00d4bb9fa18dd69",
+        "relative_path": ".vite/renderer/main_window/assets/AveriaSerifLibre-Regular-BN-0MeY4.woff2",
+        "sha256": "f08e930db5917a02f6bf3fb451463e5fa0a1e32ea083d4f4b3cd1cf0a403236a",
+        "bytes_written": 40540,
+        "created": true
+      },
+      {
+        "artifact_id": "art_9d549c6cdcbd05e7dc3c9afecafca5ed9515a6e059f90aac6175c5c7cc4a2ff0",
+        "relative_path": ".vite/renderer/main_window/assets/CrimsonPro-Bold-DPGAiqDK.ttf",
+        "sha256": "8f6cd9595b9882689dbb8b619719e82d6a7a8a1dea5b50ef8ae29d8ae542f175",
+        "bytes_written": 97804,
+        "created": true
+      },
+      {
+        "artifact_id": "art_122c53184e155c3f49a842e4ff6344bd9f7dd4a90fef3bd01d2bad06323764e4",
+        "relative_path": ".vite/renderer/main_window/assets/CrimsonPro-Light-wF3Yg_z9.ttf",
+        "sha256": "6b29cedad136c23b9eb9cfa65bc54240613eb44d372fd4a891af9fe6fd03d738",
+        "bytes_written": 97224,
+        "created": true
+      },
+      {
+        "artifact_id": "art_d8bf6835694a8ae16e6d9d09253b5b656ec03409a142357a4e2cbc058f72493f",
+        "relative_path": ".vite/renderer/main_window/assets/CrimsonPro-Regular-wQbFRjd8.ttf",
+        "sha256": "d43dfaf98f1cb4ef4052e266538317af16ebe6ea8eed50c03c086f2752682e47",
+        "bytes_written": 97164,
+        "created": true
+      },
+      {
+        "artifact_id": "art_7e2b626fcac1f6abd9bcd1a857e84af6d2ac44162d9d9a4c0e272e79c1443c45",
+        "relative_path": ".vite/renderer/main_window/assets/GeistMono-Bold-CSvWH0Z4.woff2",
+        "sha256": "e26084c8990fb104a6e57590eed37732eb2d3743dec13def0c7bf7ddc91f0984",
+        "bytes_written": 30428,
+        "created": true
+      },
+      {
+        "artifact_id": "art_2d83e23a687c7c13bb0591043111de2d177f4c0ecde96faf04b7e74a0ebaf1d7",
+        "relative_path": ".vite/renderer/main_window/assets/GeistMono-Light-XN-yfBKe.woff2",
+        "sha256": "df865f62ed8b929015247816cfeb9cce84b4130fd4125c520e94af737b6ca834",
+        "bytes_written": 29984,
+        "created": true
+      },
+      {
+        "artifact_id": "art_a0bd69cc49dea597cc1eb579ecfddf6f6dd0314e6c6f224089603f9fe07eec6f",
+        "relative_path": ".vite/renderer/main_window/assets/GeistMono-Medium-CiQfRJL3.woff2",
+        "sha256": "2d1e603642784bdbadf226d5e72687d46cf055ddeda5072e0060b37ba70f31ef",
+        "bytes_written": 30440,
+        "created": true
+      },
+      {
+        "artifact_id": "art_717bfbe07623ef2d65779eaef2209b6fcf6baf6708c98b4c6d575dcead63defc",
+        "relative_path": ".vite/renderer/main_window/assets/GeistMono-Regular-CeHGjpI8.woff2",
+        "sha256": "cd0dc54bdc58d9226dce1e93e5410d79ac38d6f28f2a1a79d73c4ad05980f19a",
+        "bytes_written": 29304,
+        "created": true
+      },
+      {
+        "artifact_id": "art_282dada4160676ff0d12e16cc00a2f337dedfd31952039868aeebffc1b68cc79",
+        "relative_path": ".vite/renderer/main_window/assets/GeistMono-SemiBold-D2-e-Hy5.woff2",
+        "sha256": "e7df2f2c4f9ee00a25be397ebba2cc6862b9d384462d3972721e7322aad1172e",
+        "bytes_written": 30456,
+        "created": true
+      },
+      {
+        "artifact_id": "art_6e1e4f7ff1c5b77fba78983d06d45eee10aa7c782073ca13c17b80b6f7d16534",
+        "relative_path": ".vite/renderer/main_window/assets/GeistMono-Thin-BrN3c0Mm.woff2",
+        "sha256": "fc0a8a38f0cd46bf50ef71bce64cb658f496ba71d3b8c0e041c361bf57853fc3",
+        "bytes_written": 29012,
+        "created": true
+      },
+      {
+        "artifact_id": "art_b24da936ff7457f2cde301bef7de94872060ae179e3a53285ef7f11a4801af8d",
+        "relative_path": ".vite/renderer/main_window/assets/Hahmlet-Variable-31q_hrR1.ttf",
+        "sha256": "892bffe530255770a7435226154a02f519055ff6bedf64254f37f21d15a59279",
+        "bytes_written": 3559144,
+        "created": true
+      },
+      {
+        "artifact_id": "art_36494c857708fc9c4c70df3f79185300f05bdcdc0fa0ec6cefff75d6f9fde61a",
+        "relative_path": ".vite/renderer/main_window/assets/KaTeX_AMS-Regular-BQhdFMY1.woff2",
+        "sha256": "0cdd387c9590a1a9f9794560022dbb59654a7d86f187aa0c81495ad42d3a7308",
+        "bytes_written": 28076,
+        "created": true
+      },
+      {
+        "artifact_id": "art_bccfdb0c25df68a68ac063fc90f996c2f201dea1f63ad0b81b087d23c2408b8c",
+        "relative_path": ".vite/renderer/main_window/assets/KaTeX_AMS-Regular-DMm9YOAa.woff",
+        "sha256": "30da91e84c893f875e252689faebdc590b2871145e8adc7f9a9d4dbd8ce0b251",
+        "bytes_written": 33516,
+        "created": true
+      },
+      {
+        "artifact_id": "art_43399465ee9b4457d296ae180ae080a5ef896b6b4c60cda11542c83bc0e73500",
+        "relative_path": ".vite/renderer/main_window/assets/KaTeX_AMS-Regular-DRggAlZN.ttf",
+        "sha256": "68534840bcfdd2bffb6f0e8deb48684dd01e7f04ea2813267577afb906de1d13",
+        "bytes_written": 63632,
+        "created": true
+      },
+      {
+        "artifact_id": "art_31af12710f8688aa4ef488c66b747889b7baebd87dbad077512881028325444d",
+        "relative_path": ".vite/renderer/main_window/assets/KaTeX_Caligraphic-Bold-ATXxdsX0.ttf",
+        "sha256": "07d8e303ce4fc12b4bb54f1004170dd190a1f3db45d400fe68060df3e0897268",
+        "bytes_written": 12368,
+        "created": true
+      },
+      {
+        "artifact_id": "art_30e4b63698763c6dfb02f8581d8e94ea7d829333d62e5cd52dd03067f0371aff",
+        "relative_path": ".vite/renderer/main_window/assets/KaTeX_Caligraphic-Bold-BEiXGLvX.woff",
+        "sha256": "1ae6bd7475590e97e7f145a89e09ccde322f7a6bc0b91607b1c8b8ee28290fed",
+        "bytes_written": 7716,
+        "created": true
+      },
+      {
+        "artifact_id": "art_3074d828c3818ba2413343b8b9b45a169ceb6352a5226edf1e015f3691308379",
+        "relative_path": ".vite/renderer/main_window/assets/KaTeX_Caligraphic-Bold-Dq_IR9rO.woff2",
+        "sha256": "de7701e42cf1f4cf0b766c03fb27977207eee2f4fd5d76fa82188406da43ea4c",
+        "bytes_written": 6912,
+        "created": true
+      },
+      {
+        "artifact_id": "art_eff5c72a3805a470a0300001f55de1466b837cebb91bf6609a0cfc1ff8a23fdb",
+        "relative_path": ".vite/renderer/main_window/assets/KaTeX_Caligraphic-Regular-CTRA-rTL.woff",
+        "sha256": "3398dd02302557a793f2863f88e02d96ce10df2abffa07c8e9fa90775116e65c",
+        "bytes_written": 7656,
+        "created": true
+      },
+      {
+        "artifact_id": "art_f24aeaca759a3189e84a0072b761afd3f698daa171d8ad4e8bf183fe2724572d",
+        "relative_path": ".vite/renderer/main_window/assets/KaTeX_Caligraphic-Regular-Di6jR-x-.woff2",
+        "sha256": "5d53e70ad607c2352162dec9e0923fb54ecdafaccbf604cd8dcf7d00facb989b",
+        "bytes_written": 6908,
+        "created": true
+      },
+      {
+        "artifact_id": "art_edcc52e7279edfa18e16cf7e35855297a815fcdb6f8ccdfa9e2cfdf0ae031977",
+        "relative_path": ".vite/renderer/main_window/assets/KaTeX_Caligraphic-Regular-wX97UBjC.ttf",
+        "sha256": "ed0b74372feefcbb9c0666b2e210da37b7e49fa7fbbf3eeb11db5f693dacfbb7",
+        "bytes_written": 12344,
+        "created": true
+      },
+      {
+        "artifact_id": "art_97eb6e9a107418550de2256d1095b709da8ddc93c3e1f1dd8f9c82c8496481b9",
+        "relative_path": ".vite/renderer/main_window/assets/KaTeX_Fraktur-Bold-BdnERNNW.ttf",
+        "sha256": "9163df9c7122432e6495b4229fa9071cf9ae86a758ae5efc4924ec2e1a6dbce1",
+        "bytes_written": 19584,
+        "created": true
+      },
+      {
+        "artifact_id": "art_5669afb9a501aea0963056577e70b8af858bab2c66014c4e7a127e5de4dab718",
+        "relative_path": ".vite/renderer/main_window/assets/KaTeX_Fraktur-Bold-BsDP51OF.woff",
+        "sha256": "9be7ceb88004ab8ad124082246fbfcca4091e36385d4ec6ed1df67375dad50fb",
+        "bytes_written": 13296,
+        "created": true
+      },
+      {
+        "artifact_id": "art_f6124a2c5fde131ea83fae4d18fe353255bcbb7bf1e5acc0e5f5ab3515baf98e",
+        "relative_path": ".vite/renderer/main_window/assets/KaTeX_Fraktur-Bold-CL6g_b3V.woff2",
+        "sha256": "74444efd593c005e3f4573b44524704c0af0a937fe911cca9e94068d0d140d3f",
+        "bytes_written": 11348,
+        "created": true
+      },
+      {
+        "artifact_id": "art_68f03dcb34259836802a61dfe727f744ef9736baedfa4a4b60154901176f6902",
+        "relative_path": ".vite/renderer/main_window/assets/KaTeX_Fraktur-Regular-CB_wures.ttf",
+        "sha256": "1e6f9579e90e2cac37f8f60a597c436e075c114385652b7cbeb0dec0421291b3",
+        "bytes_written": 19572,
+        "created": true
+      },
+      {
+        "artifact_id": "art_b7ed37e98ca4c21a78f30d10fa47873bad48627fb7d3f14acd92fcdbe5353c4e",
+        "relative_path": ".vite/renderer/main_window/assets/KaTeX_Fraktur-Regular-CTYiF6lA.woff2",
+        "sha256": "51814d270d06ff0255dba0799994fa4d8c84d11f09951d47595f4abb1f3602dc",
+        "bytes_written": 11316,
+        "created": true
+      },
+      {
+        "artifact_id": "art_14ee35c52295b4763e55fc5916b978be37e71be7a1e21d81f09d3fb2b0a20610",
+        "relative_path": ".vite/renderer/main_window/assets/KaTeX_Fraktur-Regular-Dxdc4cR9.woff",
+        "sha256": "5e28753be717dac97f559f49bc10be9cf3c124ddcabda6659d11cb68febc6463",
+        "bytes_written": 13208,
+        "created": true
+      },
+      {
+        "artifact_id": "art_45ded06577dab0a103ac6b67dec796a9427b2cab3b2b401ba0af530b8ad164c3",
+        "relative_path": ".vite/renderer/main_window/assets/KaTeX_Main-Bold-Cx986IdX.woff2",
+        "sha256": "0f60d1b897938ec918c8ce073092411baf9438f6739465693ff18b0f9d20b021",
+        "bytes_written": 25324,
+        "created": true
+      },
+      {
+        "artifact_id": "art_806164ef354f9acc4d8862a8e94e9f5fc72f9ea205d77be138eab9f9534c2010",
+        "relative_path": ".vite/renderer/main_window/assets/KaTeX_Main-Bold-Jm3AIy58.woff",
+        "sha256": "c76c5d696297d51b9cb1639c7da4334f0e7dec81b42b11213b5e25ef671bb822",
+        "bytes_written": 29912,
+        "created": true
+      },
+      {
+        "artifact_id": "art_1855211d9ae18c5481df5e45c7e205d8828b3e3e3005d59510cb07435f64200f",
+        "relative_path": ".vite/renderer/main_window/assets/KaTeX_Main-Bold-waoOVXN0.ttf",
+        "sha256": "138ac28d1663b3037e9c5f52371fa5c63d8324f4a38d22cd573e6ea3a3fd0cf8",
+        "bytes_written": 51336,
+        "created": true
+      },
+      {
+        "artifact_id": "art_73187a3f965dfebd522bc6a44aaaef46c93458a42a78a54916632637670fa59f",
+        "relative_path": ".vite/renderer/main_window/assets/KaTeX_Main-BoldItalic-DxDJ3AOS.woff2",
+        "sha256": "99cd42a3c072d918f2f44984a807cf7aa16e13545fd0875fc07c6c65f99e715b",
+        "bytes_written": 16780,
+        "created": true
+      },
+      {
+        "artifact_id": "art_24a65c3bdac9d125ffb2cc6c3513c8e2f8ec6c1c7431abe19813d3d3152f5b3e",
+        "relative_path": ".vite/renderer/main_window/assets/KaTeX_Main-BoldItalic-DzxPMmG6.ttf",
+        "sha256": "70ee1f64a20f2048c21940ef46d0144fd215baa953ca69afd1e31e98544f708f",
+        "bytes_written": 32968,
+        "created": true
+      },
+      {
+        "artifact_id": "art_738f92be334f7c95c5bd7ce7284d2989ddf4649cab59d4619d1003766a93793f",
+        "relative_path": ".vite/renderer/main_window/assets/KaTeX_Main-BoldItalic-SpSLRI95.woff",
+        "sha256": "a6f7ec0d846ac7ad975adb8959c37ed49b94acbc4ae436db9ce9e20287e4a64c",
+        "bytes_written": 19412,
+        "created": true
+      },
+      {
+        "artifact_id": "art_7a0749bb2669eaf878c0f00aa4fa6f349a334d7b183196e91e35674d2aa40932",
+        "relative_path": ".vite/renderer/main_window/assets/KaTeX_Main-Italic-3WenGoN9.ttf",
+        "sha256": "0d85ae7cc30f23790a7f1a58c4a112fdca8aae769b6ba11429af1d98b1b6cb3a",
+        "bytes_written": 33580,
+        "created": true
+      },
+      {
+        "artifact_id": "art_ea3b7c75ba5f00f64fd7994b29880fc92c89ac5019bbffb6ca0b3db778ac1f1f",
+        "relative_path": ".vite/renderer/main_window/assets/KaTeX_Main-Italic-BMLOBm91.woff",
+        "sha256": "f1d6ef86f3b11a528bd5185199bd2443ecb2b0dead96d88674b5a2c12be24bdf",
+        "bytes_written": 19676,
+        "created": true
+      },
+      {
+        "artifact_id": "art_e5bd1d36dac7cba05453577b416f739a6478ced3791c0004bf6dba88bcf78519",
+        "relative_path": ".vite/renderer/main_window/assets/KaTeX_Main-Italic-NWA7e6Wa.woff2",
+        "sha256": "97479ca6cce906abc961ecac96faa5f9ca2e61b8e7670d475826bcdee9a7c267",
+        "bytes_written": 16988,
+        "created": true
+      },
+      {
+        "artifact_id": "art_587014bb89b9a4e19253de3cf7f19e51e8a7a16daaceb11dbc8346cb78c31ba2",
+        "relative_path": ".vite/renderer/main_window/assets/KaTeX_Main-Regular-B22Nviop.woff2",
+        "sha256": "c2342cd8b869e01752a9321dc17213fc40d4d04c79688c1d43f2cf316abd7866",
+        "bytes_written": 26272,
+        "created": true
+      },
+      {
+        "artifact_id": "art_65b45c1590838956e770bb87d85b8593785bcd0d5f79100a15b33291fae315d7",
+        "relative_path": ".vite/renderer/main_window/assets/KaTeX_Main-Regular-Dr94JaBh.woff",
+        "sha256": "c6368d87e8a1a3a5d337623d83d8dc4b868f242a9ad476237d6f8d1e0f168cdc",
+        "bytes_written": 30772,
+        "created": true
+      },
+      {
+        "artifact_id": "art_96d6318fc8bd7e5ff7f0f48904359fa2a6eb95bec0790a27d062f28944dd4d14",
+        "relative_path": ".vite/renderer/main_window/assets/KaTeX_Main-Regular-ypZvNtVU.ttf",
+        "sha256": "d0332f52868370fd83ae7fa46470f90c8f2eab2fcf12bc4f88080b340c95a830",
+        "bytes_written": 53580,
+        "created": true
+      },
+      {
+        "artifact_id": "art_dcb8f519fd0d47c8c09aa59ab0e9668421a5a68f759502f1b0586fb6e1620acf",
+        "relative_path": ".vite/renderer/main_window/assets/KaTeX_Math-BoldItalic-B3XSjfu4.ttf",
+        "sha256": "f9377ab0271cda59af24bcffbd46a4d0c8a3572ffafdbb38de2ad5ea7b0d5ee5",
+        "bytes_written": 31196,
+        "created": true
+      },
+      {
+        "artifact_id": "art_d214e767cd7a7707b61f2b12b67b53bbd68d11cffd10fa6b3a10ad87e3327dce",
+        "relative_path": ".vite/renderer/main_window/assets/KaTeX_Math-BoldItalic-CZnvNsCZ.woff2",
+        "sha256": "dc47344dbb6cb5b655c8460d561f4df5f501b90c804ad3c6cec65fe322351ab1",
+        "bytes_written": 16400,
+        "created": true
+      },
+      {
+        "artifact_id": "art_d93f285a954acb8cf4c6572aa20d4b2f3bf46ca14c6f057dbcba29dcbcfe39d6",
+        "relative_path": ".vite/renderer/main_window/assets/KaTeX_Math-BoldItalic-iY-2wyZ7.woff",
+        "sha256": "850c0af5c2238497febaf5e461d880bf458c341f42f4f330f1b1ab5698b1998e",
+        "bytes_written": 18668,
+        "created": true
+      },
+      {
+        "artifact_id": "art_d104383da3ead2d8c09397af11dffaa1f6dddf3cad5efda6e2d51badcb57e7cb",
+        "relative_path": ".vite/renderer/main_window/assets/KaTeX_Math-Italic-DA0__PXp.woff",
+        "sha256": "8a8d244581371912b8f3f5a23e2437cb2a59cd9bcaebb0346e722c05737a2571",
+        "bytes_written": 18748,
+        "created": true
+      },
+      {
+        "artifact_id": "art_fc93e59eef50adca3537e253140ce98a19494768c9e0d74ca75dfb14f7159ee4",
+        "relative_path": ".vite/renderer/main_window/assets/KaTeX_Math-Italic-flOr_0UB.ttf",
+        "sha256": "08ce98e51b04d58945a301e639e02b6998af29fdfd61a7b8afdd07bbfc479d4a",
+        "bytes_written": 31308,
+        "created": true
+      },
+      {
+        "artifact_id": "art_0be5a4b22452885f8372cf36dee233e77b270d8e8f086bff71923f679c4eead7",
+        "relative_path": ".vite/renderer/main_window/assets/KaTeX_Math-Italic-t53AETM-.woff2",
+        "sha256": "7af58c5ec8f132a2ddde9027c6d7814decce4d3b822a11192a42a20e2e973264",
+        "bytes_written": 16440,
+        "created": true
+      },
+      {
+        "artifact_id": "art_7c019a05521d3a2d404bb6182c330206eba77dbaaf3d8a3fe405b16f5c28c6d5",
+        "relative_path": ".vite/renderer/main_window/assets/KaTeX_SansSerif-Bold-CFMepnvq.ttf",
+        "sha256": "1ece03f79f95277d57dc7f6b435a74e1379b0d46104a8530286b60ff49369ea0",
+        "bytes_written": 24504,
+        "created": true
+      },
+      {
+        "artifact_id": "art_b1e43b10a588be3bc250377c7150969eb91fc6e6107fab504637997aab441bbb",
+        "relative_path": ".vite/renderer/main_window/assets/KaTeX_SansSerif-Bold-D1sUS0GD.woff2",
+        "sha256": "e99ae51144bf1232efcc1bfe5add36262c6866b0faab24fa75740e1b98577a62",
+        "bytes_written": 12216,
+        "created": true
+      },
+      {
+        "artifact_id": "art_4aa7b6f0a0ab738247c2973259c5134d7e997472b3678904b756feaaeeed4c43",
+        "relative_path": ".vite/renderer/main_window/assets/KaTeX_SansSerif-Bold-DbIhKOiC.woff",
+        "sha256": "ece03cfd83e22c212cdef66feb8442d25a083beb988db3f1883f3f9738d750ba",
+        "bytes_written": 14408,
+        "created": true
+      },
+      {
+        "artifact_id": "art_3bcfd7376d0b4f78bef1ed45e639cad2cc2ec595b7ae00c324e5ef09ceccc743",
+        "relative_path": ".vite/renderer/main_window/assets/KaTeX_SansSerif-Italic-C3H0VqGB.woff2",
+        "sha256": "00b26ac825e2095056396e0553b8ac26d3f8ad158c3826e28b4c45b385c4714a",
+        "bytes_written": 12028,
+        "created": true
+      },
+      {
+        "artifact_id": "art_7702c5ba6b1f3431a10170369c3dab8623297411e794d9535d08789a850344b2",
+        "relative_path": ".vite/renderer/main_window/assets/KaTeX_SansSerif-Italic-DN2j7dab.woff",
+        "sha256": "91ee67500cc0129aa0ace3ac5c61ff1692102f0f31d02b69347fba35dcb75bf2",
+        "bytes_written": 14112,
+        "created": true
+      },
+      {
+        "artifact_id": "art_023aed312998420489fb30c67b33905a6fdb4148feffdd80dd100d2d526cdb50",
+        "relative_path": ".vite/renderer/main_window/assets/KaTeX_SansSerif-Italic-YYjJ1zSn.ttf",
+        "sha256": "3931dd81faed86ba021bb2bbdc36f5bed9a38d6b4f4077aca59b265aa1b02083",
+        "bytes_written": 22364,
+        "created": true
+      },
+      {
+        "artifact_id": "art_e74fb7e887d00dddd54a1e0faf26f0a908977eaf9159a61c914581c694e843db",
+        "relative_path": ".vite/renderer/main_window/assets/KaTeX_SansSerif-Regular-BNo7hRIc.ttf",
+        "sha256": "f36ea897e19f4a2e571d1e900e4e3710e438deb05a842486045ba0a3e616a4ad",
+        "bytes_written": 19436,
+        "created": true
+      },
+      {
+        "artifact_id": "art_5f14e5139864fe3623e6e4e2bf3fe548ca48a35702da21b0873fff1864da8b44",
+        "relative_path": ".vite/renderer/main_window/assets/KaTeX_SansSerif-Regular-CS6fqUqJ.woff",
+        "sha256": "11e4dc8a6471ff6d6ee561d53d10fde8f7489e798257ff449c5d37c197435605",
+        "bytes_written": 12316,
+        "created": true
+      },
+      {
+        "artifact_id": "art_23df768d779a0f619a582d1a04a1b80c547dfae081530fc0fc9441a5fd66a160",
+        "relative_path": ".vite/renderer/main_window/assets/KaTeX_SansSerif-Regular-DDBCnlJ7.woff2",
+        "sha256": "68e8c73ef42afd3ccec58bf0fba302cce448938e7fc020a5e31f8a952eee1342",
+        "bytes_written": 10344,
+        "created": true
+      },
+      {
+        "artifact_id": "art_a306d5769fee31cc5ded6c23eb9493c237d6a4358788a86e175a736c5abcc131",
+        "relative_path": ".vite/renderer/main_window/assets/KaTeX_Script-Regular-C5JkGWo-.ttf",
+        "sha256": "1c67f068fea8bb09bf099c088b1cf64bd27516a6e07f4684344873564bb66a67",
+        "bytes_written": 16648,
+        "created": true
+      },
+      {
+        "artifact_id": "art_4056bca7ac1e1554d32fca8b29ecf60238eec7dfe6d596aeddaddac0b2d9a7ba",
+        "relative_path": ".vite/renderer/main_window/assets/KaTeX_Script-Regular-D3wIWfF6.woff2",
+        "sha256": "036d4e95149b69ff9bcc0cd55771efeb25ffa3947293e69acd78d5ac328c684b",
+        "bytes_written": 9644,
+        "created": true
+      },
+      {
+        "artifact_id": "art_b356e50a3060253c6bd5c11453c7322b2ce27ec76c571861f526f62e32088bae",
+        "relative_path": ".vite/renderer/main_window/assets/KaTeX_Script-Regular-D5yQViql.woff",
+        "sha256": "d96cdf2b3bdd4d64a8fd5f74a4c467f123a8a73931cd435889f08ffaf9bf947a",
+        "bytes_written": 10588,
+        "created": true
+      },
+      {
+        "artifact_id": "art_27d7ac0c7901f79792962030f012d78e48ef00247d03ecbb9c5fb4b0778dfcd2",
+        "relative_path": ".vite/renderer/main_window/assets/KaTeX_Size1-Regular-C195tn64.woff",
+        "sha256": "c943cc986384f59e86bea5fd7dc50a9c4dfe567a7c05eb40d6790720dead97c9",
+        "bytes_written": 6496,
+        "created": true
+      },
+      {
+        "artifact_id": "art_a9dbe1bfaac02a569f178ee98aab66a2b97c1f0286df389b5c8fe8028f24e5e0",
+        "relative_path": ".vite/renderer/main_window/assets/KaTeX_Size1-Regular-Dbsnue_I.ttf",
+        "sha256": "95b6d2f1a50173bfedb8c63e1d1c99b10427d0a4df4201cb44513b226951a22b",
+        "bytes_written": 12228,
+        "created": true
+      },
+      {
+        "artifact_id": "art_c9e743c327f32fc0ce0295e756e8210249a668f191d68ae84a589d4716accb57",
+        "relative_path": ".vite/renderer/main_window/assets/KaTeX_Size1-Regular-mCD8mA8B.woff2",
+        "sha256": "6b47c40166b6dbe21a5dfca7718413f2147fd2399be1ba605d8ad39cedf25dfe",
+        "bytes_written": 5468,
+        "created": true
+      },
+      {
+        "artifact_id": "art_cd5ed7eac65be9f103909815882b885824ee7e78cdaa356d174e6670ba75dcd1",
+        "relative_path": ".vite/renderer/main_window/assets/KaTeX_Size2-Regular-B7gKUWhC.ttf",
+        "sha256": "a6b2099fb555c60e3a0db3a08842ebf1d732c6eb4e4bf44913613bed4fc4e39b",
+        "bytes_written": 11508,
+        "created": true
+      },
+      {
+        "artifact_id": "art_716d570ab8832c63d39b4c7505da5bc005b6d8e00282cf8e54db9c8227f13650",
+        "relative_path": ".vite/renderer/main_window/assets/KaTeX_Size2-Regular-Dy4dx90m.woff2",
+        "sha256": "d04c54219f9eaec6d4d4fd42dfb28785975a4794d6b2fc71e566b9cd6db842dd",
+        "bytes_written": 5208,
+        "created": true
+      },
+      {
+        "artifact_id": "art_672a6483b79d3cc49b652aab4fc9334e8cde4be7cf26b1a9162b6d2d5e57404b",
+        "relative_path": ".vite/renderer/main_window/assets/KaTeX_Size2-Regular-oD1tc_U0.woff",
+        "sha256": "2014c523c3210bcc166648c4d4cc57f05b747df07a24277bf71c51e67dc79e3d",
+        "bytes_written": 6188,
+        "created": true
+      },
+      {
+        "artifact_id": "art_582dd37e677dfd5fd09ee4d4f706eff2ff69919ea638667bb735816137c7c4a1",
+        "relative_path": ".vite/renderer/main_window/assets/KaTeX_Size3-Regular-CTq5MqoE.woff",
+        "sha256": "6ab6b62e9b62dae2c00dd90f791bd10950be0ecc3490d7d6045f51c2e8fe0949",
+        "bytes_written": 4420,
+        "created": true
+      },
+      {
+        "artifact_id": "art_40a0e3172770865be961e9c2ee7a6296af33c12f9181147584e9d28f0d7fd8e2",
+        "relative_path": ".vite/renderer/main_window/assets/KaTeX_Size3-Regular-DgpXs0kz.ttf",
+        "sha256": "500e04d54f0d51666332c9d2089aa803be22aa878eca539e59fa53c6e522b082",
+        "bytes_written": 7588,
+        "created": true
+      },
+      {
+        "artifact_id": "art_d49826085a935eeaeb6a08278bbe35ef36f1ac9ce50585bd08bb16016a56dc4f",
+        "relative_path": ".vite/renderer/main_window/assets/KaTeX_Size4-Regular-BF-4gkZK.woff",
+        "sha256": "99f9c6750b489c9462bf04900bd3f939df9b829339daaaaa99ef5495cdddea58",
+        "bytes_written": 5980,
+        "created": true
+      },
+      {
+        "artifact_id": "art_9bc5918181e29824a32b8bbed3da3064a906a8da61d1ea8a5a682d20a1355550",
+        "relative_path": ".vite/renderer/main_window/assets/KaTeX_Size4-Regular-DWFBv043.ttf",
+        "sha256": "c647367d1dd4e162468717d020e1fc0f1dc5c26ebfdffbe55261713bf88c5877",
+        "bytes_written": 10364,
+        "created": true
+      },
+      {
+        "artifact_id": "art_40b398cf2bc729e55f2162f76869d48864c97593828dc35267f6cd19bbf5a1bc",
+        "relative_path": ".vite/renderer/main_window/assets/KaTeX_Size4-Regular-Dl5lxZxV.woff2",
+        "sha256": "a4af7d414440a1c1790825cfb700cf9cf43b0f2c4b04f0ebc523011ad9853ec0",
+        "bytes_written": 4928,
+        "created": true
+      },
+      {
+        "artifact_id": "art_8dba7137b092db3fddc89a039f366bc33ee5f2099972aa713f007e2cad069bbf",
+        "relative_path": ".vite/renderer/main_window/assets/KaTeX_Typewriter-Regular-C0xS9mPB.woff",
+        "sha256": "e14fed02b1aba7ce9f5afd5844b5d0321b22351febc720e0de8b8723527609f7",
+        "bytes_written": 16028,
+        "created": true
+      },
+      {
+        "artifact_id": "art_02d2464ece24f909c7b07579b2ba1566d1b39e3e07b4816b0e67b3696c0ecb11",
+        "relative_path": ".vite/renderer/main_window/assets/KaTeX_Typewriter-Regular-CO6r4hn1.woff2",
+        "sha256": "71d517d67827787cfabdf186914cc3358eda539e37931941f2b2fd4a21f68c0b",
+        "bytes_written": 13568,
+        "created": true
+      },
+      {
+        "artifact_id": "art_0f315e51b0496f54c6469efae3b75b891e9775d6970109db4b4b262a759b4f45",
+        "relative_path": ".vite/renderer/main_window/assets/KaTeX_Typewriter-Regular-D3Ib7_Hf.ttf",
+        "sha256": "f01f3e87d9c6a61c0c081ceb577abd864eb00a612f7ac1620dd6915fad2ef5aa",
+        "bytes_written": 27556,
+        "created": true
+      },
+      {
+        "artifact_id": "art_d22771e7e78560da76b2181dac54520f1e4d06802eaf3601e796eb10adb9ecb1",
+        "relative_path": ".vite/renderer/main_window/assets/LaBelleAurore-Regular-oWozChqJ.ttf",
+        "sha256": "ed67462999e05f0cdac92f686374661e4d68c56fdcd7d05725c6df7b41eabd2a",
+        "bytes_written": 59364,
+        "created": true
+      },
+      {
+        "artifact_id": "art_df87c7576b478b344029b178d831eeb76898c2f539410acfa9b43f32e8106d4c",
+        "relative_path": ".vite/renderer/main_window/assets/LuxuriousScript-Regular-CEIfQz-0.ttf",
+        "sha256": "0055cb651809df114cdce97cc652f2569926d2da0d35ee5eb8eeab91ae4c42aa",
+        "bytes_written": 191040,
+        "created": true
+      },
+      {
+        "artifact_id": "art_9b8da69fb60f32f78e7bf42f2dae86ac8944f58d5c8896e938c5f88350d461dc",
+        "relative_path": ".vite/renderer/main_window/assets/NotoSerifJP-Bold-CaPLckuv.woff2",
+        "sha256": "b8ffa33f6003ba2ed06c16da77fce4ab2af6c16c5036a747c63bd0a03ead6d92",
+        "bytes_written": 3040716,
+        "created": true
+      },
+      {
+        "artifact_id": "art_9ddb56d1acc15899bb77034c40961af987622b85453dc3f44b208ab0d980780d",
+        "relative_path": ".vite/renderer/main_window/assets/NotoSerifJP-Light-DIwOlsNn.woff2",
+        "sha256": "e9f28cc67b6d7180eee3e3dd9396f04ea30cd8a25024760591632c257fbadddd",
+        "bytes_written": 2917372,
+        "created": true
+      },
+      {
+        "artifact_id": "art_58867b61e4ce95022ccbe77016066fa4da113c183a5a9ffa1d248ccec8214b03",
+        "relative_path": ".vite/renderer/main_window/assets/NotoSerifJP-Medium-CnpcfXRQ.woff2",
+        "sha256": "fcd80392b101a5e75fde14f17ff4d3e697f719c532a750efda6dfbccf0b20f9d",
+        "bytes_written": 2997836,
+        "created": true
+      },
+      {
+        "artifact_id": "art_ff5ae27881471a58578100774b036a4e57d270904875ce5cc4e2e9d62bb79bbb",
+        "relative_path": ".vite/renderer/main_window/assets/NotoSerifJP-Regular-tLV3Zl9a.woff2",
+        "sha256": "efc977800dcc12992bd0823a3891f0792b0712c81cf02beac3a4c18e5a63da0f",
+        "bytes_written": 2960076,
+        "created": true
+      },
+      {
+        "artifact_id": "art_a53372e7eb7955a3ee458851bcd7b5b08a11b7d9b5820960f54a546362ea6af0",
+        "relative_path": ".vite/renderer/main_window/assets/NotoSerifJP-SemiBold-2nhMGxtx.woff2",
+        "sha256": "94bbe70515745a5141cd8a1edb61fc98a5a8f2c40ded2815127152183cf263bf",
+        "bytes_written": 2991944,
+        "created": true
+      },
+      {
+        "artifact_id": "art_1900b880fb8f4a2d77663365160797a2d24737dc580734f582fec37437835721",
+        "relative_path": ".vite/renderer/main_window/assets/NotoSerifKR-Bold-DuF4kUe2.woff2",
+        "sha256": "2a6fcfc0d6d8932edb3faffdaccbd29f90d9d8895b71523f5acd8719428ca024",
+        "bytes_written": 3220232,
+        "created": true
+      },
+      {
+        "artifact_id": "art_f4a26c9537f854cff7b70bde66e64fd2d6b2c34cdc2afda9e3c87a45a8828ca3",
+        "relative_path": ".vite/renderer/main_window/assets/NotoSerifKR-Light-BpO9r9_X.woff2",
+        "sha256": "ec66a4fbd1b87d5e63d60aec4abed757a20887a1726bf9d9edf0a68f6e0edad4",
+        "bytes_written": 3051576,
+        "created": true
+      },
+      {
+        "artifact_id": "art_369f38be613deb580cd4d880beedda6a94f3d40ff39f8fb980880e9d4c747317",
+        "relative_path": ".vite/renderer/main_window/assets/NotoSerifKR-Medium-D2liWTEY.woff2",
+        "sha256": "fa1591262a85810691ad42b268671e1ad5baa1ddf216b934b33d0780f845f6c1",
+        "bytes_written": 3174472,
+        "created": true
+      },
+      {
+        "artifact_id": "art_e1a8fa44ed25e1168dd4a69352f2b3f5ed056350406740042f57c5f5b9b33490",
+        "relative_path": ".vite/renderer/main_window/assets/NotoSerifKR-Regular-BRfohNVC.woff2",
+        "sha256": "2fa70acfb70306b6a52ec5392bd194c561d0da276cf30d233d0530ef1e97565c",
+        "bytes_written": 3094516,
+        "created": true
+      },
+      {
+        "artifact_id": "art_b3acbddcf9285d7e188ba91ea6aefe3d7b5c440a6a29c03cc9b37b8053c7c0f8",
+        "relative_path": ".vite/renderer/main_window/assets/NotoSerifKR-SemiBold-gShozhWa.woff2",
+        "sha256": "4dc403c935e85da07d305e1a4828680b144f940d59235001d0d457660b9041ab",
+        "bytes_written": 3105272,
+        "created": true
+      },
+      {
+        "artifact_id": "art_1c772ab820a6c740476812658b0c39d6a93fde843d6fa077b2ee3cd27a9d1ea0",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardStdVariable.subset.0-DQrLlKYl.woff2",
+        "sha256": "08e95034a6a801e68db380a488523ab5a900d1cb3662dd8ed5cf22c04113f4ba",
+        "bytes_written": 26744,
+        "created": true
+      },
+      {
+        "artifact_id": "art_b829410a9ba9b8bf741913166f143d30f7df9897e8ad826ad03de242cb68598d",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardStdVariable.subset.1-ClGTr1Gs.woff2",
+        "sha256": "6a6ee2332a57c6e3d9915c35b47c9852f0090fdd891c6de7111ddf9ad61d1afe",
+        "bytes_written": 17996,
+        "created": true
+      },
+      {
+        "artifact_id": "art_a4a6343935e56b68d59d91bfa2c3578ea682eeaadee771ecaa0e49b9a1b1b0db",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardStdVariable.subset.2-NQYfr58S.woff2",
+        "sha256": "8e3b8c757223e2313b0333d9e314e4583019b247e4ce91e8828e022e89cf0fe5",
+        "bytes_written": 14356,
+        "created": true
+      },
+      {
+        "artifact_id": "art_cdbc9126a89efb8b0032d9c6b340df6486326495d319f87a4f1a233bff41a81f",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardStdVariable.subset.3-DUoqHKe9.woff2",
+        "sha256": "d58e61646d09a80c68a4d778cc89d1866b0f6d91a549045dfcbc7b3bc2856886",
+        "bytes_written": 22760,
+        "created": true
+      },
+      {
+        "artifact_id": "art_e77aaf755cb5c35400e1f8fc3e266fa033c270ac7be44aef9c3c61c4e68df6da",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardStdVariable.subset.4-Dw9z8jzY.woff2",
+        "sha256": "e41f1c228fdf95c5d06be677adaa53fea4f8b93c9570564eacbb977cbd8989ae",
+        "bytes_written": 11480,
+        "created": true
+      },
+      {
+        "artifact_id": "art_c5d94de37a9e958598a1be81b49dfd49075185aa4e3792d507cc37e0dbf73aa3",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardStdVariable.subset.5-sKUrWbvR.woff2",
+        "sha256": "0fea021b39fdaa8c2e65bc96d2191f243afd1e5b6637192f384e77250ca7294b",
+        "bytes_written": 64572,
+        "created": true
+      },
+      {
+        "artifact_id": "art_89b85b1ef353315f4b4d61b765a7cfd2594817a67397118b488710d54e74b243",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardStdVariable.subset.6-Dvapiq1C.woff2",
+        "sha256": "3d3d478b0e89198fb811def235b4cf762d58277f22150f09aa3ef7f31d4a2e34",
+        "bytes_written": 56480,
+        "created": true
+      },
+      {
+        "artifact_id": "art_c89dd0dc70a16bcfbaf9b4a7565651352ad3d98b73c0e6cd39a0904a86217d5c",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardVariable.subset.0-DBymmO4B.woff2",
+        "sha256": "0d96cb2ffa6d2d968c632dbec215619cd91a322f50a02f00d2c9d40acba716b8",
+        "bytes_written": 34472,
+        "created": true
+      },
+      {
+        "artifact_id": "art_7754b2c0ae3ddddfc1e76cbe96063245e984c3b46e6108432992afbaeac636f4",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardVariable.subset.1-Df1eWPuA.woff2",
+        "sha256": "023bee252ac2e08c1c6f5dc411f6a37af53bdfed3cf43cfa1c5d7a7a06895782",
+        "bytes_written": 32104,
+        "created": true
+      },
+      {
+        "artifact_id": "art_58c20ba43bab48ae2934a2652e54acf56a259bbfc3b72cc6d43b94b0e332afe9",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardVariable.subset.10-olHpwlft.woff2",
+        "sha256": "281811bc00248ac86ab3813afa6b509ee406a6015972aed624e9ff9ca8d2e704",
+        "bytes_written": 32936,
+        "created": true
+      },
+      {
+        "artifact_id": "art_494e00a2f974b27b68cc2eff15252cc98d7d95af9b0c871b3fbb09df22ea8066",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardVariable.subset.11-SCRYY2x-.woff2",
+        "sha256": "8901a0732b2f3c718d4ac9bbef9d7a94a6f347eaceccb7ede2de9d6569bd462d",
+        "bytes_written": 37472,
+        "created": true
+      },
+      {
+        "artifact_id": "art_6ec3382e085bcd1328d9fdd43bbd727fde3b9831a0e2b4e83e04f660052808c4",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardVariable.subset.12-kYOUplPU.woff2",
+        "sha256": "c7dbb9c915c4efb13e9382c7743218441b63b8f457152d44f9c3a861fb1c24b6",
+        "bytes_written": 37836,
+        "created": true
+      },
+      {
+        "artifact_id": "art_eb41bb62c33f3d24f4f5352cd936974aaa51162f0f9ca19112cb93cbaf4a2379",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardVariable.subset.13-CGCgdoAA.woff2",
+        "sha256": "2e371d08203700e2e778e206aa31a370790868db60d588539e40f2350598e7f3",
+        "bytes_written": 35560,
+        "created": true
+      },
+      {
+        "artifact_id": "art_73c1708aec913c554efeb0feb3105441b480408b5e101ae67fd41d1e812b8e47",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardVariable.subset.14-Ba5xCOFX.woff2",
+        "sha256": "425628b3a44360a9460352736f3f4a7ff10fe43a1562155318550124353f069c",
+        "bytes_written": 36496,
+        "created": true
+      },
+      {
+        "artifact_id": "art_853a267d17665cd882438efa091e7fc1a45d590f5b5c23fafdf647dfaf55e6ef",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardVariable.subset.15-CtjoSNGt.woff2",
+        "sha256": "550a41e2e3d2fdc0571edd55c3d16128dae6e9d7d85dff6d928fc8b1c824dd85",
+        "bytes_written": 35636,
+        "created": true
+      },
+      {
+        "artifact_id": "art_707971c483167ced441c29f900b9b709eee2f69d361b723dadac3e19f5bc0eec",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardVariable.subset.16-CkMCAkJ2.woff2",
+        "sha256": "7620da8686c2a51697dafef3effb6a093ad3eab771974ee1c35edd970b67640f",
+        "bytes_written": 37776,
+        "created": true
+      },
+      {
+        "artifact_id": "art_39225966d4b5ec2c4f55a078a25c0cf9c752c826051a93e3bc4ec3880e079b5a",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardVariable.subset.17-BUuQ-7iu.woff2",
+        "sha256": "10c3aeabc4db1860f92e287ec578054411e4c228de1c00874fc297061675869c",
+        "bytes_written": 34880,
+        "created": true
+      },
+      {
+        "artifact_id": "art_bfc3e2f8220bf2b1cff67b2faa70857165255e61001666b8264d75748d71b04f",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardVariable.subset.18-Cuc2CROK.woff2",
+        "sha256": "9755795cf5d47918abe2604498764f1e72335b80dd5cfced33e78b7c3ff4de14",
+        "bytes_written": 41672,
+        "created": true
+      },
+      {
+        "artifact_id": "art_4dd2107fc99a3a46e350b0369e5ce11dc7c575660757e7875dc6095cfc25ac4f",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardVariable.subset.19-NaXQAOA4.woff2",
+        "sha256": "ad984900ae0c24913a636f3b753f52a8d3332825d8621203587b568342430164",
+        "bytes_written": 42380,
+        "created": true
+      },
+      {
+        "artifact_id": "art_2b5b657f078415286ea8a2940aa511bc5d8bcddf0e329c54ed5a0e41a623db79",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardVariable.subset.2-DjhJae3Q.woff2",
+        "sha256": "78d03dbf2038627dc0c89ac9bc1bba2d50d0f52c963aeab4f5934e26e15f2a3b",
+        "bytes_written": 44152,
+        "created": true
+      },
+      {
+        "artifact_id": "art_52c876173efcb239c7f4a9aaa83c486d398dcc6d7098b0cdc1285332b5c357d8",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardVariable.subset.20-Bu3oN0Ww.woff2",
+        "sha256": "d774bbde9c16080526c62d99cf80f02525bc92d8db780b757ae3b4be344583a3",
+        "bytes_written": 36084,
+        "created": true
+      },
+      {
+        "artifact_id": "art_4e4e0b432a8852bff2fdb560cc6fe2768f29746d58927979c7ffcc838eea59f8",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardVariable.subset.21-Duqz9oY_.woff2",
+        "sha256": "d85c8fc88a73febc73c06650d68397e3f2d9baa23c3788d068bd6d6dbbb23c41",
+        "bytes_written": 37148,
+        "created": true
+      },
+      {
+        "artifact_id": "art_4cbbf0354b4c94083e35419192f04088597cf71d751c5688e9f7dd71e7952bd1",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardVariable.subset.22-DUlJRsiO.woff2",
+        "sha256": "a1409c8295b32eb877565c2de9683c70c6301e318e5072ac2f1210b828258b8e",
+        "bytes_written": 38732,
+        "created": true
+      },
+      {
+        "artifact_id": "art_0b2b59ddae8d10151bda229c1466969ecca00beae8f862d715ec65d3ddb4adb4",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardVariable.subset.23-B7iVpuPK.woff2",
+        "sha256": "e585fc8be8da57e8626f6b685e8628aa67393a1f440482a29d4d8cc385c4f3a1",
+        "bytes_written": 40164,
+        "created": true
+      },
+      {
+        "artifact_id": "art_cbf9b4b98349dffc4bd675c6d16b4c6a2d6b3a59c3416fdf57d1fe093c2946ed",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardVariable.subset.24-CUdhlepy.woff2",
+        "sha256": "5653d09c36f1423b72d7952005c309d46c23005a578b189ff0bf251326a76f00",
+        "bytes_written": 32188,
+        "created": true
+      },
+      {
+        "artifact_id": "art_885491d146d13db160d640dd8a59c542f93e13c54fb9083c8201d40b0fa67c9b",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardVariable.subset.25-BFLRwBA-.woff2",
+        "sha256": "f582bcea14335126cb839a7835bf5e56533f65c01740257c2ccd149fe09e6aa7",
+        "bytes_written": 42160,
+        "created": true
+      },
+      {
+        "artifact_id": "art_c13d786af20f19d7a93999396fb798ea1121cb105c00360236d1f5a72d350071",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardVariable.subset.26-CG6A2xeG.woff2",
+        "sha256": "57d0c6f9bcd45658484f6839537464b06b4753d48604729dca3629c5ad999c72",
+        "bytes_written": 40328,
+        "created": true
+      },
+      {
+        "artifact_id": "art_d3dfd377a39ebfe4b9676b15edde816125e4c74f37264172ba56302d61a86c60",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardVariable.subset.27-tfu2OtlH.woff2",
+        "sha256": "b77c2f072101917f399b5b0ca7a455a374d3b0306cc31a6b690a89df99e821ef",
+        "bytes_written": 35336,
+        "created": true
+      },
+      {
+        "artifact_id": "art_97da3327a5ac40aca0a9333cb95f619fcb9e31bb86be7326d1afadda1e49607a",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardVariable.subset.28-ayXu_WbT.woff2",
+        "sha256": "41db746c3799870896ab0f90beb09e5f99bd00ba9f40faff253273176d76c3c5",
+        "bytes_written": 38516,
+        "created": true
+      },
+      {
+        "artifact_id": "art_57306ed24a2ac2c89a738de12b5949620ce711aedb32560d595ed3cbf083c7f8",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardVariable.subset.29-CR5bi5eY.woff2",
+        "sha256": "47507c0acf4bf7061ea375356ff12e838724b92cac021c68a1996ce5321ab1c5",
+        "bytes_written": 39304,
+        "created": true
+      },
+      {
+        "artifact_id": "art_2da71f0119f55c4b2c3b81e63ba639bf3ca81e575ac83bfcae96fe5ab148b1ea",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardVariable.subset.3-BE0AXhA8.woff2",
+        "sha256": "c2e05178d09fdd8cb031db110c24beae2207e307dd70ee5fb02b72836b87b1b2",
+        "bytes_written": 40744,
+        "created": true
+      },
+      {
+        "artifact_id": "art_12d9b8ac33a71f9ec4105d1dad8618a6cc38706a7bd751d11ba8328a61e5b183",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardVariable.subset.30-DynRK-PH.woff2",
+        "sha256": "42a1a0395ba2df0b70e66649ac00944f595bff89c1e44b1c465806141a58b749",
+        "bytes_written": 38356,
+        "created": true
+      },
+      {
+        "artifact_id": "art_92e4f719f4e55f61bfe2923a9a745f1f79dc23498d02e854b5254f9f6f43fede",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardVariable.subset.31-DbOLS9Yx.woff2",
+        "sha256": "0d9b9d035886a3933275d55ac23ffa78a99274598f06b1859a5a748bee5ad0e5",
+        "bytes_written": 41900,
+        "created": true
+      },
+      {
+        "artifact_id": "art_ec736af11b8006757af181c177bd0a24ca4e151253d29aa449beb26af9031385",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardVariable.subset.32-pVg-8iLH.woff2",
+        "sha256": "f046d54e8e48653ac5ad2067761f3207c700a07c0999582ca3acc234297c2b94",
+        "bytes_written": 40212,
+        "created": true
+      },
+      {
+        "artifact_id": "art_b4b606f175703713a3390f2f1f0cccfe948052a88d957aa16f35489b2fa45254",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardVariable.subset.33-D7_6bc74.woff2",
+        "sha256": "69876fa6237150ddaf23134595f2dee7ba9b710d95c959c47f27bcf66a69e495",
+        "bytes_written": 34736,
+        "created": true
+      },
+      {
+        "artifact_id": "art_775e9a9ff60ce77bfb3762a2b94de3c1e447c34ed5d218d1c28188213e61f06d",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardVariable.subset.34-DWJoatV-.woff2",
+        "sha256": "d70e089067bf83d699884f6215454cd0ec26c30e2f6046c95845c9f3aea5becb",
+        "bytes_written": 34696,
+        "created": true
+      },
+      {
+        "artifact_id": "art_5121a1ca5321a5db1badfa40283d2244e4797fc292a18d478e4b31cde07e4f4f",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardVariable.subset.35-B49kC3R5.woff2",
+        "sha256": "ac6cafa88d6a965c02efd2f8d253c91e0641767af2d233bfce14dd2555c44bd5",
+        "bytes_written": 35420,
+        "created": true
+      },
+      {
+        "artifact_id": "art_999e8a81adeb246d7e7adf41752ce62c162547f83d68e0b3efc857bee23b7133",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardVariable.subset.36-BKYihMGC.woff2",
+        "sha256": "180fe99faec12ee896f3a98f34fd7ce3bcabcb0ba8d280481db460566d60fb39",
+        "bytes_written": 34824,
+        "created": true
+      },
+      {
+        "artifact_id": "art_98acdac99bf4908225879f8d56c6a07fde7abf8b85e019a89b8907b8e372e836",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardVariable.subset.37-DsHz0BN1.woff2",
+        "sha256": "4deda59cd9a592102dd9a03d47046cfe84bfc87d280c55b5e504b6a9c4b6a53b",
+        "bytes_written": 27724,
+        "created": true
+      },
+      {
+        "artifact_id": "art_6a89db3cbc36f9386a7a121c6ca3fb8f4a85b757429a83b4e326714e420c8ec2",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardVariable.subset.38-BvP4j5Ms.woff2",
+        "sha256": "8fc7ffd6dc8731e3485d52c3e85f43445a6c5685efed0acf2338f9cb41966930",
+        "bytes_written": 34916,
+        "created": true
+      },
+      {
+        "artifact_id": "art_0943ca60441c4b559c027cdebcd45e857c674c88c753f4866f7bba406f676a37",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardVariable.subset.39-DquVGmvP.woff2",
+        "sha256": "5c77ee58d41133151847380bdfd62465a94f08c362fbf981a756fe13431a8143",
+        "bytes_written": 34172,
+        "created": true
+      },
+      {
+        "artifact_id": "art_4b17f614df72561ad68d3a9234bdd322be02b49a767cc38bd14e1d0d01af11be",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardVariable.subset.4-DqlaZNxt.woff2",
+        "sha256": "25e48a5d64ef160044bf75a620e94f221d0cc17565b5fae863ef12eafa057198",
+        "bytes_written": 35272,
+        "created": true
+      },
+      {
+        "artifact_id": "art_5760297f596d543a1e91064b5b18f6046793e90bfe4b6cc8d9f9d7bb6638912d",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardVariable.subset.40-Fw7itPml.woff2",
+        "sha256": "c435deee7d5c6b2148d4568f7c40a0420119629f2cf1f1aaf49346d987194e43",
+        "bytes_written": 29660,
+        "created": true
+      },
+      {
+        "artifact_id": "art_c2d3d3352ec39a9f24bc5968257e8cdfaee2341578e36abdf457da252b87d6d7",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardVariable.subset.41-XlztDHAi.woff2",
+        "sha256": "2964ef3face1df163977ed9d4f1f1dbb8debc5b1b4a724c00b3e3928b2bfec60",
+        "bytes_written": 33252,
+        "created": true
+      },
+      {
+        "artifact_id": "art_974a411b98042a93b0dfcfd5eb4555659d6a9a672368786479483557b594671a",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardVariable.subset.42--Y5RIIut.woff2",
+        "sha256": "2818aff22fd0c5297fccb05c2e72406c7279012f7c2bf50ef00528962fe993b9",
+        "bytes_written": 34644,
+        "created": true
+      },
+      {
+        "artifact_id": "art_448faad7f5c3125bdf72e7b92c1ab732e47d57c6b15e2f335835b1b00d058fe4",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardVariable.subset.43-Db5fTH1O.woff2",
+        "sha256": "b45f3b1dd2751c8b40904ae2f9f4f0c1aac645b9182242a069441f21b2b78905",
+        "bytes_written": 30256,
+        "created": true
+      },
+      {
+        "artifact_id": "art_ebbc2d8ddf1ffe4ea4c16e38f892fb1628e036cfb8b90ff9e9dd03be570352b7",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardVariable.subset.44-CN7e2rUN.woff2",
+        "sha256": "2be75edd91e3b2784bdca2034378e184ba88c95a787761bc83b32c9d8e0ceb96",
+        "bytes_written": 32128,
+        "created": true
+      },
+      {
+        "artifact_id": "art_e1db74cb37477e8554956ba278f12c1128b771f457b8bc55988eb47fbacd7870",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardVariable.subset.45-gpjdlHT4.woff2",
+        "sha256": "6f13e80c512a6a9850eba6e8c3a0fe8c948f26f9419894423c37efdf1d68b8a2",
+        "bytes_written": 34744,
+        "created": true
+      },
+      {
+        "artifact_id": "art_158ef551c716c1a8953f7230184d91c23ce4813fbe51fe6096e14069236d66ce",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardVariable.subset.46-D_4KDrZa.woff2",
+        "sha256": "818b9daf7753a0ba1a3111a3c6419124ecc01f5750a41167f99a113edad825f7",
+        "bytes_written": 36524,
+        "created": true
+      },
+      {
+        "artifact_id": "art_7de8be5ce2f01494d592804f9548eaf197a806d2195dfb39d2e06f1cbcc79003",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardVariable.subset.47-zZDE_Ktw.woff2",
+        "sha256": "808925e84ffa0192be378e38b4c3d13ad41a79e889387db93ad242ce60ef8f5b",
+        "bytes_written": 35952,
+        "created": true
+      },
+      {
+        "artifact_id": "art_b015ea8d6eb04fbabc8d3b371891624de614c10432a65556c005db5679200c8b",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardVariable.subset.48-BuB0z6nF.woff2",
+        "sha256": "f168bda9633ccb68e71815f0667473b797e38d09275484d6b3b6fdd829135a11",
+        "bytes_written": 38064,
+        "created": true
+      },
+      {
+        "artifact_id": "art_060165fa728c172728d2813344e0dffc9d613118a21e0e32db8dbb7b99dc0d5a",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardVariable.subset.49-B4GR4aDm.woff2",
+        "sha256": "b941c617fc3d6b8b178123d94d4f8212755dc60831b8251fdd797d25d8ce46c6",
+        "bytes_written": 36364,
+        "created": true
+      },
+      {
+        "artifact_id": "art_cc7502a8a1af72199833880c1e41927e975137df4dc2b509258ab310eb869bea",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardVariable.subset.5-BdiVBSJ1.woff2",
+        "sha256": "2aa75f816b06e48d3c240651a4f1c9993ec3c2281470a6ad317b32761dc253ab",
+        "bytes_written": 33696,
+        "created": true
+      },
+      {
+        "artifact_id": "art_763600c7dd618455b3886c8d5142eb07dc41f9c3bfb7fe14d2df80113b38ed7a",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardVariable.subset.50-CCPjv-S3.woff2",
+        "sha256": "ed0af5ee07e5d0702d4a023f2db722be9614105ec860ef94baa523d3b0f517ab",
+        "bytes_written": 33276,
+        "created": true
+      },
+      {
+        "artifact_id": "art_e0c9b4f86642c519527354c4e94bde27cbabf1d1dc96e8b99cfd95962ea29c15",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardVariable.subset.51-D037s8DK.woff2",
+        "sha256": "78c9967150c2200d77bf2a452e93eaa155cd5b60a2c1784b84964c90da3badaa",
+        "bytes_written": 35980,
+        "created": true
+      },
+      {
+        "artifact_id": "art_cdd7ecd80dc6cb0258a8df5ddb9de4b28e6d59a1a09b17af6fffb3f0a57abf2e",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardVariable.subset.52-CytAeqDR.woff2",
+        "sha256": "866d55cf93b9952cfe81550a054439767a165c4e1b40bc9a53a6d8903fa8a1af",
+        "bytes_written": 34484,
+        "created": true
+      },
+      {
+        "artifact_id": "art_004de1e7123490fa14ab5bbd429917870dc275e49f118f981520b4e4c10b1828",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardVariable.subset.53-DNbSP6dO.woff2",
+        "sha256": "ac5c53b71e279f440a815fff5e0f449196ebdae8e7bbed4360707f5e3a3cdd8b",
+        "bytes_written": 34696,
+        "created": true
+      },
+      {
+        "artifact_id": "art_5d1a13c2069c58217dc55e7c6794cafcf09b27fe08897cf8cac4bd7f0881d416",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardVariable.subset.54-Bp9ZmfxU.woff2",
+        "sha256": "d23604234b5dddc727796e9f70f9825bfe0bb09cd173fe17cf4186e449f82109",
+        "bytes_written": 33424,
+        "created": true
+      },
+      {
+        "artifact_id": "art_0fcc5cac28698dcfeb6861d0298d7f8f23c378edacd198e6108b11312a7a2b01",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardVariable.subset.55-DYz2Mf0h.woff2",
+        "sha256": "f871c8527c393c2309d9eead66e98f9877d745dbd0a2bd6309bf76494684e259",
+        "bytes_written": 34260,
+        "created": true
+      },
+      {
+        "artifact_id": "art_8214d3248f186e581cdff8d7e21610dc62a28b5c9f3efa1283bd7245cefd0207",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardVariable.subset.56-BAkgbv-A.woff2",
+        "sha256": "39dd7bf064c03e4ec2fc088a44e3a7018299f542cd35bad6d501a230202175f5",
+        "bytes_written": 35208,
+        "created": true
+      },
+      {
+        "artifact_id": "art_5491d50e21686deec834b59018dab1af95f24a1b4999f41d741d725f31a44125",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardVariable.subset.57-D-64mP41.woff2",
+        "sha256": "64303665c1980ca054d08368bdec4cfd7d9cb7d47a5737e74b35205931c41568",
+        "bytes_written": 36056,
+        "created": true
+      },
+      {
+        "artifact_id": "art_f7140911db4003f98e05c025ac8e2184fb1d4e8867838501643c88750ba3ce4b",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardVariable.subset.58-pIRNvojP.woff2",
+        "sha256": "738a7c07511f6d29f1981e78babbcf2d13d10c0231c97a5a91a95c7c200eae3d",
+        "bytes_written": 41952,
+        "created": true
+      },
+      {
+        "artifact_id": "art_daf02755d1d424418bda8f057f91b5edb666426c3bec0798f90ab106499a6988",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardVariable.subset.59-DIgbBA0U.woff2",
+        "sha256": "084e5502ccd3f0d615147438f5fe20056f917219d62fa4613a695e7cc8e5eec6",
+        "bytes_written": 39140,
+        "created": true
+      },
+      {
+        "artifact_id": "art_48456ddd870ac60bed3e8b4218e4cbd9f06ed24d2c24a37aff0db3554ded0409",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardVariable.subset.6-CptQ4hS_.woff2",
+        "sha256": "878d9755f28812de4df2339ed51c1a738dbb1f0bf99264699feeeaaff81b4ef0",
+        "bytes_written": 34088,
+        "created": true
+      },
+      {
+        "artifact_id": "art_4b81052d500e1a216be95f62a64844e5abea7ae1eda0efbe51bff6480366906c",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardVariable.subset.60-BuEYVBMV.woff2",
+        "sha256": "e89a5f25f9643b334ddb93670712f4ae7e17676832d3253a44cbd3adea4ce6ec",
+        "bytes_written": 37636,
+        "created": true
+      },
+      {
+        "artifact_id": "art_d3aa34dd58af8ba9cf683e7a52d8fff9ba3477d6df78488b399544a2dc4432d9",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardVariable.subset.61-7EKbXz6c.woff2",
+        "sha256": "9d88e16e0c765636ec24e721aaaad9c797b4d3630c3f45531c78cae21dea9b87",
+        "bytes_written": 36056,
+        "created": true
+      },
+      {
+        "artifact_id": "art_c32e2e207dd9f904a7c3efde16ee3e8e3643254c2b1127d7d109ca2490939ab2",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardVariable.subset.62-3DYwe9Dd.woff2",
+        "sha256": "0445c46f03e8078c69abacb43a9406fe7401dad1a76d9b626304911d3ed36f4e",
+        "bytes_written": 35220,
+        "created": true
+      },
+      {
+        "artifact_id": "art_e8916e7add483ca993e899dbda1c82ee33ca8096d1bec527f8ef9e8c46c8d26b",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardVariable.subset.63-C2jwouMy.woff2",
+        "sha256": "ec0764d6b03af0ec75856ce523ba4f112451d0e1862ae5a106c67e7013ab3b5f",
+        "bytes_written": 28852,
+        "created": true
+      },
+      {
+        "artifact_id": "art_299c3b1bfff89853a869c8179a3c644f676e932e42dca07f104d131a88f79b1f",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardVariable.subset.64-BHrtkMJC.woff2",
+        "sha256": "34d93343f2ff628ed85eca88847a4186016583cc53639c990c289b342e653ddb",
+        "bytes_written": 8144,
+        "created": true
+      },
+      {
+        "artifact_id": "art_0aa8da511af3da5c84e9fed69e96bc8c18bc97fdee4dde6353b979e6162309fa",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardVariable.subset.65-BcMZAoU8.woff2",
+        "sha256": "9ef811aa5a867516322e712876783832289a538759f1552d3707588bcb2fa17b",
+        "bytes_written": 11036,
+        "created": true
+      },
+      {
+        "artifact_id": "art_20c4cf2dc3fff1b61980fbc281779ab73835346274c66e2453c2bfa29eb32b83",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardVariable.subset.66-Bbf5X2Mn.woff2",
+        "sha256": "6daaef98e3a3c0b512e9e00b2ea6dae0813e699257cda61bb2cc732a4b89aefb",
+        "bytes_written": 8132,
+        "created": true
+      },
+      {
+        "artifact_id": "art_d877a7eb1a0c8af54d5bff98aabe28998f2d34b5b24c99dca3aa8126ddec06c8",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardVariable.subset.67-Cy6VSm7L.woff2",
+        "sha256": "9b3e5bdad51aa76e38742252c1146b616af9e436927fb6b807949675b6a99028",
+        "bytes_written": 21784,
+        "created": true
+      },
+      {
+        "artifact_id": "art_82ba8932f3dea4a6a01ec8385a16a81a3685e6fd1166d8221ef99ccb5bce7efe",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardVariable.subset.68-DKXQXI0r.woff2",
+        "sha256": "3bfb77dc16a1b389c50e562db0a8f81779b012efef56544d4cfdff1dfcd70682",
+        "bytes_written": 16332,
+        "created": true
+      },
+      {
+        "artifact_id": "art_c673612f7c9b50b83c8880fd603d123d5245e8ab0f4f10dbe8008143e3be6257",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardVariable.subset.69-DAQtgKxx.woff2",
+        "sha256": "7c9a1fbd6cbb908938ef8b41fa518a5e219b86013fa0eb0d337bb22a21bfdc2f",
+        "bytes_written": 34940,
+        "created": true
+      },
+      {
+        "artifact_id": "art_fb8ea4f803ba98cfc4569d7150bb5042c463a3ae2afdafb626f9e614e91b0c6b",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardVariable.subset.7-DFxHhUNr.woff2",
+        "sha256": "15440e4dbbdd06912af09d823acbbe0db4e295761ac1f1b282f5bc51364d7168",
+        "bytes_written": 31952,
+        "created": true
+      },
+      {
+        "artifact_id": "art_802403c9ef72ffc02b7b80d3ce06408db4ae253d84a95e9a92f7c61acf80aa8b",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardVariable.subset.70-BNACkOVY.woff2",
+        "sha256": "ede2a2dc29342b6157ed2d3025855809fb45498a2a7f8f2863ac39a8de92867b",
+        "bytes_written": 27004,
+        "created": true
+      },
+      {
+        "artifact_id": "art_07cda10b4a83382ace08a2ae262a0381fb32737e085820493b500b7cbf5150d6",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardVariable.subset.71-DQsi7phZ.woff2",
+        "sha256": "fec8f90e9531879dcf01c1e1eed2a15776f5300bcfa4eec9c925803467278a71",
+        "bytes_written": 28472,
+        "created": true
+      },
+      {
+        "artifact_id": "art_46921544ac16c04f125a185d995f412735f3806e31aa7e5f0838d81a216b031a",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardVariable.subset.72-B6MaFL1Y.woff2",
+        "sha256": "82bc58c89076c53eee1eb5ff25f3801189e7440e0b97da9d60f6e53283501dc0",
+        "bytes_written": 19268,
+        "created": true
+      },
+      {
+        "artifact_id": "art_2f14bcbba9603bb7f798adfa3856ddf4aa588a15d689bd6f3d1fbb1ac6e6c170",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardVariable.subset.73-C6YiHv2H.woff2",
+        "sha256": "de30a4f8e865169254fbc0d52cae65fab384e2cdf0ed99b8a6f0a7d6bc7a811d",
+        "bytes_written": 18196,
+        "created": true
+      },
+      {
+        "artifact_id": "art_a6f54f0af4db9ad675a00847393a9edce880c19e355cf32bc9bc03e788a54aae",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardVariable.subset.74-CeUm33eY.woff2",
+        "sha256": "cf81febaee4a1ba586bb67d93a13a4d71eb6071c3c32b0e2e201c416aa30ba41",
+        "bytes_written": 22356,
+        "created": true
+      },
+      {
+        "artifact_id": "art_e0a3c098b2c363bb5977c7cca30bf86256c05553669fbc12cb43142d498acf75",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardVariable.subset.75-Dv7whzOg.woff2",
+        "sha256": "0969dead588bbf3b924678f626c6f313040a57ab41f05cdde919b995297b38a3",
+        "bytes_written": 19916,
+        "created": true
+      },
+      {
+        "artifact_id": "art_6b4f9e893553e5daaf60eb4076f348214cbe2c74d40c635f1e03626c0b6da38a",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardVariable.subset.76-DRowT6R5.woff2",
+        "sha256": "13b4f69a0e12b12a75ea5a734044de71c95be250b63b45cd695212e492f78f1e",
+        "bytes_written": 24732,
+        "created": true
+      },
+      {
+        "artifact_id": "art_cb36ac6e128e94072f33ab3502baca9d7b2cb5c13585ebc34233e6228c1ef5c8",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardVariable.subset.77-BMUHfxF9.woff2",
+        "sha256": "267d649c7e742ca64b51ece3fb289419ad8c5c4cee760607e9c29f7fdc7a7876",
+        "bytes_written": 26000,
+        "created": true
+      },
+      {
+        "artifact_id": "art_b18024efb81ccbeb634ba69018c9a323d1e5580899d8e965dd0168087eebed3c",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardVariable.subset.78-ChV1fH5C.woff2",
+        "sha256": "a2f7348b60e619d924c9d6dd89eaa687a7c5c6b0af022e68c9f5fd7c46f2cacb",
+        "bytes_written": 26456,
+        "created": true
+      },
+      {
+        "artifact_id": "art_1ed603ebf8985313286e69180d91465eadd10811be16ea910751c814cb50e2aa",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardVariable.subset.79-DviL9-uG.woff2",
+        "sha256": "fc0f55c9333ed33d978dc760f28233d8d2b3a77d2691cfc83c60ed92144c5831",
+        "bytes_written": 26072,
+        "created": true
+      },
+      {
+        "artifact_id": "art_934dd8ab7e47d042c60caad4f3ace0fd4f51f6de09228d2cdd848696e9821618",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardVariable.subset.8-WQVeq_fH.woff2",
+        "sha256": "457592584e423ce903a0e57b84add472768cf0dd11ab873ddcb95183333e60ad",
+        "bytes_written": 36816,
+        "created": true
+      },
+      {
+        "artifact_id": "art_daecab818d91c49b5a9331b169523304d0d8cd2c6cb9849d85746be3eee9b7d9",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardVariable.subset.80-CH1bPKsD.woff2",
+        "sha256": "acffd9239a22d03ea2d485b45d8225ed49895ca50c8c7b80565303aec35cbe4e",
+        "bytes_written": 28716,
+        "created": true
+      },
+      {
+        "artifact_id": "art_6274c28a3130fbaa03301e667969cfd586ed106273a49b1de5fc9ea0a1871afe",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardVariable.subset.81-VMGg7efk.woff2",
+        "sha256": "1edaf477f9b65e6cc8519656c680ef278add1a62910ff926e5d9dd2966c5be78",
+        "bytes_written": 26228,
+        "created": true
+      },
+      {
+        "artifact_id": "art_01e1acf888b4c8df443da12122ff9cc1895ca5e4bb07761a931ab8479f50e703",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardVariable.subset.82-CwXqX6hF.woff2",
+        "sha256": "9df5e191dc33c2ae2b6ccce3c4f4d4b1093746c41f8cfc0245f23d4f87977f96",
+        "bytes_written": 26476,
+        "created": true
+      },
+      {
+        "artifact_id": "art_c2bebcbb63a5e9a4993a2fc08d89309adc20ace7d331805845c22d4e59412b7b",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardVariable.subset.83-DywfCLl6.woff2",
+        "sha256": "72960ab2a5cfd19383503319180210365675dd152375b2b83b1466518f6c6a69",
+        "bytes_written": 26864,
+        "created": true
+      },
+      {
+        "artifact_id": "art_6e8261bdb9b20b5ba981d5cd86cc7e829a70200b58d743eb848bc7ba3d752bc1",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardVariable.subset.84-DOAypv5o.woff2",
+        "sha256": "4d747b3809c50babed67cf1a3f3688794bde4d0f0fc84fd099a872c6d67276c3",
+        "bytes_written": 24380,
+        "created": true
+      },
+      {
+        "artifact_id": "art_f363f4ddfae0d0a2febaa741fb70b0641373585ddf1544be1cbb595a11df5bba",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardVariable.subset.85--9jt_HAk.woff2",
+        "sha256": "61e43bbf0dd73d5d4e49d653dab30dd365fde7be464b95db39c3886faa206169",
+        "bytes_written": 25064,
+        "created": true
+      },
+      {
+        "artifact_id": "art_f097ab29643372759b21cdbe035fa91b29fba0919ef57f19f8958b8854b0e106",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardVariable.subset.86-V8Ai4f3U.woff2",
+        "sha256": "02f1e04e949eec73ff9d079d2a9a6098eb11b48fe2e3ede25607c52a1c5a6ad2",
+        "bytes_written": 25576,
+        "created": true
+      },
+      {
+        "artifact_id": "art_78e697b336cf4aa3f6426202ef671b037fa245630a2a5cc5ff679d1ec4ff2a96",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardVariable.subset.87-CwfzGw7H.woff2",
+        "sha256": "2bb989c36751ec4bc30a1de4bf0562868465f8bb4618b4b89753172ba606a109",
+        "bytes_written": 24500,
+        "created": true
+      },
+      {
+        "artifact_id": "art_d66eaecf86d931a62cb8ee3f28229f4494a0fe8b7468e93cebd05920990e9957",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardVariable.subset.88-DJxS5LTL.woff2",
+        "sha256": "c9da489a53d1d7cfef653acf530194e435093d06603b2b6356d4ef4a0462df2b",
+        "bytes_written": 25512,
+        "created": true
+      },
+      {
+        "artifact_id": "art_ffba6deeca9cc065ee32f8e0588aadb683ff1aab89ace0490105057b27d88ea2",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardVariable.subset.89-9DQRdVIV.woff2",
+        "sha256": "0e548141aeb3bc2780633341c565cac4b9a0a33b240049d0e27b0293148a5621",
+        "bytes_written": 21704,
+        "created": true
+      },
+      {
+        "artifact_id": "art_6fa9c4688e7392b893939ff1fcc62a7be97e7e454cd43e9674d5bd5db355396e",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardVariable.subset.9-DuYjD9wG.woff2",
+        "sha256": "618c6c22aecdb5776b135cf1b012a1d34523c7afc8535b69d67d1db70dadb09a",
+        "bytes_written": 34164,
+        "created": true
+      },
+      {
+        "artifact_id": "art_43d39a233004c7d223626077dd3171a5883c19aece92dac914c2b66260db01e7",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardVariable.subset.90-CaygFE4l.woff2",
+        "sha256": "361c7e8fe277d65f0da34a846694248a152bf6c948a1e0923dd67f1d42a6214c",
+        "bytes_written": 20780,
+        "created": true
+      },
+      {
+        "artifact_id": "art_524fbdbc31dd3a637ace1a0b4ecd6c3b5f240d8544ea7b08cf9c003a36175094",
+        "relative_path": ".vite/renderer/main_window/assets/PretendardVariable.subset.91-_yN0_362.woff2",
+        "sha256": "b224c848eebfe73dbe2017e19295301d0f0c49b1ef5591da35d039c667d1707e",
+        "bytes_written": 37776,
+        "created": true
+      },
+      {
+        "artifact_id": "art_d6f5a23e32700a48f30d495da44e1e4eca8aa900d74721cd2a29f28ceb1e6dc5",
+        "relative_path": ".vite/renderer/main_window/assets/RecklessLandingEN-Bftq4V7T.woff2",
+        "sha256": "f424791e66ba0fbcb33ce65d476296dbf1b6d8e7289dbac0e3af0e597a3265b9",
+        "bytes_written": 189088,
+        "created": true
+      },
+      {
+        "artifact_id": "art_dd6758c0cb124200e8d3d912607cdc082cdf0ba523f1ba23b30a1e0c7e301083",
+        "relative_path": ".vite/renderer/main_window/assets/calendar-app-icons-BPywNlnP.png",
+        "sha256": "4b27ed750c15eb770bb1e6108f32acb53239e1988eda2d80f13100ce7f63b2b7",
+        "bytes_written": 12282,
+        "created": true
+      },
+      {
+        "artifact_id": "art_62246e139b9a759d7d4cf02628becaab58b69d055dc082aa463bcbd0828b39d1",
+        "relative_path": ".vite/renderer/main_window/assets/calendar-asset-2xpeuw97.png",
+        "sha256": "45506bc48bdccb4b62fe6f44458a922eb13f95a4da73636edaec61344eab38ed",
+        "bytes_written": 61419,
+        "created": true
+      },
+      {
+        "artifact_id": "art_7ae72d0868024db08f6a199875fd64ae5f85a542aea1e3eab62251ddc0c5a3d3",
+        "relative_path": ".vite/renderer/main_window/assets/common-BLBuIq7z.js",
+        "sha256": "874c206bf67a6cb6fc8b4aaca57b14a5dd94223051e60f197998c0c136f74292",
+        "bytes_written": 481779,
+        "created": true
+      },
+      {
+        "artifact_id": "art_7ddc5b58ca81d6bca3a0541adf00112b64e1877702d287dd9de5155d67d6f115",
+        "relative_path": ".vite/renderer/main_window/assets/common-BaNizp2g.js",
+        "sha256": "a27c7d734c2e624e48212317373cea6da5a79b0ba8c25f92da5ad92b9af91a1b",
+        "bytes_written": 385633,
+        "created": true
+      },
+      {
+        "artifact_id": "art_df7d257e6eba31e1441f7e919d57d74502c6b769360a1cb00e655942be6bbefc",
+        "relative_path": ".vite/renderer/main_window/assets/common-Ciwjkgzm.js",
+        "sha256": "a8a294555b2c9ec431b370ec43a09218da21d03e92d79128f390262fa55ad68e",
+        "bytes_written": 458714,
+        "created": true
+      },
+      {
+        "artifact_id": "art_90f01e2c4ca5e8228eb44b3568eaee22473503443fa2ede4c46ab3d2ad78c6ce",
+        "relative_path": ".vite/renderer/main_window/assets/confluence-Dei1HGh7.png",
+        "sha256": "71c8534e073b5bead9766f53055542e8d0e24be640b4a035c362ef287360156b",
+        "bytes_written": 38570,
+        "created": true
+      },
+      {
+        "artifact_id": "art_540045934f16bdcd2af307a041909fa3aa53e5726bd8db88592b834f349c9bac",
+        "relative_path": ".vite/renderer/main_window/assets/es-B_-YbVid.svg",
+        "sha256": "4af9f9302a99ddc7460186236e993defb644a0401a3d3d407c5858fe02fb5198",
+        "bytes_written": 93335,
+        "created": true
+      },
+      {
+        "artifact_id": "art_af8d8c8f155ad9630a7c40118b26e150c23f6f9b0c89541d33cf39d1a3af9996",
+        "relative_path": ".vite/renderer/main_window/assets/google-calendar-CZqFCKXc.png",
+        "sha256": "2eaf8c1f4ad8204244401b43d7e3d56358c77b0ff43176e7d03c4ad761c54e99",
+        "bytes_written": 96141,
+        "created": true
+      },
+      {
+        "artifact_id": "art_281577f8098ed88a3c3aa59ddc4a84f34ede064850af9d2533059173a4a02c0b",
+        "relative_path": ".vite/renderer/main_window/assets/hubspot-DY7vvKeB.png",
+        "sha256": "31ebbb7dda1e5dc49767ace7ed908301728fcb459576f5f618dde4c33823b145",
+        "bytes_written": 63053,
+        "created": true
+      },
+      {
+        "artifact_id": "art_72db9b5fea0b2cef6ceaf111f503f43064a2d15844baaa29014edac20dd0225e",
+        "relative_path": ".vite/renderer/main_window/assets/index-CXautzcB.js",
+        "sha256": "455bd6ef381652704cebcd65c58c460deb63ae784f4925ab974333284aa166c2",
+        "bytes_written": 5785358,
+        "created": true
+      },
+      {
+        "artifact_id": "art_c5c40d292827667ae2b436ae562a094c8af07870ed853a4ec0e682970b0d1f8f",
+        "relative_path": ".vite/renderer/main_window/assets/index-DEPkF0IT.css",
+        "sha256": "e7dfdf2abdd47fca6eff8b5eecb9714ed331b6f8afe90c3532a35b537c71aa7e",
+        "bytes_written": 306253,
+        "created": true
+      },
+      {
+        "artifact_id": "art_1fff731736a18ec0a648180d1835fe14b4dc6d1d141c0fc6fd4b9d3bef469135",
+        "relative_path": ".vite/renderer/main_window/assets/integration-automation-slack-en-Bz6F1CHA.png",
+        "sha256": "d73e975de5b0555365909d44f2585d167851c7ab0abcb0890c516d930cee7235",
+        "bytes_written": 227530,
+        "created": true
+      },
+      {
+        "artifact_id": "art_455138d9ea7a6d251669ef20ddd09a1854bfcbf09d0b0f12abd96c39f744a82a",
+        "relative_path": ".vite/renderer/main_window/assets/integration-automation-slack-ja-BWL6hDs3.png",
+        "sha256": "854a62a175f8ab6777b99c230e9cd8ab110b0dc922b87edfd946a8b1e194851f",
+        "bytes_written": 234834,
+        "created": true
+      },
+      {
+        "artifact_id": "art_0f927c97ae510780c89b55fc600872ed53a318758d524512e5475962a7bc20f1",
+        "relative_path": ".vite/renderer/main_window/assets/integration-automation-slack-ko-2C-4mFBV.png",
+        "sha256": "a08f0c7b49c99c1eeeff257dc649629d043e6b98ae296ab9f7ce8f271b55c280",
+        "bytes_written": 211301,
+        "created": true
+      },
+      {
+        "artifact_id": "art_1026e279ccb083608d60798bff1b7279f1fb0fa6b53fb3d2fbe414a325b18263",
+        "relative_path": ".vite/renderer/main_window/assets/login-hero-Dzaj5Tyc.png",
+        "sha256": "92a65ce14d44f096acc2cfddab03e15b6860aaf8bea95eaba63586f819baddc1",
+        "bytes_written": 6013883,
+        "created": true
+      },
+      {
+        "artifact_id": "art_fe7641f4be681a4e281755e2e272bd10440b8242387a3aede519966490410ea7",
+        "relative_path": ".vite/renderer/main_window/assets/mcp-chatgpt-oObzrRfp.png",
+        "sha256": "856cf07bddbdc8fd4c4333bfe567790695cdc9a29f8c1d4d9ab6b7f2bbb6fd02",
+        "bytes_written": 53129,
+        "created": true
+      },
+      {
+        "artifact_id": "art_7de748f81733b73ec6354c4839bba7ae4a8a41384ab4d03d1682a3c4a6cca82e",
+        "relative_path": ".vite/renderer/main_window/assets/mcp-claude-D4eyhjWN.png",
+        "sha256": "7e883cec26ca72a73568b2b51819d4355795230bd42ffec6c907e3139efbc4d0",
+        "bytes_written": 298245,
+        "created": true
+      },
+      {
+        "artifact_id": "art_d6e95dc376b5db20859e55d9c7c0a855826cc1e4c6958173670307b7c80c5270",
+        "relative_path": ".vite/renderer/main_window/assets/mcp-cursor-DlqL5cv3.png",
+        "sha256": "292696a0da45723f501c5c7546b30433cbd79070fc552682492a000e6ad7202b",
+        "bytes_written": 62709,
+        "created": true
+      },
+      {
+        "artifact_id": "art_715b4981f2825f0de28829e8d1e4ce728f2f24d8e423d5d9bd6dd14a47dc5f4d",
+        "relative_path": ".vite/renderer/main_window/assets/microsoft-teams-B5hQpox5.svg",
+        "sha256": "1ab26279cd8fc9e773d496173ab5db9d28a8610b19f197340a94131e6477292e",
+        "bytes_written": 4855,
+        "created": true
+      },
+      {
+        "artifact_id": "art_33c22035c6cb72fe830f9885618b6b2d24869643abbcd546fab5aba85b9046ec",
+        "relative_path": ".vite/renderer/main_window/assets/mobile-app-download-background-Ct2gwTXz.png",
+        "sha256": "afa8f7a7b5cce299e3e990c459eacbd7d7f5e496d151b7ae178334abe19f4d9b",
+        "bytes_written": 159446,
+        "created": true
+      },
+      {
+        "artifact_id": "art_cfd33cc1c71fc8b49a1427cf6432bafc34ceca2aa493e6829af47ecd687aa101",
+        "relative_path": ".vite/renderer/main_window/assets/notion-C1XUKvDk.png",
+        "sha256": "da801d659d8916320e0d76c8c62154e97a1d44f71762f2a18d1c8c185624d5be",
+        "bytes_written": 11406,
+        "created": true
+      },
+      {
+        "artifact_id": "art_2addd92db0ff7969b2a0fb6c92417a0f0d838afb068e481b36d67d60d8d3a51c",
+        "relative_path": ".vite/renderer/main_window/assets/onboarding-ai-claude-DJOaanTj.png",
+        "sha256": "b0da2d1b08055dece43e0144af32ef982dae304aeef51ec2ad28963146aa7a2a",
+        "bytes_written": 5102,
+        "created": true
+      },
+      {
+        "artifact_id": "art_18cdf918411c312534004f25f832dcebf75138f4018568e2f5ce8843fc686c90",
+        "relative_path": ".vite/renderer/main_window/assets/onboarding-ai-openai-CGosQWEo.png",
+        "sha256": "12bcf10b68573181729b5dd69ca9691f2f5a2bc0ce07d8db9c69f4c5d2dc118b",
+        "bytes_written": 4470,
+        "created": true
+      },
+      {
+        "artifact_id": "art_b763b0732d5ed90a08cafb62c20b1eff27ebf7e2c50c759f768cc7411185452c",
+        "relative_path": ".vite/renderer/main_window/assets/onboarding-shader-dark-CGRQQIUJ.png",
+        "sha256": "769f53edf10073c1feca3ec585197ead43a98ec6e988432fce06ee2cfccea3d5",
+        "bytes_written": 51326,
+        "created": true
+      },
+      {
+        "artifact_id": "art_c0755c4bffbd78d8b3722a51ab88bd3d7af803f8980bab71f1b89e99bc56b5e4",
+        "relative_path": ".vite/renderer/main_window/assets/onboarding-shader-light-BMxjY4B3.png",
+        "sha256": "15d921a598744b19bb54aaf393414e40c35b7c74dc0d502bcaa5f488e994a93e",
+        "bytes_written": 25839,
+        "created": true
+      },
+      {
+        "artifact_id": "art_22e4e3de9fc01902ca19a925fefb179988251a97b9c7e9457fd826334687721f",
+        "relative_path": ".vite/renderer/main_window/assets/outlook-logo-DDDItmd_.png",
+        "sha256": "c6d9954aef9659e79c42ccdc958f553e1190589f3f384a5c264a31d66d890d06",
+        "bytes_written": 4268,
+        "created": true
+      },
+      {
+        "artifact_id": "art_7dfdf406dea23924a2aa92c3a47137e19e92b8c6ae4d970297fdec39d8c26c21",
+        "relative_path": ".vite/renderer/main_window/assets/payment-invite-gift-DG7x89e9.png",
+        "sha256": "87f331ffc0c3e7d1376e842e2e9101d1479fa1df9a329f1c79d7363443910a5d",
+        "bytes_written": 1209565,
+        "created": true
+      },
+      {
+        "artifact_id": "art_35d85ed2586fbd71007ee43212906f1abe1db286881f4029ffba6bc38780157f",
+        "relative_path": ".vite/renderer/main_window/assets/referral-gift-CYB-GHH5.png",
+        "sha256": "fa0667d18a27c5091231ed9d1ca192dfb421cf238e92a3705968f2037879f706",
+        "bytes_written": 1692440,
+        "created": true
+      },
+      {
+        "artifact_id": "art_3df9b0feb9a204efe783c2c46ac3289039227b3e371ab4e92562d07b66b0fcfa",
+        "relative_path": ".vite/renderer/main_window/assets/referral-pro-ticket-DexgkCPR.png",
+        "sha256": "ba032f7a21f341b1c073f4bce5fa59e6e1589941d3ed944a6880731a4477d912",
+        "bytes_written": 112771,
+        "created": true
+      },
+      {
+        "artifact_id": "art_91c3b438f2164555f4eedb9fc554eed7cf8cfc607d02b9bb540ae8f76ed0c79c",
+        "relative_path": ".vite/renderer/main_window/assets/security-certification-badges-OUff1eon.png",
+        "sha256": "2a4368b94f28909d5a232921b76fee0d84d74a640534b6c8d72bdc4a88aeaf83",
+        "bytes_written": 47939,
+        "created": true
+      },
+      {
+        "artifact_id": "art_ba92c4736aebe1f2f49486d840b8ab9e56b097bb29b397dfb00aaa3cea3f2695",
+        "relative_path": ".vite/renderer/main_window/assets/security-certification-soc2-type2-DVqlWHRk.png",
+        "sha256": "66e688ecbe079d227388382481c14297c2de0a51d64e7b0ae3641b260e07be7d",
+        "bytes_written": 11154,
+        "created": true
+      },
+      {
+        "artifact_id": "art_a5336315ee78e641dca3296a8a3ca235e2e1f98f224a20c549a4d9e0a1126f81",
+        "relative_path": ".vite/renderer/main_window/assets/sigma.esm-Dtz9FVz5.js",
+        "sha256": "46704d40b3c66d40beee7db97ad20b92bc2d89471c99fb070281b53e46e43225",
+        "bytes_written": 86198,
+        "created": true
+      },
+      {
+        "artifact_id": "art_bb69ad9e41e3a6934893940d43872b52a54c7ea5bd87d8f02216eb182209fb74",
+        "relative_path": ".vite/renderer/main_window/assets/tiro-glyph-V6C5C636-BsOP_i1y.png",
+        "sha256": "e2815e25eb4216367d56cd9f469fb179f73cbd61385fc2318197a859f5b7f128",
+        "bytes_written": 42656,
+        "created": true
+      },
+      {
+        "artifact_id": "art_9dd4a0ac9a85e8ebda8c34ad56690906d0e60a23343accaa8d150232b4e03f5b",
+        "relative_path": ".vite/renderer/main_window/assets/tiro-icon-brown-Bnzo2vV_.png",
+        "sha256": "7c343e00104ca96fdac3e9a96da2c0c7710ec093ec07390922ef35a56f098f37",
+        "bytes_written": 4867,
+        "created": true
+      },
+      {
+        "artifact_id": "art_3b2d5560e3ed37165ae3f49bd5ddecd5bd5759ca3a78557cc0c19e92580e799b",
+        "relative_path": ".vite/renderer/main_window/assets/tiro-wordmark-PO4N3T3N-Bm8eZh-e.png",
+        "sha256": "4e528b29e7bd10b445aa96be796bf217f73a94f351fd255ffe2c5f9a0ead0f58",
+        "bytes_written": 44842,
+        "created": true
+      },
+      {
+        "artifact_id": "art_034b7108301a958fcf3cc13419dc69b882896d1e332c0bfab782becd823fe03e",
+        "relative_path": ".vite/renderer/main_window/index.html",
+        "sha256": "83df7f87ee5fd10d375076422431686f2cdeaeb7ed8508b99dc95bb1a033047c",
+        "bytes_written": 4124,
+        "created": true
+      },
+      {
+        "artifact_id": "art_52a80198b473289a191093e50a4447a3cfb798140c904dad3d4020d5ac57f30c",
+        "relative_path": "node_modules/@plato-corp/microphone/.clangd",
+        "sha256": "ca3499a5a5a73acc74cf0f92b5dc24a982ffe9ee61255493ab856077b1965ef1",
+        "bytes_written": 210,
+        "created": true
+      },
+      {
+        "artifact_id": "art_884f48caaf0c01a8837125121a762604c120f4414befb68539f11636c207fd3e",
+        "relative_path": "node_modules/@plato-corp/microphone/.gitignore",
+        "sha256": "5666e353c9e7f4176daf3b2ffe7de6ee442f97c29b5f88650906c11489fffc73",
+        "bytes_written": 14,
+        "created": true
+      },
+      {
+        "artifact_id": "art_ff7a963decd712fc66587f91de8cd4bb9f68174c711c8a9cbec3e389ebcd6c35",
+        "relative_path": "node_modules/@plato-corp/microphone/CHANGELOG.md",
+        "sha256": "a4e669bd67d239b63be424bf04f9211cf2f4f8de0132981a6fbbc9c66fcd3d67",
+        "bytes_written": 478,
+        "created": true
+      },
+      {
+        "artifact_id": "art_f90d04bdaf5799c118ab5828a75f821256de3551166c9e8f4a75b846777b7509",
+        "relative_path": "node_modules/@plato-corp/microphone/binding.gyp",
+        "sha256": "06610cda78622bf9e47c7cc62c9913e217677f1ca9231bf71a9ae3704ea5252e",
+        "bytes_written": 1302,
+        "created": true
+      },
+      {
+        "artifact_id": "art_4ad846852a495f4c34e1e2a190d279578ecb22d276853d3ab85d7a2278851934",
+        "relative_path": "node_modules/@plato-corp/microphone/build/Release/.forge-meta",
+        "sha256": "163277ecc65081b46284358978ea3866920b5e6ffd03ad7ca5c39004da7d9562",
+        "bytes_written": 8,
+        "created": true
+      },
+      {
+        "artifact_id": "art_b9d44445bcc5d9025ca24db4707cc9fa8da6291feea16c34e9915ad105e33573",
+        "relative_path": "node_modules/@plato-corp/microphone/build/Release/microphone.exp",
+        "sha256": "783de928461052c321a4dd05070d002b17cfe95772ae5752243fd2e5e8adaf26",
+        "bytes_written": 1115,
+        "created": true
+      },
+      {
+        "artifact_id": "art_fba214b27fccf487893ca3cf64bb0a2cd83bdd199bd4c1770b587037ae6529dc",
+        "relative_path": "node_modules/@plato-corp/microphone/build/Release/microphone.iobj",
+        "sha256": "d8321a75346de9a7faa75f37b9cbcf2f2449490705a41bf4eb6132330d56fe84",
+        "bytes_written": 760759,
+        "created": true
+      },
+      {
+        "artifact_id": "art_e45673585ae5b9ffef0b09aaf370ee05d7ede7992bbea6ed1596b17908fe9b52",
+        "relative_path": "node_modules/@plato-corp/microphone/build/Release/microphone.ipdb",
+        "sha256": "dcce8e4ddf3bed942c5529375ff2b2feab4d5a8fd8d4217c823f98c2cc8d78f5",
+        "bytes_written": 287344,
+        "created": true
+      },
+      {
+        "artifact_id": "art_8de313bdcc965c35e100f027027cd8c5bb90dffcda636e960bb763aa38c46f87",
+        "relative_path": "node_modules/@plato-corp/microphone/build/Release/microphone.lib",
+        "sha256": "a0e892f51b42fa49187952fdf6c0eb97dd99c9edbca045f8ae3e878afc1a262a",
+        "bytes_written": 2118,
+        "created": true
+      },
+      {
+        "artifact_id": "art_dd5fd33b32fa60a7eab84703c588fb70cfe21ee9226d10957fd224e729302f8b",
+        "relative_path": "node_modules/@plato-corp/microphone/build/Release/microphone.node",
+        "sha256": "48f33841dd8986114c1e89cf3efa916ae84b3d0adb0d818a25283e52b40d7532",
+        "bytes_written": 166144,
+        "created": true
+      },
+      {
+        "artifact_id": "art_fed36d7c056bb07b61968980872d001466aac764de5cc8b68b7f214c8e1498a5",
+        "relative_path": "node_modules/@plato-corp/microphone/build/Release/microphone.pdb",
+        "sha256": "ccd240ae7468a16ddb7e19e305d48a340f5ecf978f1bbe194bd312d6a5b273c6",
+        "bytes_written": 4820992,
+        "created": true
+      },
+      {
+        "artifact_id": "art_8c4c1aacac85ec1cc875b07503229b454cd2a64cb275bbafb7023d35f8a89278",
+        "relative_path": "node_modules/@plato-corp/microphone/build/Release/nothing.lib",
+        "sha256": "b3a122f7f43ed798bc3f380c88c4601a04bd1a984449e930422338aac07b7076",
+        "bytes_written": 115860,
+        "created": true
+      },
+      {
+        "artifact_id": "art_5eaa7698a868be2a47e440f8d4cf5760550c03c06288d3e2d53c74fb0edf3b41",
+        "relative_path": "node_modules/@plato-corp/microphone/build/Release/obj/microphone/microphone.node.recipe",
+        "sha256": "57c9fa450bca63cad168771a68199a6d99d03f61420fd2d296be1a0af81002e6",
+        "bytes_written": 384,
+        "created": true
+      },
+      {
+        "artifact_id": "art_364d935aef50d6fa35ba355384ca1f552759a037e76baef3d707e5f8c4adc1c9",
+        "relative_path": "node_modules/@plato-corp/microphone/build/Release/obj/microphone/microphone.tlog/CL.command.1.tlog",
+        "sha256": "77d1455212a5e17b51e57664c2cb2cf0648960268d5d717f9ec3351ed9c90870",
+        "bytes_written": 10514,
+        "created": true
+      },
+      {
+        "artifact_id": "art_51eccad86bd4b1bbc03bf3af7f1c7b1a0e399bf9d0b64cacc8abb5223af3e86f",
+        "relative_path": "node_modules/@plato-corp/microphone/build/Release/obj/microphone/microphone.tlog/CL.read.1.tlog",
+        "sha256": "55e6ec17dbf62b3cc46b81f8c5728c0aee4a0b66b50b0a24204e93e2d3793789",
+        "bytes_written": 81254,
+        "created": true
+      },
+      {
+        "artifact_id": "art_a43029736b8d6f3ea89534b01dc85171df620e2ee9373ef5807d6f6a7600468a",
+        "relative_path": "node_modules/@plato-corp/microphone/build/Release/obj/microphone/microphone.tlog/CL.write.1.tlog",
+        "sha256": "65ec4b541959e59ec4de45013c3b29f1bc26ad5c192a8dc8e9fdd39b0691bebb",
+        "bytes_written": 1738,
+        "created": true
+      },
+      {
+        "artifact_id": "art_3b7b855e7c6bb55d7cdbd3e2f712ba09fec463da25b64f8c24c7b67dbad90252",
+        "relative_path": "node_modules/@plato-corp/microphone/build/Release/obj/microphone/microphone.tlog/Cl.items.tlog",
+        "sha256": "7cf4b875299c158537d4be9dcc58e842c2dc8c7cf62c70a1edad60888d37cdd8",
+        "bytes_written": 862,
+        "created": true
+      },
+      {
+        "artifact_id": "art_b2e3af4d3f8fb5edceeaa293d2c9aef296c540f8878c098961f33ac19ae2539e",
+        "relative_path": "node_modules/@plato-corp/microphone/build/Release/obj/microphone/microphone.tlog/link.command.1.tlog",
+        "sha256": "22d335aaaaf400454bc2cfae9b66663a16e2f4c3d52a79328203495aff0b0533",
+        "bytes_written": 3252,
+        "created": true
+      },
+      {
+        "artifact_id": "art_428e1846461e36a80060e965d57dcdd21b234996b062604eb9d43045dee3f13f",
+        "relative_path": "node_modules/@plato-corp/microphone/build/Release/obj/microphone/microphone.tlog/link.read.1.tlog",
+        "sha256": "76cf9ddc38e9d7303093eabebef3b26e0ef4fcfd5ec561ae5634af7dec9b5d2d",
+        "bytes_written": 7140,
+        "created": true
+      },
+      {
+        "artifact_id": "art_b810c96a6260e0baef99fdf67f72bf9cdd28146b52d35f71f421c95b3ea7580b",
+        "relative_path": "node_modules/@plato-corp/microphone/build/Release/obj/microphone/microphone.tlog/link.secondary.1.tlog",
+        "sha256": "ce929103b478f40c066b13fbc2226ac6d6579d2f7decc74a0626f2df87cf3589",
+        "bytes_written": 1190,
+        "created": true
+      },
+      {
+        "artifact_id": "art_2491ae738a67e923da491a2773633a27bd0171255ad84c66cc5c742c58d08cc1",
+        "relative_path": "node_modules/@plato-corp/microphone/build/Release/obj/microphone/microphone.tlog/link.write.1.tlog",
+        "sha256": "548ec539a5823ee68fe1ec20a8147d3385fb7f304e8e247cda2e6e535d984906",
+        "bytes_written": 1812,
+        "created": true
+      },
+      {
+        "artifact_id": "art_2d9c47f0ddaa16a484abb08435b94f218b09457736fc4ca93a8b00d5caafb6df",
+        "relative_path": "node_modules/@plato-corp/microphone/build/Release/obj/microphone/microphone.tlog/microphone.lastbuildstate",
+        "sha256": "77ac32207138ffe3a5b4326ef4f8dbba73658e5d1b87c1dcc51d48b54711b70c",
+        "bytes_written": 249,
+        "created": true
+      },
+      {
+        "artifact_id": "art_b1aeae32b91355157e8ce160cd831a8d29832209445cf0677b652df31f801675",
+        "relative_path": "node_modules/@plato-corp/microphone/build/Release/obj/microphone/src/index.obj",
+        "sha256": "ca8cd81dfe23f9fe7aaea81d27f4746a2de8794d9cae037264873dd294b17964",
+        "bytes_written": 1658108,
+        "created": true
+      },
+      {
+        "artifact_id": "art_fb225df2211131368179c1902d3c6035a837d29e21174a4f118d6e5b62f67793",
+        "relative_path": "node_modules/@plato-corp/microphone/build/Release/obj/microphone/src/microphone.obj",
+        "sha256": "fa54c62bb753a47ce231194f39824443e6157f7e1394185b535d8ad3f4bda49a",
+        "bytes_written": 1179531,
+        "created": true
+      },
+      {
+        "artifact_id": "art_0e3503b588850810d817c191e8687d6fd1cc5aca8e09baa992337142cddfcad1",
+        "relative_path": "node_modules/@plato-corp/microphone/build/Release/obj/microphone/win_delay_load_hook.obj",
+        "sha256": "8bdebbb10b64832b407b6a20c858aa6bdfebd7751c6a04b492de0d490435c991",
+        "bytes_written": 112807,
+        "created": true
+      },
+      {
+        "artifact_id": "art_af3d933a5541846cacd326860d6009e5e0ed43e649c76cc3cbe08469fd5298b1",
+        "relative_path": "node_modules/@plato-corp/microphone/build/binding.sln",
+        "sha256": "8466e164e5e518ed02af39a873653c135c93b93c8ac76b17704e2a67a33e70ad",
+        "bytes_written": 2010,
+        "created": true
+      },
+      {
+        "artifact_id": "art_2ef84e602c00509f4f9e7ee8aa89dca13f88493456125498fde2f15101999f55",
+        "relative_path": "node_modules/@plato-corp/microphone/build/config.gypi",
+        "sha256": "99aad102882298b9d6c2f9568db9853454d85655f0002f62ac654e295c12b94c",
+        "bytes_written": 19823,
+        "created": true
+      },
+      {
+        "artifact_id": "art_9db81b5f37736ccd0c8304e170bef27329b3ca448434bf0c0d3c298f005e43e4",
+        "relative_path": "node_modules/@plato-corp/microphone/build/microphone.vcxproj",
+        "sha256": "65d0fcc6faa9f08ab894320af0430ea626ed16381c6cc76d68a9fd4bfb20343e",
+        "bytes_written": 12983,
+        "created": true
+      },
+      {
+        "artifact_id": "art_6cc26f1e6f0cbaee1310b133cbc9cef5930d85e7d45cd53aff9122bd04b3321c",
+        "relative_path": "node_modules/@plato-corp/microphone/build/microphone.vcxproj.filters",
+        "sha256": "b92f386010fab7093aca5f51cd8aaa350e0d26cece01bd87d22f326d1bcf6661",
+        "bytes_written": 3287,
+        "created": true
+      },
+      {
+        "artifact_id": "art_fd78f7960df091aa6e3dbf442ecb2be07295f2788ad383f7f0d22233102f7441",
+        "relative_path": "node_modules/@plato-corp/microphone/build/node_modules/node-addon-api/Release/obj/nothing/node_modules/node-addon-api/nothing.obj",
+        "sha256": "24b7fa97c7c82fff051e37bdab71548898163dfadc496b2f414e67a1262a4460",
+        "bytes_written": 5758,
+        "created": true
+      },
+      {
+        "artifact_id": "art_2ed3e0f9b29b87efba9d00276ec3f1ab7cc5ad330946973f72976e13892a627c",
+        "relative_path": "node_modules/@plato-corp/microphone/build/node_modules/node-addon-api/Release/obj/nothing/nothing.lib.recipe",
+        "sha256": "e68192ea7180a53ff41b201936b074c7189f62533bd0b6a3087354b3df6ed73c",
+        "bytes_written": 152,
+        "created": true
+      },
+      {
+        "artifact_id": "art_c8d7818243b0734bef5c80fd722ec58723e6617c702068da93565c5cbe1dc7ce",
+        "relative_path": "node_modules/@plato-corp/microphone/build/node_modules/node-addon-api/Release/obj/nothing/nothing.tlog/CL.command.1.tlog",
+        "sha256": "5dc294048a2f399537457928f3fe4515de56c819a402a5779ed635e7e15eef00",
+        "bytes_written": 6632,
+        "created": true
+      },
+      {
+        "artifact_id": "art_d661342e4e057cc45de88468b6f20aac6adeaa14099a800036a1be43eeb0d56f",
+        "relative_path": "node_modules/@plato-corp/microphone/build/node_modules/node-addon-api/Release/obj/nothing/nothing.tlog/CL.read.1.tlog",
+        "sha256": "0154ed742dfc3c379ce2e5ea0f0f63ed1893975fa5434fe3c61ccbf6763f529c",
+        "bytes_written": 16738,
+        "created": true
+      },
+      {
+        "artifact_id": "art_b51638695f125a0ef28483f384ef3f0f46705d9f9349df0e44d64773749866e7",
+        "relative_path": "node_modules/@plato-corp/microphone/build/node_modules/node-addon-api/Release/obj/nothing/nothing.tlog/CL.write.1.tlog",
+        "sha256": "63316f25b50109f3e6b679f4eeb4696f27f7cedff5e19c8857ff5e7dd65c295e",
+        "bytes_written": 1354,
+        "created": true
+      },
+      {
+        "artifact_id": "art_6f6da52a69764f09fa11c636dfc296f49e44c3872261d62f47629cefe500d9af",
+        "relative_path": "node_modules/@plato-corp/microphone/build/node_modules/node-addon-api/Release/obj/nothing/nothing.tlog/Cl.items.tlog",
+        "sha256": "a48af8c32a667b549cc1915cf236843090fc4ec22f9d479f9f779909eec8e4d4",
+        "bytes_written": 672,
+        "created": true
+      },
+      {
+        "artifact_id": "art_7411dbb22190e4a6eadb2b9c6a2de70a0116a45b125f192d9b96c41a65fed36b",
+        "relative_path": "node_modules/@plato-corp/microphone/build/node_modules/node-addon-api/Release/obj/nothing/nothing.tlog/Lib-link.read.1.tlog",
+        "sha256": "13d2e6383efb0c207fd6bd8a269e1b745ba7f98a396252d1fe38932c80ae1e88",
+        "bytes_written": 1756,
+        "created": true
+      },
+      {
+        "artifact_id": "art_a8103ef6a754f8660b2d0b5a769a12954dd930a62d455e13cdef2cc76dd33a7c",
+        "relative_path": "node_modules/@plato-corp/microphone/build/node_modules/node-addon-api/Release/obj/nothing/nothing.tlog/Lib-link.write.1.tlog",
+        "sha256": "17d49026d232640f9dfffae5867fd6c23805928183d8e36ede6b3c07996a1fd6",
+        "bytes_written": 798,
+        "created": true
+      },
+      {
+        "artifact_id": "art_96318d04acde3c3d09e16dbf79490957380f472b38ced3dddd87a9186c2a9640",
+        "relative_path": "node_modules/@plato-corp/microphone/build/node_modules/node-addon-api/Release/obj/nothing/nothing.tlog/Lib.command.1.tlog",
+        "sha256": "f60de912753097f2751404589646b0fad6740bd166b99bdc53d391f400776280",
+        "bytes_written": 1384,
+        "created": true
+      },
+      {
+        "artifact_id": "art_2d9c47f0ddaa16a484abb08435b94f218b09457736fc4ca93a8b00d5caafb6df",
+        "relative_path": "node_modules/@plato-corp/microphone/build/node_modules/node-addon-api/Release/obj/nothing/nothing.tlog/nothing.lastbuildstate",
+        "sha256": "77ac32207138ffe3a5b4326ef4f8dbba73658e5d1b87c1dcc51d48b54711b70c",
+        "bytes_written": 249,
+        "created": true
+      },
+      {
+        "artifact_id": "art_16d0f9e6b8caa0297e604f17566e0684e417482d25720fe2f6c525e3beed154d",
+        "relative_path": "node_modules/@plato-corp/microphone/build/node_modules/node-addon-api/Release/obj/nothing/win_delay_load_hook.obj",
+        "sha256": "9d159d48c6feedf8b9a0be03f69c67f2c2b1c59fd83bbede571068acc10572ae",
+        "bytes_written": 109559,
+        "created": true
+      },
+      {
+        "artifact_id": "art_d14cdf595f5b55561c7d783e2637d5f5a6839b29756fbad0fed397047c991a3f",
+        "relative_path": "node_modules/@plato-corp/microphone/build/node_modules/node-addon-api/node_api.sln",
+        "sha256": "46f448319e8ccd0f69e10f37d9b18686598e3f88b233ac8d2a970bb1bfdc8d2a",
+        "bytes_written": 851,
+        "created": true
+      },
+      {
+        "artifact_id": "art_096079532bc5b4c83d9e9caec9a52fd65b2d3665802841d54dc46d62e2aad460",
+        "relative_path": "node_modules/@plato-corp/microphone/build/node_modules/node-addon-api/nothing.vcxproj",
+        "sha256": "d7d81cd44a623cabf45623681c7b74d7cde3b08b927e9ed1d284ecab73e33e4f",
+        "bytes_written": 11517,
+        "created": true
+      },
+      {
+        "artifact_id": "art_078cae3eb2ccf733f316f4b98c4c520505006bab6748ab65ad7312f1182a137d",
+        "relative_path": "node_modules/@plato-corp/microphone/build/node_modules/node-addon-api/nothing.vcxproj.filters",
+        "sha256": "b31134616e4e750cd8fc399de4e72ed51d1c106e89c0bb7f6f83fe9dcd6590cb",
+        "bytes_written": 4049,
+        "created": true
+      },
+      {
+        "artifact_id": "art_5f9b8172022aa892673afa6cd4f88c57329d2b003939d4b76f22ab69cb157e79",
+        "relative_path": "node_modules/@plato-corp/microphone/include/microphone.h",
+        "sha256": "0c4f253dfc68dff31940d80e115541a63402efb7f67957a7e580a2c4a8dc8cb8",
+        "bytes_written": 1831,
+        "created": true
+      },
+      {
+        "artifact_id": "art_30238a4e17d5ef36beeccf8aabd6d03a41517acc7b88ae57edf307d71d18f54c",
+        "relative_path": "node_modules/@plato-corp/microphone/index.d.ts",
+        "sha256": "026ece21740dad20f4c8ef304910e1a433756ec5321e66785617b1fbee01aab0",
+        "bytes_written": 2678,
+        "created": true
+      },
+      {
+        "artifact_id": "art_f27aa6923429073cd175301cddcbecd40f82e59aca3776dd24da3363de972185",
+        "relative_path": "node_modules/@plato-corp/microphone/lib/index.js",
+        "sha256": "2b91be7850d50d2dd276bd2c939bafb2e17a8e63008b0330ca183c25ba142b36",
+        "bytes_written": 639,
+        "created": true
+      },
+      {
+        "artifact_id": "art_db66da9565110af8534b6e24de1f504db0f7b95fdb80fa871f7c4c1772343123",
+        "relative_path": "node_modules/@plato-corp/microphone/node_modules/bindings/LICENSE.md",
+        "sha256": "85fde19744c84cfacb04aed732c0392ba221231b26090d3271d2ed865bfc0792",
+        "bytes_written": 1108,
+        "created": true
+      },
+      {
+        "artifact_id": "art_6c206cebad2e2419ee5a125ea6241b73bf96a15f42fb5589c6df46ac9b6a30ca",
+        "relative_path": "node_modules/@plato-corp/microphone/node_modules/bindings/README.md",
+        "sha256": "a5552f138725ba2768610c9362f5c7387c8ac80c61fc68477a4f97b7412bba86",
+        "bytes_written": 3476,
+        "created": true
+      },
+      {
+        "artifact_id": "art_c11b2fdd80808c02dad309ca1e6d8caa1b395cc1d79e03bbd8a660b9fbcd9338",
+        "relative_path": "node_modules/@plato-corp/microphone/node_modules/bindings/bindings.js",
+        "sha256": "8e32a0d37f20bd6f7d5bdbf99d041aa27be47cbbe5172ac13ebf7380a10b3bf6",
+        "bytes_written": 5986,
+        "created": true
+      },
+      {
+        "artifact_id": "art_82b5b9f60db83e40398b2511e84a9dc1a0cb5b8ab6e2981d6139028a496af062",
+        "relative_path": "node_modules/@plato-corp/microphone/node_modules/bindings/package.json",
+        "sha256": "a87721fe406e1f1798fef44d697b46ea1efe346fda118010334713346ee4207c",
+        "bytes_written": 660,
+        "created": true
+      },
+      {
+        "artifact_id": "art_e7738efef47f372bab0a123607128f336acc0eb81a0dad10b06ce98bc87cf149",
+        "relative_path": "node_modules/@plato-corp/microphone/node_modules/file-uri-to-path/.npmignore",
+        "sha256": "bfb16fc2dc3b7f24e20981aa586e31d66293c81eb7c2e5d0a9bbb252b13c6271",
+        "bytes_written": 14,
+        "created": true
+      },
+      {
+        "artifact_id": "art_13dc7897c3573d8d0cc75310c9bdc4228de1c924328acd4476d684940c26327e",
+        "relative_path": "node_modules/@plato-corp/microphone/node_modules/file-uri-to-path/.travis.yml",
+        "sha256": "14cfedcd0d39a797fb56787bc06b46d09aa2786084bb0dec49467b9720fb2979",
+        "bytes_written": 472,
+        "created": true
+      },
+      {
+        "artifact_id": "art_722fad35d59b6488d0f36f41895e0274170047aae1459c0fa94ec6cb4e9bfaeb",
+        "relative_path": "node_modules/@plato-corp/microphone/node_modules/file-uri-to-path/History.md",
+        "sha256": "0b06e981a4318af1daef8b6ef0c6ff794e9b18a0a3e0738a65c9063988016d2e",
+        "bytes_written": 433,
+        "created": true
+      },
+      {
+        "artifact_id": "art_6fd842a89cc6b23cfa068927c9ac1b6c3be93e82b60d238477656e865fffaa01",
+        "relative_path": "node_modules/@plato-corp/microphone/node_modules/file-uri-to-path/LICENSE",
+        "sha256": "75070206e4ee2a749be52444cecc05101ca8d314c9d6d335ff914046cbf086a0",
+        "bytes_written": 1083,
+        "created": true
+      },
+      {
+        "artifact_id": "art_f24ef7a928133d900f40c295c88c08fa5dba6bf00ff28b3865c8256a71f7ddfb",
+        "relative_path": "node_modules/@plato-corp/microphone/node_modules/file-uri-to-path/README.md",
+        "sha256": "a801a028d69327433eb397e69fd0aea3f58b80a76222ffbae129d8808913251a",
+        "bytes_written": 2073,
+        "created": true
+      },
+      {
+        "artifact_id": "art_0fbd4c8bb95c77cec5d7de57224da04f4aaf18abc16f8d8f75dceebc13707cc6",
+        "relative_path": "node_modules/@plato-corp/microphone/node_modules/file-uri-to-path/index.d.ts",
+        "sha256": "46eb38b4f992126135e00159041a6e69e46402e56613bdc891d7b0d28fc31e37",
+        "bytes_written": 77,
+        "created": true
+      },
+      {
+        "artifact_id": "art_93bb61b3c2cbe7dc8c2da6d13c3372b844352beeef3a12793fbf67604a1969d6",
+        "relative_path": "node_modules/@plato-corp/microphone/node_modules/file-uri-to-path/index.js",
+        "sha256": "e62293e871bdd5a7449ff3c7956c9536ec1d2ea7369461de77322b5256bb93e7",
+        "bytes_written": 1723,
+        "created": true
+      },
+      {
+        "artifact_id": "art_0f5aaa95a687892a0e0598d3648d4fd0a120da45ab356341acc2eb3301dac44d",
+        "relative_path": "node_modules/@plato-corp/microphone/node_modules/file-uri-to-path/package.json",
+        "sha256": "71eb1e24bb9694f89c613fa0aa307f977dd43f41d11794c7b48fabf6c55f66b0",
+        "bytes_written": 717,
+        "created": true
+      },
+      {
+        "artifact_id": "art_fc1aa1f0d60505399ba35f6d1638a528119795c184dc9b77af62db2b88c5cb18",
+        "relative_path": "node_modules/@plato-corp/microphone/node_modules/file-uri-to-path/test/test.js",
+        "sha256": "223c25dba6fefbb7cb491b026a32f070b1425475d3cd2d04627be5d71a07fd38",
+        "bytes_written": 666,
+        "created": true
+      },
+      {
+        "artifact_id": "art_b452f4ae03fe426bc558992f20a3e0d02c106f708abab0855d30c176c0f8af9d",
+        "relative_path": "node_modules/@plato-corp/microphone/node_modules/file-uri-to-path/test/tests.json",
+        "sha256": "b48c50c1328ab8522fc0bf91923ea42fb59e63e847b967dac88123cb5e5b185d",
+        "bytes_written": 810,
+        "created": true
+      },
+      {
+        "artifact_id": "art_a0b3a1b33014befa887d62d6bf5243c195114eff77a04344154bd5810667c74f",
+        "relative_path": "node_modules/@plato-corp/microphone/node_modules/node-addon-api/LICENSE.md",
+        "sha256": "89024017b88a9f2b763f79b941a4f2db3b4428edfcacdc0b23866b2da633ad0c",
+        "bytes_written": 1150,
+        "created": true
+      },
+      {
+        "artifact_id": "art_1376377228b17510bd6ea9af7260a121e842091f8d8df538d4b0f70d2154642a",
+        "relative_path": "node_modules/@plato-corp/microphone/node_modules/node-addon-api/README.md",
+        "sha256": "8a5624af026ea5e9cf311476aa30cf33d9fc2c0c3be40bd7c5d8600a01ff1932",
+        "bytes_written": 4994,
+        "created": true
+      },
+      {
+        "artifact_id": "art_29ef25e19a992160a5ec30d536a844c7673e8d748134c200dec6f9ee0ea7788c",
+        "relative_path": "node_modules/@plato-corp/microphone/node_modules/node-addon-api/common.gypi",
+        "sha256": "d1f38562aa923e16c81512df718e49e308ff6b407ae7ed8a90637603ffe70c34",
+        "bytes_written": 797,
+        "created": true
+      },
+      {
+        "artifact_id": "art_6738c60e40d4d821339ca75145cba54dd7f009cfbbd5b95b9b635ec543899d04",
+        "relative_path": "node_modules/@plato-corp/microphone/node_modules/node-addon-api/except.gypi",
+        "sha256": "ddbc09f5b66fe24dd898fbe659085a6ff72e9575025004fc3762271dba781e8b",
+        "bytes_written": 560,
+        "created": true
+      },
+      {
+        "artifact_id": "art_c49ab07cfaf89c84607b9d75e8518381cf170d8bc12dd395ea90b34bec7dcd85",
+        "relative_path": "node_modules/@plato-corp/microphone/node_modules/node-addon-api/index.js",
+        "sha256": "afbfa96b5c40c643828f212610129d2911095eff1e86e63ccfe81658d6fe61d9",
+        "bytes_written": 435,
+        "created": true
+      },
+      {
+        "artifact_id": "art_27a2a97ad0c41289d8a5eae96a3b2ed1cf0a8813a13d9d5555266984aeebac7f",
+        "relative_path": "node_modules/@plato-corp/microphone/node_modules/node-addon-api/napi-inl.deprecated.h",
+        "sha256": "b66ed1e565e735bbfabcc2f72d466ab7c5414d3ef8851d1af440b81be7f2375c",
+        "bytes_written": 6323,
+        "created": true
+      },
+      {
+        "artifact_id": "art_36231c202093dd9ddf2d14ce2292d9a0b9cb6da6c67a3e9db182c2d993c8bb99",
+        "relative_path": "node_modules/@plato-corp/microphone/node_modules/node-addon-api/napi-inl.h",
+        "sha256": "797668948d7f2df0ee8fcfe734af5b55942768bc7e15e77196a1f1107bba3635",
+        "bytes_written": 235906,
+        "created": true
+      },
+      {
+        "artifact_id": "art_54bb941d3b47f8e7c1fe48d6e42bfaec6fe91ee8f05c18cf2dc9083cda023d7b",
+        "relative_path": "node_modules/@plato-corp/microphone/node_modules/node-addon-api/napi.h",
+        "sha256": "ffb807c34a8b3e346a6d0eacd7c8dbc0bdd92ee06bf42668557568dc54f918e9",
+        "bytes_written": 119871,
+        "created": true
+      },
+      {
+        "artifact_id": "art_a34ce952a08fc10e683fdcc4616e9f8ddead841be72c9489170f483171855969",
+        "relative_path": "node_modules/@plato-corp/microphone/node_modules/node-addon-api/node_addon_api.gyp",
+        "sha256": "6d34b9bae562103233f650d8a041edc0ca6b44d90898cd232b38745adfb7edfc",
+        "bytes_written": 1097,
+        "created": true
+      },
+      {
+        "artifact_id": "art_208ac676c623dbfa6a7a9e6d617de46720d0d1e3efbc2279cef68243bd1d5206",
+        "relative_path": "node_modules/@plato-corp/microphone/node_modules/node-addon-api/node_api.gyp",
+        "sha256": "3cd2c44fb0974f016376b676d46bbebbca7c89d4383b09ece30e4cb4122a1499",
+        "bytes_written": 132,
+        "created": true
+      },
+      {
+        "artifact_id": "art_12bc0be6956cca773a7d7d298c0d40d2cd317c88b966af46e40c1727fd613d24",
+        "relative_path": "node_modules/@plato-corp/microphone/node_modules/node-addon-api/noexcept.gypi",
+        "sha256": "0e815179b5d2697e0acdc8f3c3a5d0a1ed050d48a295ee000454cf5352357f66",
+        "bytes_written": 649,
+        "created": true
+      },
+      {
+        "artifact_id": "art_06fe957dd9e718e515484fe073090638b07ba2e8eddcc914fc8fb62dbd34924e",
+        "relative_path": "node_modules/@plato-corp/microphone/node_modules/node-addon-api/nothing.c",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes_written": 0,
+        "created": true
+      },
+      {
+        "artifact_id": "art_161ec8dcb160ba50cae3725bac8456aa8acec3c9f18d2aa19620e167931c5d76",
+        "relative_path": "node_modules/@plato-corp/microphone/node_modules/node-addon-api/package-support.json",
+        "sha256": "b1cb7da23cca1681c7392a3c889eb0cc4916c53d2d7692d4b654ae751f3442f3",
+        "bytes_written": 467,
+        "created": true
+      },
+      {
+        "artifact_id": "art_ad1a876a40078b9a54d261077ca9d6a0fdf88c467559b21431aa344bb5f6d032",
+        "relative_path": "node_modules/@plato-corp/microphone/node_modules/node-addon-api/package.json",
+        "sha256": "19d23a454d2fb2ad84717a72a5d65a88511e433a8f94740dfd9e9c93ecced5e8",
+        "bytes_written": 11005,
+        "created": true
+      },
+      {
+        "artifact_id": "art_511cf5050931becd018d9905a06ce4b4d532b9799e29d1f81ddf280cf7d9d1c7",
+        "relative_path": "node_modules/@plato-corp/microphone/node_modules/node-addon-api/tools/README.md",
+        "sha256": "65e9ea918538f453166b10a1d609cf44cec3d2d01f23fecb5265fb3a4bf303d5",
+        "bytes_written": 3217,
+        "created": true
+      },
+      {
+        "artifact_id": "art_43b874486f6b9da51b99fa1f18089663c63fbd4041462d80334520af89bf624f",
+        "relative_path": "node_modules/@plato-corp/microphone/node_modules/node-addon-api/tools/check-napi.js",
+        "sha256": "9e1207808023cd998fe9e377aefbe77d6c59fa129f94e6acbf24907149d8c11e",
+        "bytes_written": 3176,
+        "created": true
+      },
+      {
+        "artifact_id": "art_337b8f65d04ccd838e716c7ce7968f66e789ab88d925fbf8b3b4e1fdb4e694cb",
+        "relative_path": "node_modules/@plato-corp/microphone/node_modules/node-addon-api/tools/clang-format.js",
+        "sha256": "3e0b5e6d6f1a0c5ed106115871d0fd48f37bac5554effdacaf8d2439f4ed0c65",
+        "bytes_written": 2002,
+        "created": true
+      },
+      {
+        "artifact_id": "art_b393b175b2dd28c32834933b68d2da337a468ea30b2297c4993dbc299732f742",
+        "relative_path": "node_modules/@plato-corp/microphone/node_modules/node-addon-api/tools/conversion.js",
+        "sha256": "9f375b0f9d9ec93c2ded07470478b3f523a2661c6ca707c28b0e9dae15009002",
+        "bytes_written": 15001,
+        "created": true
+      },
+      {
+        "artifact_id": "art_7f88bb9116a8424c2b01bdb7c59e62ab16f78b768514eec5ddf6b5ade5bc0003",
+        "relative_path": "node_modules/@plato-corp/microphone/package.json",
+        "sha256": "a97dc67895a2ba6fc5644e44b53494815f718fffb6a280d58e9fbee0216fc16c",
+        "bytes_written": 496,
+        "created": true
+      },
+      {
+        "artifact_id": "art_f4b3dea8acfe1dd3d7d9db3db6e40ad143b7eb69e9d57dcf1fa9679f4b771676",
+        "relative_path": "node_modules/@plato-corp/microphone/src/index.cc",
+        "sha256": "b37c4e3c7a976819b5ab3eb51394c8f554e7b2c4ac8072ccd9353cc4eee0e849",
+        "bytes_written": 1839,
+        "created": true
+      },
+      {
+        "artifact_id": "art_209093fa7a110dc425e315962c152cca799d78ec476c5133789fce68358c5e85",
+        "relative_path": "node_modules/@plato-corp/microphone/src/microphone.cc",
+        "sha256": "395f9acea985b9f181d74eb4b6a865b1b5f00264823e9799a91f92877260fcf8",
+        "bytes_written": 13455,
+        "created": true
+      },
+      {
+        "artifact_id": "art_b59f19f85b10afc4a59b27eee76bbcc19ad4f5c81a43ee7a3385c45e8dd97463",
+        "relative_path": "node_modules/@plato-corp/microphone/test/index.js",
+        "sha256": "bd2c42009f9f5a921f8f441d921048a253cc1b022b06199d806a727a9760f986",
+        "bytes_written": 164,
+        "created": true
+      },
+      {
+        "artifact_id": "art_db66da9565110af8534b6e24de1f504db0f7b95fdb80fa871f7c4c1772343123",
+        "relative_path": "node_modules/bindings/LICENSE.md",
+        "sha256": "85fde19744c84cfacb04aed732c0392ba221231b26090d3271d2ed865bfc0792",
+        "bytes_written": 1108,
+        "created": true
+      },
+      {
+        "artifact_id": "art_6c206cebad2e2419ee5a125ea6241b73bf96a15f42fb5589c6df46ac9b6a30ca",
+        "relative_path": "node_modules/bindings/README.md",
+        "sha256": "a5552f138725ba2768610c9362f5c7387c8ac80c61fc68477a4f97b7412bba86",
+        "bytes_written": 3476,
+        "created": true
+      },
+      {
+        "artifact_id": "art_c11b2fdd80808c02dad309ca1e6d8caa1b395cc1d79e03bbd8a660b9fbcd9338",
+        "relative_path": "node_modules/bindings/bindings.js",
+        "sha256": "8e32a0d37f20bd6f7d5bdbf99d041aa27be47cbbe5172ac13ebf7380a10b3bf6",
+        "bytes_written": 5986,
+        "created": true
+      },
+      {
+        "artifact_id": "art_82b5b9f60db83e40398b2511e84a9dc1a0cb5b8ab6e2981d6139028a496af062",
+        "relative_path": "node_modules/bindings/package.json",
+        "sha256": "a87721fe406e1f1798fef44d697b46ea1efe346fda118010334713346ee4207c",
+        "bytes_written": 660,
+        "created": true
+      },
+      {
+        "artifact_id": "art_e7738efef47f372bab0a123607128f336acc0eb81a0dad10b06ce98bc87cf149",
+        "relative_path": "node_modules/file-uri-to-path/.npmignore",
+        "sha256": "bfb16fc2dc3b7f24e20981aa586e31d66293c81eb7c2e5d0a9bbb252b13c6271",
+        "bytes_written": 14,
+        "created": true
+      },
+      {
+        "artifact_id": "art_13dc7897c3573d8d0cc75310c9bdc4228de1c924328acd4476d684940c26327e",
+        "relative_path": "node_modules/file-uri-to-path/.travis.yml",
+        "sha256": "14cfedcd0d39a797fb56787bc06b46d09aa2786084bb0dec49467b9720fb2979",
+        "bytes_written": 472,
+        "created": true
+      },
+      {
+        "artifact_id": "art_722fad35d59b6488d0f36f41895e0274170047aae1459c0fa94ec6cb4e9bfaeb",
+        "relative_path": "node_modules/file-uri-to-path/History.md",
+        "sha256": "0b06e981a4318af1daef8b6ef0c6ff794e9b18a0a3e0738a65c9063988016d2e",
+        "bytes_written": 433,
+        "created": true
+      },
+      {
+        "artifact_id": "art_6fd842a89cc6b23cfa068927c9ac1b6c3be93e82b60d238477656e865fffaa01",
+        "relative_path": "node_modules/file-uri-to-path/LICENSE",
+        "sha256": "75070206e4ee2a749be52444cecc05101ca8d314c9d6d335ff914046cbf086a0",
+        "bytes_written": 1083,
+        "created": true
+      },
+      {
+        "artifact_id": "art_f24ef7a928133d900f40c295c88c08fa5dba6bf00ff28b3865c8256a71f7ddfb",
+        "relative_path": "node_modules/file-uri-to-path/README.md",
+        "sha256": "a801a028d69327433eb397e69fd0aea3f58b80a76222ffbae129d8808913251a",
+        "bytes_written": 2073,
+        "created": true
+      },
+      {
+        "artifact_id": "art_0fbd4c8bb95c77cec5d7de57224da04f4aaf18abc16f8d8f75dceebc13707cc6",
+        "relative_path": "node_modules/file-uri-to-path/index.d.ts",
+        "sha256": "46eb38b4f992126135e00159041a6e69e46402e56613bdc891d7b0d28fc31e37",
+        "bytes_written": 77,
+        "created": true
+      },
+      {
+        "artifact_id": "art_93bb61b3c2cbe7dc8c2da6d13c3372b844352beeef3a12793fbf67604a1969d6",
+        "relative_path": "node_modules/file-uri-to-path/index.js",
+        "sha256": "e62293e871bdd5a7449ff3c7956c9536ec1d2ea7369461de77322b5256bb93e7",
+        "bytes_written": 1723,
+        "created": true
+      },
+      {
+        "artifact_id": "art_0f5aaa95a687892a0e0598d3648d4fd0a120da45ab356341acc2eb3301dac44d",
+        "relative_path": "node_modules/file-uri-to-path/package.json",
+        "sha256": "71eb1e24bb9694f89c613fa0aa307f977dd43f41d11794c7b48fabf6c55f66b0",
+        "bytes_written": 717,
+        "created": true
+      },
+      {
+        "artifact_id": "art_fc1aa1f0d60505399ba35f6d1638a528119795c184dc9b77af62db2b88c5cb18",
+        "relative_path": "node_modules/file-uri-to-path/test/test.js",
+        "sha256": "223c25dba6fefbb7cb491b026a32f070b1425475d3cd2d04627be5d71a07fd38",
+        "bytes_written": 666,
+        "created": true
+      },
+      {
+        "artifact_id": "art_b452f4ae03fe426bc558992f20a3e0d02c106f708abab0855d30c176c0f8af9d",
+        "relative_path": "node_modules/file-uri-to-path/test/tests.json",
+        "sha256": "b48c50c1328ab8522fc0bf91923ea42fb59e63e847b967dac88123cb5e5b185d",
+        "bytes_written": 810,
+        "created": true
+      },
+      {
+        "artifact_id": "art_5a88d14e04c4bdf2315b548e05dec422b2d8632a49e1c6669e46d401fb20881e",
+        "relative_path": "node_modules/ws/LICENSE",
+        "sha256": "2b29dcfe0d6471f7e8c92c5fb38c9f93edee10330937055440192f1832b1ecef",
+        "bytes_written": 1183,
+        "created": true
+      },
+      {
+        "artifact_id": "art_2190776d7ff9338dc61d71d7eabd51b64f6bf0e6354fc5d5bb8e7db200ba02e9",
+        "relative_path": "node_modules/ws/README.md",
+        "sha256": "bb979132f3cbff08ce47f36d041e18071f8f534d01f591c0b129ba7abf1e480e",
+        "bytes_written": 15306,
+        "created": true
+      },
+      {
+        "artifact_id": "art_36e0bbaeded41d0dfb4ba39f79437e87859bfbe7dd9b96e38cc6aa66d80e8043",
+        "relative_path": "node_modules/ws/browser.js",
+        "sha256": "010da44addea1d88b2b732540c3f1fd0cbcb28926b96623d4c64222e0ead2d0e",
+        "bytes_written": 176,
+        "created": true
+      },
+      {
+        "artifact_id": "art_4873a74113241eebe16f142f37003ed48f654fa28b611a2f08af627d026585ca",
+        "relative_path": "node_modules/ws/index.js",
+        "sha256": "70a117e957f85622a6fe2be39afb9597489965fe3fe6ebefd84adb8f0d9d114a",
+        "bytes_written": 376,
+        "created": true
+      },
+      {
+        "artifact_id": "art_fffd10539f93fa46686a08dc3b320a7e01625c97cfadd1369c7bae88f831d454",
+        "relative_path": "node_modules/ws/lib/buffer-util.js",
+        "sha256": "8b0a45739132f82e25ea13163780abf547ccfe989267f3eb7abb475beec92da3",
+        "bytes_written": 3056,
+        "created": true
+      },
+      {
+        "artifact_id": "art_83dbb12def7463326861399aff8c1c9009c257ffce0dabda3a08e5b23218f225",
+        "relative_path": "node_modules/ws/lib/constants.js",
+        "sha256": "7efe5c0b888e4fde8bd9076c65b81bfd0df0963810b977d890df126929bb9190",
+        "bytes_written": 479,
+        "created": true
+      },
+      {
+        "artifact_id": "art_9209a8041e35798a38515a419e229b56a6527ceaf7efbef3628654f1e322e548",
+        "relative_path": "node_modules/ws/lib/event-target.js",
+        "sha256": "c45d3c6e12d170c860c0c3f1a050aa0f864d9806632b609a1e607d675aba128c",
+        "bytes_written": 7321,
+        "created": true
+      },
+      {
+        "artifact_id": "art_b456e319709ebed4dd206e1cd7eadfe2ba3613dd25792dce991b57874554aa75",
+        "relative_path": "node_modules/ws/lib/extension.js",
+        "sha256": "852564f0f6b460287043803eae732666fb5610f676874354fc89f06aa4e986ed",
+        "bytes_written": 6183,
+        "created": true
+      },
+      {
+        "artifact_id": "art_00caab55a2d2541f72b4029dde803ed4d5eb819ad42b3c6f4a8a290f22a8a71b",
+        "relative_path": "node_modules/ws/lib/limiter.js",
+        "sha256": "e0469d4b83f6ba764b15f80e1766b75c136fbff68f048f4c050f0b1c7f065f69",
+        "bytes_written": 1034,
+        "created": true
+      },
+      {
+        "artifact_id": "art_90d0d42cab005c500c7ea639d925874557abdfc753de6f27041feb5f3077ce9c",
+        "relative_path": "node_modules/ws/lib/permessage-deflate.js",
+        "sha256": "adcedcb3069b7c6db3fd6cec93699ef70bd4061126b987dd9a8f7cb16d2b7530",
+        "bytes_written": 14510,
+        "created": true
+      },
+      {
+        "artifact_id": "art_2c45d8ab15b8e8a5f4d62baf03cd18d5ee44c166a151d6f64bc6a46538902bc5",
+        "relative_path": "node_modules/ws/lib/receiver.js",
+        "sha256": "7b9f6afc1fffb5c98d768d7d3d6fc1b709f28b45c6ae2682ff255075394323d9",
+        "bytes_written": 16460,
+        "created": true
+      },
+      {
+        "artifact_id": "art_71afd31db281d4c9250f491163e0cfe4d9b426dff8bcbe320c18ad57e1457d6c",
+        "relative_path": "node_modules/ws/lib/sender.js",
+        "sha256": "a80e8688dde53d46d836a58c9d15121ee12e978b7b0f656ed818c63d20df5f94",
+        "bytes_written": 16711,
+        "created": true
+      },
+      {
+        "artifact_id": "art_45bd82c72ef17770acd5d922aa81c03eb0ed10f6b00659a1ddfaecb8d0e06cb3",
+        "relative_path": "node_modules/ws/lib/stream.js",
+        "sha256": "a56fcb6e2b152097ee820b6f5410b1f71e59819b45d08d9f8bda588fe39070ec",
+        "bytes_written": 4204,
+        "created": true
+      },
+      {
+        "artifact_id": "art_2a1f2e59f76b4755eac01c77b405bcb9e4fbd6a7cd3b661118e5c4ba9771afea",
+        "relative_path": "node_modules/ws/lib/subprotocol.js",
+        "sha256": "be3f6323d6f549568577dcba9004c1479d95c65a7abb0fe0c582875b9fac0b7c",
+        "bytes_written": 1498,
+        "created": true
+      },
+      {
+        "artifact_id": "art_81516b158785464141bf9c49fbc2da0c7ddbb546c1d61df1a04e73d88355cf14",
+        "relative_path": "node_modules/ws/lib/validation.js",
+        "sha256": "41ce8e83d0d434132e1704895fedb91f6703a701b42d91c80954ab29b2845593",
+        "bytes_written": 3903,
+        "created": true
+      },
+      {
+        "artifact_id": "art_c0d84ca45e8a22e884f1376959c44166989ea7867d63da8a094d032b8238755c",
+        "relative_path": "node_modules/ws/lib/websocket-server.js",
+        "sha256": "5d0e592eb6e8b7628cbf6e2e6c703a3d6bda17139842b3a870ee9d67e336a77c",
+        "bytes_written": 16254,
+        "created": true
+      },
+      {
+        "artifact_id": "art_4a1bcbe73038114da993aaae01c52d36ace227a6306fad06691daf8b24f59a76",
+        "relative_path": "node_modules/ws/lib/websocket.js",
+        "sha256": "ea50fd045185975e0e572637cd96fa065a7e988a1d1c890d18002c75a8a253b9",
+        "bytes_written": 36463,
+        "created": true
+      },
+      {
+        "artifact_id": "art_3a9ee8d6e2fe9cc02c24a597839bd1c75800da48f014aad114526c0f6a42b482",
+        "relative_path": "node_modules/ws/package.json",
+        "sha256": "be6d54950d2b67fe7bcca4e46ffd5b84658978911b36760c9c6a86b23da0eea7",
+        "bytes_written": 1723,
+        "created": true
+      },
+      {
+        "artifact_id": "art_529ee6fc0cae4f238b220741d9fcea35fa1f12cd186a6184edae280277f0ea7c",
+        "relative_path": "node_modules/ws/wrapper.mjs",
+        "sha256": "e37bddaf6d40a3b2ee107906f792cc5117e543cba776fa25f7aeeb3908637f7c",
+        "bytes_written": 341,
+        "created": true
+      },
+      {
+        "artifact_id": "art_cfe1b3925de866acaf7352fb6d5e77bb62239cd8fcb52a07dde0435336c1053b",
+        "relative_path": "package.json",
+        "sha256": "396ab6728b99d8b35f53f08d9b752aa56795d4d212346e3a6e483e3aa08221a1",
+        "bytes_written": 9292,
+        "created": true
+      }
+    ],
+    "containment_verified": true,
+    "cleanup": {
+      "attempted": false,
+      "verified": true,
+      "residual_paths": []
+    },
+    "provenance": [],
+    "integrity_contradictions": [
+      {
+        "contradiction_id": "ic_0264c5a258b446f89296ad9915809b55455a87c05a870dd070c2cf63b2027c99",
+        "occurrence_id": "occ_64f1cd73ca72ff66a2e73566482ca92c1ceced1f1b75526af8cb54f4f0fea0fc",
+        "parent_artifact_id": "art_3ca34517affb20afbb32206d9ca05e8faa93ca61debc718b1e9890a09faf870a",
+        "logical_path": "node_modules/@plato-corp/microphone/build/Release/microphone.node",
+        "declared_sha256": "a7e869552aa2d20c4d3af49e1fd496073de1f9916eae5bcbbd1411f802ffac6e",
+        "observed_sha256": "48f33841dd8986114c1e89cf3efa916ae84b3d0adb0d818a25283e52b40d7532",
+        "entry_kind": "file",
+        "unpacked": true,
+        "trust": "observed-untrusted",
+        "provenance": "container-integrity-metadata-versus-observed-bytes",
+        "limitations": [
+          "Observed bytes contradict declared integrity metadata and cannot support equivalence."
+        ]
+      }
+    ],
+    "limitations": [
+      "All regular files in the active artifact were materialized; nested archive contents remain represented by their containing file.",
+      "1 extracted file(s) contradict declared integrity metadata; their bytes are observed-untrusted."
+    ]
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "All regular files in the active artifact were materialized; nested archive contents remain represented by their containing file.",
+    "1 extracted file(s) contradict declared integrity metadata; their bytes are observed-untrusted."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

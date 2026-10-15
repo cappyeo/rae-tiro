@@ -1,0 +1,70 @@
+{
+  "evidence_id": "ev_1f7a2b5ea0e6423a33b65220eac2c0a162b962d21381cadb53c9947be4fb8e0c",
+  "subject": {
+    "name": "tiro-audio-capture.exe",
+    "digest": {
+      "sha256": "eb036f32dacc118baade22afad8ec2d78f6d5b6546db45a31a1326dcd75e148b"
+    },
+    "local_path": "C:\\Users\\jeong\\Documents\\Codex\\2026-10-16\\c-users-jeong-downloads-tiro-4\\work\\package\\lib\\net45\\resources\\external\\win\\tiro-audio-capture.exe",
+    "format": "pe",
+    "architecture": "x86_64"
+  },
+  "provider": {
+    "id": "rust-auditable",
+    "name": "REA Rust dependency reader",
+    "version": "1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_rust_binary",
+  "parameters": {
+    "path": "C:\\Users\\jeong\\Documents\\Codex\\2026-10-16\\c-users-jeong-downloads-tiro-4\\work\\package\\lib\\net45\\resources\\external\\win\\tiro-audio-capture.exe"
+  },
+  "raw_result": null,
+  "normalized_result": {
+    "artifact": {
+      "path": "C:\\Users\\jeong\\Documents\\Codex\\2026-10-16\\c-users-jeong-downloads-tiro-4\\work\\package\\lib\\net45\\resources\\external\\win\\tiro-audio-capture.exe",
+      "sha256": "eb036f32dacc118baade22afad8ec2d78f6d5b6546db45a31a1326dcd75e148b",
+      "bytes": 909056
+    },
+    "format": "pe",
+    "architecture": "amd64",
+    "bits": 64,
+    "byte_order": "little",
+    "auditable_metadata": null,
+    "rustc_commit": {
+      "evidence_kind": "inferred",
+      "hashes": [
+        {
+          "hash": "8bab26f4f68e0e26f0bb7960be334d5b520ea452",
+          "file_offset": 627913
+        }
+      ]
+    },
+    "limitations": [
+      "Embedded dependency metadata is file content. It does not authenticate package names, versions, sources, or the compiler that produced the binary.",
+      "Only the .dep-v0 dependency section and read-only compiler path strings are inspected. Functions, types, and runtime behavior are not recovered.",
+      "Resource guards bound the selected file to 256 MiB, a dependency section to 1 MiB, inflated JSON to the smaller of 8 MiB and 64 times the section size, and the complete report to 8 MiB. Package and dependency counts are admitted against that output budget before schema cloning, graph objects, or reverse-edge allocation.",
+      "No .dep-v0 section was found. Absence of .dep-v0 does not mean the binary has no dependencies.",
+      "The rustc commit hash is inferred from a /rustc/<40-hex>/ path in read-only data. It does not by itself prove which compiler produced the binary."
+    ]
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Embedded dependency metadata is file content. It does not authenticate package names, versions, sources, or the compiler that produced the binary.",
+    "Only the .dep-v0 dependency section and read-only compiler path strings are inspected. Functions, types, and runtime behavior are not recovered.",
+    "Resource guards bound the selected file to 256 MiB, a dependency section to 1 MiB, inflated JSON to the smaller of 8 MiB and 64 times the section size, and the complete report to 8 MiB. Package and dependency counts are admitted against that output budget before schema cloning, graph objects, or reverse-edge allocation.",
+    "No .dep-v0 section was found. Absence of .dep-v0 does not mean the binary has no dependencies.",
+    "The rustc commit hash is inferred from a /rustc/<40-hex>/ path in read-only data. It does not by itself prove which compiler produced the binary."
+  ],
+  "relationship_coverage": null,
+  "locations": [
+    {
+      "kind": "artifact-path",
+      "path": "C:\\Users\\jeong\\Documents\\Codex\\2026-10-16\\c-users-jeong-downloads-tiro-4\\work\\package\\lib\\net45\\resources\\external\\win\\tiro-audio-capture.exe"
+    }
+  ],
+  "evidence_links": []
+}

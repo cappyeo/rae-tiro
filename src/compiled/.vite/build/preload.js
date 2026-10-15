@@ -1,0 +1,543 @@
+"use strict";
+try {
+  let e =
+      typeof window < "u"
+        ? window
+        : typeof global < "u"
+          ? global
+          : typeof globalThis < "u"
+            ? globalThis
+            : typeof self < "u"
+              ? self
+              : {},
+    r = new e.Error().stack;
+  r &&
+    ((e._sentryDebugIds = e._sentryDebugIds || {}),
+    (e._sentryDebugIds[r] = "9aac4384-f050-4ed9-91bd-1fe0148cfd4f"),
+    (e._sentryDebugIdIdentifier =
+      "sentry-dbid-9aac4384-f050-4ed9-91bd-1fe0148cfd4f"));
+} catch {}
+const n = require("electron");
+{
+  let e =
+    typeof window < "u"
+      ? window
+      : typeof global < "u"
+        ? global
+        : typeof globalThis < "u"
+          ? globalThis
+          : typeof self < "u"
+            ? self
+            : {};
+  e.SENTRY_RELEASE = { id: "b0e582b6b191bb327293ebbcbbdf60646085db2b" };
+}
+const s = process.platform === "darwin",
+  d = process.platform === "win32",
+  a = "4.9.14",
+  p = crypto.randomUUID(),
+  c = (e) => ({
+    ...e,
+    reason: (e == null ? void 0 : e.reason) ?? "unannotated",
+    requestId: crypto.randomUUID(),
+    rendererInstanceId: p,
+  });
+n.contextBridge.exposeInMainWorld("electron", {
+  baseUrl: {
+    api: "https://api.tiro.ooo",
+    web: "https://tiro.ooo",
+    ws: "wss://api.tiro.ooo",
+    docs: "https://docs.tiro.ooo",
+    channelTalk: "5d873410-56f4-4504-8497-b1ca2f13a8a9",
+  },
+  app: {
+    version: a,
+    quit: () => n.ipcRenderer.invoke("app:quit"),
+    isFullScreen: () => n.ipcRenderer.invoke("mac:isFullScreen"),
+    onFullScreenChange: (e) => {
+      const r = (i, o) => e(o);
+      n.ipcRenderer.on("mac:fullscreen-changed", r);
+    },
+    offFullScreenChange: (e) => {
+      n.ipcRenderer.removeAllListeners("mac:fullscreen-changed");
+    },
+  },
+  platform: { isMac: s, isWindows: d },
+  windows: {
+    minimize: () => n.ipcRenderer.invoke("windows:minimize"),
+    maximize: () => n.ipcRenderer.invoke("windows:maximize"),
+    restore: () => n.ipcRenderer.invoke("windows:restore"),
+    close: () => n.ipcRenderer.invoke("windows:close"),
+    isMaximized: () => n.ipcRenderer.invoke("windows:isMaximized"),
+    focus: () => n.ipcRenderer.invoke("windows:focus"),
+    onMaximizeChange: (e) => {
+      const r = (i, o) => e(o);
+      n.ipcRenderer.on("windows:maximized-changed", r);
+    },
+    offMaximizeChange: (e) => {
+      n.ipcRenderer.removeAllListeners("windows:maximized-changed");
+    },
+  },
+  appMenu: {
+    popup: (e) => n.ipcRenderer.invoke("app-menu:popup", e),
+    onAction: (e) => {
+      const r = (i, o) => e(o);
+      return (
+        n.ipcRenderer.on("app-menu:action", r),
+        () => n.ipcRenderer.removeListener("app-menu:action", r)
+      );
+    },
+  },
+  overlay: {
+    setRecordingState: (e, r) =>
+      n.ipcRenderer.invoke("overlay:set-recording-state", e, r),
+    setEnabled: (e) => n.ipcRenderer.invoke("overlay:set-enabled", e),
+    getEnabled: () => n.ipcRenderer.invoke("overlay:get-enabled"),
+    updateAudioLevel: (e) =>
+      n.ipcRenderer.invoke("overlay:update-audio-level", e),
+  },
+  meetingEnd: {
+    start: (e) => n.ipcRenderer.invoke("meeting-end:start", { pollMs: e }),
+    stop: () => n.ipcRenderer.invoke("meeting-end:stop"),
+    requestPause: () => n.ipcRenderer.invoke("meeting-end:request-pause"),
+    onMicSignal: (e) => {
+      const r = (i, o) => e(o);
+      return (
+        n.ipcRenderer.on("meeting-end:mic-signal", r),
+        () => n.ipcRenderer.removeListener("meeting-end:mic-signal", r)
+      );
+    },
+  },
+  notification: { show: (e) => n.ipcRenderer.invoke("notification-show", e) },
+  securityPolicy: {
+    update: (e) => n.ipcRenderer.invoke("security-policy:update", e),
+    clear: () => n.ipcRenderer.invoke("security-policy:clear"),
+  },
+  locale: {
+    set: (e) => n.ipcRenderer.invoke("locale:set", e),
+    setRecordingPreferences: (e) =>
+      n.ipcRenderer.invoke("locale:set-recording-preferences", e),
+    getRecordingPreferences: () =>
+      n.ipcRenderer.invoke("locale:get-recording-preferences"),
+  },
+  calendar: {
+    syncEvents: (e) => n.ipcRenderer.invoke("calendar:sync-events", e),
+    getNotificationStatus: () =>
+      n.ipcRenderer.invoke("calendar:get-notification-status"),
+    setNotificationEnabled: (e) =>
+      n.ipcRenderer.invoke("calendar:set-notification-enabled", e),
+    getNotificationEnabled: () =>
+      n.ipcRenderer.invoke("calendar:get-notification-enabled"),
+  },
+  micDetection: {
+    getNotificationEnabled: () =>
+      n.ipcRenderer.invoke("mic-detection:get-notification-enabled"),
+    setNotificationEnabled: (e) =>
+      n.ipcRenderer.invoke("mic-detection:set-notification-enabled", e),
+    setTiroMicState: (e) => {
+      n.ipcRenderer.send("mic-detection:set-tiro-mic-state", e);
+    },
+  },
+  auth: {
+    setAuthToken: (e) => n.ipcRenderer.invoke("set-auth-token", e),
+    getAuthToken: () => n.ipcRenderer.invoke("get-auth-token"),
+    setRequestInterceptor: () =>
+      n.ipcRenderer.invoke("set-request-interceptor"),
+  },
+  adAttribution: {
+    getPending: () => n.ipcRenderer.invoke("ad-attribution:get-pending"),
+    clearPending: () => n.ipcRenderer.invoke("ad-attribution:clear-pending"),
+  },
+  posthogHandoff: {
+    getPendingWebDistinctId: () =>
+      n.ipcRenderer.invoke("posthog-handoff:get-pending-web-distinct-id"),
+    clearPendingWebDistinctId: () =>
+      n.ipcRenderer.invoke("posthog-handoff:clear-pending-web-distinct-id"),
+  },
+  firstLaunch: { claim: () => n.ipcRenderer.invoke("first-launch:claim") },
+  deeplink: {
+    notifyReady: () => {
+      n.ipcRenderer.send("deeplink:renderer-ready");
+    },
+    notifyGone: () => {
+      n.ipcRenderer.send("deeplink:renderer-gone");
+    },
+  },
+  credentialAttach: {
+    claimResult: () => n.ipcRenderer.invoke("credential-attach-result:claim"),
+  },
+  workflowConnect: {
+    claimResults: () => n.ipcRenderer.invoke("workflow-connect-result:claim"),
+  },
+  googleDrivePicker: {
+    open: (e) => n.ipcRenderer.invoke("google-drive-picker:open", e),
+    claimResult: () => n.ipcRenderer.invoke("google-drive-picker:claim"),
+  },
+  authorize: (e, r, i) =>
+    n.ipcRenderer.invoke("authorize", { authUrl: e, provider: r, ...i }),
+  setObservabilityUser: (e) =>
+    n.ipcRenderer.invoke("observability:set-user", e),
+  clearAuthToken: () => n.ipcRenderer.invoke("clear-auth-token"),
+  openUrlInExternalBrowser: (e, r) =>
+    n.ipcRenderer.invoke("open-url-in-external-browser", e, r).catch(() => !1),
+  getExternalModulePath: (e) =>
+    n.ipcRenderer.invoke("get-external-module-path", e),
+  getDeviceUUID: () => n.ipcRenderer.invoke("get-device-uuid"),
+  update: () => {
+    n.ipcRenderer.send("update");
+  },
+  getUpdateInfo: () => n.ipcRenderer.invoke("get-update-info"),
+  onUpdateAvailable: (e) => {
+    n.ipcRenderer.on("update-available", (r, i) => {
+      e(i);
+    });
+  },
+  onUpdateCompleted: (e) => {
+    n.ipcRenderer.on("update-completed", (r, i) => {
+      e(i);
+    });
+  },
+  onUpdateTelemetry: (e) => {
+    const r = (i, o) => e(o);
+    return (
+      n.ipcRenderer.on("telemetry:update-event", r),
+      () => {
+        n.ipcRenderer.removeListener("telemetry:update-event", r);
+      }
+    );
+  },
+  onTelemetryLog: (e) => {
+    const r = (i, o) => e(o);
+    return (
+      n.ipcRenderer.on("telemetry:log", r),
+      () => {
+        n.ipcRenderer.removeListener("telemetry:log", r);
+      }
+    );
+  },
+  notifyTelemetryReady: () => n.ipcRenderer.invoke("telemetry:ready"),
+  hasMicrophonePermission: () =>
+    n.ipcRenderer.invoke("has-microphone-permission"),
+  hasSystemAudioCapturePermission: () =>
+    n.ipcRenderer.invoke("has-system-audio-capture-permission"),
+  grantMicrophonePermission: () =>
+    n.ipcRenderer.invoke("grant-microphone-permission"),
+  grantSystemAudioCapturePermission: () =>
+    n.ipcRenderer.invoke("grant-system-audio-capture-permission"),
+  recordingSupport: {
+    get: () =>
+      d
+        ? Promise.resolve({ kind: "supported" })
+        : n.ipcRenderer
+            .invoke("recording-support:get")
+            .catch(() => ({ kind: "unavailable" })),
+    ensureSupported: () =>
+      d
+        ? Promise.resolve(!0)
+        : n.ipcRenderer
+            .invoke("recording-support:ensure-supported")
+            .catch(() => !1),
+  },
+  onTrayCreateNote: (e) => {
+    (n.ipcRenderer.removeAllListeners("tray:create-note"),
+      n.ipcRenderer.on("tray:create-note", (r, i) => e(i)));
+  },
+  onRequestCalendarEvents: (e) => {
+    n.ipcRenderer.on("tray:request-calendar-events", e);
+  },
+  updateCalendarEvents: (e) => {
+    n.ipcRenderer.send("tray:update-calendar-events", e);
+  },
+  trayRecordingState: {
+    update: (e) => {
+      n.ipcRenderer.send("tray:recording-state:update", e);
+    },
+  },
+  trayRecordingControl: {
+    onLivePause: (e) => {
+      const r = (i, o) => e(o);
+      return (
+        n.ipcRenderer.on("tray:live:pause", r),
+        () => n.ipcRenderer.removeListener("tray:live:pause", r)
+      );
+    },
+    onLiveResume: (e) => {
+      const r = () => e();
+      return (
+        n.ipcRenderer.on("tray:live:resume", r),
+        () => n.ipcRenderer.removeListener("tray:live:resume", r)
+      );
+    },
+    onLiveStop: (e) => {
+      const r = () => e();
+      return (
+        n.ipcRenderer.on("tray:live:stop", r),
+        () => n.ipcRenderer.removeListener("tray:live:stop", r)
+      );
+    },
+    onOfflinePause: (e) => {
+      const r = (i, o) => e(o);
+      return (
+        n.ipcRenderer.on("tray:offline:pause", r),
+        () => n.ipcRenderer.removeListener("tray:offline:pause", r)
+      );
+    },
+    onOfflineResume: (e) => {
+      const r = () => e();
+      return (
+        n.ipcRenderer.on("tray:offline:resume", r),
+        () => n.ipcRenderer.removeListener("tray:offline:resume", r)
+      );
+    },
+    onOfflineStop: (e) => {
+      const r = () => e();
+      return (
+        n.ipcRenderer.on("tray:offline:stop", r),
+        () => n.ipcRenderer.removeListener("tray:offline:stop", r)
+      );
+    },
+  },
+  pdf: { generatePDF: (e) => n.ipcRenderer.invoke("pdf:generate", e) },
+  docx: { generateDOCX: (e) => n.ipcRenderer.invoke("docx:generate", e) },
+  zoom: {
+    in: () => n.ipcRenderer.invoke("zoom:in"),
+    out: () => n.ipcRenderer.invoke("zoom:out"),
+    reset: () => n.ipcRenderer.invoke("zoom:reset"),
+    getLevel: () => n.ipcRenderer.invoke("zoom:get-level"),
+    setLevel: (e) => n.ipcRenderer.invoke("zoom:set-level", e),
+  },
+  system: {
+    onSuspend: (e) => {
+      const r = () => e();
+      return (n.ipcRenderer.on("system:suspend", r), r);
+    },
+    onResume: (e) => {
+      const r = () => e();
+      return (n.ipcRenderer.on("system:resume", r), r);
+    },
+    onLockScreen: (e) => {
+      const r = () => e();
+      return (n.ipcRenderer.on("system:lock", r), r);
+    },
+    onUnlockScreen: (e) => {
+      const r = () => e();
+      return (n.ipcRenderer.on("system:unlock", r), r);
+    },
+    removeListener: (e, r) => {
+      n.ipcRenderer.removeListener(e, r);
+    },
+  },
+  audioRecording: {
+    start: (e) => n.ipcRenderer.invoke("audio-recording:start", e),
+    append: (e, r) =>
+      n.ipcRenderer.send("audio-recording:append", {
+        noteGuid: e,
+        audioData: r,
+      }),
+    pause: (e) => n.ipcRenderer.invoke("audio-recording:pause", e),
+    stop: (e) => n.ipcRenderer.invoke("audio-recording:stop", e),
+    setSavePath: () => n.ipcRenderer.invoke("audio-recording:set-save-path"),
+    getSavePath: () => n.ipcRenderer.invoke("audio-recording:get-save-path"),
+    openFile: (e) => n.ipcRenderer.invoke("audio-recording:open-file", e),
+    getRecordings: () => n.ipcRenderer.invoke("audio-recording:get-recordings"),
+    getEnabled: () => n.ipcRenderer.invoke("audio-recording:get-enabled"),
+    setEnabled: (e) => n.ipcRenderer.invoke("audio-recording:set-enabled", e),
+    hasRecording: (e) =>
+      n.ipcRenderer.invoke("audio-recording:has-recording", e),
+    downloadFile: (e) =>
+      n.ipcRenderer.invoke("audio-recording:download-file", e),
+  },
+  offlineRecording: {
+    start: (e) => n.ipcRenderer.invoke("offline-recording:start", e),
+    append: (e, r) =>
+      n.ipcRenderer.send("offline-recording:append", {
+        noteGuid: e,
+        audioData: r,
+      }),
+    pause: (e) => n.ipcRenderer.invoke("offline-recording:pause", e),
+    resume: (e) => n.ipcRenderer.invoke("offline-recording:resume", e),
+    stop: (e) => n.ipcRenderer.invoke("offline-recording:stop", e),
+    getFile: (e) => n.ipcRenderer.invoke("offline-recording:get-file", e),
+    getUploadFileSize: (e) =>
+      n.ipcRenderer.invoke("offline-recording:get-upload-file-size", e),
+    saveFile: (e) => n.ipcRenderer.invoke("offline-recording:save-file", e),
+    uploadFile: (e) => n.ipcRenderer.invoke("offline-recording:upload-file", e),
+    listTempFiles: () =>
+      n.ipcRenderer.invoke("offline-recording:list-temp-files"),
+    deleteFile: (e, r) =>
+      n.ipcRenderer.invoke("offline-recording:delete-file", e, r),
+    getPendingSessions: () =>
+      n.ipcRenderer.invoke("offline-recording:get-pending-sessions"),
+    cleanupSessions: () =>
+      n.ipcRenderer.invoke("offline-recording:cleanup-sessions"),
+    clearPendingSession: (e) =>
+      n.ipcRenderer.invoke("offline-recording:clear-pending-session", e),
+    updateSessionStatus: (e) =>
+      n.ipcRenderer.invoke("offline-recording:update-session-status", e),
+    getSettings: () => n.ipcRenderer.invoke("offline-recording:get-settings"),
+    updateSettings: (e) =>
+      n.ipcRenderer.invoke("offline-recording:update-settings", e),
+    generateSessionId: () =>
+      n.ipcRenderer.invoke("offline-recording:generate-session-id"),
+  },
+  dialog: {
+    showSaveDialog: (e) => n.ipcRenderer.invoke("dialog:show-save-dialog", e),
+    showOpenDialog: (e) => n.ipcRenderer.invoke("dialog:show-open-dialog", e),
+  },
+  fs: {
+    writeFile: (e, r) => n.ipcRenderer.invoke("fs:write-file", e, r),
+    readFile: (e) => n.ipcRenderer.invoke("fs:read-file", e),
+  },
+  nativeAudioCapture: {
+    start: (e, r) => n.ipcRenderer.invoke("native-audio:start", e, c(r)),
+    confirmSystemOnlyFallback: (e) =>
+      !e ||
+      typeof e != "object" ||
+      Object.entries({
+        title: 120,
+        description: 1e3,
+        settings: 80,
+        systemOnly: 80,
+        cancel: 80,
+      }).some(([i, o]) => {
+        const t = e[i];
+        return typeof t != "string" || t.length === 0 || t.length > o;
+      })
+        ? Promise.reject(new TypeError("Invalid system-only fallback copy"))
+        : n.ipcRenderer.invoke("native-audio:confirm-system-only-fallback", e),
+    changeMicDevice: (e) => n.ipcRenderer.invoke("native-audio:change-mic", e),
+    stop: (e) => n.ipcRenderer.invoke("native-audio:stop", c(e)),
+    pause: () => n.ipcRenderer.invoke("native-audio:pause"),
+    setGain: (e, r) => n.ipcRenderer.invoke("native-audio:set-gain", e, r),
+    recoverSystemAudio: () =>
+      n.ipcRenderer.invoke("native-audio:recover-system"),
+    onAudioLevel: (e) => {
+      const r = (i, o) => e(o.rms, o.peak);
+      return (
+        n.ipcRenderer.on("native-audio:level", r),
+        () => {
+          n.ipcRenderer.removeListener("native-audio:level", r);
+        }
+      );
+    },
+    onError: (e) => {
+      const r = (i, o) => e(o.code, o.message, o.fatal);
+      return (
+        n.ipcRenderer.on("native-audio:error", r),
+        () => {
+          n.ipcRenderer.removeListener("native-audio:error", r);
+        }
+      );
+    },
+    onPermissionRequired: (e) => {
+      const r = (i, o) => e(o.source);
+      return (
+        n.ipcRenderer.on("native-audio:permission-required", r),
+        () => {
+          n.ipcRenderer.removeListener("native-audio:permission-required", r);
+        }
+      );
+    },
+    onMicDeviceFallbackApplied: (e) => {
+      const r = () => e();
+      return (
+        n.ipcRenderer.on("native-audio:mic-device-fallback-applied", r),
+        () => {
+          n.ipcRenderer.removeListener(
+            "native-audio:mic-device-fallback-applied",
+            r,
+          );
+        }
+      );
+    },
+  },
+  stompStreaming: {
+    connect: (e, r) =>
+      n.ipcRenderer.invoke("stomp:connect", { noteId: e, platform: r }),
+    disconnect: (e) => n.ipcRenderer.invoke("stomp:disconnect", { noteId: e }),
+    sendResume: (e, r, i) =>
+      n.ipcRenderer.invoke("stomp:send-resume", {
+        noteId: e,
+        connectType: r,
+        platform: i,
+      }),
+    sendPause: (e, r) =>
+      n.ipcRenderer.invoke("stomp:send-pause", { noteId: e, pauseReason: r }),
+    sendEnd: (e) => n.ipcRenderer.invoke("stomp:send-end", { noteId: e }),
+    sendSummary: (e, r, i) =>
+      n.ipcRenderer.invoke("stomp:send-summary", {
+        noteId: e,
+        templateId: r,
+        force: i,
+      }),
+    sendRecordingFile: (e, r) =>
+      n.ipcRenderer.invoke("stomp:send-recording-file", { noteId: e, body: r }),
+    sendRecordingFileUri: (e, r) =>
+      n.ipcRenderer.invoke("stomp:send-recording-file-uri", {
+        noteId: e,
+        body: r,
+      }),
+    isConnected: (e) =>
+      n.ipcRenderer.invoke("stomp:is-connected", { noteId: e }),
+    onSubscriptionMessage: (e) => {
+      const r = (i, o) => e(o);
+      return (
+        n.ipcRenderer.on("stomp:subscription-message", r),
+        () => {
+          n.ipcRenderer.removeListener("stomp:subscription-message", r);
+        }
+      );
+    },
+    onConnectionStatus: (e) => {
+      const r = (i, o) => e(o);
+      return (
+        n.ipcRenderer.on("stomp:connection-status", r),
+        () => {
+          n.ipcRenderer.removeListener("stomp:connection-status", r);
+        }
+      );
+    },
+    onError: (e) => {
+      const r = (i, o) => e(o);
+      return (
+        n.ipcRenderer.on("stomp:error", r),
+        () => {
+          n.ipcRenderer.removeListener("stomp:error", r);
+        }
+      );
+    },
+  },
+});
+n.ipcRenderer.on("calendar-create-note", (e, r) => {
+  const i = typeof r == "string" ? JSON.parse(r) : r;
+  window.dispatchEvent(new CustomEvent("calendar-create-note", { detail: i }));
+});
+n.ipcRenderer.on("integration:connect-result", () => {
+  window.dispatchEvent(new Event("integration:connect-result"));
+});
+n.ipcRenderer.on("google-drive-picker:result", () => {
+  window.dispatchEvent(new Event("google-drive-picker:result"));
+});
+n.ipcRenderer.on("credential-attach-complete", () => {
+  window.dispatchEvent(new Event("credential-attach-complete"));
+});
+n.ipcRenderer.on("auth-callback-failed", (e, r) => {
+  const i = typeof r == "object" && r !== null ? r : {};
+  window.dispatchEvent(new CustomEvent("auth-callback-failed", { detail: i }));
+});
+n.ipcRenderer.on("deeplink-start-recording", (e, r) => {
+  const i = typeof r == "string" ? JSON.parse(r) : r;
+  window.dispatchEvent(
+    new CustomEvent("deeplink-start-recording", { detail: i }),
+  );
+});
+n.ipcRenderer.on("deeplink-stop-recording", (e, r) => {
+  const i = typeof r == "string" ? JSON.parse(r) : r;
+  window.dispatchEvent(
+    new CustomEvent("deeplink-stop-recording", { detail: i }),
+  );
+});
+n.ipcRenderer.on("welcome-overlay-show", (e, r) => {
+  const i = typeof r == "string" ? JSON.parse(r) : r;
+  window.dispatchEvent(new CustomEvent("welcome-overlay-show", { detail: i }));
+});
+//# sourceMappingURL=preload.js.map

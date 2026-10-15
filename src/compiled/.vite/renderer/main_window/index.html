@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      @keyframes tiro-workspace-switch-fade {
+        0%,
+        100% {
+          opacity: 1;
+        }
+
+        50% {
+          opacity: 0.55;
+        }
+      }
+
+      html[data-tiro-workspace-switching="true"],
+      html[data-tiro-workspace-switching="true"] body {
+        background: rgb(253 252 250) !important;
+      }
+
+      html[data-tiro-workspace-switching="true"]::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        z-index: 2147483644;
+        background: rgb(253 252 250);
+      }
+
+      html[data-tiro-workspace-switching="true"]::after {
+        content: attr(data-tiro-workspace-switch-label);
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        z-index: 2147483645;
+        box-sizing: border-box;
+        width: 260px;
+        height: 90px;
+        margin: -45px 0 0 -130px;
+        padding-top: 58px;
+        background: url("./assets/tiro-icon-brown-Bnzo2vV_.png") top center /
+          42px 42px no-repeat;
+        color: rgb(146 142 136);
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        text-align: center;
+        animation: tiro-workspace-switch-fade 1.5s ease-in-out infinite;
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        html[data-tiro-workspace-switching="true"]::after {
+          animation: none;
+        }
+      }
+    </style>
+    <script>
+      (function () {
+        var transitionKey = "TIRO_WORKSPACE_SWITCH_TRANSITION";
+        var labelKey = "TIRO_WORKSPACE_SWITCH_LOADING_LABEL";
+        var startedAtKey = "TIRO_WORKSPACE_SWITCH_STARTED_AT";
+        var switchingAttribute = "data-tiro-workspace-switching";
+        var labelAttribute = "data-tiro-workspace-switch-label";
+        var rendererAttribute = "data-tiro-workspace-switch-renderer";
+        var maxAge = 60000;
+
+        var clearAttributes = function () {
+          document.documentElement.removeAttribute(switchingAttribute);
+          document.documentElement.removeAttribute(labelAttribute);
+          document.documentElement.removeAttribute(rendererAttribute);
+        };
+
+        var clearStorage = function () {
+          window.sessionStorage.removeItem(transitionKey);
+          window.sessionStorage.removeItem(labelKey);
+          window.sessionStorage.removeItem(startedAtKey);
+        };
+
+        var getFallbackLabel = function () {
+          var lang = document.documentElement.lang || navigator.language || "";
+          if (lang.indexOf("ko") === 0)
+            return "워크스페이스를 준비하고 있어요...";
+          if (lang.indexOf("ja") === 0)
+            return "ワークスペースを準備しています...";
+          return "Preparing workspace...";
+        };
+
+        try {
+          if (!window.sessionStorage.getItem(transitionKey)) {
+            clearAttributes();
+            return;
+          }
+
+          var startedAtRaw = window.sessionStorage.getItem(startedAtKey);
+          if (startedAtRaw) {
+            var startedAt = Number(startedAtRaw);
+            if (
+              !Number.isFinite(startedAt) ||
+              Date.now() - startedAt > maxAge
+            ) {
+              clearStorage();
+              clearAttributes();
+              return;
+            }
+          }
+
+          document.documentElement.setAttribute(
+            labelAttribute,
+            window.sessionStorage.getItem(labelKey) || getFallbackLabel(),
+          );
+          document.documentElement.setAttribute(rendererAttribute, "css");
+          document.documentElement.setAttribute(switchingAttribute, "true");
+        } catch (error) {
+          clearAttributes();
+        }
+      })();
+    </script>
+    <script type="module" crossorigin src="./assets/index-CXautzcB.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-DEPkF0IT.css" />
+  </head>
+
+  <body>
+    <script
+      src="https://do.featurebase.app/js/sdk.js"
+      id="featurebase-sdk"
+    ></script>
+    <div id="root"></div>
+  </body>
+</html>

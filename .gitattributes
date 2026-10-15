@@ -1,0 +1,2 @@
+# Preserve recovered artifact and source-map hashes across Windows checkouts.
+* -text

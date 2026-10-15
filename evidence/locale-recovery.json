@@ -1,0 +1,42 @@
+{
+  "generatedAt": "2026-10-15T20:05:54.932Z",
+  "method": "require captured CJS locale chunks and serialize their default export",
+  "records": [
+    {
+      "locale": "en",
+      "source": "preserved/app/.vite/build/common-BYp7ijXW.js",
+      "sourceSha256": "60e03bf2a590fcbea89d7d05568ed34c0ad11bc0fbb5ad21e4cd7958176e46ce",
+      "outputSha256": "bebc2b1f6c66059dc069eb8085c271b73ec7ee76a91c46562ee3a3553579892a",
+      "outputBytes": 386883,
+      "outputs": [
+        "recovered/sourcemaps/application/src/locales/dist/en/common.json",
+        "recovered/packages/locales/src/en/common.json",
+        "recovered/sourcemaps/application/packages/locales/src/en/common.json"
+      ]
+    },
+    {
+      "locale": "ja",
+      "source": "preserved/app/.vite/build/common-d8iTTsZZ.js",
+      "sourceSha256": "dd794eecd507619706311cb74b022ab49f40d9fbf0bde0b0cf4802b5fbb830f8",
+      "outputSha256": "cec14e236970cda76c0d35d05053c7408628e8a34518fe54f3734a5cad5754b8",
+      "outputBytes": 484221,
+      "outputs": [
+        "recovered/sourcemaps/application/src/locales/dist/ja/common.json",
+        "recovered/packages/locales/src/ja/common.json",
+        "recovered/sourcemaps/application/packages/locales/src/ja/common.json"
+      ]
+    },
+    {
+      "locale": "ko",
+      "source": "preserved/app/.vite/build/common-ESyrnCuW.js",
+      "sourceSha256": "9eb7222255651bce35c42194cbd1cccc0dee44d9f8ef3ac497b8701ffa8ea49a",
+      "outputSha256": "65b401c98b4aa87931335fac8b1feac8c66860d9f344966a16e3237cab39a14c",
+      "outputBytes": 461098,
+      "outputs": [
+        "recovered/sourcemaps/application/src/locales/dist/ko/common.json",
+        "recovered/packages/locales/src/ko/common.json",
+        "recovered/sourcemaps/application/packages/locales/src/ko/common.json"
+      ]
+    }
+  ]
+}
